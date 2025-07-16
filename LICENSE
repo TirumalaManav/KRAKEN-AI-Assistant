@@ -19,3 +19,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+KRAKEN AI Assistant
+Created by: Tirumala Manav
+Email: tirumalamanav@example.com
+GitHub: https://github.com/TirumalaManav
+LinkedIn: https://linkedin.com/in/tirumalamanav
+
+This project demonstrates advanced AI/ML capabilities including:
+- Large Language Model integration
+- Retrieval-Augmented Generation (RAG)
+- Vector databases and embeddings
+- Multi-agent AI systems
+- Modern web application development
+
+Technology Stack:
+- Python, Streamlit, LangChain
+- ChromaDB, Sentence Transformers
+- Google Gemini API
+- Advanced RAG Pipeline
