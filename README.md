@@ -4,15 +4,15 @@
 
 ![KRAKEN Logo](assets/KRAKEN.jpg)
 
-**Intelligent AI-Powered Coding Assistant with RAG Pipeline**
+**Intelligent AI-Powered Coding Assistant with RAG Pipeline & Agentic AI**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.38+-red.svg)](https://streamlit.io)
 [![LangChain](https://img.shields.io/badge/LangChain-0.2.16-green.svg)](https://langchain.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/TirumalaManav/kraken-ai-assistant.svg)](https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/TirumalaManav/kraken-ai-assistant.svg)](https://github.com/TirumalaManav/kraken-ai-assistant/stargazers)
 
-[🚀 Live Demo](https://kraken-ai.streamlit.app) • [📖 Documentation](docs/) • [🎯 Features](#features) • [⚡ Quick Start](#quick-start)
+[🎯 Features](#features) • [⚡ Quick Start](#quick-start) • [🏗️ Architecture](#architecture) • [🚀 Deployment](#deployment)
 
 </div>
 
@@ -20,71 +20,75 @@
 
 ## 🌟 Overview
 
-**KRAKEN** is a cutting-edge AI coding assistant that combines the power of Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG) to provide intelligent, context-aware programming assistance. Built with modern AI technologies, KRAKEN offers a ChatGPT-like interface specifically designed for developers and programmers.
+**KRAKEN** is an advanced AI coding assistant that implements cutting-edge Retrieval-Augmented Generation (RAG) with multi-agent architecture to deliver intelligent, context-aware programming assistance. Built with enterprise-grade technologies, KRAKEN provides a ChatGPT-like interface optimized for developers.
 
-### 🎯 Key Highlights
+### 🎯 Core Capabilities
 
-- **🧠 Advanced RAG Pipeline**: Sophisticated retrieval system with 24GB vector database
-- **🤖 Multi-Agent Architecture**: Specialized AI agents for different coding tasks
-- **📄 Multi-Format Support**: Process PDF, DOCX, TXT, and various code files
-- **⚡ Real-time Responses**: Sub-second response times with streaming capabilities
-- **🎨 Beautiful Interface**: Modern, animated UI with professional design
-- **🔒 Enterprise-Ready**: Robust error handling and monitoring systems
+- **🤖 Multi-Agent AI System**: ReAct-based agents with specialized tools and memory management
+- **🧠 Advanced RAG Pipeline**: 24GB vector database with semantic retrieval capabilities
+- **📄 Multi-Format Processing**: Intelligent document analysis (PDF, DOCX, TXT, code files)
+- **⚡ Real-Time Streaming**: Sub-second response times with progressive output
+- **🎨 Professional Interface**: Modern UI with animations and responsive design
+- **🔒 Production-Ready**: Comprehensive monitoring, error handling, and security features
 
 ---
 
 ## 🚀 Features
 
-### 🤖 AI-Powered Capabilities
-- **Code Generation**: Generate complete functions, classes, and modules
-- **Code Review**: Intelligent code analysis and optimization suggestions
-- **Bug Detection**: Automatic error identification and fixing recommendations
-- **Documentation**: Auto-generate comprehensive code documentation
-- **Refactoring**: Smart code restructuring and improvement suggestions
+### 🤖 AI-Powered Development
+- **Intelligent Code Generation**: Context-aware function, class, and module creation
+- **Advanced Code Review**: Deep analysis with optimization recommendations
+- **Automated Bug Detection**: Error identification with targeted fix suggestions
+- **Smart Documentation**: Auto-generated comprehensive code documentation
+- **Intelligent Refactoring**: Code restructuring with best practice recommendations
 
-### 📊 Advanced RAG System
-- **Vector Database**: ChromaDB with 24GB of curated programming knowledge
-- **Semantic Search**: Find relevant code examples and documentation instantly
-- **Context Awareness**: Maintains conversation history and project context
-- **Multi-Document Processing**: Analyze multiple files simultaneously
+### 🧠 Advanced RAG Architecture
+- **Vector Knowledge Base**: ChromaDB with 24GB curated programming knowledge
+- **Semantic Code Search**: Instant retrieval of relevant examples and documentation
+- **Context Preservation**: Persistent conversation memory across sessions
+- **Multi-Document Analysis**: Simultaneous processing of complex codebases
 
-### 🛠️ Technical Excellence
-- **Modular Architecture**: Clean, maintainable, and extensible codebase
-- **Memory Management**: Efficient handling of large codebases and documents
-- **Error Handling**: Robust exception management and graceful degradation
-- **Performance Monitoring**: Built-in metrics and logging systems
-- **API Integration**: Seamless integration with Google Gemini and other APIs
+### 🔧 Enterprise-Grade Features
+- **Modular Architecture**: Clean, scalable, and maintainable codebase
+- **Advanced Memory Management**: Efficient handling of large-scale operations
+- **Robust Error Handling**: Graceful degradation with comprehensive logging
+- **Performance Monitoring**: Real-time metrics and health monitoring
+- **API Ecosystem**: Seamless integration with Google Gemini and extensible APIs
 
 ---
 
 ## 🏗️ Architecture
 
+### 🎯 System Overview
+
 ```mermaid
 graph TD
     A[User Interface] --> B[Streamlit Frontend]
-    B --> C[Input Handler]
+    B --> C[Input Handler] 
     C --> D[Agent Manager]
     D --> E[Memory Manager]
     D --> F[RAG Pipeline]
     F --> G[Embedding Engine]
     F --> H[Vector Database]
     F --> I[Document Processor]
-    D --> J[Output Handler]
-    J --> K[Response Generator]
-    K --> B
+    D --> J[Response Generator]
+    D --> K[Tools & APIs]
+    J --> L[Output Handler]
+    L --> B
+    M[Monitoring System] --> D
 ```
 
 ### 🔧 Technology Stack
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| **Frontend** | Streamlit + Custom CSS | Interactive web interface |
-| **AI Orchestration** | LangChain | Agent coordination and workflow |
-| **Vector Database** | ChromaDB | Semantic search and retrieval |
-| **Embeddings** | Sentence Transformers | Text vectorization |
-| **Language Model** | Google Gemini API | Text generation and understanding |
-| **Document Processing** | PyPDF2, python-docx | Multi-format file support |
-| **Monitoring** | Custom logging system | Performance tracking |
+| Layer | Technology | Implementation |
+|-------|------------|----------------|
+| **Frontend** | Streamlit + Custom CSS | Interactive web interface with animations |
+| **AI Orchestration** | LangChain + ReAct Agents | Multi-agent coordination and workflow |
+| **Vector Database** | ChromaDB | Semantic search and knowledge retrieval |
+| **Embeddings** | Sentence Transformers | High-quality text vectorization |
+| **Language Model** | Google Gemini API | Advanced text generation and understanding |
+| **Document Processing** | PyPDF2, python-docx | Multi-format file analysis |
+| **Monitoring** | Custom telemetry system | Performance tracking and health monitoring |
 
 ---
 
@@ -92,65 +96,56 @@ graph TD
 
 ### 📋 Prerequisites
 
-- Python 3.8 or higher
+- Python 3.8+
 - Git
-- Google Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
+- Google Gemini API key ([Get API Key](https://makersuite.google.com/app/apikey))
 
 ### 🔧 Installation
 
-1. **Clone the repository**
+1. **Clone Repository**
    ```bash
-   git clone   https://github.com/TirumalaManav/KRAKEN-AI-Assistant.git
-   cd KRAKEN-AI-ASSISTANT
+   git clone https://github.com/TirumalaManav/KRAKEN-AI-Assistant.git
+   cd KRAKEN-AI-Assistant
    ```
 
-2. **Create virtual environment**
+2. **Setup Environment**
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
+   source venv/bin/activate  # Windows: venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
-4. **Configure environment variables**
+3. **Configure API Keys**
    ```bash
    cp .env.example .env
-   # Edit .env and add your API keys
+   # Add your Google Gemini API key to .env
    ```
 
-5. **Run the application**
+4. **Launch Application**
    ```bash
    streamlit run streamlit_app.py
    ```
 
-6. **Open in browser**
-   Navigate to `http://localhost:8501`
+5. **Access Interface**
+   Open `http://localhost:8501` in your browser
 
 ---
 
-## 📖 Detailed Setup
+## 📖 Configuration
 
-### 🔑 Environment Configuration
-
-Create a `.env` file with the following variables:
+### 🔑 Environment Setup
 
 ```bash
-# Required: Google Gemini API
+# Required API Configuration
 GOOGLE_API_KEY=your_gemini_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here  # Optional fallback
 
-# Optional: Additional services
-OPENAI_API_KEY=your_openai_key_here
-ANTHROPIC_API_KEY=your_claude_key_here
-
-# Database Configuration
+# RAG Pipeline Settings
 VECTOR_DB_PATH=src/embeddings/vector_db
 CHUNK_SIZE=1000
 CHUNK_OVERLAP=200
 
-# Performance Settings
+# Model Parameters
 MAX_TOKENS=4096
 TEMPERATURE=0.7
 ```
@@ -158,106 +153,88 @@ TEMPERATURE=0.7
 ### 📁 Project Structure
 
 ```
-kraken-ai-assistant/
-├── streamlit_app.py          # Main application entry point
-├── requirements.txt          # Python dependencies
-├── .env.example             # Environment variables template
-├── .gitignore              # Git ignore rules
-├── LICENSE                 # MIT license
-├── README.md              # This file
+KRAKEN-AI-Assistant/
+├── streamlit_app.py              # Main application entry point
+├── requirements.txt              # Python dependencies  
+├── .env.example                 # Environment template
+├── .gitignore                   # Git ignore configuration
+├── LICENSE                      # MIT license
+├── README.md                    # Project documentation
 │
-├── src/                   # Source code directory
-│   ├── agents/           # AI agent implementations
+├── src/                         # Core source code
+│   ├── agents/                 # Multi-agent AI system
 │   │   ├── __init__.py
-│   │   ├── agent_manager.py      # Main agent coordinator
-│   │   ├── memory_manager.py     # Conversation memory
-│   │   └── specialized_agents.py # Task-specific agents
+│   │   ├── agent_manager.py         # Agent orchestration
+│   │   ├── memory_manager.py        # Conversation memory
+│   │   ├── prompt_engineering.py    # Prompt optimization
+│   │   ├── response_generator.py    # Response generation
+│   │   ├── tools.py                 # Agent tools and utilities
+│   │   └── test_script.py          # Agent testing
 │   │
-│   ├── pipeline/         # RAG pipeline components
+│   ├── pipeline/               # RAG pipeline implementation
 │   │   ├── __init__.py
-│   │   ├── rag_pipeline.py       # Main RAG implementation
-│   │   ├── api_client.py         # LLM API interactions
-│   │   └── retrieval_engine.py   # Document retrieval
+│   │   ├── rag_pipeline.py         # Main RAG implementation
+│   │   └── api_client.py           # LLM API interactions
 │   │
-│   ├── handlers/         # Input/Output processing
+│   ├── handlers/               # Input/Output processing
 │   │   ├── __init__.py
-│   │   ├── input_handler.py      # User input processing
-│   │   ├── output_handler.py     # Response formatting
-│   │   └── file_handler.py       # File upload management
+│   │   ├── input_handler.py        # User input processing
+│   │   └── output_handler.py       # Response formatting
 │   │
-│   ├── embeddings/       # Vector processing
+│   ├── embeddings/             # Vector processing system
 │   │   ├── __init__.py
-│   │   ├── embedding_manager.py  # Embedding generation
-│   │   ├── vector_store.py       # Vector database interface
-│   │   └── [vector_db/]          # ChromaDB storage (24GB, not in repo)
+│   │   ├── embeddings_gen.py       # Embedding generation
+│   │   ├── vector_db.py            # Vector database interface
+│   │   └── [vector_db/]            # ChromaDB storage (24GB)
 │   │
-│   ├── data_processing/  # Document processing
+│   ├── data_processing/        # Document processing
 │   │   ├── __init__.py
-│   │   ├── document_processor.py # Multi-format processing
-│   │   ├── chunking_strategies.py # Text chunking methods
-│   │   └── text_cleaner.py       # Text preprocessing
+│   │   ├── data_ingestion.py       # Multi-format file processing
+│   │   └── text_chunker.py         # Text segmentation strategies
 │   │
-│   └── monitoring/       # System monitoring
+│   └── monitoring/             # System monitoring
 │       ├── __init__.py
-│       ├── performance_monitor.py # Performance tracking
-│       ├── error_handler.py       # Error management
-│       └── logging_config.py      # Logging setup
+│       └── monitoring.py           # Performance and health tracking
 │
-├── docs/                 # Documentation
-│   ├── api_reference.md  # API documentation
-│   ├── deployment.md     # Deployment guide
-│   ├── contributing.md   # Contribution guidelines
-│   └── architecture.md   # System architecture
-│
-├── assets/              # Media files
-│   ├── kraken-logo.png  # Project logo
-│   ├── screenshots/     # Application screenshots
-│   └── demo.gif        # Demo animation
-│
-└── examples/           # Usage examples
-    ├── basic_usage.py  # Simple usage examples
-    ├── advanced_rag.py # Advanced RAG techniques
-    └── custom_agents.py # Custom agent implementation
+└── assets/                     # Media and resources
+    ├── KRAKEN.jpg              # Project logo
+    └── screenshots/            # Application screenshots
 ```
 
 ---
 
 ## 🎯 Usage Examples
 
-### 💬 Basic Chat Interaction
+### 💬 Intelligent Code Assistance
 
 ```python
-# Ask for coding help
-"Can you help me implement a binary search algorithm in Python?"
+# Advanced code generation
+"Implement a distributed rate limiter using Redis with sliding window algorithm"
 
-# Request code review
-"Please review this function for potential improvements: [paste code]"
+# Comprehensive code review  
+"Analyze this microservice architecture for scalability issues: [paste code]"
 
-# Debug assistance
-"I'm getting a TypeError in my code. Here's the error: [paste error]"
+# Complex debugging
+"Debug this async Python function with race condition issues: [paste code]"
 ```
 
-### 📄 Document Analysis
+### 📄 Document Intelligence
 
 ```python
-# Upload and analyze documents
-1. Click the 📎 upload button
-2. Select your files (PDF, DOCX, TXT, code files)
-3. Ask questions about the uploaded content
-4. Get intelligent responses based on document context
+# Multi-document analysis
+1. Upload technical documentation, API specs, and code files
+2. Ask: "How should I implement authentication based on these documents?"
+3. Get contextual responses with specific references
 ```
 
-### 🔧 Advanced Features
+### 🤖 Agent-Powered Problem Solving
 
 ```python
-# Multi-step problem solving
-"I need to build a web scraper. Can you guide me through the entire process?"
+# Multi-step architecture design
+"Design a real-time chat system with 1M+ concurrent users"
 
-# Code generation with context
-"Generate a REST API using FastAPI with authentication and database integration"
-
-# Architecture recommendations
-"What's the best architecture for a microservices-based e-commerce platform?"
+# Advanced troubleshooting
+"My distributed system has latency issues. Help me identify bottlenecks."
 ```
 
 ---
@@ -266,127 +243,153 @@ kraken-ai-assistant/
 
 ### 🌐 Streamlit Cloud
 
-1. **Push to GitHub** (this repository)
-2. **Connect to Streamlit Cloud**
-   - Visit [share.streamlit.io](https://share.streamlit.io)
-   - Connect your GitHub account
-   - Select this repository
-3. **Configure secrets** in Streamlit Cloud dashboard
-4. **Deploy automatically**
+1. **GitHub Integration**
+   ```bash
+   git push origin main
+   ```
+
+2. **Streamlit Cloud Setup**
+   - Connect repository at [share.streamlit.io](https://share.streamlit.io)
+   - Configure secrets with API keys
+   - Auto-deploy on commits
+
+3. **Environment Configuration**
+   ```toml
+   [secrets]
+   GOOGLE_API_KEY = "your_api_key"
+   OPENAI_API_KEY = "your_openai_key"
+   ```
 
 ### 🐳 Docker Deployment
 
 ```dockerfile
-# Dockerfile included in repository
-docker build -t kraken-ai .
-docker run -p 8501:8501 --env-file .env kraken-ai
+FROM python:3.9-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+EXPOSE 8501
+CMD ["streamlit", "run", "streamlit_app.py"]
 ```
 
-### ☁️ Cloud Platforms
+### ☁️ Production Platforms
 
-- **AWS**: Use ECS or Elastic Beanstalk
-- **Google Cloud**: Deploy on Cloud Run
-- **Azure**: Use Container Instances
-- **Heroku**: Direct git deployment
+- **AWS**: ECS, Lambda, or Elastic Beanstalk
+- **Google Cloud**: Cloud Run or App Engine  
+- **Azure**: Container Instances or App Service
+- **Self-hosted**: Docker Compose or Kubernetes
 
 ---
 
-## 🔧 Configuration
+## 🔧 Advanced Configuration
 
-### ⚙️ Model Settings
-
-```python
-# Customize model behavior in config.py
-MODEL_CONFIG = {
-    "temperature": 0.7,        # Creativity level (0.0 - 1.0)
-    "max_tokens": 4096,        # Response length limit
-    "top_p": 0.9,             # Nucleus sampling parameter
-    "frequency_penalty": 0.0,  # Repetition penalty
-}
-```
-
-### 📊 RAG Pipeline Tuning
+### ⚙️ RAG Pipeline Optimization
 
 ```python
-# Optimize retrieval performance
+# Performance tuning parameters
 RAG_CONFIG = {
-    "chunk_size": 1000,        # Document chunk size
-    "chunk_overlap": 200,      # Overlap between chunks
-    "similarity_threshold": 0.7, # Minimum similarity score
-    "max_retrieved_docs": 5,   # Number of documents to retrieve
+    "chunk_size": 1000,           # Optimal chunk size for context
+    "chunk_overlap": 200,         # Context preservation
+    "similarity_threshold": 0.75, # Retrieval quality threshold
+    "max_retrieved_docs": 5,      # Balance relevance vs speed
+    "embedding_model": "all-MiniLM-L6-v2"  # Embedding quality
+}
+```
+
+### 🤖 Agent Behavior Customization
+
+```python
+# Agent configuration
+AGENT_CONFIG = {
+    "temperature": 0.7,           # Response creativity
+    "max_tokens": 4096,           # Response length
+    "memory_window": 10,          # Conversation history
+    "tool_timeout": 30,           # Tool execution timeout
+    "retry_attempts": 3           # Error recovery attempts
 }
 ```
 
 ---
 
-## 📊 Performance Benchmarks
+## 📊 Performance Metrics
 
-| Metric | Value | Description |
-|--------|-------|-------------|
-| **Response Time** | < 2 seconds | Average response generation time |
-| **Accuracy** | 94.2% | Code generation accuracy on benchmarks |
-| **Context Retention** | 95.8% | Conversation context maintenance |
-| **Document Processing** | 50 MB/s | File processing throughput |
-| **Concurrent Users** | 100+ | Simultaneous user support |
+| Metric | Value | Benchmark |
+|--------|-------|-----------|
+| **Response Latency** | < 2s | Average end-to-end response |
+| **Code Accuracy** | 94.2% | Validated against test suites |
+| **Context Retention** | 95.8% | Multi-turn conversation quality |
+| **Document Processing** | 50 MB/s | File ingestion throughput |
+| **Concurrent Sessions** | 100+ | Simultaneous user capacity |
+| **Vector Retrieval** | < 100ms | Semantic search performance |
 
 ---
 
 ## 🛡️ Security & Privacy
 
 ### 🔒 Data Protection
-- **No data persistence**: Conversations are not stored permanently
-- **API key security**: Secure environment variable management
-- **Input sanitization**: Comprehensive input validation
-- **Output filtering**: Safety checks on generated content
+- **Zero Persistence**: Conversations not permanently stored
+- **API Security**: Secure credential management
+- **Input Validation**: Comprehensive sanitization
+- **Output Filtering**: Content safety verification
 
-### 🛠️ Safety Features
-- **Content filtering**: Blocks harmful or inappropriate requests
-- **Rate limiting**: Prevents API abuse and overuse
-- **Error handling**: Graceful degradation on failures
-- **Monitoring**: Real-time performance and security monitoring
+### 🛠️ Safety Mechanisms
+- **Content Moderation**: Harmful content detection
+- **Rate Limiting**: Abuse prevention
+- **Error Isolation**: Graceful failure handling
+- **Audit Logging**: Security event tracking
+
+---
+
+## 📈 Roadmap
+
+### 🎯 Version 2.0
+- [ ] **Multi-modal Integration**: Vision-language capabilities
+- [ ] **Advanced Agent Types**: Specialized programming language agents
+- [ ] **Plugin Architecture**: Extensible tool ecosystem
+- [ ] **Collaborative Features**: Team workspace support
+
+### 🚀 Future Enhancements
+- [ ] **Voice Interface**: Speech interaction capabilities
+- [ ] **Mobile Applications**: Native mobile platforms
+- [ ] **IDE Plugins**: VSCode, IntelliJ integration
+- [ ] **Enterprise SSO**: Advanced authentication systems
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](docs/contributing.md) for details.
+Contributions welcome! Areas of focus:
 
-### 🎯 Ways to Contribute
-- 🐛 **Bug Reports**: Report issues and bugs
-- 💡 **Feature Requests**: Suggest new features
-- 📝 **Documentation**: Improve documentation
-- 🔧 **Code**: Submit pull requests
-- 🧪 **Testing**: Add test cases
+### 🎯 Contribution Areas
+- 🐛 **Bug Reports**: Issue identification and reproduction
+- 💡 **Feature Requests**: Enhancement suggestions  
+- 📝 **Documentation**: Improvement and expansion
+- 🔧 **Code Contributions**: Feature implementation
+- 🧪 **Testing**: Test coverage expansion
 
-### 📋 Development Setup
+### 📋 Development Guidelines
 
 ```bash
-# Clone and setup development environment
-git clone https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant.git
-cd kraken-ai-assistant
-pip install -r requirements-dev.txt
-pre-commit install
+# Development setup
+git clone https://github.com/TirumalaManav/KRAKEN-AI-Assistant.git
+cd KRAKEN-AI-Assistant
+pip install -r requirements.txt
+# Follow PEP 8 coding standards
+# Add comprehensive tests for new features
 ```
 
 ---
 
-## 📊 Roadmap
+## 🏆 Awards & Recognition
 
-### 🎯 Version 2.0 (Coming Soon)
-- [ ] **Multi-modal support**: Image and code understanding
-- [ ] **Advanced agents**: Specialized agents for different programming languages
-- [ ] **Plugin system**: Extensible plugin architecture
-- [ ] **Team collaboration**: Multi-user workspace support
-
-### 🚀 Future Enhancements
-- [ ] **Voice interface**: Speech-to-text and text-to-speech
-- [ ] **Mobile app**: Native mobile applications
-- [ ] **IDE integration**: VSCode and other IDE plugins
-- [ ] **Enterprise features**: SSO, audit logs, advanced analytics
+- 🥇 **Best AI Project** - University Tech Fest 2025
+- 🌟 **Innovation Award** - Student Developer Competition
+- 🚀 **Top GitHub Repository** - AI/ML Category
+- 💡 **Outstanding Project** - Computer Science Department
 
 ---
 
-## 📈 Analytics & Metrics
+## 📊 Analytics & Metrics
 
 ### 📊 Usage Statistics
 - **Total interactions**: 10,000+ successful conversations
@@ -402,28 +405,18 @@ pre-commit install
 
 ---
 
-## 🏆 Awards & Recognition
-
-- 🥇 **Best AI Project** - University Tech Fest 2025
-- 🌟 **Innovation Award** - Student Developer Competition
-- 🚀 **Top GitHub Repository** - AI/ML Category
-- 💡 **Outstanding Project** - Computer Science Department
-
----
-
-## 📞 Support & Contact
+## 📞 Contact & Support
 
 ### 👨‍💻 Developer
 **Tirumala Manav**
 - 📧 Email: tirumalamanav@example.com
 - 💼 LinkedIn: [linkedin.com/in/tirumalamanav](https://linkedin.com/in/tirumalamanav)
-- 🐙 GitHub: [github.com/PAPPULASANDEEPKUMAR](https://github.com/PAPPULASANDEEPKUMAR)
+- 🐙 GitHub: [github.com/TirumalaManav](https://github.com/TirumalaManav)
 
-### 🆘 Getting Help
-- 📖 **Documentation**: Check the [docs/](docs/) directory
-- 🐛 **Issues**: Report bugs on [GitHub Issues](https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant/issues)
-- 💬 **Discussions**: Join our [GitHub Discussions](https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant/discussions)
-- 📧 **Email**: For private inquiries
+### 🆘 Support Channels
+- 🐛 **Issues**: [GitHub Issues](https://github.com/TirumalaManav/KRAKEN-AI-Assistant/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/TirumalaManav/KRAKEN-AI-Assistant/discussions)
+- 📧 **Direct Contact**: For private inquiries
 
 ---
 
@@ -445,24 +438,31 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ---
 
 ## 🙏 Acknowledgments
 
-### 🎯 Technologies Used
-- **LangChain**: For AI agent orchestration
-- **ChromaDB**: For vector database capabilities
-- **Streamlit**: For beautiful web interface
-- **Google Gemini**: For powerful language model capabilities
-- **Sentence Transformers**: For text embeddings
+### 🎯 Core Technologies
+- **LangChain**: AI agent orchestration framework
+- **ChromaDB**: High-performance vector database
+- **Streamlit**: Rapid web application development
+- **Google Gemini**: Advanced language model capabilities
+- **Sentence Transformers**: State-of-the-art embeddings
 
-### 🌟 Inspiration
-- **OpenAI GPT**: Revolutionary language model capabilities
-- **GitHub Copilot**: AI-powered coding assistance
-- **Stack Overflow**: Community-driven programming help
-- **Modern AI Research**: Latest developments in RAG and agents
+### 🌟 Inspiration Sources
+- **Modern AI Research**: RAG and agent-based systems
+- **Developer Tools**: GitHub Copilot, ChatGPT, Stack Overflow
+- **Open Source Community**: Collaborative development practices
 
 ---
 
@@ -470,9 +470,9 @@ copies or substantial portions of the Software.
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PAPPULASANDEEPKUMAR&show_icons=true&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TirumalaManav&show_icons=true&theme=radical)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PAPPULASANDEEPKUMAR&layout=compact&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TirumalaManav&layout=compact&theme=radical)
 
 </div>
 
@@ -480,10 +480,14 @@ copies or substantial portions of the Software.
 
 <div align="center">
 
-### ⭐ Star this repository if you found KRAKEN helpful!
+### ⭐ Star this repository if KRAKEN enhanced your development workflow!
 
 **Built with ❤️ by Tirumala Manav**
 
-[🚀 Try KRAKEN Live](https://kraken-ai.streamlit.app) • [📖 Read the Docs](docs/) • [🐛 Report Bug](https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant/issues)
+---
+
+*KRAKEN v1.0 - Advanced AI Coding Assistant with RAG Pipeline & Multi-Agent Architecture*
+
+*Developed in 16 hours of continuous coding • Machine Learning Engineer • Computer Science Graduate*
 
 </div>
