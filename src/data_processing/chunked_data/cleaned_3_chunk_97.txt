@@ -1,0 +1,11 @@
+border: 2px solid #ff6f61;
+color: #ff6f61;
+box-shadow: 0 0 10px rgba(255, 111, 97, 0.8);
+}
+.primary-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 20px rgba(255, 111, 97, 0.6), 0 0 20px rgba(255, 111, 97, 0.8);
+}
+.secondary-btn:hover {
+background: #ff6f61;
+color: white;

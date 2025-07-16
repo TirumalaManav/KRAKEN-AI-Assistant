@@ -1,0 +1,10 @@
+handle = nvidia_smi.nvmlDeviceGetHandleByIndex(0)
+info = nvidia_smi.nvmlDeviceGetMemoryInfo(handle)
+return {
+'total': info.total / 1024**2,
+'free': info.free / 1024**2,
+'used': info.used / 1024**2
+}
+except Exception as e:
+logger.warning(f"Could not get GPU memory info: {str(e)}")
+return None

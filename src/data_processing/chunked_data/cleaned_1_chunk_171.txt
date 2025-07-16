@@ -1,0 +1,7 @@
+#     # Return model, optimizer, loss function, and kwargs
+#     return model, optimizer, criterion, kwargs
+if name == 'nn':
+kwargs.setdefault('patch_size', 1)
+center_pixel = True
+model = Baseline(n_bands, n_classes,
+kwargs.setdefault('dropout', False))

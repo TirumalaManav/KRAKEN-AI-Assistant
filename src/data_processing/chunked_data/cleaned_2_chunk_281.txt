@@ -1,0 +1,10 @@
+try:
+logger.info(f"Starting patch extraction with patch_size={patch_size}")
+patches = []
+patch_labels = []
+patch_locations = []
+h, w = images.shape[:2]
+pad_size = patch_size // 2
+# Count total labeled pixels for progress tracking
+total_labeled = np.sum(labels != 0)
+processed = 0

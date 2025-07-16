@@ -1,0 +1,10 @@
+<!-- JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<style>
+:root {
+--primary-color: #2a2a72;
+--secondary-color: #00d4ff;
+--success-color: #ff6f61;
+--error-color: #ef4444;
+--background-color: #f8f9fa;
+--card-bg: rgba(255, 255, 255, 0.9);

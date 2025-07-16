@@ -1,0 +1,8 @@
+IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2017
+"""
+@staticmethod
+def weight_init(m):
+# In the beginning, the weights are randomly initialized
+# with standard deviation 0.001
+if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
+init.normal_(m.weight, std=0.001)

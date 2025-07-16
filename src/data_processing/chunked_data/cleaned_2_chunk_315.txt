@@ -1,0 +1,8 @@
+# Place predictions at their original locations
+for pred, (i, j) in zip(predictions, patch_locations):
+reconstructed[i, j] = pred
+return reconstructed
+except Exception as e:
+logger.error(f"Error reconstructing image: {str(e)}")
+raise
+def plot_training_history(self, model_metadata, save_dir):

@@ -1,0 +1,5 @@
+#                 string = string.format(
+#                     e, epoch, batch_idx *
+#                     len(data), len(data) * len(data_loader),
+#                     100. * batch_idx / len(data_loader), mean_losses[iter_])
+#                 update = None if loss_win is None else 'append'

@@ -1,0 +1,7 @@
+if not os.path.exists(file_path):
+logger.warning(f"Missing required file '{file}' for dataset: {dataset_name}")
+return False
+logger.info(f"Dataset {dataset_name} validated successfully")
+return True
+except Exception as e:
+logger.error(f"Error validating dataset {dataset_name}: {str(e)}")

@@ -1,0 +1,5 @@
+center_pixel = True
+model = HeEtAl(n_bands, n_classes, patch_size=kwargs['patch_size'])
+# For Adagrad, we need to load the model on GPU before creating the optimizer
+model = model.to(device)
+optimizer = optim.Adagrad(model.parameters(), lr=lr, weight_decay=0.01)

@@ -1,0 +1,14 @@
+margin-left: 250px;
+padding: 2rem;
+transition: var(--transition);
+flex-grow: 1;
+}
+/* Header */
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 2rem;
+padding: 1rem;
+background: var(--header-gradient); /* Cyan to Coral gradient */
+color: var(--white);

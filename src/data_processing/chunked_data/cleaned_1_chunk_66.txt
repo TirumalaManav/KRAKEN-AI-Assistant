@@ -1,0 +1,7 @@
+X = img.reshape((w*h, N_BANDS))
+prediction = model.predict(X)
+prediction = prediction.reshape(img.shape[:2])
+else:
+model, _, _, hyperparams = get_model(MODEL, **hyperparams)
+model.load_state_dict(torch.load(CHECKPOINT))
+probabilities = test(model, img, hyperparams)

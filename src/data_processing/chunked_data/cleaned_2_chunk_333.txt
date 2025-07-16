@@ -1,0 +1,7 @@
+raise
+def _save_training_history_text(self, history, model_metadata, save_dir):
+"""Save detailed training history metrics as text."""
+try:
+history_text_path = os.path.join(save_dir, 'training_history.txt')
+with open(history_text_path, 'w') as f:
+f.write(f"Training History Summary\n")

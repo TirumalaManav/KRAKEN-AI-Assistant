@@ -1,0 +1,8 @@
+'Acacia grasslands', 'Short mopane', 'Mixed mopane',
+'Exposed soils']
+}
+}
+def register_custom_dataset(dataset_info):
+"""Register a custom dataset with the system."""
+try:
+required_fields = ['name', 'data_file', 'label_file', 'data_keys', 'label_keys',

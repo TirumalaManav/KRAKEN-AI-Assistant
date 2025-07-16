@@ -1,0 +1,10 @@
+</span>
+</div>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/lalan-kumar-983267229/" target="_blank" class="social-link">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a href="https://github.com/kumar8074" target="_blank" class="social-link">
+<i class="fab fa-github"></i>
+</a>
+</div>

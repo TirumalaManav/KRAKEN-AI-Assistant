@@ -1,0 +1,7 @@
+#             val_accuracies.append(val_acc)
+#             metric = -val_acc
+#         else:
+#             metric = avg_loss
+#         if isinstance(scheduler, optim.lr_scheduler.ReduceLROnPlateau):
+#             scheduler.step(metric)
+#         elif scheduler is not None:

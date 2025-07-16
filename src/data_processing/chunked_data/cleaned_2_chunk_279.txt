@@ -1,0 +1,5 @@
+pca = PCA(n_components=n_components)
+reduced_data = pca.fit_transform(reshaped_images)
+reduced_images = reduced_data.reshape(h, w, n_components)
+explained_variance = np.sum(pca.explained_variance_ratio_) * 100
+logger.info(f"PCA completed with {explained_variance:.2f}% explained variance")

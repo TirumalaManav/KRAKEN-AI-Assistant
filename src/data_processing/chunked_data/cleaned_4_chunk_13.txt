@@ -1,0 +1,8 @@
+roi = gray[y:y+h, x:x+w]
+keypoints = self.feature_extractor.detect(roi, None)
+for kp in keypoints:
+kp.pt = (kp.pt[0] + x, kp.pt[1] + y)
+else:
+keypoints = self.feature_extractor.detect(gray, None)
+keypoints, descriptors = self.feature_extractor.compute(gray, keypoints)
+if object_type:

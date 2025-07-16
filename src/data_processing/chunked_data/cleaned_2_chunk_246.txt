@@ -1,0 +1,5 @@
+tf.saved_model.save(ae_model, str(results_dir / f'autoencoder_model_{timestamp}'))
+# Save weights separately
+cnn_model.save_weights(str(results_dir / f'cnn_model_weights_{timestamp}'))
+ae_model.save_weights(str(results_dir / f'autoencoder_model_weights_{timestamp}'))
+# Prepare training summary

@@ -1,0 +1,6 @@
+sigma_space = 10 if mean_val < 100 else 7
+gray = cv2.bilateralFilter(gray, 9, sigma_color, sigma_space)
+original_nfeatures = self.feature_extractor.getMaxFeatures()
+if object_type:
+if object_type == 'large':
+self.feature_extractor.setMaxFeatures(int(original_nfeatures * 1.5))

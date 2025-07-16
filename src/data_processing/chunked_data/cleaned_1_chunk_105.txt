@@ -1,0 +1,8 @@
+continue_training = True
+if CHECKPOINT is not None:
+if os.path.isfile(CHECKPOINT):
+print(f"Loading checkpoint '{CHECKPOINT}'")
+model.load_state_dict(torch.load(CHECKPOINT))
+print("Checkpoint loaded successfully.")
+continue_training = False  # Skip training if checkpoint is loaded successfully
+else:

@@ -1,0 +1,12 @@
+x = self.fc4_dec(x)
+return x_classif, x
+class BoulchEtAl(nn.Module):
+"""
+Autoencodeurs pour la visualisation d'images hyperspectrales
+A.Boulch, N. Audebert, D. Dubucq
+GRETSI 2017
+"""
+@staticmethod
+def weight_init(m):
+if isinstance(m, (nn.Linear, nn.Conv1d)):
+init.kaiming_normal_(m.weight)

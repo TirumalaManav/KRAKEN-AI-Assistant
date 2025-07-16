@@ -1,0 +1,8 @@
+associated weight is m/f_i.
+Args:
+ground_truth: the annotations array
+n_classes: number of classes (optional, defaults to max(ground_truth))
+ignored_classes: id of classes to ignore (optional)
+Returns:
+numpy array with the IMF coefficients
+"""

@@ -1,0 +1,7 @@
+plt.fill_between(range(len(mean_spectrum)), lower_spectrum,
+higher_spectrum, color="#3F5D7D")
+plt.plot(mean_spectrum, alpha=1, color="#FFFFFF", lw=2)
+vis.matplot(plt)
+mean_spectrums[class_names[c]] = mean_spectrum
+return mean_spectrums
+def plot_spectrums(spectrums, vis, title=""):

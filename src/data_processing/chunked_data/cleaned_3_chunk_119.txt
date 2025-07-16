@@ -1,0 +1,5 @@
+<div class="card">
+<h3>CNN</h3>
+<p>Convolutional Neural Networks excel at spatial feature extraction, making them perfect for analyzing the complex patterns in hyperspectral data. Our CNN models achieve state-of-the-art accuracy in classification tasks.</p>
+</div>
+<div class="card">

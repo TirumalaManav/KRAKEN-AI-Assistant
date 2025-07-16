@@ -1,0 +1,5 @@
+# Verify class names match number of classes
+if len(dataset_info['class_names']) != dataset_info['n_classes'] + 1:  # +1 for background
+raise ValueError("Number of class names does not match n_classes (+1 for background)")
+# Add to dataset mappings
+DATASET_MAPPINGS[dataset_info['name']] = {

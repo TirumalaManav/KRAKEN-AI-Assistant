@@ -1,0 +1,7 @@
+f"{history['val_classifier_accuracy'][epoch]:7.4f}  "
+f"{history['classifier_loss'][epoch]:10.4f}  "
+f"{history['val_classifier_loss'][epoch]:8.4f}\n")
+else:
+f.write(f"{epoch+1:5d}  {history['accuracy'][epoch]:9.4f}  "
+f"{history['val_accuracy'][epoch]:7.4f}  "
+f"{history['loss'][epoch]:10.4f}  "

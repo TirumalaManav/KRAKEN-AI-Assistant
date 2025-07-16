@@ -1,0 +1,6 @@
+#data = preprocessing.scale(data)
+data  = preprocessing.minmax_scale(data)
+img = data.reshape(img.shape)
+return img, gt, label_values, ignored_labels, rgb_bands, palette
+# class HyperX(torch.utils.data.Dataset):
+#     """ Generic class for a hyperspectral scene """

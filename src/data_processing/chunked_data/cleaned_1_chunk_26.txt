@@ -1,0 +1,7 @@
+"Cattail marsh", "Salt marsh", "Mud flats", "Wate"]
+ignored_labels = [0]
+else:
+# Custom dataset
+img, gt, rgb_bands, ignored_labels, label_values, palette = CUSTOM_DATASETS_CONFIG[dataset_name]['loader'](folder)
+# Filter NaN out
+nan_mask = np.isnan(img.sum(axis=-1))

@@ -1,0 +1,7 @@
+logger.info("\nControls:")
+logger.info("Drag and Drop or Double Click: Select tracking object (adaptive bounding box)")
+logger.info("'c' key: Start tracking selected object")
+logger.info("Space: Pause/Resume")
+logger.info("'r' key: Reset tracking")
+logger.info("q: Quit")
+prev_time = time.time()

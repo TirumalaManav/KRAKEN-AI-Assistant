@@ -1,0 +1,12 @@
+<div class="info-content">
+<h3>Location</h3>
+<p>HITAM, Hyderabad Institute of Technology and Management</p>
+<p>Gowdavelly, Medchal, Hyderabad - 501401</p>
+</div>
+</div>
+<div class="info-item">
+<div class="info-icon">
+<i class="fas fa-phone"></i>
+</div>
+<div class="info-content">
+<h3>Phone</h3>

@@ -1,0 +1,6 @@
+median_width = np.median(widths)
+median_height = np.median(heights)
+std_center = np.std(centers, axis=0)
+if np.max(std_center) > self.convergence_threshold:
+print(f"Candidates have not converged (std: {std_center}); waiting for more evidence.")
+return (None, False)

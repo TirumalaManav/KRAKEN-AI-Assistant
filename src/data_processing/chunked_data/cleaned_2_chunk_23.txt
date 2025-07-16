@@ -1,0 +1,7 @@
+image_path = os.path.join(UPLOAD_FOLDER, f'{username}_register_{timestamp}.jpg')
+# Save the image
+try:
+image = Image.open(BytesIO(base64.b64decode(image_data)))
+image.save(image_path)
+logger.info(f"Successfully saved registration image for user {username}")
+except Exception as e:

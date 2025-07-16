@@ -1,0 +1,7 @@
+self.aggregate_count = 0
+def compute_background_model_ema(self, gray_frame):
+if self.prev_bg_model is None:
+self.prev_bg_model = gray_frame.copy().astype(np.float32)
+else:
+cv2.accumulateWeighted(gray_frame, self.prev_bg_model, self.EMA_ALPHA)
+return cv2.convertScaleAbs(self.prev_bg_model)

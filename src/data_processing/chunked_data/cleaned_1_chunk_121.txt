@@ -1,0 +1,8 @@
+palette: dict of colors
+display (optional): type of display, if any
+"""
+print("Image has dimensions {}x{} and {} channels".format(*img.shape))
+rgb = spectral.get_rgb(img, bands)
+rgb /= np.max(rgb)
+rgb = np.asarray(255 * rgb, dtype='uint8')
+# Display the RGB composite image

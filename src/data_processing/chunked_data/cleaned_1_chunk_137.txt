@@ -1,0 +1,10 @@
+if y + h > H:
+y = H - h
+if with_data:
+yield image[x:x + w, y:y + h], x, y, w, h
+else:
+yield x, y, w, h
+def count_sliding_window(top, step=10, window_size=(20, 20)):
+""" Count the number of windows in an image.
+Args:
+image: 2D+ image to slide the window on, e.g. RGB or hyperspectral, ...

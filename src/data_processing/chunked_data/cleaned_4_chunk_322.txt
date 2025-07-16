@@ -1,0 +1,6 @@
+class AppearanceModel:
+"""Handles feature extraction and object appearance tracking"""
+def __init__(self, feature_memory_size=5, spectrum_type=None):
+self.feature_memory = deque(maxlen=feature_memory_size)
+self.color_memory = deque(maxlen=feature_memory_size)
+self.min_match_count = 5

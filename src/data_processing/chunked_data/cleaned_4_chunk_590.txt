@@ -1,0 +1,9 @@
+if center_point is None:
+return None
+click_x, click_y = center_point
+if results and len(results[0].boxes) > 0:
+logger.info(f"Number of detections: {len(results[0].boxes)}")
+for box in results[0].boxes:
+conf = box.conf.item() if hasattr(box, 'conf') else 0.0
+if conf < 0.25:
+continue

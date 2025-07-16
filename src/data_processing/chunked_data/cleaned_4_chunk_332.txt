@@ -1,0 +1,7 @@
+margin = int(min(w, h) * 0.2)
+roi = gray[max(0, y-margin):min(gray.shape[0], y+h+margin),
+max(0, x-margin):min(gray.shape[1], x+w+margin)]
+if roi.size == 0:
+return [], None
+keypoints = self.feature_extractor.detect(roi, None)
+for kp in keypoints:

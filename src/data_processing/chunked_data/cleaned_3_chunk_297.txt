@@ -1,0 +1,10 @@
+}
+}
+async function validateModelAPI(modelType) {
+try {
+const response = await fetch(`${API_URL}/validate-model`, {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ modelType })
+});
+if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);

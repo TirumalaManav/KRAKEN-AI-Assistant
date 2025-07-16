@@ -1,0 +1,10 @@
+return jsonify({
+"success": True,
+"message": f"{model_type.upper()} model validated successfully",
+"model_config": model_config[model_type],
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+})
+except Exception as e:
+logger.error(f"Error validating model: {str(e)}")
+return jsonify({

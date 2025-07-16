@@ -1,0 +1,9 @@
+else:
+detection_to_draw = detection_localizer
+elif detection_localizer is not None:
+detection_to_draw = detection_localizer
+elif detection_yolo is not None:
+detection_to_draw = detection_yolo
+output_frame = frame.copy()
+if detection_to_draw is not None:
+x, y, w, h, cx, cy = detection_to_draw[:6]

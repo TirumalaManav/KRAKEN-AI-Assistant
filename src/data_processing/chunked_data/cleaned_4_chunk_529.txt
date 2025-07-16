@@ -1,0 +1,6 @@
+logger = logging.getLogger(__name__)
+JUMP_THRESHOLD = 50  # Maximum allowed jump (in pixels) between consecutive bounding box centers
+# Appearance model for keeping the target fingerprint
+class AppearanceModel:
+def __init__(self, feature_memory_size=5):
+self.feature_extractor = cv2.SIFT_create()

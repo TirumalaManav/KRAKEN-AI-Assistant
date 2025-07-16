@@ -1,0 +1,9 @@
+new_aspect = w_cnt / max(1, h_cnt)
+aspect_similarity = min(original_aspect/max(0.1, new_aspect), new_aspect/max(0.1, original_aspect))
+size_similarity = min(area/(w*h), (w*h)/area)
+score = (
+size_similarity * 0.4 +
+aspect_similarity * 0.3 +
+max(0, 1 - normalized_dist) * 0.3
+)
+if score > best_score:

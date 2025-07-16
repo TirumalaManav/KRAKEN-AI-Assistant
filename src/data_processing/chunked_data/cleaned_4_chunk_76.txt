@@ -1,0 +1,8 @@
+final_confidence = self.duo_confidence_boost(bbox, boosted_confidence, kalman_bbox)
+combined_confidence = (
+0.3 * final_confidence +
+0.25 * appearance_score +
+0.2 * iou_score +
+0.15 * (1.0 - min(mahalanobis_dist / 5.0, 1.0)) +
+0.1 * shape_similarity
+)

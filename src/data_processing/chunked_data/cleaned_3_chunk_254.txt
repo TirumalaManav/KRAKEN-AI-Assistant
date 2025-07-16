@@ -1,0 +1,10 @@
+-webkit-text-fill-color: transparent;
+animation: floatText 4s infinite ease-in-out;
+}
+@keyframes floatText {
+0%, 100% { transform: translateY(0) rotateX(0); }
+50% { transform: translateY(-10px) rotateX(10deg); }
+}
+.hero-content p {
+font-size: 1.2rem;
+color: rgba(255, 255, 255, 0.9);

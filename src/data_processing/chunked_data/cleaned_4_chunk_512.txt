@@ -1,0 +1,10 @@
+roi = frame[roi_y:roi_y+roi_h, roi_x:roi_x+roi_w]
+yolo_results = self.model(roi)
+for result in yolo_results:
+for box in result.boxes:
+if box.conf[0] >= CONF_THRESHOLD:
+rx1, ry1, rx2, ry2 = map(int, box.xyxy[0])
+full_x1 = roi_x + rx1
+full_y1 = roi_y + ry1
+full_w = rx2 - rx1
+full_h = ry2 - ry1

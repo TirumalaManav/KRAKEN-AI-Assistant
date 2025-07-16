@@ -1,0 +1,7 @@
+init.normal_(m.weight, std=0.001)
+init.zeros_(m.bias)
+def __init__(self, input_channels, n_classes, patch_size=27, n_planes=32):
+super(ChenEtAl, self).__init__()
+self.input_channels = input_channels
+self.n_planes = n_planes
+self.patch_size = patch_size

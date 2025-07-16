@@ -1,0 +1,6 @@
+});
+document.getElementById('learning-rate').addEventListener('input', (e) => {
+const value = (parseInt(e.target.value) / 10000).toFixed(4);
+document.getElementById('learning-rate-value').textContent = value;
+});
+document.getElementById('batch-size').addEventListener('input', (e) => {

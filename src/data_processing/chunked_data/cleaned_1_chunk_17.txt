@@ -1,0 +1,8 @@
+urlretrieve(url, filename=folder + filename,
+reporthook=t.update_to)
+elif not os.path.isdir(folder):
+print("WARNING: {} is not downloadable.".format(dataset_name))
+if dataset_name == 'PaviaC':
+# Load the image
+img = open_file(folder + 'Pavia.mat')['pavia']
+rgb_bands = (55, 41, 12)

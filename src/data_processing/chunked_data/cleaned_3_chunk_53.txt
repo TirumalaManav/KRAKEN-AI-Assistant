@@ -1,0 +1,10 @@
+}
+.contact-info, .contact-form {
+background: rgba(255, 255, 255, 0.9);
+padding: 40px;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+border: 2px solid transparent;
+transition: transform 0.5s ease, box-shadow 0.5s ease;
+}

@@ -1,0 +1,4 @@
+patch_size = kwargs.setdefault('patch_size', 9)
+model = LiuEtAl(n_bands, n_classes, patch_size)
+optimizer = optim.SGD(model.parameters(), lr=lr)
+# "The unsupervised cost is the squared error of the difference"

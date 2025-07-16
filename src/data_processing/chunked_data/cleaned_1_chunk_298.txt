@@ -1,0 +1,5 @@
+# Decoder
+self.fc1_dec = nn.Linear(self.features_sizes[2], self.features_sizes[2])
+self.fc1_dec_bn = nn.BatchNorm1d(self.features_sizes[2])
+self.fc2_dec = nn.Linear(self.features_sizes[2], self.features_sizes[1])
+self.fc2_dec_bn = nn.BatchNorm1d(self.features_sizes[1])

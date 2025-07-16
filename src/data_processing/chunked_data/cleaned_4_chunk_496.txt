@@ -1,0 +1,9 @@
+final_boxes = self.non_max_suppression(valid_boxes, self.NMS_OVERLAP_THRESH)
+detections = []
+for box in final_boxes:
+x, y, w, h = box
+cx, cy = x + w // 2, y + h // 2
+detections.append((x, y, w, h, cx, cy))
+return detections
+def temporal_smoothing(self, current_detections):
+new_detections = []

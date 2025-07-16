@@ -1,0 +1,9 @@
+images, labels, model_metadata['patch_size']
+)
+logger.info(f"Processing {len(patches)} patches in batches")
+# Generate predictions in batches
+batch_size = 256
+n_batches = (len(patches) + batch_size - 1) // batch_size
+predictions = []
+for i in range(n_batches):
+start_idx = i * batch_size

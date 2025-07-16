@@ -1,0 +1,8 @@
+0.3 * appearance_score +
+0.2 * float(motion_consistent) +
+0.1 * float(size_consistent)
+)
+if combined_confidence < self.confidence_threshold:
+self.lost_frames_count += 1
+else:
+self.lost_frames_count = max(0, self.lost_frames_count - 1)

@@ -1,0 +1,5 @@
+[50, 60] if len(context_roi.shape) == 3 else [50],
+[0, 180, 0, 256] if len(context_roi.shape) == 3 else [0, 256])
+cv2.normalize(curr_context, curr_context)
+context_similarity = cv2.compareHist(self.initial_context, curr_context, cv2.HISTCMP_CORREL)
+return context_similarity > 0.5

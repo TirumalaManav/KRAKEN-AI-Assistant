@@ -1,0 +1,8 @@
+g.kalman_initialized = False
+g.mode = "selection"
+adaptive_box = get_adaptive_bbox(g.frame, x, y)
+g.init_rect = adaptive_box
+g.click_point = (x, y)
+g.message_display = "Object selected adaptively. Press 'c' to start tracking."
+except Exception as e:
+logger.error("Error in mouse callback: %s", e)

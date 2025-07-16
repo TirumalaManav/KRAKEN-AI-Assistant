@@ -1,0 +1,13 @@
+currentStream = null;
+}
+if (captureTimeout) {
+clearTimeout(captureTimeout);
+}
+if (countdownInterval) {
+clearInterval(countdownInterval);
+}
+}
+function captureAndProcess() {
+if (isProcessing) return;
+isProcessing = true;
+const video = document.getElementById('video');

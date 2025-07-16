@@ -1,0 +1,10 @@
+}
+} catch (error) {
+showToast("Error during training: " + error.message, false);
+} finally {
+resetTrainingUI();
+}
+});
+// Hyperparameter slider updates
+document.getElementById('patch-size').addEventListener('input', (e) => {
+document.getElementById('patch-size-value').textContent = e.target.value;

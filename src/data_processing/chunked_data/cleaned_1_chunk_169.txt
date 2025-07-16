@@ -1,0 +1,7 @@
+# if name == 'CNN':
+#     # Set up hyperparameters
+#     patch_size = kwargs.setdefault('patch_size', 5)
+#     center_pixel = True
+#     lr = kwargs.setdefault('learning_rate', 0.01)
+#     batch_size = kwargs.setdefault('batch_size', 100)
+#     n_classes = kwargs.setdefault('n_classes', 9)

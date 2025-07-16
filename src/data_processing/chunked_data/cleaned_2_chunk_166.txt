@@ -1,0 +1,8 @@
+if encryption_key != user_data['encryption_key']:
+self.logger.warning("Invalid passphrase for deletion")
+return False
+# Remove reference image
+reference_image = user_data.get('reference_image')
+if reference_image and os.path.exists(reference_image):
+os.remove(reference_image)
+# Remove user file

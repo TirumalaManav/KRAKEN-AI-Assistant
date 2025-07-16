@@ -1,0 +1,8 @@
+return metadata
+except Exception as e:
+logger.error(f"Error loading model metadata: {str(e)}")
+raise
+def load_hyperspectral_data(data_dir, dataset_name):
+"""Load hyperspectral data and labels from .mat files."""
+try:
+logger.info(f"Starting to load hyperspectral data for dataset: {dataset_name}")

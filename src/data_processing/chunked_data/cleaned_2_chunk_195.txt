@@ -1,0 +1,8 @@
+if labels is not None:
+logger.info("Converting labels to int32")
+labels = tf.cast(labels, tf.int32)
+# Extract patches
+logger.info("Extracting patches...")
+patches, valid_labels = extract_patches(images, labels, patch_size)
+X = patches
+y = valid_labels - 1  # Adjust labels to start from 0

@@ -1,0 +1,6 @@
+self.feature_extractor = cv2.SIFT_create()
+self.feature_memory = deque(maxlen=feature_memory_size)
+self.color_memory = deque(maxlen=feature_memory_size)
+self.matcher = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+self.min_match_count = 10
+def update_features(self, frame, bbox):

@@ -1,0 +1,11 @@
+vis : Visdom display
+Returns:
+mean_spectrums: dict of mean spectrum by class
+"""
+mean_spectrums = {}
+for c in np.unique(complete_gt):
+if c in ignored_labels:
+continue
+mask = complete_gt == c
+class_spectrums = img[mask].reshape(-1, img.shape[-1])
+step = max(1, class_spectrums.shape[0] // 100)

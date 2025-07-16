@@ -1,0 +1,10 @@
+@staticmethod
+def flip(*arrays):
+horizontal = np.random.random() > 0.5
+vertical = np.random.random() > 0.5
+if horizontal:
+arrays = [np.fliplr(arr) for arr in arrays]
+if vertical:
+arrays = [np.flipud(arr) for arr in arrays]
+return arrays
+@staticmethod

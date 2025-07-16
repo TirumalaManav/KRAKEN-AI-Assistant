@@ -1,0 +1,7 @@
+self.force_refresh_flag = False
+self.lock_on_flag = False  # Operator override flag if needed
+self.video_path = video_path
+self.model_path = model_path
+self.model = YOLO(self.model_path)
+self.cap = cv2.VideoCapture(self.video_path)
+if not self.cap.isOpened():

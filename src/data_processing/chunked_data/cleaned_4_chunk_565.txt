@@ -1,0 +1,8 @@
+if self.missed_count >= self.max_missed_frames:
+print("Missed candidate for too many frames; resetting buffer.")
+self.reset()
+return (None, False)
+else:
+self.missed_count = 0
+bbox = tuple(map(int, bbox))
+# If we have a previously confirmed refined bbox, check if new candidate is inside it.

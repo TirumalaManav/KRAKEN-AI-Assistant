@@ -1,0 +1,9 @@
+return reduced_images
+except Exception as e:
+logger.error(f"Error in PCA application: {str(e)}", exc_info=True)
+raise
+def extract_patches(images, labels, patch_size=7):
+"""
+Extract patches from the hyperspectral image based on valid label locations.
+"""
+try:

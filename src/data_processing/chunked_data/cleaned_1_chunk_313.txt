@@ -1,0 +1,3 @@
+def __init__(self, input_channels, n_classes):
+# The proposed network model uses a single recurrent layer that adopts our modified GRUs of size 64 with sigmoid gate activation and PRetanh activation functions for hidden representations
+super(MouEtAl, self).__init__()

@@ -1,0 +1,13 @@
+model_save_path = f'best_model_{model_type}'
+logger.info(f"Model will be saved to: {model_save_path}")
+callbacks = [
+EarlyStopping(
+monitor=monitor_metric,
+patience=5,
+restore_best_weights=True,
+verbose=1
+),
+ModelCheckpoint(
+filepath=model_save_path,
+monitor=monitor_metric,
+save_best_only=True,

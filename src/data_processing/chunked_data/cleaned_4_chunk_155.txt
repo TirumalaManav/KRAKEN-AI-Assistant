@@ -1,0 +1,11 @@
+# Get new frame
+ret, frame = cap.read()
+if not ret:
+print("Video ended")
+break
+# Create a copy for display
+display_frame = frame.copy()
+# Check for new box selection
+if new_box is not None:
+# Convert to format expected by tracker (x, y, w, h)
+x1, y1, x2, y2 = new_box

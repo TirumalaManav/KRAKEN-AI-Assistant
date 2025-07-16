@@ -1,0 +1,8 @@
+val_loader=None, supervision='full', continue_training=True):
+"""
+Training loop to optimize a network for several epochs and a specified loss
+Args:
+net: a PyTorch model
+optimizer: a PyTorch optimizer
+data_loader: a PyTorch dataset loader
+epoch: int specifying the number of training epochs

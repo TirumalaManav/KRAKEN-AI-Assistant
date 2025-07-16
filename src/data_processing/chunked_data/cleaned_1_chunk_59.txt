@@ -1,0 +1,5 @@
+help="When using a trained algorithm, specified  the number of classes of this algorithm")
+# Training options
+group_train = parser.add_argument_group('Model')
+group_train.add_argument('--patch_size', type=int,
+help="Size of the spatial neighbourhood (optional, if "

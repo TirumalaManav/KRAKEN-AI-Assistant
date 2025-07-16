@@ -1,0 +1,8 @@
+print(f"Timestamp: 2025-01-24 05:29:38")
+print(f"Base Path: {os.path.dirname(__file__)}")
+print(f"Datasets Directory: {DATASETS_DIR}")
+print(f"Available Datasets: {available_datasets}")
+print("\nServer is starting...")
+# Start the Flask server
+app.run(debug=True)
+except Exception as e:

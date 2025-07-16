@@ -1,0 +1,13 @@
+.hero {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background: linear-gradient(45deg, #00d4ff, #ff6f61); /* Gradient background */
+color: white;
+position: relative;
+overflow: hidden;
+}
+/* Background Text Animation */
+.background-text {

@@ -1,0 +1,7 @@
+for kp in keypoints:
+kp.pt = (kp.pt[0] + max(0, x-margin), kp.pt[1] + max(0, y-margin))
+else:
+keypoints = self.feature_extractor.detect(gray, None)
+keypoints, descriptors = self.feature_extractor.compute(gray, keypoints)
+if object_type:
+self.feature_extractor.setMaxFeatures(original_nfeatures)

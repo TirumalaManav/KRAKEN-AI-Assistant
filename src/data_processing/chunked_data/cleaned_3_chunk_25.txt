@@ -1,0 +1,10 @@
+</div>
+<!-- Team Grid -->
+<div class="container">
+<div class="team-grid">
+<div class="team-member">
+<div class="member-image">
+<img src="[PLACEHOLDER_FOR_BHASKAR_IMAGE]" alt="Bhaskar Das">
+</div>
+<div class="member-info">
+<h3>Mr. Bhaskar Das</h3>

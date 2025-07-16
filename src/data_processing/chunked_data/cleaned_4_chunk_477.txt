@@ -1,0 +1,6 @@
+self.localizer = self.ObjectLocalizer()
+class ObjectLocalizer:
+"""
+This inner class implements robust pre-processing and localization using multi-frame fusion,
+adaptive thresholding, morphological operations and temporal smoothing.
+"""

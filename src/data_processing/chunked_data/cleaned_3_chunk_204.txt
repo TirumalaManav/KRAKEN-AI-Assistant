@@ -1,0 +1,16 @@
+height: 100%;
+object-fit: cover;
+}
+button {
+width: 100%;
+padding: 1rem;
+background: linear-gradient(45deg, #00d4ff, #ff6f61);
+color: #fff;
+border: none;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+transition: 0.3s;
+font-weight: 500;
+box-shadow: 0 4px 15px rgba(255, 111, 97, 0.3);
+}

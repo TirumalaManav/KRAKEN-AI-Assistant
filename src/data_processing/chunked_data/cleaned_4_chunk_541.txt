@@ -1,0 +1,5 @@
+center_y = bbox[1] + bbox[3] / 2
+predicted_pos = self.position_history[-1] + self.velocity_history[-1]
+actual_pos = np.array([center_x, center_y])
+current_velocity = actual_pos - self.position_history[-1]
+acceleration = current_velocity - self.velocity_history[-1]

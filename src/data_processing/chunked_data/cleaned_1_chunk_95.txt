@@ -1,0 +1,5 @@
+class_weight = 'balanced' if CLASS_BALANCING else None
+clf = sklearn.svm.SVC(class_weight=class_weight)
+clf = sklearn.model_selection.GridSearchCV(clf, SVM_GRID_PARAMS, verbose=5, n_jobs=4)
+clf.fit(X_train, y_train)
+print("SVM best parameters : {}".format(clf.best_params_))

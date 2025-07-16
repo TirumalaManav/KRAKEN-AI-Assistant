@@ -1,0 +1,6 @@
+gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+enhanced_gray = clahe.apply(gray)
+self.fusion_buffer.append(enhanced_gray)
+if len(self.fusion_buffer) > self.fusion_buffer_size:
+self.fusion_buffer.pop(0)

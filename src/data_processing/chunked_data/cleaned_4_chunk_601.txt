@@ -1,0 +1,13 @@
+prev_time = current_time
+with g.lock:
+current_mode = g.mode
+paused = g.paused
+if current_mode in ("selection", "selection_during_tracking"):
+delay_ms = 20
+ret, frame = cap.read()
+if not ret:
+logger.info("End of video reached.")
+break
+with g.lock:
+g.frame_idx += 1
+g.frame = frame.copy()

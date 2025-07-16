@@ -1,0 +1,15 @@
+roi = prev_gray[y:y+h, x:x+w]
+p0 = cv2.goodFeaturesToTrack(
+roi,
+maxCorners=15,
+qualityLevel=0.01,
+minDistance=7,
+blockSize=7,
+useHarrisDetector=True,
+k=0.04
+)
+if p0 is None:
+return (0.0, 0.0)
+p0 = np.array(p0, dtype=np.float32).reshape(-1, 1, 2)
+p0[:, 0, 0] += x
+p0[:, 0, 1] += y

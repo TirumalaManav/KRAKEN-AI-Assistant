@@ -1,0 +1,5 @@
+if jump_distance > jump_threshold:
+jump_factor = jump_threshold / (jump_distance + 1e-6)
+new_center_x = prev_center[0] + (new_center[0] - prev_center[0]) * jump_factor
+new_center_y = prev_center[1] + (new_center[1] - prev_center[1]) * jump_factor
+g.tracked_object['kalman_box'] = (

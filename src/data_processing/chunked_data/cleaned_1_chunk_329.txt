@@ -1,0 +1,6 @@
+#                           'xlabel': "Iterations",
+#                           'ylabel': "Loss"
+#                          }
+#                 )
+#                 tqdm.write(string)
+#                 if len(val_accuracies) > 0:

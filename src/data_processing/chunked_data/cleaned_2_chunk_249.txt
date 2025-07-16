@@ -1,0 +1,6 @@
+'autoencoder_weights': str(results_dir / f'autoencoder_model_weights_{timestamp}')
+},
+'cnn_training': {
+'final_train_loss': float(cnn_history.history['loss'][-1]),
+'final_train_accuracy': float(cnn_history.history['accuracy'][-1]),
+'final_val_loss': float(cnn_history.history['val_loss'][-1]),

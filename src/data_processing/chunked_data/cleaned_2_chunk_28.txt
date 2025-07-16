@@ -1,0 +1,10 @@
+}), 500
+except Exception as e:
+logger.error(f"Error during registration: {str(e)}")
+return jsonify({
+"success": False,
+"message": f"Error during registration: {str(e)}"
+}), 500
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+if request.method == 'GET':

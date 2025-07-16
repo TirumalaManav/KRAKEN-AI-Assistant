@@ -1,0 +1,7 @@
+#             optimizer.zero_grad()
+#             if supervision == 'full':
+#                 output = net(data)
+#                 #target = target - 1
+#                 loss = criterion(output, target)
+#             elif supervision == 'semi':
+#                 outs = net(data)

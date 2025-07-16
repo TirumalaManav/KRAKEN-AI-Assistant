@@ -1,0 +1,8 @@
+cv2.namedWindow("Localized Output")
+cv2.setMouseCallback("Localized Output", self.mouse_callback)
+while self.cap.isOpened():
+ret, frame = self.cap.read()
+if not ret:
+break
+# Stage 1: Preprocessing / Fusion for enhanced visibility
+gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)

@@ -1,0 +1,8 @@
+#         x = self.bn4(x)
+#         x = self.relu4(x)
+#         x = self.maxpool4(x)
+#         x = self.conv5(x)
+#         x = self.bn5(x)
+#         x = self.relu5(x)
+#         x = self.maxpool5(x)
+#         # Flatten the output tensor before passing it through the fully connected layers

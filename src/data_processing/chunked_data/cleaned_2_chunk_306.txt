@@ -1,0 +1,6 @@
+logger.info(f"Found latest training directory: {latest_dir}")
+# Load model metadata
+model_metadata = load_model_metadata(latest_dir)
+# Load the model
+if os.path.exists(os.path.join(latest_dir, 'autoencoder_model')):
+model_path = os.path.join(latest_dir, 'autoencoder_model')

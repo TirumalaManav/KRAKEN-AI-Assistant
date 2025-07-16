@@ -1,0 +1,9 @@
+#         np.random.shuffle(self.indices)
+class HyperX(torch.utils.data.Dataset):
+""" Generic class for a hyperspectral scene """
+def __init__(self, data, gt, **hyperparams):
+"""
+Args:
+data: 3D hyperspectral image
+gt: 2D array of labels
+patch_size: int, size of the spatial neighbourhood

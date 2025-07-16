@@ -1,0 +1,16 @@
+padding: 0 20px;
+position: relative;
+z-index: 2;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap: 2rem;
+margin-top: 2rem;
+}
+/* Cards */
+.card {
+background: var(--card-bg);
+border-radius: 20px;
+padding: 1.5rem;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);

@@ -1,0 +1,5 @@
+data = self.radiation_noise(data)
+if self.mixture_augmentation and np.random.random() < 0.2:
+data = self.mixture_noise(data, label)
+# Copy the data into numpy arrays (PyTorch doesn't like numpy views)
+data = np.asarray(np.copy(data).transpose((2, 0, 1)), dtype='float32')

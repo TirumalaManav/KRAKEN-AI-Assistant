@@ -1,0 +1,11 @@
+</div>
+<!-- Hero Section -->
+<div class="hero-section">
+<div id="particles-js"></div>
+<div class="hero-content">
+<h1>Meet Our Team</h1>
+<p>Pioneering the future of Hyperspectral Imaging through innovation and expertise</p>
+</div>
+</div>
+<!-- Team Grid -->
+<div class="container">

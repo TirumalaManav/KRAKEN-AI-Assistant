@@ -1,0 +1,6 @@
+cy = int(M['m01'] / M['m00'])
+dist_to_center = np.sqrt((cx - rel_x)**2 + (cy - rel_y)**2)
+normalized_dist = dist_to_center / max(1, min(w, h))
+x_cnt, y_cnt, w_cnt, h_cnt = cv2.boundingRect(cnt)
+original_aspect = w / max(1, h)
+new_aspect = w_cnt / max(1, h_cnt)

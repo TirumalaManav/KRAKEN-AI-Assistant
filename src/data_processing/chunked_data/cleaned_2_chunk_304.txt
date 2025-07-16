@@ -1,0 +1,10 @@
+if parent == current_dir:
+logger.warning(f"Using current directory: {os.getcwd()}")
+return os.getcwd()
+current_dir = parent
+except Exception as e:
+logger.error(f"Error finding project root: {str(e)}")
+raise
+def get_latest_model(self):
+"""Find and load the most recent model"""
+try:

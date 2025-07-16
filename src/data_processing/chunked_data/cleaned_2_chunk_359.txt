@@ -1,0 +1,6 @@
+for i, class_name in enumerate(target_names):
+class_correct = conf_matrix[i, i]
+class_total = conf_matrix[i, :].sum()
+class_accuracy = (class_correct / class_total) * 100
+f.write(f"{class_name}: {class_accuracy:.2f}%\n")
+logger.info(f"Saved metrics visualizations to {save_dir}")

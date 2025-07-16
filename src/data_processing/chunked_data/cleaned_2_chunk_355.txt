@@ -1,0 +1,6 @@
+plt.yticks(rotation=0)
+# Save confusion matrix
+conf_matrix_path = os.path.join(save_dir, f'{dataset_name}_confusion_matrix.png')
+plt.savefig(conf_matrix_path, dpi=300, bbox_inches='tight')
+plt.close()
+# Save classification report

@@ -1,0 +1,7 @@
+ax4.set_xlabel('Epoch', fontsize=10)
+ax4.set_ylabel('Loss', fontsize=10)
+ax4.grid(True, linestyle='--', alpha=0.7)
+ax4.legend(loc='upper right', fontsize=10)
+# Add overall title
+plt.suptitle(
+f'Training History Metrics\nDataset: {model_metadata["training_dataset"]} | '

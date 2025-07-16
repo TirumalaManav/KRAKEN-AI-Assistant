@@ -1,0 +1,7 @@
+logger.info(f"Patches shape: {X.shape}")
+logger.info(f"Valid labels shape: {y.shape}")
+# Convert to numpy arrays
+logger.info("Converting to numpy arrays...")
+X = X.numpy() if isinstance(X, tf.Tensor) else X
+y = y.numpy() if isinstance(y, tf.Tensor) else y
+# Split data

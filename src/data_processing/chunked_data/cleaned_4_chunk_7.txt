@@ -1,0 +1,8 @@
+fastThreshold=fastThreshold
+)
+self.matcher = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+def extract_adaptive_features(self, frame, bbox=None, object_type=None):
+"""
+Extract features with adaptive processing based on image characteristics and object type.
+"""
+if len(frame.shape) == 3:

@@ -1,0 +1,5 @@
+self.initial_context = None
+def _dlo_confidence_boost(self, bbox, tracker_confidence, kalman_bbox):
+iou_score = iou(bbox, kalman_bbox)
+mahalanobis_dist = self.motion_model.mahalanobis_distance(bbox)
+shape_similarity = min(bbox[2] / (kalman_bbox[2] + 1e-6), kalman_bbox[2] / (bbox[2] + 1e-6)) * \

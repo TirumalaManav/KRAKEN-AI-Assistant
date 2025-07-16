@@ -1,0 +1,6 @@
+'n_classes': n_classes
+},
+'model_paths': {
+'cnn_model': str(results_dir / f'cnn_model_{timestamp}'),
+'autoencoder_model': str(results_dir / f'autoencoder_model_{timestamp}'),
+'cnn_weights': str(results_dir / f'cnn_model_weights_{timestamp}'),

@@ -1,0 +1,6 @@
+kwargs.setdefault('batch_size', 100)
+lr = kwargs.setdefault('learning_rate', 0.1)
+center_pixel = True
+model = LuoEtAl(n_bands, n_classes, patch_size=kwargs['patch_size'])
+optimizer = optim.SGD(model.parameters(), lr=lr, weight_decay=0.09)
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])

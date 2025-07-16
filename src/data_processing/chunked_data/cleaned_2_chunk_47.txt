@@ -1,0 +1,9 @@
+"user": "TirumalaManav"
+}), 500
+@app.route('/api/validate-dataset', methods=['POST'])
+def validate_dataset_endpoint():
+"""Validate dataset with enhanced error checking"""
+try:
+data = request.get_json()
+dataset_path = data.get('datasetPath')
+logger.info(f"Validating dataset: {dataset_path}")

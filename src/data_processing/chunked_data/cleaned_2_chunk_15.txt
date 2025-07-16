@@ -1,0 +1,8 @@
+"current_epoch": epoch + 1,
+"current_loss": float(logs.get('loss', 0)),
+"current_accuracy": float(logs.get('accuracy', 0)) if self.model_type == 'standard'
+else float(logs.get('classifier_accuracy', 0)),
+"last_update_time": "2025-01-23 13:10:47"
+})
+log_training_metrics(epoch, logs)
+# Error handler

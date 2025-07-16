@@ -1,0 +1,6 @@
+logger.info(f"Input images shape: {images.shape}")
+logger.info(f"Input labels shape: {labels.shape if labels is not None else 'None'}")
+# Normalize images
+logger.info("Normalizing images...")
+images = tf.cast(images, tf.float32) / 255.0
+if labels is not None:

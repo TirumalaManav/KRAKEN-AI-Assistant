@@ -1,0 +1,10 @@
+)
+else:
+adjusted_bbox = bbox
+success = self.appearance_model.update_features(frame, adjusted_bbox)
+if not success:
+logger.warning("Appearance model update failed, skipping frame")
+# Larger fallback ROI for hypersonic objects
+expanded_bbox = (
+bbox[0] - 50, bbox[1] - 50,
+bbox[2] + 100, bbox[3] + 100

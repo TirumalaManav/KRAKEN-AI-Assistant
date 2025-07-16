@@ -1,0 +1,9 @@
+g.tracked_objects.remove(obj)
+continue
+else:
+obj['kalman_box'] = fused_box
+new_center = fused_center
+obj['prev_center'] = new_center
+conf, lost = obj['confidence_tracker'].update(frame, obj['kalman_box'], 0.8)
+if lost:
+logger.info("Lost track of one object, removing from tracking list")

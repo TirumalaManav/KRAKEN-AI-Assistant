@@ -1,0 +1,9 @@
+}
+async function startTrainingAPI(config) {
+try {
+console.log('Training config:', config);
+const response = await fetch(`${API_URL}/train`, {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify(config)
+});

@@ -1,0 +1,6 @@
+if self.last_refined_bbox is not None:
+lx, ly, lw, lh = self.last_refined_bbox
+if (bbox[0] >= lx and bbox[1] >= ly and
+bbox[0] + bbox[2] <= lx + lw and
+bbox[1] + bbox[3] <= ly + lh):
+# Candidate is inside the refined bounding box. Update candidate buffer.

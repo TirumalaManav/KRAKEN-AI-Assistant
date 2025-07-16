@@ -1,0 +1,7 @@
+if roi.size == 0:
+return [], None
+keypoints = self.feature_extractor.detect(roi, None)
+for kp in keypoints:
+kp.pt = (kp.pt[0] + max(0, x-margin), kp.pt[1] + max(0, y-margin))
+else:
+keypoints = self.feature_extractor.detect(gray, None)

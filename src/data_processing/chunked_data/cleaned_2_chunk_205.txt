@@ -1,0 +1,9 @@
+layers.BatchNormalization(),
+layers.ReLU(),
+layers.Conv2D(256, kernel_size=3, padding='same'),
+layers.BatchNormalization(),
+layers.ReLU()
+])
+# Decoder - Keep the same spatial dimensions
+self.decoder = models.Sequential([
+layers.Conv2D(128, kernel_size=3, padding='same'),

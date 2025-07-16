@@ -1,0 +1,14 @@
+box-shadow: 0 4px 15px rgba(255, 111, 97, 0.3);
+}
+button:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(255, 111, 97, 0.4);
+}
+.status-message {
+margin-top: 1rem;
+padding: 1rem;
+border-radius: 10px;

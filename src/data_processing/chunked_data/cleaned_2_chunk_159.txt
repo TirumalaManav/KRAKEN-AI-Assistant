@@ -1,0 +1,9 @@
+# Check if user exists
+if not os.path.exists(user_file):
+self.logger.warning(f"User {username} not found")
+return False
+# Load user data
+with open(user_file, 'rb') as f:
+user_data = pickle.load(f)
+# Verify passphrase
+encryption_key, _ = self._generate_dynamic_key(passphrase, user_data['salt'])

@@ -1,0 +1,7 @@
+self.encoder = nn.Sequential(*encoder_modules)
+self.features_sizes = self._get_sizes()
+self.classifier = nn.Linear(self.features_sizes, n_classes)
+self.regressor = nn.Linear(self.features_sizes, input_channels)
+self.apply(self.weight_init)
+def _get_sizes(self):
+with torch.no_grad():

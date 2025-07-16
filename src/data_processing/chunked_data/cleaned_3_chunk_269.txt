@@ -1,0 +1,16 @@
+border-radius: 50%;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+transform: scale(1.1);
+}
+.switch-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 1rem 0;
+}
+.switch {
+position: relative;
+display: inline-block;

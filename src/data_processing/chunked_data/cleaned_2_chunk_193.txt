@@ -1,0 +1,7 @@
+raise
+def preprocess_hyperspectral_data(images, labels, model_type='standard', patch_size=7, batch_size=32):
+"""
+Unified preprocessing function for both CNN and Autoencoder
+"""
+try:
+logger.info(f"Starting preprocessing with model_type={model_type}, patch_size={patch_size}, batch_size={batch_size}")

@@ -1,0 +1,15 @@
+self.apply(self.weight_init)
+def forward(self, x):
+x = F.relu(self.fc1(x))
+if self.use_dropout:
+x = self.dropout(x)
+x = F.relu(self.fc2(x))
+if self.use_dropout:
+x = self.dropout(x)
+x = F.relu(self.fc3(x))
+if self.use_dropout:
+x = self.dropout(x)
+x = self.fc4(x)
+return x
+class HuEtAl(nn.Module):
+"""

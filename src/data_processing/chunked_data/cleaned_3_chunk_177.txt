@@ -1,0 +1,12 @@
+{% for dataset in data.available_datasets %}
+<option value="{{ dataset }}" {% if dataset == data.selected_dataset %}selected{% endif %}>
+{{ dataset }}
+</option>
+{% endfor %}
+</select>
+</div>
+</div>
+<!-- Results Grid -->
+<div class="results-grid">
+<!-- Overview Card -->
+<div class="card">

@@ -1,0 +1,8 @@
+'Painted metal sheets', 'Bare Soil', 'Bitumen',
+'Self-Blocking Bricks', 'Shadows']
+ignored_labels = [0]
+elif dataset_name == 'IndianPines':
+# Load the image
+img = open_file(folder + 'Indian_pines_corrected.mat')
+img = img['indian_pines_corrected']
+rgb_bands = (43, 21, 11)  # AVIRIS sensor

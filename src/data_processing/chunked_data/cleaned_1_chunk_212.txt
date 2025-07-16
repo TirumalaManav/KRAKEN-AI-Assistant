@@ -1,0 +1,6 @@
+#         self.bn5 = nn.BatchNorm2d(1024)
+#         self.relu5 = nn.ReLU(inplace=True)
+#         self.maxpool5 = nn.MaxPool2d(kernel_size=2, stride=1)
+#         # Fully connected layers
+#         self.fc1 = nn.Linear(1024 * 2 * 2, 1024)
+#         self.fc2 = nn.Linear(1024, n_classes)

@@ -1,0 +1,19 @@
+}
+.parameter-slider {
+width: 100%;
+margin: 1rem 0;
+}
+.slider-container {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.slider-value {
+min-width: 60px;
+padding: 0.25rem 0.5rem;
+background: var(--background-color);
+border-radius: 0.25rem;
+text-align: center;
+}
+input[type="range"] {
+width: 100%;

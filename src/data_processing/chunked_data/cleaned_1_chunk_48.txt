@@ -1,0 +1,6 @@
+label = self.label[x1:x2, y1:y2]
+if self.flip_augmentation and self.patch_size > 1:
+# Perform data augmentation (only on 2D patches)
+data, label = self.flip(data, label)
+if self.radiation_augmentation and np.random.random() < 0.1:
+data = self.radiation_noise(data)

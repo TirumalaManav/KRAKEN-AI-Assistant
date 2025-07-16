@@ -1,0 +1,4 @@
+edges_combined = np.zeros_like(gray_roi)
+for scale in [0.8, 1.0, 1.3]:
+edges = cv2.Canny(gray_roi, int(low_thresh_base * scale), int(high_thresh_base * scale))
+edges_combined = cv2.bitwise_or(edges_combined, edges)

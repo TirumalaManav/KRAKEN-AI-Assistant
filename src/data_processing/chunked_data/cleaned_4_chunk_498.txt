@@ -1,0 +1,10 @@
+min_dist = dist
+best_match = prev
+if best_match:
+px, py, pw, ph, pcx, pcy, count = best_match
+new_x = int((x + px) / 2)
+new_y = int((y + py) / 2)
+new_w = int((w + pw) / 2)
+new_h = int((h + ph) / 2)
+new_cx = int((cx + pcx) / 2)
+new_cy = int((cy + pcy) / 2)

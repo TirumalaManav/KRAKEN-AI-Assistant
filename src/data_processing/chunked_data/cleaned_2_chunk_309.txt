@@ -1,0 +1,7 @@
+# Apply PCA if needed
+if images.shape[-1] > model_metadata['n_components']:
+images = apply_pca(images, model_metadata['n_components'])
+# Normalize images
+images = tf.cast(images, tf.float32) / 255.0
+# Extract patches only from labeled pixels
+patches, patch_labels, patch_locations = extract_patches(

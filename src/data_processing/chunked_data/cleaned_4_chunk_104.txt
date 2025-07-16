@@ -1,0 +1,5 @@
+return (0.0, 0.0)
+try:
+prev_gray = cv2.cvtColor(prev_frame, cv2.COLOR_BGR2GRAY) if len(prev_frame.shape) == 3 else prev_frame.copy()
+curr_gray = cv2.cvtColor(current_frame, cv2.COLOR_BGR2GRAY) if len(current_frame.shape) == 3 else current_frame.copy()
+roi = prev_gray[y:y+h, x:x+w]

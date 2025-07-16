@@ -1,0 +1,3 @@
+MIN_ASPECT_RATIO = 0.5            # Expected minimum aspect ratio for a valid object
+MAX_ASPECT_RATIO = 3.0            # Expected maximum aspect ratio for a valid object
+NMS_OVERLAP_THRESH = 0.3          # Overlap threshold for non-maximum suppression

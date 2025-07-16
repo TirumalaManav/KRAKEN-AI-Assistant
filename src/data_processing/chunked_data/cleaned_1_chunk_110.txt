@@ -1,0 +1,8 @@
+results.append(run_results)
+show_results(run_results, viz, label_values=LABEL_VALUES)
+if N_RUNS > 1:
+show_results(results, viz, label_values=LABEL_VALUES, agregated=True)
+# -*- coding: utf-8 -*-
+import random
+import numpy as np
+from sklearn.metrics import confusion_matrix

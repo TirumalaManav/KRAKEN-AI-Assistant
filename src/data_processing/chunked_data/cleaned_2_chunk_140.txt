@@ -1,0 +1,9 @@
+return None
+def _encrypt_data(self, data, fernet_instance):
+"""Encrypt data using the provided Fernet instance."""
+try:
+if not isinstance(data, (bytes, bytearray)):
+data = pickle.dumps(data)
+return fernet_instance.encrypt(data)
+except Exception as e:
+self.logger.error(f"Encryption failed: {e}")

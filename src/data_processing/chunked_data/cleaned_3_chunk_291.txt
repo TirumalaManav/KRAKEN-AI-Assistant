@@ -1,0 +1,14 @@
+</label>
+</div>
+</div>
+<button id="start-training" class="btn btn-primary" disabled>
+<i class="fas fa-play"></i>
+Start Training
+</button>
+</div>
+</div>
+</div>
+<script>
+// API Configuration
+const API_URL = 'http://localhost:5000/api';
+// Toast notification function

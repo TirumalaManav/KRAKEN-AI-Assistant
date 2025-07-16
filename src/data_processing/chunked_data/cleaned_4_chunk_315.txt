@@ -1,0 +1,6 @@
+(bbox[0] + bbox[2], bbox[1] + bbox[3]),
+tracker.global_vars.tracked_object['color'], 2)
+if tracker.global_vars.init_rect:
+x, y, w, h = tracker.global_vars.init_rect
+cv2.rectangle(display_frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+cv2.putText(display_frame, f"FPS: {fps:.2f}", (10, 30),

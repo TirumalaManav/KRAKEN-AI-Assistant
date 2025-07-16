@@ -1,0 +1,8 @@
+frame,
+g.tracked_object['kalman_box'],
+g.tracked_object['prev_frame']
+)
+blend = max(0.3, min(0.7, conf))
+g.tracked_object['kalman_box'] = (
+int(blend * g.tracked_object['kalman_box'][0] + (1-blend) * redetected_box[0]),
+int(blend * g.tracked_object['kalman_box'][1] + (1-blend) * redetected_box[1]),

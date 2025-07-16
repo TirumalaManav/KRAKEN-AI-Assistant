@@ -1,0 +1,3 @@
+--light-gray: #f8f9fa; /* Light Gray */
+--semi-transparent-white: rgba(255, 255, 255, 0.1); /* Semi-Transparent White */
+--header-gradient: linear-gradient(135deg, var(--cyan), var(--coral)); /* Cyan to Coral gradient */

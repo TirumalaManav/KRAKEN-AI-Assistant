@@ -1,0 +1,7 @@
+args = parser.parse_args()
+CUDA_DEVICE = get_device(args.cuda)
+SAMPLE_PERCENTAGE = args.training_sample
+FLIP_AUGMENTATION = args.flip_augmentation
+RADIATION_AUGMENTATION = args.radiation_augmentation
+MIXTURE_AUGMENTATION = args.mixture_augmentation
+DATASET = args.dataset

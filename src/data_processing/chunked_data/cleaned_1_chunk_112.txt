@@ -1,0 +1,10 @@
+import torch
+def get_device(ordinal):
+# Use GPU ?
+if ordinal < 0:
+print("Computation on CPU")
+device = torch.device('cpu')
+elif torch.cuda.is_available():
+print("Computation on CUDA GPU device {}".format(ordinal))
+device = torch.device('cuda:{}'.format(ordinal))
+else:

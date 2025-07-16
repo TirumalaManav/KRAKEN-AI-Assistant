@@ -1,0 +1,6 @@
+for l in IGNORED_LABELS:
+mask[gt == l] = True
+prediction[mask] = 0
+color_prediction = convert_to_color(prediction)
+display_predictions(color_prediction, viz, gt=convert_to_color(test_gt), caption="Prediction vs. test ground truth")
+results.append(run_results)

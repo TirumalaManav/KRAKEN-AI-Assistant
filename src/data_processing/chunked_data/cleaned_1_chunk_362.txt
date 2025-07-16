@@ -1,0 +1,9 @@
+else:
+metric = avg_loss  # Use training loss if no validation set is provided
+if isinstance(scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
+scheduler.step(metric)
+elif scheduler is not None:
+scheduler.step()
+# Save the best model
+if metric > best_metric:
+best_metric = metric

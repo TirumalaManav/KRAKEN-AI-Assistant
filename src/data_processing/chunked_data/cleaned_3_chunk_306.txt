@@ -1,0 +1,13 @@
+</div>
+`;
+showToast(validation.message, false);
+}
+} else {
+selectedFiles.innerHTML = `
+<div class="validation-message error">
+<i class="fas fa-exclamation-circle"></i> Please select a folder with at least 2 .mat files
+</div>
+`;
+showToast("Invalid dataset folder", false);
+}
+});

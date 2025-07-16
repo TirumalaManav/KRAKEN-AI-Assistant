@@ -1,0 +1,13 @@
+logger.info(f"""
+GPU configuration successful
+Time: 2025-01-23 13:10:47
+User: TirumalaManav
+Physical GPUs: {len(gpus)}
+Logical GPUs: {len(logical_gpus)}
+Memory Growth: Enabled
+""")
+except RuntimeError as e:
+logger.error(f"""
+GPU configuration error
+Time: 2025-01-23 13:10:47
+User: TirumalaManav

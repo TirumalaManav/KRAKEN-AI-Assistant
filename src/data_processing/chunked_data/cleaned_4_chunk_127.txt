@@ -1,0 +1,11 @@
+if g.init_rect is not None:
+box = g.init_rect
+elif g.click_point is not None:
+x_center, y_center = g.click_point
+box = get_adaptive_bbox(frame, x_center, y_center)
+else:
+box = None
+if box is not None:
+tracker = build_tracker(model)
+tracker.init(frame, box)
+kalman = EnhancedKalmanBox(box)

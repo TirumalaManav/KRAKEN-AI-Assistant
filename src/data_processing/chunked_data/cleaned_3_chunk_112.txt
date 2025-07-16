@@ -1,0 +1,5 @@
+<section class="section" id="overview">
+<h2 class="section-title">Understanding Hyperspectral Imaging</h2>
+<div class="card-grid">
+<div class="card">
+<h3>What is Hyperspectral Imaging?</h3>

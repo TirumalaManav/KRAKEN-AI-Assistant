@@ -1,0 +1,16 @@
+}
+@keyframes floatParticle {
+0%, 100% {
+transform: translateY(0) translateX(0);
+}
+50% {
+transform: translateY(-20px) translateX(20px);
+}
+}
+.brand-background {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 12.5vw;
+color: rgba(255, 255, 255, 0.03);

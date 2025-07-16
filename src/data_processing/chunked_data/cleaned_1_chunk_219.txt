@@ -1,0 +1,7 @@
+self.relu3 = nn.ReLU(inplace=True)
+self.maxpool3 = nn.MaxPool2d(kernel_size=2, stride=1)
+# Fourth convolutional block
+self.conv4 = nn.Conv2d(256, 512, kernel_size=3, padding=1)
+self.bn4 = nn.BatchNorm2d(512)
+self.relu4 = nn.ReLU(inplace=True)
+self.maxpool4 = nn.MaxPool2d(kernel_size=2, stride=1)

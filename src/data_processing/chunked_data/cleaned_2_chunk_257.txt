@@ -1,0 +1,10 @@
+# Global variables
+CURRENT_TIMESTAMP = "2025-01-23 18:13:46"
+CURRENT_USER = "TirumalaManav"
+# Dataset mappings configuration with metadata
+DATASET_MAPPINGS = {
+'PaviaU': {
+'data_file': 'PaviaU.mat',
+'label_file': 'PaviaU_gt.mat',
+'data_keys': ['paviaU'],
+'label_keys': ['paviaU_gt'],

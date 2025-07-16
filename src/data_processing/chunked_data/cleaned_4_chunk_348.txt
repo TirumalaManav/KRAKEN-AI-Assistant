@@ -1,0 +1,5 @@
+return False
+roi = frame[y:y+h, x:x+w]
+object_type = 'large' if max(w, h) > 200 else 'small' if max(w, h) < 50 else None
+keypoints, descriptors = self.extract_adaptive_features(roi, object_type=object_type)
+if descriptors is not None and len(descriptors) > 0 and object_type != 'small':

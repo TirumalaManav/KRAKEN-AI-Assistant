@@ -1,0 +1,4 @@
+g.tracked_object['prev_frame'] = frame.copy()
+cv2.putText(display_frame, f"FPS: {fps:.2f}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 2)
+if g.message_display:
+cv2.putText(display_frame, g.message_display, (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)

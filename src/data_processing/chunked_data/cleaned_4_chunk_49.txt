@@ -1,0 +1,6 @@
+diff = actual_pos - predicted_pos
+inv_cov = np.linalg.inv(self.covariance + np.eye(2) * 1e-6)
+return np.sqrt(diff.T @ inv_cov @ diff)
+def predict_next_position(self):
+if len(self.velocity_history) > 0:
+# Extrapolate further for hypersonic speeds

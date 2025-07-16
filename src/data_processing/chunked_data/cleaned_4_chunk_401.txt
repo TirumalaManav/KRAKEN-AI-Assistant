@@ -1,0 +1,5 @@
+self.lost_frames_count += 1
+self.hit_streak = max(0, self.hit_streak - 1)
+if self.initial_size and max(bbox[2], bbox[3]) < 50:
+initial_center = (self.initial_size[0] / 2, self.initial_size[1] / 2)
+current_center = (bbox[0] + bbox[2] / 2, bbox[1] + bbox[3] / 2)

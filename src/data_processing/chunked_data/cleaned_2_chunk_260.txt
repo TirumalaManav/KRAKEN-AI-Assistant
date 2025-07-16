@@ -1,0 +1,10 @@
+'Bitumen', 'Tiles', 'Shadows', 'Meadows', 'Bare Soil']
+},
+'Salinas': {
+'data_file': 'Salinas.mat',
+'label_file': 'Salinas_gt.mat',
+'data_keys': ['salinas'],
+'label_keys': ['salinas_gt'],
+'description': 'Salinas Valley scene',
+'n_classes': 16,
+'n_bands': 204,

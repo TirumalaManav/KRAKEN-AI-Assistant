@@ -1,0 +1,16 @@
+"""
+nfeatures = 2000
+scaleFactor = 1.15
+nlevels = 10
+edgeThreshold = 35
+patchSize = 37
+fastThreshold = 15
+if spectrum_type:
+if spectrum_type == "MWIR":
+fastThreshold = 12
+edgeThreshold = 31
+nlevels = 12
+elif spectrum_type == "SWIR":
+fastThreshold = 17
+scaleFactor = 1.2
+patchSize = 33

@@ -1,0 +1,13 @@
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.primary-btn {
+background: #ff6f61;
+color: white;
+box-shadow: 0 4px 15px rgba(255, 111, 97, 0.4), 0 0 10px rgba(255, 111, 97, 0.8);
+}
+.secondary-btn {
+background: transparent;
+border: 2px solid #ff6f61;

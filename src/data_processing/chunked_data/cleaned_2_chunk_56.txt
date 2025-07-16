@@ -1,0 +1,9 @@
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+}), 500
+@app.route('/api/validate-model', methods=['POST'])
+def validate_model_endpoint():
+"""Validate model configuration with enhanced parameters"""
+try:
+data = request.get_json()
+model_type = data.get('modelType')

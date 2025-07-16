@@ -1,0 +1,8 @@
+ax2.legend(loc='upper right', fontsize=10)
+# Plot Accuracy Trends with Moving Average
+ax3 = fig.add_subplot(gs[1, 0])
+if 'classifier_accuracy' in history:
+acc_data = history['classifier_accuracy']
+val_acc_data = history['val_classifier_accuracy']
+else:
+acc_data = history['accuracy']

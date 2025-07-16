@@ -1,0 +1,12 @@
+the chosen samples
+"""
+samples = []
+labels = []
+# Check that image and ground truth have the same 2D dimensions
+assert mat.shape[:2] == gt.shape[:2]
+for label in np.unique(gt):
+if label in ignored_labels:
+continue
+else:
+indices = np.nonzero(gt == label)
+samples += list(mat[indices])

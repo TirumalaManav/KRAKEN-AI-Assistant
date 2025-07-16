@@ -1,0 +1,10 @@
+const data = await response.json();
+console.log('Model validation response:', data);
+return data;
+} catch (error) {
+console.error('Model validation error:', error);
+return { success: false, message: `Model validation failed: ${error.message}` };
+}
+}
+async function startTrainingAPI(config) {
+try {

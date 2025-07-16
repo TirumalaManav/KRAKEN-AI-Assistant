@@ -1,0 +1,4 @@
+logger.info("Loading hyperspectral data...")
+images, labels = load_hyperspectral_data(DATASETS_DIR, dataset_name)
+logger.info(f"Data loaded successfully. Shape - Images: {images.shape}, Labels: {labels.shape}")
+# 2. Apply PCA reduction using MLPipeline function

@@ -1,0 +1,9 @@
+# Remove unused dimensions when we work with invidual spectrums
+elif self.patch_size == 1:
+data = data[:, 0, 0]
+label = label[0, 0]
+# Add a fourth dimension for 3D CNN
+if self.patch_size > 1:
+# Make 4D data ((Batch x) Planes x Channels x Width x Height)
+data = data.unsqueeze(0)
+return data, label

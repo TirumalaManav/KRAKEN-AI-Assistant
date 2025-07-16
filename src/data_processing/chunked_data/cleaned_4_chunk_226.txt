@@ -1,0 +1,10 @@
+self.det_thresh = det_thresh
+self.lost_frames_count = 0
+self.appearance_model = AppearanceModel()
+self.motion_model = MotionModel()
+self.initial_size = None
+self.max_size_change = 0.9
+self.hit_streak = 0
+self.time_since_update = 0
+self.size_history = deque(maxlen=5)
+self.initial_context = None

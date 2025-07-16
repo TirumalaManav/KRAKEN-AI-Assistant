@@ -1,0 +1,5 @@
+else:
+ax1.plot(history['accuracy'], 'b-', label='Training', marker='o', markersize=4)
+ax1.plot(history['val_accuracy'], 'r-', label='Validation', marker='o', markersize=4)
+ax1.set_title('Model Accuracy', fontsize=12, pad=20)
+ax1.set_xlabel('Epoch', fontsize=10)

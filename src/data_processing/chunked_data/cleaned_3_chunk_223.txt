@@ -1,0 +1,9 @@
+<video id="video" autoplay playsinline></video>
+<div class="countdown" id="countdown"></div>
+</div>
+<div class="processing" id="processing">Processing...</div>
+<button onclick="startAuth()" id="auth-button">Start</button>
+<div class="status-message" id="status-message"></div>
+</div>
+</div>
+</div>

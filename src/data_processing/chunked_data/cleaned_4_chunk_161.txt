@@ -1,0 +1,8 @@
+else:
+# Show selection instructions
+cv2.putText(display_frame, "Click and drag to select an object to track", (10, 30),
+cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
+# Display the current frame
+cv2.imshow(video_name, display_frame)
+# Check for user input
+key = cv2.waitKey(1) & 0xFF

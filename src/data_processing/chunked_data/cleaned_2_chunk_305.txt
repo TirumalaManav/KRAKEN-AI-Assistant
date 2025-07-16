@@ -1,0 +1,6 @@
+"""Find and load the most recent model"""
+try:
+training_dirs = glob.glob(os.path.join(self.results_dir, 'training_*'))
+if not training_dirs:
+raise FileNotFoundError("No training directories found!")
+latest_dir = max(training_dirs, key=os.path.getctime)

@@ -1,0 +1,9 @@
+if displacement.size != 2:
+return (0.0, 0.0)
+dx = float(displacement[0])
+dy = float(displacement[1])
+if np.sqrt(dx*dx + dy*dy) > 20:
+logger.warning("Optical flow shift too high, skipping update")
+return (0.0, 0.0)
+return (dx, dy)
+except Exception as e:

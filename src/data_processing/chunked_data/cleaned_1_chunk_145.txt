@@ -1,0 +1,10 @@
+# Compute kappa coefficient
+pa = np.trace(cm) / float(total)
+pe = np.sum(np.sum(cm, axis=0) * np.sum(cm, axis=1)) / \
+float(total * total)
+kappa = (pa - pe) / (1 - pe)
+results["Kappa"] = kappa
+return results
+def show_results(results, vis, label_values=None, agregated=False):
+text = ""
+if agregated:

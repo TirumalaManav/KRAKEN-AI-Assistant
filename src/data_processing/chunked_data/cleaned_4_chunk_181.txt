@@ -1,0 +1,6 @@
+if roi.size == 0:
+return initial_bbox
+gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY) if len(roi.shape) == 3 else roi.copy()
+mean_val, std_val = np.mean(gray_roi), np.std(gray_roi)
+low_thresh_base = max(10, int(mean_val * 0.2))
+high_thresh_base = max(30, int(mean_val * 0.5))

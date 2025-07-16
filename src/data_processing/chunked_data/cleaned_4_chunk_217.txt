@@ -1,0 +1,6 @@
+], np.float32)
+self.kalman.measurementMatrix = np.array([
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+], np.float32)
+process_noise = np.eye(10, dtype=np.float32) * 1e-3

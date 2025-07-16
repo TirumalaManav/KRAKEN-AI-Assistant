@@ -1,0 +1,8 @@
+unique_labels = np.unique(labels)
+n_classes = len(unique_labels[unique_labels != 0])
+logger.info(f"Number of classes: {n_classes}")
+# 3. Preprocess data using MLPipeline function
+logger.info("Preprocessing data...")
+train_dataset, test_dataset = preprocess_hyperspectral_data(
+images,
+labels,

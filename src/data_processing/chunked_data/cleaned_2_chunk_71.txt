@@ -1,0 +1,8 @@
+"progress": 0,
+"current_epoch": 0,
+"total_epochs": hyperparameters['epochs'],
+"training_start_time": "2025-01-23 13:55:35",
+"user": "TirumalaManav"
+})
+# 1. Load hyperspectral data using MLPipeline function
+logger.info("Loading hyperspectral data...")

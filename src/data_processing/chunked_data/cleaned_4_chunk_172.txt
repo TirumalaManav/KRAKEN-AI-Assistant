@@ -1,0 +1,7 @@
+def extract_adaptive_features(self, frame, bbox=None, object_type=None):
+try:
+gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) if len(frame.shape) == 3 else frame.copy()
+if gray.size == 0:
+return [], None
+mean_val, std_val = np.mean(gray), np.std(gray)
+if std_val < 30:

@@ -1,0 +1,6 @@
+for v in history] for k, history in ae_history.history.items()}
+}
+with open(results_dir / 'training_history.json', 'w') as f:
+json.dump(history_data, f, indent=4)
+# Log completion
+logger.info(f"\nExecution completed at: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

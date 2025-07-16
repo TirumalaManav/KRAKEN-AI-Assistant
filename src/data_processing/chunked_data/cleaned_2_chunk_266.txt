@@ -1,0 +1,8 @@
+'label_file': 'KSC_gt.mat',
+'data_keys': ['KSC'],
+'label_keys': ['KSC_gt'],
+'description': 'Kennedy Space Center scene',
+'n_classes': 13,
+'n_bands': 176,
+'class_names': ['Background', 'Scrub', 'Willow swamp', 'CP hammock',
+'Slash pine', 'Oak/Broadleaf', 'Hardwood swamp',

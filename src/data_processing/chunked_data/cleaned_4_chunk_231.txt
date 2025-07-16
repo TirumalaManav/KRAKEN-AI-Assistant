@@ -1,0 +1,4 @@
+margin = int(min(w, h) * 0.5)
+context_roi = frame[max(0, y-margin):min(frame.shape[0], y+h+margin),
+max(0, x-margin):min(frame.shape[1], x+w+margin)]
+if context_roi.size > 0:

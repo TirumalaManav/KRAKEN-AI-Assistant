@@ -1,0 +1,11 @@
+DATASET = args.dataset
+CUSTOM_DATASET = args.custom_dataset
+MODEL = args.model
+N_RUNS = args.runs
+PATCH_SIZE = args.patch_size
+DATAVIZ = args.with_exploration
+FOLDER = args.folder
+EPOCH = args.epoch
+SAMPLING_MODE = args.sampling_mode
+CHECKPOINT = args.restore
+LEARNING_RATE = args.lr

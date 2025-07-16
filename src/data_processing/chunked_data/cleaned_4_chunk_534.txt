@@ -1,0 +1,7 @@
+gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
+keypoints, descriptors = self.feature_extractor.detectAndCompute(gray_roi, None)
+if descriptors is None:
+sift_similarity = 0.0
+else:
+sift_similarity = 0.0
+for stored_descriptors in self.feature_memory:

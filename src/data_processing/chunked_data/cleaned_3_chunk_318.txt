@@ -1,0 +1,10 @@
+loadingScreen.classList.add('hide');
+}, 2000);
+console.log('Application initialized:', {
+time: "2025-01-23 13:27:01",
+user: "TirumalaManav"
+});
+});
+</script>
+</body>
+</html>

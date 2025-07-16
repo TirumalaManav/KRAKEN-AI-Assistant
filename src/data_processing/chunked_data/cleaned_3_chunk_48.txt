@@ -1,0 +1,9 @@
+margin-bottom: 20px;
+font-weight: 700;
+background: linear-gradient(45deg, #ffffff, #f8f9fa);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: floatText 4s infinite ease-in-out;
+}
+@keyframes floatText {
+0%, 100% { transform: translateY(0) rotateX(0); }

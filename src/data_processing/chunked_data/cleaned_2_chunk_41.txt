@@ -1,0 +1,9 @@
+def check_username(username):
+try:
+user_files = [f for f in os.listdir(UPLOAD_FOLDER)
+if f.startswith(f'{username}_register_')]
+exists = len(user_files) > 0
+logger.info(f"Username check for {username}: {'exists' if exists else 'does not exist'}")
+return jsonify({
+"exists": exists
+})

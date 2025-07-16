@@ -1,0 +1,7 @@
+logger.info("Reshaping images for PCA")
+reshaped_images = images.reshape(-1, c)
+logger.info("Initializing PCA")
+pca = PCA(n_components=n_components)
+logger.info("Applying PCA transformation")
+reduced_data = pca.fit_transform(reshaped_images)
+logger.info("Reshaping data back to image format")

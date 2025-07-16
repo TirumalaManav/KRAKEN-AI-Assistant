@@ -1,0 +1,6 @@
+#             iter_ += 1
+#             del(data, target, loss, output)
+#         # Update the scheduler
+#         avg_loss /= len(data_loader)
+#         if val_loader is not None:
+#             val_acc = val(net, val_loader, device=device, supervision=supervision)

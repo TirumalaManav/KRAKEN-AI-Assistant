@@ -1,0 +1,9 @@
+cv2.imshow("Tracking", display_frame)
+key = cv2.waitKey(1) & 0xFF
+if key == ord('q'):
+break
+elif key == ord('c') and tracker.global_vars.init_rect:
+tracker.start_tracking(tracker.global_vars.init_rect)
+elif key == ord('r'):
+tracker.reset_tracking()
+except Exception as e:

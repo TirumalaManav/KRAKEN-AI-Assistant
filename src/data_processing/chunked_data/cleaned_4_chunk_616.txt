@@ -1,0 +1,5 @@
+new_box = (int(x+dx), int(y+dy), w, h)
+new_center = (new_box[0] + new_box[2] // 2, new_box[1] + new_box[3] // 2)
+jump_distance = math.hypot(new_center[0] - prev_center[0],
+new_center[1] - prev_center[1])
+if jump_distance > JUMP_THRESHOLD:

@@ -1,0 +1,9 @@
+"""
+try:
+logger.info(f"Starting model compilation for model_type: {model_type}")
+logger.info(f"Model summary:\n{model.summary()}")
+if model_type == 'standard':
+logger.info("Compiling standard classification model")
+model.compile(
+optimizer='adam',
+loss='sparse_categorical_crossentropy',

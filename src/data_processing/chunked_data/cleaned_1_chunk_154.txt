@@ -1,0 +1,5 @@
+train_size = int(train_size)
+if mode == 'random':
+train_indices, test_indices = sklearn.model_selection.train_test_split(X, train_size=train_size, stratify=y)
+train_indices = [list(t) for t in zip(*train_indices)]
+test_indices = [list(t) for t in zip(*test_indices)]

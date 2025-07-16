@@ -1,0 +1,6 @@
+'final_classifier_accuracy': float(ae_history.history['classifier_accuracy'][-1]),
+'final_val_classifier_accuracy': float(ae_history.history['val_classifier_accuracy'][-1])
+}
+}
+# Save training summary
+with open(results_dir / 'training_summary.json', 'w') as f:

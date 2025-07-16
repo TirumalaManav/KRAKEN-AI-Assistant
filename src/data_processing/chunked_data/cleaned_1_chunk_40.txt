@@ -1,0 +1,5 @@
+self.mixture_augmentation = hyperparams['mixture_augmentation']
+self.center_pixel = hyperparams['center_pixel']
+mask = hyperparams.setdefault('mask', np.zeros((data.shape[0], data.shape[1])))
+supervision = hyperparams['supervision']
+# Fully supervised : use all pixels with label not ignored

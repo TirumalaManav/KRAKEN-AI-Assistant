@@ -1,0 +1,4 @@
+motion_consistent = self.motion_model.check_motion_consistency(bbox)
+size_consistent = self.check_size_consistency(bbox)
+iou_score = iou(bbox, kalman_bbox)
+mahalanobis_dist = self.motion_model.mahalanobis_distance(bbox)

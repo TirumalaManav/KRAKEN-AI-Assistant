@@ -1,0 +1,10 @@
+full_w = rx2 - rx1
+full_h = ry2 - ry1
+return (full_x1, full_y1, full_w, full_h,
+full_x1 + full_w // 2, full_y1 + full_h // 2)
+return detection
+def full_frame_yolo_scan(self, frame):
+yolo_results = self.model(frame)
+detections = []
+CONF_THRESHOLD = 0.3
+for result in yolo_results:

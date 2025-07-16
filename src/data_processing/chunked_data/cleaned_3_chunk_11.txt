@@ -1,0 +1,17 @@
+color: #ffffff;
+}
+/* Team Grid */
+.container {
+max-width: 1200px;
+margin: -100px auto 0;
+padding: 0 20px;
+position: relative;
+z-index: 2;
+}
+.team-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+padding: 20px 0;
+}
+.team-member {

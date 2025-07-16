@@ -1,0 +1,9 @@
+numpy array with the IMF coefficients
+"""
+n_classes = np.max(ground_truth) if n_classes is None else n_classes
+weights = np.zeros(n_classes)
+frequencies = np.zeros(n_classes)
+for c in range(0, n_classes):
+if c in ignored_classes:
+continue
+frequencies[c] = np.count_nonzero(ground_truth == c)

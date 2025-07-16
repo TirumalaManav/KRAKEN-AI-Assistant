@@ -1,0 +1,13 @@
+resetForm();
+}
+} catch (error) {
+showStatus('Login failed: ' + error.message, 'error');
+resetForm();
+} finally {
+stopCamera();
+isProcessing = false;
+}
+}
+async function processRegistration(imageData) {
+const username = document.getElementById('username').value.trim();
+try {

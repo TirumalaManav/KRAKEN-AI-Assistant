@@ -1,0 +1,9 @@
+self.global_vars.tracked_object = None
+self.global_vars.mode = "selection"
+self.global_vars.init_rect = None
+self.global_vars.click_point = None
+self.original_template = None
+def get_frame(self):
+"""Read next frame from video source"""
+try:
+ret, frame = self.cap.read()

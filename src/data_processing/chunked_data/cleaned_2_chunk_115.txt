@@ -1,0 +1,6 @@
+processed_datasets = set()
+for file in vis_files:
+if file.endswith('.png') or file.endswith('.txt'):
+# Extract dataset name from filename (e.g., "PaviaU_confusion_matrix.png" -> "PaviaU")
+if '_' in file and not file.startswith('training_'):
+dataset_name = file.split('_')[0]

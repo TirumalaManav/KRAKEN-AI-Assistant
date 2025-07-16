@@ -1,0 +1,8 @@
+return None
+def _initialize_video(self):
+try:
+cap = cv2.VideoCapture(self.video_path if self.video_path else 0)
+if not cap.isOpened():
+logger.warning(f"Failed to open video {self.video_path}, switching to webcam")
+cap = cv2.VideoCapture(0)
+if not cap.isOpened():

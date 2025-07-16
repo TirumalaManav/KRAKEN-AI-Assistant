@@ -1,0 +1,9 @@
+return content
+except Exception as e:
+logger.error(f"Error reading file {file_path}: {str(e)}")
+return None
+def get_dataset_files(dataset_name):
+"""Get all visualization files for a specific dataset"""
+try:
+vis_dir = get_latest_visualization_dir()
+if not vis_dir:

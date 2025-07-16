@@ -1,0 +1,10 @@
+images,
+labels,
+model_type=mlpipeline_model_type,
+patch_size=hyperparameters['patch_size'],
+batch_size=hyperparameters['batch_size']
+)
+logger.info("Data preprocessing completed")
+# 4. Initialize and compile appropriate model
+logger.info(f"Initializing {model_type} model...")
+try:

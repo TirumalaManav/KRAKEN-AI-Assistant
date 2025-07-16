@@ -1,0 +1,8 @@
+min(bbox[2] + 100, frame.shape[1]),
+min(bbox[3] + 100, frame.shape[0])
+)
+success = self.appearance_model.update_features(frame, expanded_bbox)
+if not success:
+self.time_since_update += 1
+self.lost_frames_count += 1
+return 0.0, self.lost_frames_count >= self.lost_frames_threshold

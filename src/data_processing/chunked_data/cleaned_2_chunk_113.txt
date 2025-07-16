@@ -1,0 +1,9 @@
+return None
+def get_available_datasets():
+"""Get list of available datasets with visualization files"""
+try:
+available_datasets = []
+# Get the latest visualization directory
+vis_dir = get_latest_visualization_dir()
+if not vis_dir:
+logger.warning("No valid visualization directory found!")

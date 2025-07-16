@@ -1,0 +1,4 @@
+elif spectrum_type == "VIS":
+params.update({'fastThreshold': 20, 'edgeThreshold': 31, 'patchSize': 31, 'nfeatures': 1500})
+self.feature_extractor = cv2.ORB_create(**params)
+self.matcher = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)

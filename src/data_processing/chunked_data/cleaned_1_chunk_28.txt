@@ -1,0 +1,8 @@
+gt[nan_mask] = 0
+ignored_labels.append(0)
+ignored_labels = list(set(ignored_labels))
+# Normalization
+img = np.asarray(img, dtype='float32')
+#img = (img - np.min(img)) / (np.max(img) - np.min(img))
+data = img.reshape(np.prod(img.shape[:2]), np.prod(img.shape[2:]))
+#data = preprocessing.scale(data)

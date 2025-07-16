@@ -1,0 +1,6 @@
+const data = await response.json();
+if (data.exists) {
+showStatus('Username already exists. Please choose another.', 'error');
+document.getElementById('auth-button').disabled = true;
+} else {
+document.getElementById('auth-button').disabled = false;

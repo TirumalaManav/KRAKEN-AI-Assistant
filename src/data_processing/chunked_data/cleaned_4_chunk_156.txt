@@ -1,0 +1,8 @@
+x1, y1, x2, y2 = new_box
+init_rect = (x1, y1, x2 - x1, y2 - y1)
+# Re-initialize the tracker with the new selection
+tracker.init(frame, init_rect)
+tracking_initialized = True
+new_box = None
+print("New object selected for tracking")
+# Draw rectangle during selection

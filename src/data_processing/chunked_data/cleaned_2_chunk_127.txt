@@ -1,0 +1,8 @@
+except Exception as e:
+error_msg = f"Error rendering page: {str(e)}"
+logger.error(error_msg)
+return render_template('error.html', message=error_msg), 500
+@app.route('/visualizations/<path:filename>')
+def serve_visualizations(filename):
+"""Serve visualization files"""
+try:

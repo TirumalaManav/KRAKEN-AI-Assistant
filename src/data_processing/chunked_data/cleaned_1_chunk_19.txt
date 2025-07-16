@@ -1,0 +1,7 @@
+elif dataset_name == 'PaviaU':
+# Load the image
+img = open_file(folder + 'PaviaU.mat')['paviaU']
+rgb_bands = (55, 41, 12)
+gt = open_file(folder + 'PaviaU_gt.mat')['paviaU_gt']
+label_values = ['Undefined', 'Asphalt', 'Meadows', 'Gravel', 'Trees',
+'Painted metal sheets', 'Bare Soil', 'Bitumen',

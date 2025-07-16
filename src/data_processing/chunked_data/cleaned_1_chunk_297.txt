@@ -1,0 +1,7 @@
+# "the value of B1 is set to be 80"
+self.conv1 = nn.Conv2d(input_channels, 80, (3, 3))
+self.pool1 = nn.MaxPool2d((2, 2))
+self.conv1_bn = nn.BatchNorm2d(80)
+self.features_sizes = self._get_sizes()
+self.fc_enc = nn.Linear(self.features_sizes[2], n_classes)
+# Decoder

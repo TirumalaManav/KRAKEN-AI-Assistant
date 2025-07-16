@@ -1,0 +1,9 @@
+'model_type': 'CNN'
+},
+'images': {
+'comparison': f'/visualizations/{files["comparison"]}',
+'confusion_matrix': f'/visualizations/{files["confusion_matrix"]}',
+'training_history': f'/visualizations/{files["training_history_plot"]}'
+},
+'reports': {
+'classification': classification_report,

@@ -1,0 +1,5 @@
+criterion = (nn.CrossEntropyLoss(weight=kwargs['weights']), lambda rec, data: F.mse_loss(rec, data[:,:,:,patch_size//2,patch_size//2].squeeze()))
+elif name == 'boulch':
+kwargs['supervision'] = 'semi'
+kwargs.setdefault('patch_size', 1)
+kwargs.setdefault('epoch', 100)

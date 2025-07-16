@@ -1,0 +1,11 @@
+if user_files:
+logger.warning(f"User {username} already exists")
+return jsonify({
+"success": False,
+"message": "User already registered",
+"redirect": url_for('login')
+}), 409
+if not username or not image_data:
+logger.error("Missing username or image data")
+return jsonify({
+"success": False,

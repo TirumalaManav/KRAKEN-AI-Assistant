@@ -1,0 +1,7 @@
+if not os.path.exists(label_file_path):
+raise FileNotFoundError(f"Label file not found: {label_file_path}")
+logger.info(f"Validated files for dataset: {dataset_name}")
+return True
+except Exception as e:
+logger.error(f"Error validating dataset files: {str(e)}")
+raise

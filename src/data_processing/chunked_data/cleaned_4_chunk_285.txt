@@ -1,0 +1,7 @@
+'confidence_tracker': ConfidenceTracker(),
+'color': (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)),
+'prev_center': (box[0] + box[2]//2, box[1] + box[3]//2),
+'accumulator': TemporalEvidenceAccumulator(),
+'kalman': EnhancedKalmanBox(box),
+'prev_frame': None
+}

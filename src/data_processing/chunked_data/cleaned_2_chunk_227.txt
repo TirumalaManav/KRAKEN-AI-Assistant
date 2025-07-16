@@ -1,0 +1,15 @@
+monitor=monitor_metric,
+save_best_only=True,
+verbose=1,
+save_format='tf'
+)
+]
+logger.info("Starting model training...")
+history = model.fit(
+train_dataset,
+validation_data=test_dataset,
+epochs=epochs,
+callbacks=callbacks,
+verbose=1
+)
+end_time = datetime.utcnow()

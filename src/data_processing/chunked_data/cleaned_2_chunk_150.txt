@@ -1,0 +1,9 @@
+continue
+self.logger.error("Face detection failed with all backends")
+return None
+except Exception as e:
+self.logger.error(f"Face feature extraction failed: {e}")
+return None
+def register_user(self, username, passphrase, base64_image):
+"""Register a new user with their face biometric data."""
+try:

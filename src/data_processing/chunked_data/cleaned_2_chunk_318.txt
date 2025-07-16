@@ -1,0 +1,5 @@
+# Plot Training vs Validation Accuracy
+ax1 = fig.add_subplot(gs[0, 0])
+if 'classifier_accuracy' in history:
+ax1.plot(history['classifier_accuracy'], 'b-', label='Training', marker='o', markersize=4)
+ax1.plot(history['val_classifier_accuracy'], 'r-', label='Validation', marker='o', markersize=4)

@@ -1,0 +1,11 @@
+tracker.reset_tracking()
+except Exception as e:
+logger.error(f"Error in main loop: {e}")
+break
+tracker.release()
+cv2.destroyAllWindows()
+import cv2
+import numpy as np
+from collections import deque
+from ultralytics import YOLO
+class LocalizationApp:

@@ -1,0 +1,12 @@
+<img src="logo.png" alt="Logo" class="logo">
+<h1>HSI Analysis</h1>
+</div>
+<div class="user-info">
+<i class="fas fa-user"></i>
+<span>{{ data.username }}</span>
+</div>
+<div class="timestamp">
+<i class="fas fa-clock"></i>
+<span>{{ data.timestamp }}</span>
+</div>
+<div class="nav-menu">

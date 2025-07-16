@@ -1,0 +1,6 @@
+dataset_name = file.split('_')[0]
+if dataset_name:  # Ensure dataset name is not empty
+processed_datasets.add(dataset_name)
+logger.debug(f"Extracted dataset name '{dataset_name}' from file '{file}'")
+# Validate and add processed datasets
+for dataset in processed_datasets:

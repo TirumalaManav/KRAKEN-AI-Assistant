@@ -1,0 +1,7 @@
+# Get the latest visualization directory
+vis_dir = get_latest_visualization_dir()
+if not vis_dir:
+error_msg = "Visualization directory not found. Please train the model first."
+logger.error(error_msg)
+return render_template('error.html', message=error_msg), 404
+# Get dataset files

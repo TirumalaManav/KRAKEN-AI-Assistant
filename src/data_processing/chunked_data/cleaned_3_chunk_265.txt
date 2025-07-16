@@ -1,0 +1,17 @@
+background-color: var(--background-color);
+}
+.file-upload i {
+font-size: 2rem;
+color: var(--secondary-color);
+margin-bottom: 1rem;
+}
+.file-upload p {
+color: var(--text-secondary);
+margin: 0.5rem 0;
+}
+.validation-message {
+margin-top: 1rem;
+padding: 1rem;
+border-radius: 0.5rem;
+font-size: 0.9rem;
+}

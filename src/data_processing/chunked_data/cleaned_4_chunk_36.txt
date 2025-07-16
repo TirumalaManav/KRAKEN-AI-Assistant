@@ -1,0 +1,7 @@
+roi,
+object_type='large' if max(w, h) > 200 else 'small' if max(w, h) < 50 else None
+)
+orb_similarity = 0.0
+if descriptors is not None and len(descriptors) > 0:
+for stored_descriptors in self.feature_memory:
+matches = self.matcher.match(descriptors, stored_descriptors)

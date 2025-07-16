@@ -1,0 +1,8 @@
+vis_dir, metrics = predictor.visualize_results(
+ground_truth, predicted_labels, dataset_name, latest_dir, model_metadata
+)
+logger.info(f"""
+Completed processing {dataset_name}:
+- Model type: {model_type}
+- Visualization saved in: {vis_dir}
+- Overall accuracy: {metrics['accuracy']:.2f}%

@@ -1,0 +1,12 @@
+return []
+boxes_np = np.array(boxes, dtype=float)
+pick = []
+x1 = boxes_np[:, 0]
+y1 = boxes_np[:, 1]
+x2 = boxes_np[:, 0] + boxes_np[:, 2]
+y2 = boxes_np[:, 1] + boxes_np[:, 3]
+area = (x2 - x1 + 1) * (y2 - y1 + 1)
+idxs = np.argsort(y2)
+while len(idxs) > 0:
+last = idxs[-1]
+pick.append(last)

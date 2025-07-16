@@ -1,0 +1,9 @@
+"absent will be set by the model)")
+group_train.add_argument('--batch_size', type=int,
+help="Batch size (optional, if absent will be set by the model")
+args = parser.parse_args()
+CUDA_DEVICE = get_device(args.cuda)
+MODEL = args.model
+# Testing file
+MAT = args.mat
+N_CLASSES = args.n_classes

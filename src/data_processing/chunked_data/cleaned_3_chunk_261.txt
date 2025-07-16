@@ -1,0 +1,19 @@
+}
+.card-header h2 {
+font-size: 1.25rem;
+color: var(--text-primary);
+}
+/* Form Elements */
+.form-group {
+margin-bottom: 1.5rem;
+}
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+color: var(--text-primary);
+font-weight: 500;
+}
+.select-wrapper {
+position: relative;
+margin-bottom: 1rem;
+}

@@ -1,0 +1,10 @@
+return cap
+except Exception as e:
+logger.error(f"Error initializing video: {e}")
+return None
+def process_frame(self, frame):
+"""Process a single frame and return tracking results with FPS"""
+try:
+if not self.model or not self.cap or frame is None:
+return None, None, 0.0
+current_time = time.time()

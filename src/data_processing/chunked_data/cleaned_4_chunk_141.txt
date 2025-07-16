@@ -1,0 +1,5 @@
+int(blend * g.tracked_object['kalman_box'][2] + (1-blend) * redetected_box[2]),
+int(blend * g.tracked_object['kalman_box'][3] + (1-blend) * redetected_box[3])
+)
+if lost or g.tracked_object['confidence_tracker'].time_since_update > 30:
+logger.info("Lost track of object; removing from tracking list")

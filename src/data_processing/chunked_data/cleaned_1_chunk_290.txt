@@ -1,0 +1,9 @@
+self.fc2 = nn.Linear(1024, n_classes)
+self.apply(self.weight_init)
+def _get_final_flattened_size(self):
+with torch.no_grad():
+x = torch.zeros((1, 1, self.input_channels,
+self.patch_size, self.patch_size))
+x = F.relu(self.conv1_bn(self.conv1(x)))
+x = self.pool1(x)
+print(x.size())

@@ -1,0 +1,9 @@
+x = encoder_modules[-1](x)
+print(x.size())
+encoder_modules.append(nn.BatchNorm1d(p2))
+x = encoder_modules[-1](x)
+print(x.size())
+n = n // 2
+encoder_modules.append(nn.Conv1d(planes, 3, 3, padding=1))
+encoder_modules.append(nn.Tanh())
+self.encoder = nn.Sequential(*encoder_modules)

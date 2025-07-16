@@ -1,0 +1,6 @@
+return (None, False)
+# Use the smallest candidate as the anchor.
+min_width = min(widths)
+min_height = min(heights)
+if (median_width <= min_width * (1 + self.position_tolerance_ratio) and
+median_height <= min_height * (1 + self.position_tolerance_ratio)):

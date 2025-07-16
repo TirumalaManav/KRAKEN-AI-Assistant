@@ -1,0 +1,14 @@
+box-shadow: var(--shadow);
+}
+/* Results Grid */
+.results-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap: 2rem;
+}
+/* Cards */
+.card {
+background-color: var(--card-background);
+border-radius: 12px;
+box-shadow: var(--shadow);
+overflow: hidden;

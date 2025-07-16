@@ -1,0 +1,7 @@
+self.initial_size = (bbox[2], bbox[3])
+self.motion_model.set_object_size(bbox)
+self.motion_model.update(bbox)
+# Use motion prediction for hypersonic objects
+predicted_pos = self.motion_model.predict_next_position()
+if predicted_pos is not None:
+center_x = bbox[0] + bbox[2]/2

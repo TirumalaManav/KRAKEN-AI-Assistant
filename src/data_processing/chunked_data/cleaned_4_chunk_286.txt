@@ -1,0 +1,6 @@
+'prev_frame': None
+}
+self.global_vars.mode = "tracking"
+self.global_vars.init_rect = None
+self.global_vars.tracked_object['confidence_tracker'].appearance_model.original_template = cv2.cvtColor(
+self.global_vars.frame[box[1]:box[1]+box[3], box[0]:box[0]+box[2]], cv2.COLOR_BGR2GRAY)

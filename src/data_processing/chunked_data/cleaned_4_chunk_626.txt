@@ -1,0 +1,6 @@
+x, y, w, h = tracker_instance['kalman_box']
+tracker_instance['kalman_box'] = (int(x + dx), int(y + dy), w, h)
+conf, lost = tracker_instance['confidence_tracker'].update(frame,
+tracker_instance['kalman_box'],
+outputs.get('score', 0.8))
+if lost:

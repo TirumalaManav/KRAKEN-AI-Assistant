@@ -1,0 +1,12 @@
+kdf = PBKDF2HMAC(
+algorithm=hashes.SHA512(),
+length=32,
+salt=salt,
+iterations=100000,
+backend=default_backend()
+)
+key = base64.urlsafe_b64encode(kdf.derive(passphrase.encode()))
+return key, salt
+except Exception as e:
+self.logger.error(f"Dynamic key generation failed: {e}")
+return None, None

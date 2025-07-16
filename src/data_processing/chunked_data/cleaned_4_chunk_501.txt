@@ -1,0 +1,9 @@
+if best[2] * best[3] < self.MIN_AREA * 4:
+self.aggregate_count += 1
+if self.aggregate_detection is None:
+self.aggregate_detection = best
+else:
+ax, ay, aw, ah, acx, acy, _ = self.aggregate_detection
+bx, by, bw, bh, bcx, bcy = best[:6]
+agg_x = int((ax + bx) / 2)
+agg_y = int((ay + by) / 2)

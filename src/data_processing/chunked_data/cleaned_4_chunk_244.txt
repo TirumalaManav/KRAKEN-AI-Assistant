@@ -1,0 +1,4 @@
+0.2 * iou(bbox, kalman_bbox) +
+0.15 * (1.0 - min(self.motion_model.mahalanobis_distance(bbox) / 5.0, 1.0)) +
+0.1 * min(bbox[2] / (kalman_bbox[2] + 1e-6), kalman_bbox[2] / (bbox[2] + 1e-6)) *
+min(bbox[3] / (kalman_bbox[3] + 1e-6), kalman_bbox[3] / (bbox[3] + 1e-6))

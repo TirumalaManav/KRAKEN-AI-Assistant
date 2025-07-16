@@ -1,0 +1,5 @@
+prev_center = g.tracked_object['prev_center']
+object_size = max(fused_box[2], fused_box[3]) / 100.0
+jump_threshold = JUMP_THRESHOLD_BASE * object_size
+jump_distance = np.hypot(new_center[0] - prev_center[0], new_center[1] - prev_center[1])
+if jump_distance > jump_threshold:

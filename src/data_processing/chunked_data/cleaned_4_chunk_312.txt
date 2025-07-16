@@ -1,0 +1,10 @@
+g.tracking_started = False
+g.kalman_initialized = False
+g.mode = "selection"
+g.init_rect = get_adaptive_bbox(g.frame, x, y)
+g.click_point = (x, y)
+except Exception as e:
+logger.error(f"Error in mouse callback: {e}")
+if __name__ == "__main__":
+tracker = TrackerManager()
+if tracker.model is None:

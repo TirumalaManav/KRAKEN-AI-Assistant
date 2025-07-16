@@ -1,0 +1,8 @@
+return keypoints, descriptors
+def get_precise_object_boundaries(self, frame, initial_bbox, spectrum_type=None):
+"""
+Enhanced boundary detection with context awareness
+"""
+x, y, w, h = [int(v) for v in initial_bbox]
+search_margin = max(int(min(w, h) * 0.3), 30)
+roi_x = max(0, x - search_margin)

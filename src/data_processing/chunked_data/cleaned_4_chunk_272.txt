@@ -1,0 +1,4 @@
+tracker_confidence = outputs.get('score', 0.8)
+kalman_bbox = self.global_vars.tracked_object['kalman'].update(bbox, tracker_confidence)
+tracker_weight = max(0.3, min(0.7, tracker_confidence))
+size_weight = 0.7 if min(bbox[2]/kalman_bbox[2] if kalman_bbox[2] else 1,

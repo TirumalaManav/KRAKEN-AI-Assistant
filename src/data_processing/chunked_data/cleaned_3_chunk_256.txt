@@ -1,0 +1,15 @@
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: background 0.3s;
+}
+.dark-mode-toggle:hover {
+background: rgba(255, 255, 255, 1);
+}
+.dark-mode-toggle i {
+color: var(--primary-color);
+font-size: 1.2rem;
+}

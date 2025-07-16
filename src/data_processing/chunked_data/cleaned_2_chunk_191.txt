@@ -1,0 +1,7 @@
+j - patch_size // 2:j + patch_size // 2 + 1, :]
+patches.append(patch)
+valid_labels.append(labels[i, j])
+patch_count += 1
+patches_array = np.array(patches)
+valid_labels_array = np.array(valid_labels)
+logger.info(f"Patch extraction completed. Total patches extracted: {patch_count}")

@@ -1,0 +1,5 @@
+self.conv4 = nn.Conv3d(
+35, 35, (2, 1, 1), dilation=dilation, stride=(2, 1, 1), padding=(1, 0, 0))
+#self.dropout = nn.Dropout(p=0.5)
+self.features_size = self._get_final_flattened_size()
+# The architecture ends with a fully connected layer where the number

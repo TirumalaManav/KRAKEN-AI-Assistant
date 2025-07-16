@@ -1,0 +1,10 @@
+# Finalize the rectangle
+drawing = False
+if start_point and end_point:
+x1, y1 = start_point
+x2, y2 = end_point
+new_box = [min(x1, x2), min(y1, y2), max(x1, x2), max(y1, y2)]
+if __name__ == '__main__':
+# load config
+cfg.merge_from_file(CONFIG_PATH)
+cfg.CUDA = torch.cuda.is_available() and cfg.CUDA

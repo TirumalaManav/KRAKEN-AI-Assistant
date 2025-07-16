@@ -1,0 +1,6 @@
+return objects, thresh_frame
+def process_frame(self, frame, force_refresh=False, lock_on_override=False):
+gray, enhanced = self.preprocess_frame(frame)
+self.frame_buffer.append(gray)
+bg_model_ema = self.compute_background_model_ema(gray)
+if force_refresh:

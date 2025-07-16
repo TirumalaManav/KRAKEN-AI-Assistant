@@ -1,0 +1,6 @@
+self.spectrum_type = spectrum_type
+self._initialize_feature_extractor(spectrum_type)
+def _initialize_feature_extractor(self, spectrum_type=None):
+params = {'nfeatures': 2000, 'scaleFactor': 1.15, 'nlevels': 10,
+'edgeThreshold': 35, 'patchSize': 37, 'fastThreshold': 15}
+if spectrum_type == "MWIR":

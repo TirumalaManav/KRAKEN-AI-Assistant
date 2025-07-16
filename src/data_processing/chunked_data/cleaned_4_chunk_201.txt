@@ -1,0 +1,4 @@
+orb_similarity = max(orb_similarity, 1.0 - (avg_distance / 100.0))
+if self.template is not None and max(w, h) > 200:
+gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY) if len(roi.shape) == 3 else roi.copy()
+resized_template = cv2.resize(self.template, (w, h))

@@ -1,0 +1,7 @@
+predictions.append(batch_predictions)
+if (i + 1) % 10 == 0:
+logger.info(f"Processed batch {i + 1}/{n_batches}")
+# Combine predictions
+predictions = np.concatenate(predictions, axis=0)
+predicted_labels = np.argmax(predictions, axis=-1) + 1  # Add 1 to match original labels
+# Reconstruct full image

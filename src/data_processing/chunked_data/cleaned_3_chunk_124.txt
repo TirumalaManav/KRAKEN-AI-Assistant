@@ -1,0 +1,4 @@
+<h3>Developed By</h3>
+<div class="footer-links">
+<a href="https://www.linkedin.com/in/bhaskar-das-99969117/" target="_blank">Bhaskar Das</a>
+<a href="https://www.linkedin.com/in/lalan-kumar-983267229/" target="_blank">Lalan Kumar</a>

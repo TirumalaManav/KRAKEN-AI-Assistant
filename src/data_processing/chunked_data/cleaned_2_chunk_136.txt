@@ -1,0 +1,10 @@
+logging.basicConfig(
+level=logging.INFO,
+format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+handlers=[
+logging.FileHandler('security_system.log'),
+logging.StreamHandler()
+]
+)
+self.logger = logging.getLogger('CyberSecuritySystem')
+# Setup directory structure

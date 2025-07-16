@@ -1,0 +1,5 @@
+hyperparams = dict((k, v) for k, v in hyperparams.items() if v is not None)
+display_dataset(img, gt, RGB_BANDS, LABEL_VALUES, palette, viz)
+color_gt = convert_to_color(gt)
+if DATAVIZ:
+mean_spectrums = explore_spectrums(img, gt, LABEL_VALUES, viz, ignored_labels=IGNORED_LABELS)

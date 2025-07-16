@@ -1,0 +1,14 @@
+<p>{{ data.overview.model_type }}</p>
+</div>
+<div class="summary-item">
+<h3>Training Time</h3>
+<p>{{ data.overview.training_time }}</p>
+</div>
+<div class="summary-item">
+<h3>Accuracy</h3>
+<p>{{ data.overview.accuracy }}</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Prediction Comparison -->

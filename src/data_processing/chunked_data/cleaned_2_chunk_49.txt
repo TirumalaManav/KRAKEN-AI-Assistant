@@ -1,0 +1,8 @@
+"user": "TirumalaManav"
+})
+# Validate .mat files
+mat_files = [f for f in os.listdir(full_path) if f.endswith('.mat')]
+gt_files = [f for f in mat_files if '_gt' in f.lower()]
+data_files = [f for f in mat_files if '_gt' not in f.lower()]
+if not gt_files or not data_files:
+return jsonify({

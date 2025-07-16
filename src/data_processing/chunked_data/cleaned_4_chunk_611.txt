@@ -1,0 +1,9 @@
+g.message_display = "Object tracking."
+else:
+logger.warning("No selection made. Please select an object before pressing 'c'.")
+else:
+g.single_trackers = []
+if g.init_rect is not None:
+tracker.init(frame, g.init_rect)
+new_tracker = {}
+new_tracker['tracker'] = tracker

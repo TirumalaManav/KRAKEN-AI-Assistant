@@ -1,0 +1,9 @@
+init.kaiming_normal_(m.weight)
+init.zeros_(m.bias)
+def __init__(self, input_channels, n_classes, planes=16):
+super(BoulchEtAl, self).__init__()
+self.input_channels = input_channels
+self.aux_loss_weight = 0.1
+encoder_modules = []
+n = input_channels
+with torch.no_grad():

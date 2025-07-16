@@ -1,0 +1,7 @@
+fh.setLevel(logging.INFO)
+logger.addHandler(fh)
+# Load and preprocess data
+logger.info("Loading and preprocessing data...")
+images, labels = load_hyperspectral_data(data_dir, dataset_name)
+images = apply_pca(images, n_components)
+# Get number of classes and create label values

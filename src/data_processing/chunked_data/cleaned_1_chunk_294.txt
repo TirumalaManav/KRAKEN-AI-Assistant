@@ -1,0 +1,9 @@
+return x
+class LiuEtAl(nn.Module):
+"""
+A semi-supervised convolutional neural network for hyperspectral image classification
+Bing Liu, Xuchu Yu, Pengqiang Zhang, Xiong Tan, Anzhu Yu, Zhixiang Xue
+Remote Sensing Letters, 2017
+"""
+@staticmethod
+def weight_init(m):

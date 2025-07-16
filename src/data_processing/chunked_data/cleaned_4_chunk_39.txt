@@ -1,0 +1,8 @@
+template_similarity = np.max(result)
+orb_similarity = 0.7 * orb_similarity + 0.3 * template_similarity
+except:
+pass
+if len(roi.shape) == 3:
+hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+curr_hist = cv2.calcHist([hsv_roi], channels=[0, 1], mask=None,
+histSize=[50, 60], ranges=[0, 180, 0, 256])

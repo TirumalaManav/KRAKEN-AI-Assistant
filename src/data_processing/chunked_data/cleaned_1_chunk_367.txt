@@ -1,0 +1,7 @@
+Test a model on a specific image
+"""
+net.eval()
+patch_size = hyperparams['patch_size']
+center_pixel = hyperparams['center_pixel']
+batch_size, device = hyperparams['batch_size'], hyperparams['device']
+n_classes = hyperparams['n_classes']

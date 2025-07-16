@@ -1,0 +1,15 @@
+optimizer='adam',
+loss={
+'decoded': 'mse',
+'classifier': 'sparse_categorical_crossentropy'
+},
+loss_weights={
+'decoded': 1.0,
+'classifier': 1.0
+},
+metrics={
+'classifier': 'accuracy'
+}
+)
+logger.info("Model compiled with multiple losses and metrics for autoencoder-classifier")
+else:

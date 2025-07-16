@@ -1,0 +1,4 @@
+current_velocity = np.array([center_x, center_y]) - self.position_history[-1]
+acceleration = current_velocity - self.velocity_history[-1]
+return not (np.linalg.norm(acceleration) > self.max_acceleration * 2.0 or
+np.linalg.norm(current_velocity) > self.max_velocity * 2.0)

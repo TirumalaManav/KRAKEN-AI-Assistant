@@ -1,0 +1,7 @@
+else:
+acc_data = history['accuracy']
+val_acc_data = history['val_accuracy']
+# Calculate moving averages
+window = 3
+acc_ma = np.convolve(acc_data, np.ones(window)/window, mode='valid')
+val_acc_ma = np.convolve(val_acc_data, np.ones(window)/window, mode='valid')

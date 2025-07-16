@@ -1,0 +1,7 @@
+cfg.merge_from_file(args.config)
+cfg.CUDA = torch.cuda.is_available()
+device = torch.device('cuda' if cfg.CUDA else 'cpu')
+try:
+model = ModelBuilder()
+model.load_state_dict(torch.load(args.snapshot, map_location=lambda storage, loc: storage.cpu()))
+model.eval().to(device)

@@ -1,0 +1,10 @@
+},
+'PaviaC': {
+'data_file': 'Pavia.mat',
+'label_file': 'Pavia_gt.mat',
+'data_keys': ['pavia'],
+'label_keys': ['pavia_gt'],
+'description': 'Pavia Centre scene',
+'n_classes': 9,
+'n_bands': 102,
+'class_names': ['Background', 'Water', 'Trees', 'Asphalt', 'Self-Blocking Bricks',

@@ -1,0 +1,9 @@
+}), 400
+# Check if user exists
+user_files = [f for f in os.listdir(UPLOAD_FOLDER)
+if f.startswith(f'{username}_register_')]
+if not user_files:
+logger.warning(f"User {username} not found")
+return jsonify({
+"success": False,
+"message": "User not found. Please register first.",

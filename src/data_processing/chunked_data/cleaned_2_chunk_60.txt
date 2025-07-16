@@ -1,0 +1,10 @@
+"architecture": [
+"Encoder: Conv2D(64,128,256) with BatchNorm",
+"Decoder: ConvTranspose2D(128,64) → Conv2D(n_bands)",
+"Classifier: Dense(512) → Dropout(0.5) → Dense(n_classes)"
+],
+"input_shape": "(7, 7, n_bands)",
+"optimizer": "Adam with ExponentialDecay",
+"learning_rate": "0.001 with decay"
+}
+}

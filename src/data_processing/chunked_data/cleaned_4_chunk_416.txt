@@ -1,0 +1,9 @@
+self.candidate_buffer.clear()
+return (refined_bbox, True)
+return (None, False)
+except Exception as e:
+logger.error(f"Error in temporal update: {e}")
+return (None, False)
+class TrackerManager:
+"""Main tracking manager integrating all components"""
+def __init__(self, video_path=None):

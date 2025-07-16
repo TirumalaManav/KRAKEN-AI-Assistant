@@ -1,0 +1,5 @@
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])
+else:
+raise KeyError("{} model is unknown.".format(name))
+model = model.to(device)
+epoch = kwargs.setdefault('epoch', 100)

@@ -1,0 +1,15 @@
+background: #00d4ff;
+}
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+background: #ff6f61;
+}
+/* Hero Section */
+.hero-section {
+background: linear-gradient(45deg, #00d4ff, #ff6f61);
+color: white;
+padding: 150px 0 200px;
+position: relative;
+overflow: hidden;
+perspective: 1000px;
+}
+#particles-js {

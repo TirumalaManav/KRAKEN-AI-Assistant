@@ -1,0 +1,5 @@
+# and a fully-connected layer (F1)
+# we fix the spatial size of the 3D convolution kernels to 3 × 3
+# while only slightly varying the spectral depth of the kernels
+# for the Pavia University and Indian Pines scenes, those in C1 and C2
+# were set to seven and three, respectively

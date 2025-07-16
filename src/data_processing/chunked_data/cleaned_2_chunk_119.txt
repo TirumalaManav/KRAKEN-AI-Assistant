@@ -1,0 +1,10 @@
+return []
+# Flask routes
+@app.route('/prediction')
+def prediction():
+"""Serve the prediction page"""
+try:
+# Get available datasets with visualizations
+datasets = get_available_datasets()
+if not datasets:
+error_msg = "No valid datasets with visualizations available. Please train the model first."

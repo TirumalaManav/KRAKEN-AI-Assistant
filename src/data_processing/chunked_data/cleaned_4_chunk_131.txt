@@ -1,0 +1,7 @@
+outputs = tracker.track(frame)
+bbox = outputs['bbox']
+accumulator = g.tracked_object['accumulator']
+refined_bbox, confirmed = accumulator.update(bbox, g.frame_idx)
+if confirmed:
+bbox = refined_bbox
+if prev_frame is not None:

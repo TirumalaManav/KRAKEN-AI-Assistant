@@ -1,0 +1,6 @@
+x1 = max(0, x - window_size // 2)
+y1 = max(0, y - window_size // 2)
+x2 = min(w, x + window_size // 2)
+y2 = min(h, y + window_size // 2)
+initial_bbox = (x1, y1, x2 - x1, y2 - y1)
+return temp_appearance_model.get_precise_object_boundaries(frame, initial_bbox)

@@ -1,0 +1,5 @@
+avg_intensity = np.mean(fused_frame)
+low_visibility = avg_intensity < self.LOW_VISIBILITY_THRESHOLD
+# Stage 2: Localization preprocessing
+detections, thresh_frame = self.localizer.process_frame(
+frame, force_refresh=self.force_refresh_flag, lock_on_override=self.lock_on_flag)

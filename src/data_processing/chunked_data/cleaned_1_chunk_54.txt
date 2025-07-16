@@ -1,0 +1,8 @@
+" various hyperspectral datasets")
+parser.add_argument('--model', type=str, default=None,
+help="Model to train. Available:\n"
+"SVM (linear), "
+"SVM_grid (grid search on linear, poly and RBF kernels), "
+"baseline (fully connected NN), "
+"hu (1D CNN), "
+"hamida (3D CNN + 1D classifier), "

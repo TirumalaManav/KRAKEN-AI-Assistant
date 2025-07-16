@@ -1,0 +1,4 @@
+x, y, w, h = self.global_vars.tracked_object['kalman_box']
+self.global_vars.tracked_object['kalman_box'] = (int(x + dx), int(y + dy), w, h)
+self.global_vars.tracked_object['prev_center'] = (int(x + dx + w/2), int(y + dy + h/2))
+tracker_confidence = outputs.get('score', 0.8)

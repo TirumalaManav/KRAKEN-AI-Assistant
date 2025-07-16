@@ -1,0 +1,7 @@
+start_time = datetime.datetime.strptime("2025-01-23 13:55:35", "%Y-%m-%d %H:%M:%S")
+cleanup_gpu_memory()
+logger.info(f"""
+=====================================================
+TRAINING SESSION STARTED
+Time (UTC): 2025-01-23 13:55:35
+User: TirumalaManav

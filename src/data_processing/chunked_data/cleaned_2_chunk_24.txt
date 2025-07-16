@@ -1,0 +1,9 @@
+except Exception as e:
+logger.error(f"Error saving image: {str(e)}")
+return jsonify({
+"success": False,
+"message": "Error saving image. Please try again."
+}), 500
+# Register the user with your security system
+try:
+passphrase = "default_passphrase"

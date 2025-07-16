@@ -1,0 +1,6 @@
+if not data_arrays or not gt_arrays:
+raise ValueError("Invalid data format in .mat files")
+logger.info(f"Data array shape: {data_arrays[0].shape}")
+logger.info(f"Ground truth array shape: {gt_arrays[0].shape}")
+return jsonify({
+"success": True,

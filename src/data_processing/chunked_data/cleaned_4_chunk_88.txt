@@ -1,0 +1,12 @@
+self.last_refined_bbox = None
+self.hit_streak = 0
+self.time_since_update = 0
+def update(self, bbox, frame_index):
+if bbox is None:
+self.missed_count += 1
+self.time_since_update += 1
+if self.time_since_update >= self.max_age:
+self.reset()
+return (None, False)
+else:
+self.missed_count = 0

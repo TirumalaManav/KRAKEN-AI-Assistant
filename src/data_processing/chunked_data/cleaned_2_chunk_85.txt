@@ -1,0 +1,10 @@
+"loss": float(history.history['loss'][-1]),
+"val_loss": float(history.history['val_loss'][-1])
+}
+training_results = {
+"timestamp": "2025-01-23 13:55:35",
+"user": "TirumalaManav",
+"dataset": dataset_name,
+"model_type": model_type,
+"hyperparameters": hyperparameters,
+"final_metrics": final_metrics,

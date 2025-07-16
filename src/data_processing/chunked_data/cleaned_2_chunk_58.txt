@@ -1,0 +1,11 @@
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+})
+# Enhanced model configurations
+model_config = {
+'cnn': {
+"type": "CNN",
+"architecture": [
+"Conv2D(64) → BatchNorm → ReLU → MaxPool",
+"Conv2D(128) → BatchNorm → ReLU → MaxPool",
+"Conv2D(256) → BatchNorm → ReLU → MaxPool",

@@ -1,0 +1,5 @@
+gt_content = sio.loadmat(os.path.join(full_path, gt_files[0]))
+data_arrays = [v for k, v in data_content.items()
+if isinstance(v, np.ndarray) and not k.startswith('__')]
+gt_arrays = [v for k, v in gt_content.items()
+if isinstance(v, np.ndarray) and not k.startswith('__')]

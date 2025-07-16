@@ -1,0 +1,8 @@
+json.dump(training_results, f, indent=4)
+model_path = os.path.join(result_dir, f'{model_type}_model')
+model.save(model_path)
+logger.info(f"Model and results saved to: {result_dir}")
+logger.removeHandler(file_handler)
+cleanup_gpu_memory()
+# After training, run prediction.py
+try:

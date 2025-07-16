@@ -1,0 +1,4 @@
+if not image_file or not label_file:
+logger.error(f"Image or label .mat files not found in the '{dataset_name}' dataset directory")
+raise FileNotFoundError(f"Image or label .mat files not found in the '{dataset_name}' dataset directory.")
+logger.info(f"Found image file: {image_file}")

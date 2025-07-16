@@ -1,0 +1,7 @@
+if max_val > 0.5:
+new_x = search_x + max_loc[0]
+new_y = search_y + max_loc[1]
+return (new_x, new_y, w, h)
+return last_bbox
+def main():
+parser = argparse.ArgumentParser(description='Single-Object Tracking System')

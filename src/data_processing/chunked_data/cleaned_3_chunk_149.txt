@@ -1,0 +1,13 @@
+color: var(--white);
+}
+.btn-primary:hover {
+background: linear-gradient(45deg, var(--coral), var(--cyan)); /* Reverse gradient on hover */
+}
+.btn-secondary {
+background-color: var(--light-gray);
+color: var(--text-primary);
+}
+.btn:hover {
+transform: translateY(-2px);
+box-shadow: var(--shadow);
+}

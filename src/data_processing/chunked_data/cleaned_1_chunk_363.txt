@@ -1,0 +1,5 @@
+if metric > best_metric:
+best_metric = metric
+if best_model_path:
+os.remove(best_model_path)  # Remove the previous best model file
+best_model_path = save_model(net, camel_to_snake(str(net.__class__.__name__)), data_loader.dataset.name, epoch=e, metric=abs(metric))

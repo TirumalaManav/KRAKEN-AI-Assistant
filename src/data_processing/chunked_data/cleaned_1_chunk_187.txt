@@ -1,0 +1,5 @@
+# to 0.05, which is manually decreased by a factor of 10 when the validation
+# error stopped decreasing. Prior to the termination the learning rate was
+# reduced two times at 15th and 25th epoch. [...]
+# We trained the network for 30 epochs
+kwargs.setdefault('batch_size', 60)

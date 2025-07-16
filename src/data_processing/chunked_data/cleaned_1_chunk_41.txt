@@ -1,0 +1,9 @@
+if supervision == 'full':
+mask = np.ones_like(gt)
+for l in self.ignored_labels:
+mask[gt == l] = 0
+# Semi-supervised : use all pixels, except padding
+elif supervision == 'semi':
+mask = np.ones_like(gt)
+x_pos, y_pos = np.nonzero(mask)
+p = self.patch_size // 2

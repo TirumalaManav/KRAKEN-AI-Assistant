@@ -1,0 +1,6 @@
+if shift_magnitude > max_shift:
+dampening = max_shift / shift_magnitude
+logger.warning(f"Optical flow shift too high ({shift_magnitude:.1f} > {max_shift:.1f}), dampening")
+return (dx * dampening, dy * dampening)
+return (dx, dy)
+except Exception as e:

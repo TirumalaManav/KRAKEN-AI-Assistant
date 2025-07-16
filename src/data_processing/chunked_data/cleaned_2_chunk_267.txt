@@ -1,0 +1,9 @@
+'Slash pine', 'Oak/Broadleaf', 'Hardwood swamp',
+'Graminoid marsh', 'Spartina marsh', 'Cattail marsh',
+'Salt marsh', 'Mud flats', 'Water', 'Road/Buildings']
+},
+'Botswana': {
+'data_file': 'Botswana.mat',
+'label_file': 'Botswana_gt.mat',
+'data_keys': ['Botswana'],
+'label_keys': ['Botswana_gt'],

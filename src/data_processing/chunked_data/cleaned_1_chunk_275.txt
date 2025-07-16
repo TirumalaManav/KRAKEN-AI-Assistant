@@ -1,0 +1,12 @@
+x3_1 = self.conv3_1(x)
+x3_2 = self.conv3_2(x)
+x3_3 = self.conv3_3(x)
+x3_4 = self.conv3_4(x)
+x = x3_1 + x3_2 + x3_3 + x3_4
+x = self.conv4(x)
+_, t, c, w, h = x.size()
+return t * c * w * h
+def forward(self, x):
+x = F.relu(self.conv1(x))
+x2_1 = self.conv2_1(x)
+x2_2 = self.conv2_2(x)

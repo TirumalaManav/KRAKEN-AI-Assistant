@@ -1,0 +1,6 @@
+logger.info(f"Label shape: {labels.shape}")
+logger.info(f"Unique labels: {set(labels.flatten())}")
+logger.info("Successfully loaded hyperspectral data and labels")
+return images, labels
+except Exception as e:
+logger.error(f"Error occurred while loading hyperspectral data: {str(e)}", exc_info=True)

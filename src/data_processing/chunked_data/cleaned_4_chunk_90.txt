@@ -1,0 +1,9 @@
+bbox[0] + bbox[2] <= lx + lw and
+bbox[1] + bbox[3] <= ly + lh):
+self.candidate_buffer.append((frame_index, bbox))
+else:
+if self.candidate_buffer:
+_, last_bbox = self.candidate_buffer[-1]
+if iou(last_bbox, bbox) < self.iou_threshold:
+self.reset()
+self.candidate_buffer.append((frame_index, bbox))

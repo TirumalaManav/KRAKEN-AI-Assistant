@@ -1,0 +1,15 @@
+border-radius: 8px;
+box-shadow: var(--shadow);
+transition: var(--transition);
+}
+.image-container img:hover {
+transform: scale(1.02);
+}
+/* Confusion Matrix */
+.confusion-matrix-container {
+width: 100%;
+overflow: hidden;
+padding: 1rem;
+}
+.confusion-matrix-container img {
+max-width: 100%;

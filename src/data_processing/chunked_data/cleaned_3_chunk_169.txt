@@ -1,0 +1,19 @@
+margin: 5% auto;
+padding: 2rem;
+width: 90%;
+max-width: 1200px;
+max-height: 90vh;
+overflow-y: auto;
+border-radius: 12px;
+box-shadow: var(--shadow);
+}
+.modal-content img {
+max-width: 100%;
+height: auto;
+}
+.close {
+position: absolute;
+right: 1.5rem;
+top: 1rem;
+font-size: 1.8rem;
+cursor: pointer;

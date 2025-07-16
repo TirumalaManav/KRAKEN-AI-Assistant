@@ -1,0 +1,9 @@
+self.relu7 = nn.ReLU(inplace=True)
+self.maxpool7 = nn.MaxPool2d(kernel_size=1, stride=1)
+# Fully connected layers
+self.fc1 = nn.Linear(4096 * 1 * 1, 1024)
+self.fc2 = nn.Linear(1024, n_classes)
+def forward(self, x):
+# Pass the input through each layer
+x = x.view(-1, 103, 7, 7)
+x = self.conv1(x)

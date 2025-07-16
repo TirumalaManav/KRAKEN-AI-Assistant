@@ -1,0 +1,7 @@
+for file in common_files:
+if not os.path.exists(os.path.join(vis_dir, file)):
+logger.warning(f"Missing common file: {file}")
+return None
+logger.info(f"All files found for dataset: {dataset_name}")
+return files
+except Exception as e:

@@ -1,0 +1,9 @@
+})
+except Exception as e:
+cleanup_gpu_memory()
+current_training_info["is_training"] = False
+logger.error(f"Training error: {str(e)}\n{traceback.format_exc()}")
+if 'file_handler' in locals():
+logger.removeHandler(file_handler)
+return jsonify({
+"success": False,

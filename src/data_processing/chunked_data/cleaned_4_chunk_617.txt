@@ -1,0 +1,7 @@
+if jump_distance > JUMP_THRESHOLD:
+cv2.putText(display_frame, "Tracked Object lost due to jump.", (50, 50),
+cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
+logger.info("Jump distance exceeded threshold; removing tracking object")
+g.tracked_objects.remove(obj)
+continue
+obj['kalman_box'] = new_box

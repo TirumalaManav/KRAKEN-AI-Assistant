@@ -1,0 +1,18 @@
+patience=10,
+restore_best_weights=True
+)
+]
+)
+else:
+history = model.fit(
+train_dataset,
+validation_data=test_dataset,
+epochs=hyperparameters['epochs'],
+callbacks=[
+tf.keras.callbacks.EarlyStopping(
+monitor='val_classifier_accuracy',
+patience=10,
+restore_best_weights=True
+)
+]
+)

@@ -1,0 +1,8 @@
+prediction = self.predict()
+alpha = 0.7
+x = alpha * prediction[0] + (1 - alpha) * x
+y = alpha * prediction[1] + (1 - alpha) * y
+w = alpha * prediction[2] + (1 - alpha) * w
+h = alpha * prediction[3] + (1 - alpha) * h
+self.size_history.append((w, h))
+if len(self.size_history) > 3:

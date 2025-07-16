@@ -1,0 +1,6 @@
+x = x_enc
+x_classif = self.fc_enc(x)
+#x = F.relu(self.fc1_dec_bn(self.fc1_dec(x) + x_enc))
+x = F.relu(self.fc1_dec(x))
+x = F.relu(self.fc2_dec_bn(self.fc2_dec(x) + x_pool1.view(-1, self.features_sizes[1])))
+x = F.relu(self.fc3_dec_bn(self.fc3_dec(x) +x_conv1.view(-1, self.features_sizes[0])))

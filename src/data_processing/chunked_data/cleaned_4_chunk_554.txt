@@ -1,0 +1,7 @@
+return combined_confidence, self.lost_frames_count >= self.lost_frames_threshold
+def check_size_consistency(self, bbox):
+if self.initial_size is None:
+return True
+current_size = (bbox[2], bbox[3])
+if self.initial_size[0] == 0 or self.initial_size[1] == 0:
+self.initial_size = current_size

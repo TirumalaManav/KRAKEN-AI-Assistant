@@ -1,0 +1,8 @@
+plt.legend()
+plt.tight_layout()
+plt.savefig(results_dir / 'autoencoder_training_history.png')
+plt.close()
+# Save models
+logger.info("Saving models...")
+# Save models using TensorFlow SavedModel format
+tf.saved_model.save(cnn_model, str(results_dir / f'cnn_model_{timestamp}'))

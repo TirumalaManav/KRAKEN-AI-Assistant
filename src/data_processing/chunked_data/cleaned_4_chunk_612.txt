@@ -1,0 +1,7 @@
+new_tracker = {}
+new_tracker['tracker'] = tracker
+new_tracker['kalman_box'] = g.init_rect
+new_tracker['confidence_tracker'] = ConfidenceTracker()
+new_tracker['kalman_initialized'] = False
+new_tracker['accumulator'] = TemporalEvidenceAccumulator()
+g.single_trackers.append(new_tracker)

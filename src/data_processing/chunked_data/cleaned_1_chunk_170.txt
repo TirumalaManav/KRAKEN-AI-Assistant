@@ -1,0 +1,5 @@
+#     n_bands = kwargs.setdefault('n_bands', 103)
+#     # Initialize model, loss function, and optimizer
+#     model = CNN(patch_size, center_pixel, n_classes, n_bands).to(device)
+#     criterion = torch.nn.CrossEntropyLoss()
+#     optimizer = torch.optim.Adam(model.parameters(), lr=lr)

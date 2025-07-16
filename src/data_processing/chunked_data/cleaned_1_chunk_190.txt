@@ -1,0 +1,7 @@
+elif name == 'liu':
+kwargs['supervision'] = 'semi'
+# "The learning rate is set to 0.001 empirically. The number of epochs is set to be 40."
+kwargs.setdefault('epoch', 40)
+lr = kwargs.setdefault('lr', 0.001)
+center_pixel = True
+patch_size = kwargs.setdefault('patch_size', 9)

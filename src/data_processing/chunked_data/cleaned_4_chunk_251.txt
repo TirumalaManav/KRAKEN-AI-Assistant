@@ -1,0 +1,6 @@
+except Exception as e:
+logger.error(f"Error in size consistency: {e}")
+return True
+class TemporalEvidenceAccumulator:
+"""Accumulates temporal evidence for stable tracking"""
+def __init__(self, evidence_threshold=3, position_tolerance_ratio=0.3, convergence_threshold=5,

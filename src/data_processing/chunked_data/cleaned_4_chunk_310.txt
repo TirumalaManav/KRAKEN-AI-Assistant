@@ -1,0 +1,5 @@
+g.init_rect = (x1, y1, max(g.drag_start[0], g.drag_end[0]) - x1, max(g.drag_start[1], g.drag_end[1]) - y1)
+elif event == cv2.EVENT_LBUTTONUP and g.dragging:
+g.dragging = False
+g.drag_end = (x, y)
+x1, y1 = min(g.drag_start[0], g.drag_end[0]), min(g.drag_start[1], g.drag_end[1])

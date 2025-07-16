@@ -1,0 +1,7 @@
+h = max(0, yy2 - yy1 + 1)
+overlap = float(w * h) / area[i]
+if overlap > overlapThresh:
+suppress.append(pos)
+idxs = np.delete(idxs, suppress)
+return boxes_np[pick].astype(int).tolist()
+def get_objects(self, thresh_frame, enhanced):

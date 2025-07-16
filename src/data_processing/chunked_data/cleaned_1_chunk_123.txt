@@ -1,0 +1,9 @@
+ignored_labels=None):
+"""Plot sampled spectrums with mean + std for each class.
+Args:
+img: 3D hyperspectral image
+complete_gt: 2D array of labels
+class_names: list of class names
+ignored_labels (optional): list of labels to ignore
+vis : Visdom display
+Returns:

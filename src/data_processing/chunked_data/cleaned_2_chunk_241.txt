@@ -1,0 +1,15 @@
+images,
+labels,
+model_type='autoencoder_classifier',
+patch_size=patch_size,
+batch_size=batch_size
+)
+compile_model_dynamic(ae_model, 'autoencoder_classifier')
+ae_history = train_model(
+ae_model,
+train_dataset,
+test_dataset,
+'autoencoder_classifier',
+epochs
+)
+# Plot Autoencoder results

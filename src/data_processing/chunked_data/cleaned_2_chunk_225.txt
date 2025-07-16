@@ -1,0 +1,7 @@
+elif model_type == 'autoencoder_classifier':
+monitor_metric = 'val_classifier_accuracy'
+else:
+monitor_metric = 'val_loss'
+logger.info(f"Using monitoring metric: {monitor_metric}")
+# Define callbacks
+model_save_path = f'best_model_{model_type}'

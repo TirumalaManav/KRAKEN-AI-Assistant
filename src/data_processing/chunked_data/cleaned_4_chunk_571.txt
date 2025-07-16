@@ -1,0 +1,8 @@
+self.candidate_buffer.append((frame_index, bbox))
+# If we haven't collected enough evidence, return unconfirmed.
+if len(self.candidate_buffer) < self.evidence_threshold:
+return (None, False)
+# Extract candidate center and size from the buffer.
+centers = []
+widths = []
+heights = []

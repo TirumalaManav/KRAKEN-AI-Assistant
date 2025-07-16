@@ -1,0 +1,17 @@
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: var(--shadow);
+}
+/* Training Charts */
+.training-charts {
+display: grid;
+grid-template-columns: 1fr;
+gap: 2rem;
+padding: 1rem;
+}
+.training-charts canvas {
+max-height: 400px !important;
+width: 100% !important;
+}
+.chart-container {

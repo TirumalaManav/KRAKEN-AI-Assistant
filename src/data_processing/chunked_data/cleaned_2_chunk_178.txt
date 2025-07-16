@@ -1,0 +1,7 @@
+None
+)
+if image_key is None:
+logger.error(f"Image data key for '{dataset_name}' not found in the image file {image_file}")
+raise KeyError(f"Image data key for '{dataset_name}' not found in the image file {image_file}.")
+logger.info(f"Found image key: {image_key}")
+images = image_data.get(image_key)

@@ -1,0 +1,13 @@
+50% { text-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(255, 111, 97, 0.8); }
+100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); }
+}
+.nav-links {
+display: flex;
+gap: 2rem;
+list-style: none;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+padding: 0.5rem 1rem;
+border-radius: 25px;

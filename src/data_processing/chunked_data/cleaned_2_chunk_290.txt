@@ -1,0 +1,6 @@
+logger.info(f"Patch size: {metadata['patch_size']}")
+logger.info(f"Training accuracy: {metadata['training_accuracy']:.4f}")
+logger.info(f"Validation accuracy: {metadata['validation_accuracy']:.4f}")
+logger.info(f"Model type: {metadata['model_type']}")
+return metadata
+except Exception as e:

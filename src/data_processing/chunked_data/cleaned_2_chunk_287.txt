@@ -1,0 +1,3 @@
+'n_components': training_results.get('hyperparameters', {}).get('n_components'),
+'patch_size': training_results.get('hyperparameters', {}).get('patch_size'),
+'original_bands': 103 if training_results.get('dataset') == 'PaviaU' else None,

@@ -1,0 +1,6 @@
+return 0.0
+return interArea / float(denom)
+class TemporalEvidenceAccumulator:
+def __init__(self, evidence_threshold=5,
+position_tolerance_ratio=0.2,
+convergence_threshold=3,   # maximum standard deviation in pixels for candidate centers

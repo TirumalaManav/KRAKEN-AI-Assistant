@@ -1,0 +1,7 @@
+best_score = score
+best_contour = cnt
+if best_contour is not None and best_score > 0.3:
+x_cnt, y_cnt, w_cnt, h_cnt = cv2.boundingRect(best_contour)
+return (x + x_cnt - search_margin, y + y_cnt - search_margin, w_cnt, h_cnt)
+if keypoints:
+pts = np.array([kp.pt for kp in keypoints])

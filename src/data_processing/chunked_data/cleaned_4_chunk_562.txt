@@ -1,0 +1,6 @@
+iou_threshold=0.3,         # minimum required IoU between successive candidates
+max_missed_frames=3):
+self.evidence_threshold = evidence_threshold
+self.position_tolerance_ratio = position_tolerance_ratio
+self.convergence_threshold = convergence_threshold
+self.iou_threshold = iou_threshold

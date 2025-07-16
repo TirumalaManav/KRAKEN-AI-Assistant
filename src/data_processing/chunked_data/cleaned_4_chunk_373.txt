@@ -1,0 +1,5 @@
+process_noise[0:2, 0:2] *= 50; process_noise[4:6, 4:6] *= 20; process_noise[8, 8] *= 5
+self.kalman.processNoiseCov = process_noise
+self.kalman.measurementNoiseCov = np.eye(4, dtype=np.float32) * 1e-1
+self.kalman.errorCovPost = np.eye(10, dtype=np.float32)
+x, y, w, h = bbox

@@ -1,0 +1,11 @@
+</div>
+<div class="card-content">
+<div class="image-container">
+<img src="{{ data.images.confusion_matrix }}" alt="Confusion Matrix" class="zoomable">
+</div>
+</div>
+</div>
+<!-- Training History -->
+<div class="card">
+<div class="card-header">
+<h2><i class="fas fa-history"></i> Training History</h2>

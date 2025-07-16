@@ -1,0 +1,11 @@
+MAT = args.mat
+N_CLASSES = args.n_classes
+INFERENCE = args.image
+TEST_STRIDE = args.test_stride
+CHECKPOINT = args.checkpoint
+img_filename = os.path.basename(INFERENCE)
+basename = MODEL + img_filename
+dirname = os.path.dirname(INFERENCE)
+img = open_file(INFERENCE)
+if MAT is not None:
+img = img[MAT]

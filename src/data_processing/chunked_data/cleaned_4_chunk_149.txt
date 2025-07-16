@@ -1,0 +1,11 @@
+if event == cv2.EVENT_LBUTTONDOWN:
+# Start drawing the rectangle
+drawing = True
+start_point = (x, y)
+end_point = None
+elif event == cv2.EVENT_MOUSEMOVE:
+# Update the rectangle as the mouse moves
+if drawing:
+end_point = (x, y)
+elif event == cv2.EVENT_LBUTTONUP:
+# Finalize the rectangle

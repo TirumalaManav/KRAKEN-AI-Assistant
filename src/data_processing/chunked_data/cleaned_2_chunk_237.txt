@@ -1,0 +1,8 @@
+patch_size=patch_size,
+batch_size=batch_size
+)
+compile_model_dynamic(cnn_model, 'standard')
+cnn_history = train_model(cnn_model, train_dataset, test_dataset, 'standard', epochs)
+# Plot CNN training history
+plt.figure(figsize=(12, 4))
+plt.subplot(1, 2, 1)

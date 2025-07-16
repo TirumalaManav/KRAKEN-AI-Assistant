@@ -1,0 +1,8 @@
+International Conference on Pattern Recognition 2018
+"""
+@staticmethod
+def weight_init(m):
+if isinstance(m, (nn.Linear, nn.Conv2d, nn.Conv3d)):
+init.kaiming_uniform_(m.weight)
+init.zeros_(m.bias)
+def __init__(self, input_channels, n_classes, patch_size=3, n_planes=90):

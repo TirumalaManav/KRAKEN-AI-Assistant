@@ -1,0 +1,7 @@
+if object_type:
+self.feature_extractor.setMaxFeatures(original_nfeatures)
+if object_type == 'small':
+self.feature_extractor.setPatchSize(original_patch_size)
+elif object_type == 'flat':
+self.feature_extractor.setFastThreshold(original_fast_threshold)
+return keypoints, descriptors

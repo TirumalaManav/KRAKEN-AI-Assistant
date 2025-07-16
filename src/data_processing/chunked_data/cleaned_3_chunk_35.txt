@@ -1,0 +1,2 @@
+<p class="member-bio">MLOps Engineer with experience deploying machine learning models, specializing in neural networks and deep learning. Proficient in TensorFlow, Docker, MLflow, and various MLOps tools to streamline model deployment, monitoring, and scalability.</p>
+<div class="achievements">

@@ -1,0 +1,4 @@
+return (None, False)
+median_center, median_width, median_height = np.median(centers, axis=0), np.median(widths), np.median(heights)
+min_width, min_height = min(widths), min(heights)
+if (median_width <= min_width * (1 + self.position_tolerance_ratio) and

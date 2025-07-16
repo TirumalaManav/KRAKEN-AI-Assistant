@@ -1,0 +1,5 @@
+cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 2)
+if tracker.global_vars.mode == "selection" and tracker.original_template is not None:
+cv2.putText(display_frame, "Object lost - Reselect to resume", (10, 60),
+cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+cv2.imshow("Tracking", display_frame)

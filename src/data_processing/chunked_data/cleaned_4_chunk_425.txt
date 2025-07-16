@@ -1,0 +1,5 @@
+refined_bbox, confirmed = accumulator.update(bbox, self.global_vars.frame_idx)
+if confirmed:
+bbox = refined_bbox
+if self.prev_frame is not None:
+dx, dy = optical_flow_update(self.prev_frame, frame, self.global_vars.tracked_object['kalman_box'])

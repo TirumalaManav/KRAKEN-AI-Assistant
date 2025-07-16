@@ -1,0 +1,6 @@
+g.tracked_object = None
+g.mode = "selection"
+continue
+x, y, w, h = g.tracked_object['kalman_box']
+cv2.rectangle(display_frame, (x, y), (x+w, y+h), g.tracked_object['color'], 2)
+g.tracked_object['prev_frame'] = frame.copy()

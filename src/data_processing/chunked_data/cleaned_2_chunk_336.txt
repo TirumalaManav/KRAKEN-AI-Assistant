@@ -1,0 +1,6 @@
+# Write final metrics
+f.write("Final Metrics:\n")
+f.write("-"*20 + "\n")
+if 'classifier_accuracy' in history:
+f.write(f"Training Accuracy: {history['classifier_accuracy'][-1]:.4f}\n")
+f.write(f"Validation Accuracy: {history['val_classifier_accuracy'][-1]:.4f}\n")

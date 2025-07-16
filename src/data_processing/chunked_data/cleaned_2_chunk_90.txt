@@ -1,0 +1,9 @@
+return jsonify({
+"success": True,
+"message": "Training and prediction completed successfully",
+"redirect_url": "/prediction",
+"timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+"user": "TirumalaManav"
+})
+except Exception as e:
+cleanup_gpu_memory()

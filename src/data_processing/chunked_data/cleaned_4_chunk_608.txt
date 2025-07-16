@@ -1,0 +1,11 @@
+x1 = max(0, x_center - box_size // 2)
+y1 = max(0, y_center - box_size // 2)
+x2 = min(frame_w, x_center + box_size // 2)
+y2 = min(frame_h, y_center + box_size // 2)
+box = (x1, y1, x2 - x1, y2 - y1)
+else:
+box = None
+if box is not None:
+new_obj = {}
+new_obj['init_rect'] = box
+x, y, w, h = box

@@ -1,0 +1,11 @@
+<div class="image-container">
+<img src="{{ data.images.comparison }}" alt="Prediction Comparison" class="zoomable">
+</div>
+</div>
+</div>
+<!-- Confusion Matrix -->
+<div class="card">
+<div class="card-header">
+<h2><i class="fas fa-th"></i> Confusion Matrix</h2>
+</div>
+<div class="card-content">

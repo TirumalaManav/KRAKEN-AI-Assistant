@@ -1,0 +1,7 @@
+(bbox[0] + bbox[2], bbox[1] + bbox[3]),
+(0, 255, 0), 3)
+# Show status message
+cv2.putText(display_frame, "Tracking active - Click and drag for new object", (10, 30),
+cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+else:
+# Show selection instructions

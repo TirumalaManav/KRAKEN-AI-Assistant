@@ -1,0 +1,14 @@
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal for zoomed images -->
+<div id="imageModal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="modalImage">
+</div>
+<script>
+// Image zoom functionality
+document.addEventListener('DOMContentLoaded', function() {

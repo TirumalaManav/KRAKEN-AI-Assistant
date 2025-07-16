@@ -1,0 +1,9 @@
+except Exception as e:
+logger.error(f"Error in confidence update: {e}")
+return 0.0, True
+def _check_size_consistency(self, bbox):
+try:
+if self.initial_size is None:
+return True
+current_size = (bbox[2], bbox[3])
+if self.initial_size[0] == 0 or self.initial_size[1] == 0:

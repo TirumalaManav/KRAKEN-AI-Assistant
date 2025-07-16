@@ -1,0 +1,2 @@
+SMOOTHING_DIST_THRESH = 30        # Maximum allowed distance for associating detections across frames
+MIN_PERSISTENCE = 5               # Minimum consecutive frame detections for stability

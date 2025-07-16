@@ -1,0 +1,9 @@
+return
+cap = cv2.VideoCapture(args.video_name)
+if not cap.isOpened():
+logger.error("Error: Could not open video")
+return
+g.total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+orig_fps = cap.get(cv2.CAP_PROP_FPS) or 25
+g.new_fps = 2 * orig_fps
+cv2.namedWindow("Tracking")

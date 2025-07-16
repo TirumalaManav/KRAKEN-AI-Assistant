@@ -1,0 +1,6 @@
+f.write(f"Timestamp: {self.timestamp}\n")
+f.write(f"User: {self.user}\n")
+f.write("="*50 + "\n\n")
+f.write(f"Overall Accuracy: {metrics['accuracy']:.2f}%\n\n")
+f.write(f"Classes present: {metrics['labels']}\n")
+f.write(f"Class names: {metrics['target_names']}\n\n")

@@ -1,0 +1,7 @@
+try:
+# Check if dataset exists in Datasets folder
+dataset_path = os.path.join(DATASETS_DIR, dataset_name)
+if not os.path.exists(dataset_path):
+logger.warning(f"Dataset directory not found: {dataset_path}")
+return False
+# Log the contents of the dataset directory

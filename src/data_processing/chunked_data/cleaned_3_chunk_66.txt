@@ -1,0 +1,10 @@
+<!-- Contact Grid -->
+<div class="container">
+<div class="contact-grid">
+<div class="contact-info">
+<div class="info-item">
+<div class="info-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="info-content">
+<h3>Location</h3>

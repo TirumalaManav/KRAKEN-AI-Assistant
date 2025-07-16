@@ -1,0 +1,11 @@
+'http://www.ehu.eus/ccwintco/uploads/5/53/Pavia_gt.mat'],
+'img': 'Pavia.mat',
+'gt': 'Pavia_gt.mat'
+},
+'PaviaU': {
+'urls': ['http://www.ehu.eus/ccwintco/uploads/e/ee/PaviaU.mat',
+'http://www.ehu.eus/ccwintco/uploads/5/50/PaviaU_gt.mat'],
+'img': 'PaviaU.mat',
+'gt': 'PaviaU_gt.mat'
+},
+'KSC': {

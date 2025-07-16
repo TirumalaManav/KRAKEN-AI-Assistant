@@ -1,0 +1,5 @@
+reduced_images = reduced_data.reshape(h, w, n_components)
+explained_variance = np.sum(pca.explained_variance_ratio_) * 100
+logger.info(f"PCA completed: Original bands = {c}, Reduced bands = {n_components}")
+logger.info(f"Total explained variance: {explained_variance:.2f}%")
+return reduced_images

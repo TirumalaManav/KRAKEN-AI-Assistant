@@ -1,0 +1,7 @@
+elif name == 'mou':
+kwargs.setdefault('patch_size', 1)
+center_pixel = True
+kwargs.setdefault('epoch', 100)
+# "The RNN was trained with the Adadelta algorithm [...] We made use of a
+# fairly  high  learning  rate  of  1.0  instead  of  the  relatively  low
+# default of  0.002 to  train the  network"

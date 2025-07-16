@@ -1,0 +1,7 @@
+agg_y = int((ay + by) / 2)
+agg_w = int((aw + bw) / 2)
+agg_h = int((ah + bh) / 2)
+agg_cx = int((acx + bcx) / 2)
+agg_cy = int((acy + bcy) / 2)
+self.aggregate_detection = (agg_x, agg_y, agg_w, agg_h, agg_cx, agg_cy, 1)
+if self.aggregate_count >= self.AGGREGATE_FRAMES:

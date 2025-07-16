@@ -1,0 +1,8 @@
+</div>
+<div class="card">
+<h3>GAN</h3>
+<p>Generative Adversarial Networks help overcome limited data challenges by generating synthetic training samples, enhancing model robustness and improving classification accuracy through data augmentation.</p>
+</div>
+</div>
+</section>
+</main>

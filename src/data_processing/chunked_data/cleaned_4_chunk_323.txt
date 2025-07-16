@@ -1,0 +1,8 @@
+self.min_match_count = 5
+self.original_template = None
+self.template = None
+self.template_size = None
+self.alpha = 0.95
+self.spectrum_type = spectrum_type
+self._initialize_feature_extractor(spectrum_type)
+def _initialize_feature_extractor(self, spectrum_type=None):

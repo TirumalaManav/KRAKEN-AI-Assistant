@@ -1,0 +1,7 @@
+elif model_type == 'autoencoder':
+train_dataset = tf.data.Dataset.from_tensor_slices((X_train, X_train))
+test_dataset = tf.data.Dataset.from_tensor_slices((X_test, X_test))
+elif model_type == 'autoencoder_classifier':
+train_dataset = tf.data.Dataset.from_tensor_slices((
+X_train,
+{

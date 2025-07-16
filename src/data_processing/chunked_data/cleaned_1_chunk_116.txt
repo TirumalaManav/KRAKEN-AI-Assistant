@@ -1,0 +1,9 @@
+"""
+arr_3d = np.zeros((arr_2d.shape[0], arr_2d.shape[1], 3), dtype=np.uint8)
+if palette is None:
+raise Exception("Unknown color palette")
+for c, i in palette.items():
+m = arr_2d == c
+arr_3d[m] = i
+return arr_3d
+def convert_from_color_(arr_3d, palette=None):

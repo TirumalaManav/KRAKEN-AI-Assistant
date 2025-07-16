@@ -1,0 +1,7 @@
+outputs.get('score', 0.8))
+if lost:
+logger.info("Tracking lost on one instance, removing from tracking list")
+g.single_trackers.remove(tracker_instance)
+continue
+x, y, w, h = tracker_instance['kalman_box']
+cv2.rectangle(display_frame, (x, y), (x + w, y + h), (0, 255, 0), 2)

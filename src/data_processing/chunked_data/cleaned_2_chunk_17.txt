@@ -1,0 +1,13 @@
+"error": str(error),
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+}), 500
+# Routes from the first app.py file
+@app.route('/')
+def home():
+return render_template('home.html')
+@app.route('/about')
+def about():
+return render_template('about.html')
+@app.route('/contact')
+def contact():

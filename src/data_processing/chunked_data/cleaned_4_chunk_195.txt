@@ -1,0 +1,5 @@
+self.template_size = (w, h)
+elif max(w, h) > 200:
+self.template = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY) if len(roi.shape) == 3 else roi.copy()
+self.template_size = (w, h)
+hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV) if len(roi.shape) == 3 else roi

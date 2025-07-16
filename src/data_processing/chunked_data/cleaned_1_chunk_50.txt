@@ -1,0 +1,7 @@
+label = np.asarray(np.copy(label), dtype='int64')
+# Load the data into PyTorch tensors
+data = torch.from_numpy(data)
+label = torch.from_numpy(label)
+# Extract the center label if needed
+if self.center_pixel and self.patch_size > 1:
+label = label[self.patch_size // 2, self.patch_size // 2]

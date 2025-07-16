@@ -1,0 +1,8 @@
+roi_x = max(0, x - search_margin)
+roi_y = max(0, y - search_margin)
+roi_w = min(frame.shape[1] - roi_x, w + 2*search_margin)
+roi_h = min(frame.shape[0] - roi_y, h + 2*search_margin)
+roi = frame[roi_y:roi_y+roi_h, roi_x:roi_x+roi_w]
+if roi.size == 0:
+return initial_bbox
+if len(roi.shape) == 3:

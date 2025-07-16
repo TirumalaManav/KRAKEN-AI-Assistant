@@ -1,0 +1,8 @@
+try {
+const response = await fetch(`${API_URL}/validate-dataset`, {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ datasetPath })
+});
+if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+const data = await response.json();

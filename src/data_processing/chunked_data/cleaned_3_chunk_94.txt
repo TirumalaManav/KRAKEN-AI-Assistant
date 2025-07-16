@@ -1,0 +1,17 @@
+margin-bottom: 2rem;
+}
+.metric {
+text-align: center;
+color: white; /* Ensure text is visible */
+}
+.metric strong {
+display: block;
+font-size: 1.5rem;
+margin-top: 0.5rem;
+}
+.tech-stack {
+font-size: 1.1rem;
+margin-bottom: 2rem;
+color: white; /* Ensure text is visible */
+}
+.certification {

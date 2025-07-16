@@ -1,0 +1,10 @@
+x = self.regressor(x)
+return x_classif, x
+class MouEtAl(nn.Module):
+"""
+Deep recurrent neural networks for hyperspectral image classification
+Lichao Mou, Pedram Ghamisi, Xiao Xang Zhu
+https://ieeexplore.ieee.org/document/7914752/
+"""
+@staticmethod
+def weight_init(m):

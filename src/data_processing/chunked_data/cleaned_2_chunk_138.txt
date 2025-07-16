@@ -1,0 +1,5 @@
+# Create directories if they don't exist
+for path in [self.database_path, self.reference_images_path, self.face_image_path]:
+os.makedirs(path, exist_ok=True)
+self.logger.info("Security system initialized successfully")
+def _generate_secure_key(self):

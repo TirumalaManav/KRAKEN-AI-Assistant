@@ -1,0 +1,11 @@
+elif key & 0xFF == ord('c'):
+with g.lock:
+if g.use_bytetrack:
+g.tracked_objects = []
+if g.init_rect is not None:
+box = g.init_rect
+elif g.click_point is not None:
+x_center, y_center = g.click_point
+box_size = 100
+frame_h, frame_w = frame.shape[:2]
+x1 = max(0, x_center - box_size // 2)

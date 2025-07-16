@@ -1,0 +1,10 @@
+currentModel = null;
+const validation = await validateModelAPI(modelType);
+if (validation.success) {
+currentModel = modelType;
+showToast(`${modelType.toUpperCase()} model validated successfully`);
+startTrainingBtn.disabled = false;
+} else {
+showToast(validation.message, false);
+}
+});

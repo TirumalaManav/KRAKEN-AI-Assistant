@@ -1,0 +1,7 @@
+int(0.6 * h1 + 0.4 * h2)
+)
+fused_center = (fused_box[0] + fused_box[2] // 2,
+fused_box[1] + fused_box[3] // 2)
+jump_distance_fused = math.hypot(fused_center[0] - prev_center[0],
+fused_center[1] - prev_center[1])
+if jump_distance_fused > JUMP_THRESHOLD:

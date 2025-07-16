@@ -1,0 +1,8 @@
+def update_features(self, frame, bbox):
+x, y, w, h = map(int, bbox)
+roi = frame[y:y+h, x:x+w]
+if roi.size == 0:
+return False
+gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
+keypoints, descriptors = self.feature_extractor.detectAndCompute(gray_roi, None)
+if descriptors is not None:

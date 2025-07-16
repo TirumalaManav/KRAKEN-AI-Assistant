@@ -1,0 +1,16 @@
+position: relative;
+margin-bottom: 1rem;
+}
+.select-wrapper::after {
+content: '\f107';
+font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+position: absolute;
+right: 1rem;
+top: 50%;
+transform: translateY(-50%);
+pointer-events: none;
+}
+select {
+width: 100%;
+padding: 0.75rem 1rem;

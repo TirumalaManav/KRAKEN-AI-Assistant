@@ -1,0 +1,8 @@
+let countdownInterval = null;
+let isProcessing = false;
+async function checkUsername() {
+const username = document.getElementById('username').value.trim();
+if (!username) return;
+if (currentMode === 'register') {
+try {
+const response = await fetch(`/check-username/${username}`);

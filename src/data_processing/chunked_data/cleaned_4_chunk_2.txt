@@ -1,0 +1,6 @@
+JUMP_THRESHOLD_BASE = 500
+class AppearanceModel:
+def __init__(self, feature_memory_size=5, spectrum_type=None):
+self.initialize_spectrum_adaptive_orb(spectrum_type)
+self.feature_memory = deque(maxlen=feature_memory_size)
+self.color_memory = deque(maxlen=feature_memory_size)

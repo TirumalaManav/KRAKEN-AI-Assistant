@@ -1,0 +1,6 @@
+# Extrapolate further for hypersonic speeds
+return self.position_history[-1] + self.velocity_history[-1] * 2.0  # Double the prediction range
+return self.position_history[-1] if self.position_history else None
+class EnhancedKalmanBox:
+def __init__(self, bbox):
+self.kalman = cv2.KalmanFilter(10, 4)

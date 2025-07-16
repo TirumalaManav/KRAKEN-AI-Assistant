@@ -1,0 +1,10 @@
+def forward(self, x):
+# [In our design architecture, we choose the hyperbolic tangent function tanh(u)]
+x = x.squeeze(dim=-1).squeeze(dim=-1)
+x = x.unsqueeze(1)
+x = self.conv(x)
+x = torch.tanh(self.pool(x))
+x = x.view(-1, self.features_size)
+x = torch.tanh(self.fc1(x))
+x = self.fc2(x)
+return x

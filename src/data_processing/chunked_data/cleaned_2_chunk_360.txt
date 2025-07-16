@@ -1,0 +1,9 @@
+except Exception as e:
+logger.error(f"Error plotting metrics: {str(e)}")
+raise
+def main():
+"""Main execution function"""
+try:
+logger.info("Starting hyperspectral prediction pipeline...")
+logger.info(f"Timestamp: 2025-01-23 18:24:38")
+logger.info(f"User: TirumalaManav")

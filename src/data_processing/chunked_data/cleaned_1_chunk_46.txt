@@ -1,0 +1,7 @@
+if value not in self.ignored_labels:
+l_indices = np.nonzero(self.labels == value)[0]
+l_indice = np.random.choice(l_indices)
+assert(self.labels[l_indice] == value)
+x, y = self.indices[l_indice]
+data2[idx] = self.data[x,y]
+return (alpha1 * data + alpha2 * data2) / (alpha1 + alpha2) + beta * noise

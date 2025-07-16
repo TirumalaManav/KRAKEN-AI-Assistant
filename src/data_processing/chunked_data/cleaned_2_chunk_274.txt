@@ -1,0 +1,7 @@
+logger.info(f"Number of classes: {dataset_info['n_classes']}")
+logger.info(f"Number of bands: {dataset_info['n_bands']}")
+return True
+except Exception as e:
+logger.error(f"Error registering custom dataset: {str(e)}")
+raise
+def validate_dataset_files(dataset_name, data_dir):

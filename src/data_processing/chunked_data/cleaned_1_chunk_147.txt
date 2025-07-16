@@ -1,0 +1,9 @@
+F1_scores_std = np.std(F1_scores, axis=0)
+cm = np.mean([r["Confusion matrix"] for r in results], axis=0)
+text += "Agregated results :\n"
+else:
+cm = results["Confusion matrix"]
+accuracy = results["Accuracy"]
+F1scores = results["F1 scores"]
+kappa = results["Kappa"]
+#label_values = label_values[1:]

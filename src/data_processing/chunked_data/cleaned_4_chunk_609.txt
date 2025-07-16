@@ -1,0 +1,8 @@
+new_obj['init_rect'] = box
+x, y, w, h = box
+new_obj['click_point'] = (x + w // 2, y + h // 2)
+new_obj['kalman_filter'] = EnhancedKalmanBox(box)
+new_obj['kalman_box'] = box
+new_obj['confidence_tracker'] = ConfidenceTracker()
+new_obj['color'] = (random.randint(0, 255),
+random.randint(0, 255),

@@ -1,0 +1,9 @@
+expansion_factor = max(20, min(100, int(motion_dist * 0.5)))
+adjusted_bbox = (
+int(pred_center_x - w/2 - expansion_factor),
+int(pred_center_y - h/2 - expansion_factor),
+w + 2 * expansion_factor,
+h + 2 * expansion_factor
+)
+# Ensure within frame bounds
+adjusted_bbox = (

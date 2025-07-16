@@ -1,0 +1,5 @@
+raise KeyError(f"Label data key for '{dataset_name}' not found in the label file {label_file}.")
+logger.info(f"Found label key: {label_key}")
+labels = label_data.get(label_key)
+logger.info(f"Image shape: {images.shape}")
+logger.info(f"Label shape: {labels.shape}")

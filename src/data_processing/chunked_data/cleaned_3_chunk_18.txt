@@ -1,0 +1,15 @@
+justify-content: center;
+color: #2a2a72;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+.social-link:hover {
+background: #ff6f61;
+color: white;
+transform: translateY(-3px) rotateY(10deg);
+}
+.achievements {
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px solid rgba(42, 42, 114, 0.1);
+}

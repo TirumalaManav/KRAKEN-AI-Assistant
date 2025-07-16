@@ -1,0 +1,5 @@
+f.write(f"Training Loss: {history['classifier_loss'][-1]:.4f}\n")
+f.write(f"Validation Loss: {history['val_classifier_loss'][-1]:.4f}\n")
+else:
+f.write(f"Training Accuracy: {history['accuracy'][-1]:.4f}\n")
+f.write(f"Validation Accuracy: {history['val_accuracy'][-1]:.4f}\n")

@@ -1,0 +1,7 @@
+probabilities = test(model, img, hyperparams)
+prediction = np.argmax(probabilities, axis=-1)
+filename = dirname + '/' + basename + '.tif'
+io.imsave(filename, prediction)
+basename = 'color_' + basename
+filename = dirname + '/' + basename + '.tif'
+io.imsave(filename, convert_to_color(prediction))

@@ -1,0 +1,14 @@
+"Crosswalks",
+"Major thoroughfares",
+"Highways",
+"Railways",
+"Paved parking lots",
+"Unpaved parking lots",
+"Cars",
+"Trains",
+"Stadium seats"]
+ignored_labels = [0]
+palette = None
+return img, gt, rgb_bands, ignored_labels, label_values, palette
+# -*- coding: utf-8 -*-
+"""

@@ -1,0 +1,2 @@
+parser.add_argument('--folder', type=str, default="./Datasets/", help="Folder where to store the datasets.")
+parser.add_argument('--cuda', type=int, default=-1, help="Specify CUDA device (defaults to -1, which learns on CPU)")

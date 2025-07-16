@@ -1,0 +1,8 @@
+g = param
+try:
+if event == cv2.EVENT_LBUTTONDOWN:
+g.dragging = True
+g.drag_start = g.drag_end = (x, y)
+elif event == cv2.EVENT_MOUSEMOVE and g.dragging and (flags & cv2.EVENT_FLAG_LBUTTON):
+g.drag_end = (x, y)
+x1, y1 = min(g.drag_start[0], g.drag_end[0]), min(g.drag_start[1], g.drag_end[1])

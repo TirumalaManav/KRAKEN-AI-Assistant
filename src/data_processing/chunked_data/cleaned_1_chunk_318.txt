@@ -1,0 +1,4 @@
+#         criterion: a PyTorch-compatible loss function, e.g. nn.CrossEntropyLoss
+#         device (optional): torch device to use (defaults to CPU)
+#         display_iter (optional): number of iterations before refreshing the
+#         display (False/None to switch off).

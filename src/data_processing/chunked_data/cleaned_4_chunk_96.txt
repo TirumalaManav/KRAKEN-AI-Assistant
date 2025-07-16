@@ -1,0 +1,9 @@
+self.last_refined_bbox = refined_bbox
+self.candidate_buffer.clear()
+return (refined_bbox, True)
+return (None, False)
+def get_adaptive_bbox(frame, x, y):
+temp_appearance_model = AppearanceModel()
+window_size = 240
+h, w = frame.shape[:2]
+x1 = max(0, x - window_size // 2)

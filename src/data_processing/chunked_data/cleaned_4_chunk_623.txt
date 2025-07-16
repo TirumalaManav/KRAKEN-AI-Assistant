@@ -1,0 +1,15 @@
+key = cv2.waitKey(1)
+if key & 0xFF == ord('q'):
+break
+elif key & 0xFF == ord('r'):
+with g.lock:
+g.tracked_objects = []
+else:
+try:
+frame = g.frame_queue.get(timeout=0.01)
+except queue.Empty:
+with g.lock:
+frame = g.frame
+if frame is None:
+continue
+display_frame = frame.copy()

@@ -1,0 +1,9 @@
+self.tracked_objects = []  # For ByteTrack mode
+self.single_trackers = []  # For non-ByteTrack multi-object tracking
+self.dragging = False
+self.drag_start = None
+self.drag_end = None
+self.message_display = ""  # For GUI messages
+g = GlobalVars()
+import numpy as np
+from collections import deque

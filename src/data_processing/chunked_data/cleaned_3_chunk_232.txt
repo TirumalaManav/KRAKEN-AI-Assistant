@@ -1,0 +1,7 @@
+const video = document.getElementById('video');
+video.srcObject = currentStream;
+document.getElementById('video-container').style.display = 'block';
+authButton.style.display = 'none';
+startCountdown();
+} catch (error) {
+showStatus('Camera access failed: ' + error.message, 'error');

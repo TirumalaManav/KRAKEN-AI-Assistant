@@ -1,0 +1,8 @@
+f.write("Detailed Classification Report:\n")
+f.write("-"*30 + "\n")
+f.write(metrics['classification_report'])
+# Add per-class accuracies
+f.write("\nPer-class Accuracies:\n")
+f.write("-"*30 + "\n")
+conf_matrix = metrics['confusion_matrix']
+for i, class_name in enumerate(target_names):

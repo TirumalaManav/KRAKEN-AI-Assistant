@@ -1,0 +1,8 @@
+f.write(f"Training History Summary\n")
+f.write("="*50 + "\n")
+f.write(f"Dataset: {model_metadata['training_dataset']}\n")
+f.write(f"Timestamp: {self.timestamp}\n")
+f.write(f"User: {self.user}\n")
+f.write("="*50 + "\n\n")
+# Write model configuration
+f.write("Model Configuration:\n")

@@ -1,0 +1,11 @@
+margin-top: 2rem;
+}
+.card {
+background: white;
+padding: 2rem;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 212, 255, 0.4);
+transition: transform 0.3s ease;
+}
+.card:hover {
+transform: translateY(-5px);

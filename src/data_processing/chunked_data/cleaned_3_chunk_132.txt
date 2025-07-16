@@ -1,0 +1,10 @@
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+--cyan: #00d4ff; /* Cyan */
+--coral: #ff6f61; /* Coral */
+--white: #ffffff; /* White */
+--light-gray: #f8f9fa; /* Light Gray */

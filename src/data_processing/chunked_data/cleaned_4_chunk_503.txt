@@ -1,0 +1,6 @@
+if self.aggregate_count >= self.AGGREGATE_FRAMES:
+self.last_detection = self.aggregate_detection
+self.aggregate_detection = None
+self.aggregate_count = 0
+return [self.last_detection] if self.last_detection is not None else []
+def fallback_trigger(self, frame):

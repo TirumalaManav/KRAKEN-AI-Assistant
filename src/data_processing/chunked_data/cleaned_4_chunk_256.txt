@@ -1,0 +1,5 @@
+bbox[1] >= self.last_refined_bbox[1] and
+bbox[0] + bbox[2] <= self.last_refined_bbox[0] + self.last_refined_bbox[2] and
+bbox[1] + bbox[3] <= self.last_refined_bbox[1] + self.last_refined_bbox[3]
+):
+if self.candidate_buffer and iou(self.candidate_buffer[-1][1], bbox) < self.iou_threshold:

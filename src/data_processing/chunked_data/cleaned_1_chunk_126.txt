@@ -1,0 +1,5 @@
+mean_spectrum = np.mean(class_spectrums, axis=0)
+std_spectrum = np.std(class_spectrums, axis=0)
+lower_spectrum = np.maximum(0, mean_spectrum - std_spectrum)
+higher_spectrum = mean_spectrum + std_spectrum
+# Plot the mean spectrum with thickness based on std

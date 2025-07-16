@@ -1,0 +1,6 @@
+pts = np.array([kp.pt for kp in keypoints])
+min_x, min_y = np.percentile(pts[:, 0], 5), np.percentile(pts[:, 1], 5)
+max_x, max_y = np.percentile(pts[:, 0], 95), np.percentile(pts[:, 1], 95)
+return (
+int(x + 0.3 * ((min_x + max_x)/2 - w/2)),
+int(y + 0.3 * ((min_y + max_y)/2 - h/2)),

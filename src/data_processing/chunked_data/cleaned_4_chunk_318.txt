@@ -1,0 +1,11 @@
+tracker.reset_tracking()
+except Exception as e:
+logger.error(f"Error in main loop: {e}")
+break
+tracker.release()
+cv2.destroyAllWindows()
+from __future__ import absolute_import, division, print_function, unicode_literals
+import cv2
+import torch
+import numpy as np
+from pysot.core.config import cfg

@@ -1,0 +1,10 @@
+<span>SOC 2 Type II</span>
+</div>
+<div class="cta-buttons">
+<button class="primary-btn">View Documentation</button>
+<button class="secondary-btn">Download WhitePaper</button>
+</div>
+</div>
+</section>
+<main class="main-content">
+<section class="section" id="overview">

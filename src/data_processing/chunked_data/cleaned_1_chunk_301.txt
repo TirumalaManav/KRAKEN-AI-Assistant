@@ -1,0 +1,12 @@
+_, c, w, h = x.size()
+size2 = c * w * h
+return size0, size1, size2
+def forward(self, x):
+x = x.squeeze()
+x_conv1 = self.conv1_bn(self.conv1(x))
+x = x_conv1
+x_pool1 = self.pool1(x)
+x = x_pool1
+x_enc = F.relu(x).view(-1, self.features_sizes[2])
+x = x_enc
+x_classif = self.fc_enc(x)

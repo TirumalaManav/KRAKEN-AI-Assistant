@@ -1,0 +1,7 @@
+new_cy = int((cy + pcy) / 2)
+new_detections.append((new_x, new_y, new_w, new_h, new_cx, new_cy, count + 1))
+else:
+new_detections.append((x, y, w, h, cx, cy, 1))
+self.prev_detections = new_detections.copy()
+if new_detections:
+best = max(new_detections, key=lambda d: d[2] * d[3])

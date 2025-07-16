@@ -1,0 +1,10 @@
+]
+)
+logger = logging.getLogger(__name__)
+def load_hyperspectral_data(data_dir, dataset_name):
+"""
+Load hyperspectral data and labels from .mat files.
+"""
+try:
+logger.info(f"Starting to load hyperspectral data for dataset: {dataset_name}")
+logger.info(f"Looking for dataset in directory: {data_dir}")

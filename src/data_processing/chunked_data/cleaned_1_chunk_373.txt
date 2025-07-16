@@ -1,0 +1,9 @@
+for batch_idx, (data, target) in enumerate(data_loader):
+with torch.no_grad():
+# Load the data into the GPU if required
+data, target = data.to(device), target.to(device)
+if supervision == 'full':
+output = net(data)
+elif supervision == 'semi':
+outs = net(data)
+output, rec = outs

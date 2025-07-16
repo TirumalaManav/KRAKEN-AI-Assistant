@@ -1,0 +1,15 @@
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+/* Dashboard Layout */
+.dashboard {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+padding: 2rem;
+gap: 2rem;
+}
+/* Sidebar */
+.sidebar {
+background: var(--header-gradient); /* Cyan to Coral gradient */

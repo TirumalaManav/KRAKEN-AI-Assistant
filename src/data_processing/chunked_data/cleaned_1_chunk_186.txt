@@ -1,0 +1,4 @@
+elif name == 'sharma':
+# We train our S-CNN from scratch using stochastic gradient descent with
+# momentum set to 0.9, weight decay of 0.0005, and with a batch size
+# of 60.  We initialize an equal learning rate for all trainable layers

@@ -1,0 +1,8 @@
+g.single_trackers = []
+g.tracking_started = False
+g.mode = "selection"
+g.kalman_initialized = False
+cap.release()
+cv2.destroyAllWindows()
+if __name__ == "__main__":
+main()

@@ -1,0 +1,10 @@
+else:
+p1, p2 = planes, planes
+encoder_modules.append(nn.Conv1d(p1, p2, 3, padding=1))
+x = encoder_modules[-1](x)
+print(x.size())
+encoder_modules.append(nn.MaxPool1d(2))
+x = encoder_modules[-1](x)
+print(x.size())
+encoder_modules.append(nn.ReLU(inplace=True))
+x = encoder_modules[-1](x)

@@ -1,0 +1,7 @@
+#             if patch_size == 1:
+#                 data = [b[0][0, 0] for b in batch]
+#                 data = np.copy(data)
+#                 data = torch.from_numpy(data)
+#             else:
+#                 data = [b[0] for b in batch]
+#                 data = np.copy(data)

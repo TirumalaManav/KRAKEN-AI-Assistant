@@ -1,0 +1,10 @@
+layers.BatchNormalization(),
+layers.ReLU(),
+layers.GlobalAveragePooling2D(),
+layers.Dense(1024, activation='relu'),
+layers.Dense(self.n_classes, activation='softmax')
+])
+def call(self, x):
+# Forward pass through the encoder
+encoded = self.encoder(x)
+# Forward pass through the decoder and classifier

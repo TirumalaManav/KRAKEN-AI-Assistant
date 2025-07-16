@@ -1,0 +1,11 @@
+"gt_shape": gt_arrays[0].shape,
+"total_files": len(mat_files)
+},
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+})
+except Exception as e:
+logger.error(f"Error validating .mat files: {str(e)}")
+return jsonify({
+"success": False,
+"message": f"Invalid .mat file format: {str(e)}",

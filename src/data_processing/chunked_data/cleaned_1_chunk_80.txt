@@ -1,0 +1,2 @@
+group_da.add_argument('--mixture_augmentation', action='store_true', help="Random mixes between spectra")
+parser.add_argument('--with_exploration', action='store_true', help="See data exploration visualization")

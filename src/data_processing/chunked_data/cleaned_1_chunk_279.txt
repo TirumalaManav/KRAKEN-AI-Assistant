@@ -1,0 +1,6 @@
+super(LuoEtAl, self).__init__()
+self.input_channels = input_channels
+self.patch_size = patch_size
+self.n_planes = n_planes
+# the 8-neighbor pixels [...] are fed into the Conv1 convolved by n1 kernels
+# and s1 stride. Conv1 results are feature vectors each with height of and

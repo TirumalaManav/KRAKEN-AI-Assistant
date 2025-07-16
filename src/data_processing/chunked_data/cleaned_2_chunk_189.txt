@@ -1,0 +1,9 @@
+"""
+try:
+logger.info(f"Starting patch extraction with patch_size={patch_size}")
+logger.info(f"Input image shape: {images.shape}")
+logger.info(f"Input labels shape: {labels.shape}")
+patches = []
+valid_labels = []
+patch_count = 0
+logger.info("Extracting patches...")

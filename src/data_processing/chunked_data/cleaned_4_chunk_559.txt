@@ -1,0 +1,7 @@
+import numpy as np
+from collections import deque
+def iou(boxA, boxB):
+"""Compute the Intersection over Union (IoU) between two bounding boxes in (x, y, w, h) format."""
+xA = max(boxA[0], boxB[0])
+yA = max(boxA[1], boxB[1])
+xB = min(boxA[0] + boxA[2], boxB[0] + boxB[2])

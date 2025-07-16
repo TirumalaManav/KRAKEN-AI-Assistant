@@ -1,0 +1,7 @@
+logger.info(f"User: TirumalaManav")
+predictor = HyperspectralPredictor()
+model, latest_dir, model_type, model_metadata = predictor.get_latest_model()
+# Process dataset
+dataset_name = model_metadata['training_dataset']
+logger.info(f"Processing dataset: {dataset_name}")
+# Load and process data

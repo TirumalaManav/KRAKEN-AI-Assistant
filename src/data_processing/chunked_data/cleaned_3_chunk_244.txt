@@ -1,0 +1,14 @@
+statusElement.textContent = message;
+statusElement.className = 'status-message ' + type;
+statusElement.style.display = 'block';
+}
+window.addEventListener('beforeunload', () => {
+stopCamera();
+});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">

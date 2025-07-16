@@ -1,0 +1,10 @@
+# Initialize video capture
+cap = cv2.VideoCapture(VIDEO_PATH)
+if not cap.isOpened():
+print(f"Error: Could not open video {VIDEO_PATH}")
+exit()
+if VIDEO_PATH:
+video_name = os.path.basename(VIDEO_PATH).split('.')[0]
+else:
+video_name = 'webcam'
+# Create window and set mouse callback

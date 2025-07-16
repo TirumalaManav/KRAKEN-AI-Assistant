@@ -1,0 +1,4 @@
+else float(history.history['classifier_accuracy'][-1]),
+"val_accuracy": float(history.history['val_accuracy'][-1]) if mlpipeline_model_type == 'standard'
+else float(history.history['val_classifier_accuracy'][-1]),
+"loss": float(history.history['loss'][-1]),

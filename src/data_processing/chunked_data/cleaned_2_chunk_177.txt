@@ -1,0 +1,6 @@
+logger.debug(f"Keys in the image file '{image_file}': {image_data.keys()}")
+image_key = next(
+(key for key in image_data.keys() if dataset_name.lower() in key.lower() or 'data' in key.lower() or key.lower() in ['pavia', 'ksc', 'botswana']),
+None
+)
+if image_key is None:

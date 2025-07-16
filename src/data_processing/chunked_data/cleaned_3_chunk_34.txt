@@ -1,0 +1,12 @@
+<i class="fab fa-github"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="team-member">
+<div class="member-image">
+<img src="D:\Validating\TestingALL\static\Images\manav.jpeg" alt="Manav Goud">
+</div>
+<div class="member-info">
+<h3>Tirumala Manav</h3>
+<div class="member-role">MLOPS Engineer</div>

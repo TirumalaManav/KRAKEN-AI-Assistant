@@ -1,0 +1,7 @@
+x = self.softmax(x)
+return x
+# class HyperspectralCNN(nn.Module):
+#     def __init__(self, in_channels, n_classes):
+#         super(HyperspectralCNN, self).__init__()
+#         # First convolutional block
+#         self.conv1 = nn.Conv2d(in_channels, 64, kernel_size=3, padding=1)

@@ -1,0 +1,8 @@
+return files
+except Exception as e:
+logger.error(f"Error getting files for dataset {dataset_name}: {str(e)}")
+return None
+def validate_dataset(dataset_name):
+"""Validate if a dataset exists and has required files"""
+try:
+# Check if dataset exists in Datasets folder

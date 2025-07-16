@@ -1,0 +1,12 @@
+def _get_sizes(self):
+with torch.no_grad():
+x = torch.zeros((10, 1, self.input_channels))
+x = self.encoder(x)
+_, c, w = x.size()
+return c*w
+def forward(self, x):
+x = x.unsqueeze(1)
+x = self.encoder(x)
+x = x.view(-1, self.features_sizes)
+x_classif = self.classifier(x)
+x = self.regressor(x)

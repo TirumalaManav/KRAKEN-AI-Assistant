@@ -1,0 +1,7 @@
+kwargs.setdefault('epoch', 400)
+kwargs.setdefault('batch_size', 100)
+elif name == 'li':
+patch_size = kwargs.setdefault('patch_size', 5)
+center_pixel = True
+model = LiEtAl(n_bands, n_classes, n_planes=16, patch_size=patch_size)
+lr = kwargs.setdefault('learning_rate', 0.01)

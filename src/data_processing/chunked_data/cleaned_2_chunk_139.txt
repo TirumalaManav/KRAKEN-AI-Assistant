@@ -1,0 +1,9 @@
+def _generate_secure_key(self):
+"""Generate a secure encryption key using Fernet."""
+try:
+entropy = os.urandom(32)
+derived_key = base64.urlsafe_b64encode(entropy)
+return Fernet(derived_key)
+except Exception as e:
+self.logger.error(f"Key generation failed: {e}")
+return None

@@ -1,0 +1,5 @@
+RESULTS_DIR = os.path.join(os.path.dirname(__file__), 'results')
+TEMPLATES_DIR = os.path.join(os.path.dirname(__file__), 'templates')
+UPLOAD_FOLDER = 'captured_images'
+VIS_DIR = None
+# Create directories (excluding VIS_DIR for now)

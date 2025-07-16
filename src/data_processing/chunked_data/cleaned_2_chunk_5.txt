@@ -1,0 +1,8 @@
+# Create directories (excluding VIS_DIR for now)
+for dir_path in [DATASETS_DIR, RESULTS_DIR, TEMPLATES_DIR, UPLOAD_FOLDER]:
+os.makedirs(dir_path, exist_ok=True)
+# Global variables for training state
+current_training_info = {
+"is_training": False,
+"progress": 0,
+"current_epoch": 0,

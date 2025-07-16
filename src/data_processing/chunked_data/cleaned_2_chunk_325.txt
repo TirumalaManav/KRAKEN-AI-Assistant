@@ -1,0 +1,4 @@
+ax3.plot(acc_data, 'g-', alpha=0.3, label='Training')
+ax3.plot(val_acc_data, 'y-', alpha=0.3, label='Validation')
+ax3.plot(range(window-1, len(acc_data)), acc_ma, 'b-', label='Training Trend')
+ax3.plot(range(window-1, len(val_acc_data)), val_acc_ma, 'r-', label='Validation Trend')

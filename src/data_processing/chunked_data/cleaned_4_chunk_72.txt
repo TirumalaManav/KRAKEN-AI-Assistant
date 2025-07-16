@@ -1,0 +1,8 @@
+bbox[2] + 100, bbox[3] + 100
+)
+expanded_bbox = (
+max(0, min(expanded_bbox[0], frame.shape[1] - expanded_bbox[2])),
+max(0, min(expanded_bbox[1], frame.shape[0] - expanded_bbox[3])),
+min(expanded_bbox[2], frame.shape[1] - expanded_bbox[0]),
+min(expanded_bbox[3], frame.shape[0] - expanded_bbox[1])
+)

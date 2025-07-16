@@ -1,0 +1,9 @@
+logger.error("Failed to read frame. Exiting.")
+break
+display_frame, bbox, fps = tracker.process_frame(frame)
+if display_frame is None:
+logger.error("Failed to process frame. Exiting.")
+break
+if bbox:
+cv2.rectangle(display_frame, (bbox[0], bbox[1]),
+(bbox[0] + bbox[2], bbox[1] + bbox[3]),

@@ -1,0 +1,7 @@
+if g.init_rect is not None:
+x, y, w, h = g.init_rect
+cv2.rectangle(display_frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+if g.click_point:
+cv2.circle(display_frame, g.click_point, 5, (0, 255, 0), -1)
+if g.dragging and g.drag_start and g.drag_end:
+x1 = min(g.drag_start[0], g.drag_end[0])

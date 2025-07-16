@@ -1,0 +1,12 @@
+self.click_point = None
+self.prev_gray = None
+self.kalman_initialized = False
+self.kalman_box = None
+self.mode = "selection"
+self.frame_idx = 0
+self.total_frames = 0
+self.new_fps = 0
+self.cursor_pos = None
+self.last_mouse_move = 0
+self.tracked_object = None
+self.dragging = False

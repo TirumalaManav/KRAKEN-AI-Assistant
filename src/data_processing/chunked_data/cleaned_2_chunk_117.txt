@@ -1,0 +1,7 @@
+for dataset in processed_datasets:
+if validate_dataset(dataset):
+available_datasets.append(dataset)
+logger.info(f"Found valid dataset with visualizations: {dataset}")
+else:
+logger.warning(f"Dataset '{dataset}' failed validation")
+if not available_datasets:

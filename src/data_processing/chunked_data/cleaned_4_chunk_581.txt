@@ -1,0 +1,12 @@
+if g.frame is None:
+return
+try:
+g.tracking_started = False
+g.kalman_initialized = False
+g.mode = "selection"
+height, width = g.frame.shape[:2]
+box_size = 100
+x1 = max(0, x - box_size // 2)
+y1 = max(0, y - box_size // 2)
+x2 = min(width, x + box_size // 2)
+y2 = min(height, y + box_size // 2)

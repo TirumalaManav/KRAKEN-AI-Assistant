@@ -1,0 +1,6 @@
+orb_similarity = np.max(result) if result.size > 0 else 0.0
+else:
+for stored_descriptors in self.feature_memory:
+matches = self.matcher.match(descriptors, stored_descriptors)
+if len(matches) > self.min_match_count:
+avg_distance = sum(m.distance for m in matches) / len(matches)

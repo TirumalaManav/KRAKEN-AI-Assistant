@@ -1,0 +1,5 @@
+if len(self.size_history) > 3:
+filtered_w = np.median([s[0] for s in self.size_history])
+filtered_h = np.median([s[1] for s in self.size_history])
+w_change = abs(w - self.initial_size[0]) / self.initial_size[0]
+h_change = abs(h - self.initial_size[1]) / self.initial_size[1]

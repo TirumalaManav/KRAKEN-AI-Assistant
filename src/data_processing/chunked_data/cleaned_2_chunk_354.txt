@@ -1,0 +1,9 @@
+yticklabels=target_names
+)
+plt.title(f'Confusion Matrix - {dataset_name}\nAccuracy: {metrics["accuracy"]:.2f}%')
+plt.xlabel('Predicted')
+plt.ylabel('True')
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=45, ha='right')
+plt.yticks(rotation=0)
+# Save confusion matrix

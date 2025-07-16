@@ -1,0 +1,7 @@
+x, y, w, h, cx, cy = detection[:6]
+CONF_THRESHOLD = 0.3
+exp_scale = 4  # Expand ROI for context
+roi_x = max(0, x - (exp_scale - 1) * w // 2)
+roi_y = max(0, y - (exp_scale - 1) * h // 2)
+roi_w = min(frame.shape[1] - roi_x, w * exp_scale)
+roi_h = min(frame.shape[0] - roi_y, h * exp_scale)

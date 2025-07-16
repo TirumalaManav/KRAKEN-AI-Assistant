@@ -1,0 +1,9 @@
+<div class="achievements">
+<span class="achievement-badge">
+<i class="fas fa-graduation-cap"></i> PhD Candidate at IIIT-R
+</span>
+<span class="achievement-badge">
+<i class="fas fa-chalkboard-teacher"></i> Associate Professor
+</span>
+</div>
+<div class="social-links">

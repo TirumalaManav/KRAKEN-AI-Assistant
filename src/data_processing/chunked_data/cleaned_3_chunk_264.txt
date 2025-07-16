@@ -1,0 +1,14 @@
+outline-offset: 2px;
+}
+.file-upload {
+border: 2px dashed var(--border-color);
+border-radius: 0.5rem;
+padding: 2rem;
+text-align: center;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.file-upload:hover {
+border-color: var(--secondary-color);
+background-color: var(--background-color);
+}

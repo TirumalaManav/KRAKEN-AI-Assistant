@@ -1,0 +1,9 @@
+return self.model(x)
+import logging
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from datetime import datetime
+# Configure logging
+logging.basicConfig(
+level=logging.INFO,
+format='%(asctime)s - %(levelname)s - [User: TirumalaManav] - %(message)s',
+handlers=[

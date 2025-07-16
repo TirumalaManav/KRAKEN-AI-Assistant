@@ -1,0 +1,4 @@
+#         self.flip_augmentation = hyperparams['flip_augmentation']
+#         self.radiation_augmentation = hyperparams['radiation_augmentation']
+#         self.mixture_augmentation = hyperparams['mixture_augmentation']
+#         self.center_pixel = hyperparams['center_pixel']

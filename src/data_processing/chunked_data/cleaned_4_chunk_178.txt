@@ -1,0 +1,6 @@
+keypoints, descriptors = self.feature_extractor.compute(gray, keypoints)
+if object_type:
+self.feature_extractor.setMaxFeatures(original_nfeatures)
+if object_type == 'small':
+self.feature_extractor.setPatchSize(patch_size)
+elif object_type == 'flat':

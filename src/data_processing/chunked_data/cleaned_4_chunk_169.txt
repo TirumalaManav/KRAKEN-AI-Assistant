@@ -1,0 +1,5 @@
+if spectrum_type == "MWIR":
+params.update({'fastThreshold': 12, 'edgeThreshold': 31, 'nlevels': 12})
+elif spectrum_type == "SWIR":
+params.update({'fastThreshold': 17, 'scaleFactor': 1.2, 'patchSize': 33})
+elif spectrum_type == "LWIR":

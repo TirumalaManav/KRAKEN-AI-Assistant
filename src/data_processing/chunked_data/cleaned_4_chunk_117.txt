@@ -1,0 +1,9 @@
+model.eval().to(device)
+logger.info("PySOT model initialized successfully")
+except Exception as e:
+logger.error("Error initializing PySOT model: %s", e)
+return
+cap = cv2.VideoCapture(args.video_name)
+if not cap.isOpened():
+logger.error("Error: Could not open video")
+return

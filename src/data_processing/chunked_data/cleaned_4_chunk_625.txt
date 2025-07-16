@@ -1,0 +1,8 @@
+if confirmed:
+bbox = refined_bbox
+if not tracker_instance['kalman_initialized']:
+tracker_instance['kalman_box'] = bbox
+tracker_instance['kalman_initialized'] = True
+else:
+dx, dy = optical_flow_update(g.frame, frame, tracker_instance['kalman_box'])
+x, y, w, h = tracker_instance['kalman_box']

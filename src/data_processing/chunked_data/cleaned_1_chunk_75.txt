@@ -1,0 +1,3 @@
+group_dataset.add_argument('--train_set', type=str, default=None, help="Path to the train ground truth (optional)")
+group_dataset.add_argument('--test_set', type=str, default=None, help="Path to the test set (optional)")
+group_train = parser.add_argument_group('Training')

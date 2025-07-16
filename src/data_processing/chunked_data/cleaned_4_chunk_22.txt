@@ -1,0 +1,4 @@
+x_kp, y_kp = int(kp.pt[0]), int(kp.pt[1])
+if 0 <= x_kp < kp_mask.shape[1] and 0 <= y_kp < kp_mask.shape[0]:
+cv2.circle(kp_mask, (x_kp, y_kp), 3, 255, -1)
+combined_map = cv2.addWeighted(edges_combined, 0.7, kp_mask, 0.3, 0)

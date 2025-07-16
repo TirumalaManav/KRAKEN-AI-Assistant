@@ -1,0 +1,7 @@
+filename = f"{username}_face_{timestamp}.jpg"
+image_path = os.path.join(self.face_image_path, filename)
+# Resize and save image
+resized_frame = cv2.resize(frame, (640, 480))
+cv2.imwrite(image_path, resized_frame)
+self.logger.info(f"Face image processed and saved at {image_path}")
+return image_path

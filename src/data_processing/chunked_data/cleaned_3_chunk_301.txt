@@ -1,0 +1,10 @@
+console.error('Training error:', error);
+return { success: false, message: `Training failed: ${error.message}` };
+}
+}
+function resetTrainingUI() {
+startTrainingBtn.disabled = false;
+startTrainingBtn.innerHTML = '<i class="fas fa-play"></i> Start Training';
+isTraining = false;
+}
+// Event Listeners

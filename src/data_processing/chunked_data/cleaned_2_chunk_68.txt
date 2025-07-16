@@ -1,0 +1,8 @@
+"user": "TirumalaManav"
+}), 400
+# Create results directory with timestamp
+timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+result_dir = os.path.join(RESULTS_DIR, f'training_{timestamp}')
+os.makedirs(result_dir, exist_ok=True)
+# Set VIS_DIR dynamically
+global VIS_DIR

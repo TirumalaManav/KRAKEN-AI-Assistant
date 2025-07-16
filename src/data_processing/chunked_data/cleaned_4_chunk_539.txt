@@ -1,0 +1,7 @@
+self.max_velocity = 100
+def update(self, bbox):
+center_x = bbox[0] + bbox[2] / 2
+center_y = bbox[1] + bbox[3] / 2
+current_pos = np.array([center_x, center_y])
+self.position_history.append(current_pos)
+if len(self.position_history) >= 2:

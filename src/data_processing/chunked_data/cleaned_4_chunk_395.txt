@@ -1,0 +1,9 @@
+)
+else:
+adjusted_bbox = bbox
+success = self.appearance_model.update_features(frame, adjusted_bbox)
+if not success:
+expanded_bbox = (
+max(0, min(bbox[0] - 50, frame.shape[1] - bbox[2] - 100)),
+max(0, min(bbox[1] - 50, frame.shape[0] - bbox[3] - 100)),
+min(bbox[2] + 100, frame.shape[1]),

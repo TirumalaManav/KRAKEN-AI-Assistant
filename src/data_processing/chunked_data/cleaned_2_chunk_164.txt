@@ -1,0 +1,8 @@
+except Exception as e:
+self.logger.error(f"Authentication failed: {e}")
+return False
+def delete_user(self, username, passphrase):
+"""Delete a user's data and associated files."""
+try:
+user_file = os.path.join(self.database_path, f'{username}.bin')
+if not os.path.exists(user_file):

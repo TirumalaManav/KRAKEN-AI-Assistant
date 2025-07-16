@@ -1,0 +1,4 @@
+UPDATE_AREA_FACTOR = 1.2          # When a larger candidate is detected, update the box if area increases by this factor
+AGGREGATE_FRAMES = 5              # Frames to aggregate for weak signals
+def __init__(self):
+self.frame_buffer = deque(maxlen=self.BUFFER_SIZE)

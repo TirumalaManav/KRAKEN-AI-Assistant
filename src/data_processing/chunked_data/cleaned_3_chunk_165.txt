@@ -1,0 +1,14 @@
+color: var(--white);
+}
+.visual-report tr:hover {
+background-color: var(--light-gray);
+}
+/* Dataset Selection */
+.dataset-selector {
+margin-bottom: 2rem;
+padding: 1rem;
+background-color: var(--card-background);
+border-radius: 8px;
+box-shadow: var(--shadow);
+}
+.dataset-selector select {

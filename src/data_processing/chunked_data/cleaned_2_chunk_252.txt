@@ -1,0 +1,6 @@
+json.dump(training_summary, f, indent=4)
+# Save training history
+history_data = {
+'cnn_history': {k: [float(v) if isinstance(v, (list, np.ndarray)) else v
+for v in history] for k, history in cnn_history.history.items()},
+'ae_history': {k: [float(v) if isinstance(v, (list, np.ndarray)) else v

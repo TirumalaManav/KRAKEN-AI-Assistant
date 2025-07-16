@@ -1,0 +1,3 @@
+--hero-gradient: linear-gradient(45deg, var(--cyan), var(--coral)); /* Cyan to Coral gradient */
+--card-background: rgba(255, 255, 255, 0.9); /* White with transparency */
+--text-primary: #2a2a72; /* Dark Blue for text (unchanged for readability) */

@@ -1,0 +1,6 @@
+return tracker_confidence
+def _duo_confidence_boost(self, bbox, tracker_confidence, kalman_bbox):
+mahalanobis_dist = self.motion_model.mahalanobis_distance(bbox)
+iou_score = iou(bbox, kalman_bbox)
+if mahalanobis_dist > 7.0 or iou_score < 0.2:
+return max(0.0, tracker_confidence - 0.2)

@@ -1,0 +1,9 @@
+- Validation Loss: {logs.get('val_loss', 0):.4f}
+- Validation Accuracy: {logs.get('val_accuracy', 0):.4f}
+- User: TirumalaManav
+"""
+logger.info(metrics_info)
+except Exception as e:
+logger.error(f"Error logging metrics: {str(e)}")
+# Prediction-related functions
+def read_file_content(file_path):

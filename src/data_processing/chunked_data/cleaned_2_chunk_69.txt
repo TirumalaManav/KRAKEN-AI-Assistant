@@ -1,0 +1,7 @@
+# Set VIS_DIR dynamically
+global VIS_DIR
+VIS_DIR = os.path.join(result_dir, "visualizations")
+os.makedirs(VIS_DIR, exist_ok=True)
+# Set up logging for this training session
+training_log_path = os.path.join(result_dir, 'training_session.log')
+file_handler = logging.FileHandler(training_log_path)

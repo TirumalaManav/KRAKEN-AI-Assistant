@@ -1,0 +1,11 @@
+modal.style.display = "none";
+}
+}
+});
+// Loading overlay
+window.addEventListener('load', function() {
+document.querySelector('.loading-overlay').style.display = 'none';
+});
+// Navigation menu
+document.querySelectorAll('.nav-menu a').forEach(link => {
+link.addEventListener('click', function(e) {

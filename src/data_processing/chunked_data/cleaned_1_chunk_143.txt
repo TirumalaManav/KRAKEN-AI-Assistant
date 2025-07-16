@@ -1,0 +1,11 @@
+cm = confusion_matrix(
+target,
+prediction,
+labels=range(n_classes))
+results["Confusion matrix"] = cm
+# Compute global accuracy
+total = np.sum(cm)
+accuracy = sum([cm[x][x] for x in range(len(cm))])
+accuracy *= 100 / float(total)
+results["Accuracy"] = accuracy
+# Compute F1 score

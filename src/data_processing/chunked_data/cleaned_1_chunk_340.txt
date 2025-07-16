@@ -1,0 +1,6 @@
+#     for batch in tqdm(grouper(batch_size, sliding_window(img, **kwargs)),
+#                       total=(iterations),
+#                       desc="Inference on the image"
+#                       ):
+#         with torch.no_grad():
+#             if patch_size == 1:

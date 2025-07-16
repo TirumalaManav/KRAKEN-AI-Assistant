@@ -1,0 +1,10 @@
+Args:
+mat: 3D hyperspectral matrix to extract the spectrums from
+gt: 2D ground truth
+ignored_labels (optional): list of classes to ignore, e.g. 0 to remove
+unlabeled pixels
+return_indices (optional): bool set to True to return the indices of
+the chosen samples
+"""
+samples = []
+labels = []

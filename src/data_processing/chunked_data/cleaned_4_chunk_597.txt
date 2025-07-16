@@ -1,0 +1,11 @@
+model.eval().to(device)
+tracker = build_tracker(model)
+yolo = YOLO(args.yolo_model)
+yolo.conf = 0.25
+yolo.iou = 0.45
+if cfg.CUDA:
+yolo.model.to(device)
+logger.info("Models initialized successfully")
+except Exception as e:
+logger.error("Error initializing models: %s", e)
+return

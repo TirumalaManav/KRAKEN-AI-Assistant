@@ -1,0 +1,9 @@
+<div class="achievements">
+<span class="achievement-badge">
+<i class="fas fa-trophy"></i> SIH 2022 Runner Up
+</span>
+<span class="achievement-badge">
+<i class="fas fa-laptop-code"></i> 3+ Years ML Experience
+</span>
+</div>
+<div class="social-links">

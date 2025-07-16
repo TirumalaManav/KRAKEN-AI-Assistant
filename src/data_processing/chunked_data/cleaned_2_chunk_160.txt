@@ -1,0 +1,9 @@
+if encryption_key != user_data['encryption_key']:
+self.logger.warning("Invalid passphrase")
+return False
+# Process the verification image
+current_face_image = self.process_base64_image(base64_image, f"{username}_verify")
+if not current_face_image:
+return False
+try:
+# Perform face verification

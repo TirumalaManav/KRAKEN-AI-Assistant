@@ -1,0 +1,10 @@
+return (dx, dy)
+except Exception as e:
+logger.error(f"Error in optical flow calculation: {e}")
+return (0.0, 0.0)
+def compute_byt_detection(frame, center_point, yolo_model, max_distance=300):
+results = yolo_model(frame)
+selected_det = None
+min_area = float('inf')
+if center_point is None:
+return None

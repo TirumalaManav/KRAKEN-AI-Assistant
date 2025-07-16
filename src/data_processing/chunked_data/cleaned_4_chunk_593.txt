@@ -1,0 +1,10 @@
+try:
+while not frame_queue.empty():
+frame_queue.get_nowait()
+except Exception:
+pass
+frame_queue.put(frame)
+time.sleep(1.0 / g.new_fps)
+cap.release()
+def main():
+parser = argparse.ArgumentParser(description='Enhanced Ship Tracking System')

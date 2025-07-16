@@ -1,0 +1,12 @@
+<br>
+<strong>Files found:</strong> ${matFiles.length} .mat files
+</div>
+`;
+showToast("Dataset validated successfully");
+modelSelect.disabled = false;
+} else {
+selectedFiles.innerHTML = `
+<div class="validation-message error">
+<i class="fas fa-exclamation-circle"></i> ${validation.message}
+</div>
+`;

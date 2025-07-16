@@ -1,0 +1,7 @@
+search_area = frame[
+search_y:min(search_y+search_h, frame.shape[0]),
+search_x:min(search_x+search_w, frame.shape[1])
+]
+if search_area.size > 0 and template.size > 0:
+if len(search_area.shape) == 3:
+search_gray = cv2.cvtColor(search_area, cv2.COLOR_BGR2GRAY)

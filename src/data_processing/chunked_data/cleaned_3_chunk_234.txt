@@ -1,0 +1,13 @@
+count--;
+if (count > 0) {
+countdownElement.textContent = count;
+} else {
+clearInterval(countdownInterval);
+countdownElement.style.display = 'none';
+captureAndProcess();
+}
+}, 1000);
+}
+function stopCamera() {
+if (currentStream) {
+currentStream.getTracks().forEach(track => track.stop());

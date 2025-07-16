@@ -1,0 +1,8 @@
+return vis_dir
+else:
+logger.warning(f"Visualization directory does not exist: {vis_dir}")
+return None
+except Exception as e:
+logger.error(f"Error finding latest visualization directory: {str(e)}")
+return None
+def get_available_datasets():

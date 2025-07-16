@@ -1,0 +1,5 @@
+self.fusion_buffer.pop(0)
+fused_frame = np.mean(self.fusion_buffer, axis=0).astype(np.uint8)
+heatmap = cv2.applyColorMap(fused_frame, cv2.COLORMAP_JET)
+# Check for low visibility: fallback if average intensity is below threshold
+avg_intensity = np.mean(fused_frame)

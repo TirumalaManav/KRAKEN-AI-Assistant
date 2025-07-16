@@ -1,0 +1,10 @@
+--text-secondary: #636e72; /* Light Gray for secondary text */
+--shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+--transition: all 0.3s ease;
+}
+body {
+background-color: var(--light-gray);
+color: var(--text-primary);
+line-height: 1.6;
+min-height: 100vh;
+overflow-x: hidden;

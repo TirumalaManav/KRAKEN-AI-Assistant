@@ -1,0 +1,11 @@
+return (
+int(x + offset_x),
+int(y + offset_y),
+int(0.7 * w + 0.3 * width_feature),
+int(0.7 * h + 0.3 * height_feature)
+)
+return initial_bbox
+def update_features(self, frame, bbox):
+x, y, w, h = map(int, bbox)
+# Ensure ROI stays within frame bounds
+x = max(0, min(x, frame.shape[1] - 1))

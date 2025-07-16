@@ -1,0 +1,9 @@
+fontsize=14
+)
+# Save visualization
+save_path = os.path.join(vis_dir, f'{dataset_name}_comparison.png')
+plt.savefig(save_path, dpi=300, bbox_inches='tight')
+plt.close()
+except Exception as e:
+logger.error(f"Error plotting prediction comparison: {str(e)}")
+raise

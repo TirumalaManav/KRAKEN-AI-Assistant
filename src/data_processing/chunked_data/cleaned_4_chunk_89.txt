@@ -1,0 +1,10 @@
+return (None, False)
+else:
+self.missed_count = 0
+self.hit_streak += 1
+self.time_since_update = 0
+bbox = tuple(map(int, bbox))
+if self.last_refined_bbox is not None:
+lx, ly, lw, lh = self.last_refined_bbox
+if (bbox[0] >= lx and bbox[1] >= ly and
+bbox[0] + bbox[2] <= lx + lw and

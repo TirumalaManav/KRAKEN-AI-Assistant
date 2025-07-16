@@ -1,0 +1,6 @@
+const selectedFiles = document.getElementById('selected-files');
+const modelSelect = document.getElementById('model-select');
+const startTrainingBtn = document.getElementById('start-training');
+// API Functions with improved error handling
+async function validateDatasetAPI(datasetPath) {
+try {

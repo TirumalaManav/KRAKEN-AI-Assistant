@@ -1,0 +1,13 @@
+"""Plot and save metrics visualizations"""
+try:
+# Get class names for plotting
+target_names = metrics['target_names']
+# Plot confusion matrix
+plt.figure(figsize=(12, 10))
+sns.heatmap(
+metrics['confusion_matrix'],
+annot=True,
+fmt='d',
+cmap='Blues',
+xticklabels=target_names,
+yticklabels=target_names

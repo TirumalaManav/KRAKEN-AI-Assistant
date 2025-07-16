@@ -1,0 +1,10 @@
+kwargs: hyperparameters
+Returns:
+model: PyTorch network
+optimizer: PyTorch optimizer
+criterion: PyTorch loss Function
+kwargs: hyperparameters with sane defaults
+"""
+device = kwargs.setdefault('device', torch.device('cpu'))
+n_classes = kwargs['n_classes']
+n_bands = kwargs['n_bands']

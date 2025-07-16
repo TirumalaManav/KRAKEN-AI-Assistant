@@ -1,0 +1,11 @@
+window_shape: (width, height) tuple of the window
+Returns:
+xmin, xmax, ymin, ymax: tuple of the corners of the window
+"""
+w, h = window_shape
+W, H = img.shape[:2]
+x1 = random.randint(0, W - w - 1)
+x2 = x1 + w
+y1 = random.randint(0, H - h - 1)
+y2 = y1 + h
+return x1, x2, y1, y2

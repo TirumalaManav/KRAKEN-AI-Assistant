@@ -1,0 +1,5 @@
+drift_distance = np.hypot(current_center[0] - initial_center[0], current_center[1] - initial_center[1])
+if drift_distance > 2.0 * min(self.initial_size):
+self.lost_frames_count += 3
+return combined_confidence, self.lost_frames_count >= self.lost_frames_threshold
+except Exception as e:

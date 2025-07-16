@@ -1,0 +1,4 @@
+template = original_template if original_template is not None else last_frame[y:y+h, x:x+w]
+search_area = frame[search_y:min(search_y+search_h, frame.shape[0]),
+search_x:min(search_x+search_w, frame.shape[1])]
+if search_area.size > 0 and template.size > 0:

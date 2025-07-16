@@ -1,0 +1,10 @@
+'Lettuce_romaine_5wk', 'Lettuce_romaine_6wk',
+'Lettuce_romaine_7wk', 'Vinyard_untrained',
+'Vinyard_vertical_trellis']
+},
+'SalinasA': {
+'data_file': 'SalinasA.mat',
+'label_file': 'SalinasA_gt.mat',
+'data_keys': ['salinasA'],
+'label_keys': ['salinasA_gt'],
+'description': 'Salinas-A scene',

@@ -1,0 +1,7 @@
+'label_keys': ['Botswana_gt'],
+'description': 'Botswana scene',
+'n_classes': 14,
+'n_bands': 145,
+'class_names': ['Background', 'Water', 'Hippo grass', 'Floodplain grasses 1',
+'Floodplain grasses 2', 'Reeds', 'Riparian', 'Firescar',
+'Island interior', 'Acacia woodlands', 'Acacia shrublands',

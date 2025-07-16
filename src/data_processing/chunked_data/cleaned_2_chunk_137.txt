@@ -1,0 +1,5 @@
+# Setup directory structure
+self.database_path = database_path
+self.reference_images_path = os.path.join(database_path, 'reference_images')
+self.face_image_path = os.path.join(os.getcwd(), 'captured_images')
+# Create directories if they don't exist

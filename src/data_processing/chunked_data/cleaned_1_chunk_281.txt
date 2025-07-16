@@ -1,0 +1,5 @@
+# connected layer FC1 which has n4 nodes.
+# In the four datasets, the kernel height nk1 is 24 and stride s1, s2 is 9 and 1
+self.conv1 = nn.Conv3d(1, 90, (24, 3, 3), padding=0, stride=(9,1,1))
+self.conv2 = nn.Conv2d(1, 64, (3, 3), stride=(1, 1))
+self.features_size = self._get_final_flattened_size()

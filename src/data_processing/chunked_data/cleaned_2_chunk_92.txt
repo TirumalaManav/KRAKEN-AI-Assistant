@@ -1,0 +1,9 @@
+return jsonify({
+"success": False,
+"message": f"Training error: {str(e)}",
+"error_details": traceback.format_exc(),
+"timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+"user": "TirumalaManav"
+}), 500
+@app.route('/api/training-status', methods=['GET'])
+def get_training_status():

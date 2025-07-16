@@ -1,0 +1,7 @@
+iou_threshold=0.4, max_age=50, min_hits=2):
+self.evidence_threshold = evidence_threshold
+self.position_tolerance_ratio = position_tolerance_ratio
+self.convergence_threshold = convergence_threshold
+self.iou_threshold = iou_threshold
+self.max_age = max_age
+self.min_hits = min_hits

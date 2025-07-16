@@ -1,0 +1,7 @@
+Args:
+dataset_name: string with the name of the dataset
+target_folder (optional): folder to store the datasets, defaults to ./
+datasets (optional): dataset configuration dictionary, defaults to prebuilt one
+Returns:
+img: 3D hyperspectral image (WxHxB)
+gt: 2D int array of labels

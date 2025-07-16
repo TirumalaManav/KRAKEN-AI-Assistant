@@ -1,0 +1,6 @@
+object_size = min(w, h)
+object_type = 'large' if object_size > 200 else 'small' if object_size < 50 else None
+keypoints, _ = self.extract_adaptive_features(roi, object_type=object_type)
+kp_mask = np.zeros_like(edges_combined)
+for kp in keypoints:
+x_kp, y_kp = int(kp.pt[0]), int(kp.pt[1])

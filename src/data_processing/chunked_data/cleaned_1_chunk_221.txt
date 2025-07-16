@@ -1,0 +1,7 @@
+self.bn6 = nn.BatchNorm2d(2048)
+self.relu6 = nn.ReLU(inplace=True)
+self.maxpool6 = nn.MaxPool2d(kernel_size=2, stride=1)
+# Seventh convolutional block
+self.conv7 = nn.Conv2d(2048, 4096, kernel_size=3, padding=1)
+self.bn7 = nn.BatchNorm2d(4096)
+self.relu7 = nn.ReLU(inplace=True)

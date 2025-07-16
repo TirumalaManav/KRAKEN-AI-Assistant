@@ -1,0 +1,9 @@
+mean_losses = np.zeros(100000000)
+iter_ = 1
+loss_win, val_win = None, None
+val_accuracies = []
+for e in tqdm(range(1, epoch + 1), desc="Training the network"):
+# Set the network to training mode
+net.train()
+avg_loss = 0.
+# Run the training loop for one epoch

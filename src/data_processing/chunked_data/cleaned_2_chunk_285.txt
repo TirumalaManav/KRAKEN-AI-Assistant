@@ -1,0 +1,7 @@
+raise
+def load_model_metadata(model_dir):
+"""Load model metadata from training_results.json file."""
+try:
+metadata_path = os.path.join(model_dir, 'training_results.json')
+if not os.path.exists(metadata_path):
+logger.error(f"Training results file not found at: {metadata_path}")

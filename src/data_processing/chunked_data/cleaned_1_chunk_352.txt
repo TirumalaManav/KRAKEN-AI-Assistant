@@ -1,0 +1,7 @@
+scheduler (optional): PyTorch scheduler
+val_loader (optional): validation dataset
+supervision (optional): 'full' or 'semi'
+continue_training (optional): boolean flag to continue training
+"""
+if criterion is None:
+raise Exception("Missing criterion. You must specify a loss function.")

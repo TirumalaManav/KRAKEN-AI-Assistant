@@ -1,0 +1,17 @@
+color: #2a2a72;
+overflow-x: hidden;
+transition: background 0.5s, color 0.5s;
+}
+body.dark-mode {
+background: #1a1a2e;
+color: #ffffff;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {
+background: #f8f9fa;
+}
+::-webkit-scrollbar-thumb {
+background: #00d4ff;

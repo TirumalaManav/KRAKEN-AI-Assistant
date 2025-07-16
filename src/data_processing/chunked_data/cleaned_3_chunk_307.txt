@@ -1,0 +1,9 @@
+showToast("Invalid dataset folder", false);
+}
+});
+modelSelect.addEventListener('change', async (e) => {
+const modelType = e.target.value;
+if (!modelType) return;
+console.log('Selected model:', modelType);
+startTrainingBtn.disabled = true;
+currentModel = null;

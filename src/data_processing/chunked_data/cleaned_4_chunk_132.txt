@@ -1,0 +1,6 @@
+bbox = refined_bbox
+if prev_frame is not None:
+dx, dy = optical_flow_update(prev_frame, frame, g.tracked_object['kalman_box'])
+x, y, w, h = g.tracked_object['kalman_box']
+new_box = (int(x + dx), int(y + dy), w, h)
+new_center = (new_box[0] + new_box[2] // 2, new_box[1] + new_box[3] // 2)

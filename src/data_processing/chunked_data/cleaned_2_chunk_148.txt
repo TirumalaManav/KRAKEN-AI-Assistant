@@ -1,0 +1,11 @@
+for backend in backends:
+try:
+self.logger.info(f"Attempting face detection with {backend} backend")
+face_features = DeepFace.represent(
+img_path=image_path,
+model_name='ArcFace',
+detector_backend=backend,
+enforce_detection=True,
+align=True
+)
+if face_features and len(face_features) > 0:

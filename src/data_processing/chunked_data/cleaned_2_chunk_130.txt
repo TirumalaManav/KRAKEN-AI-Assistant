@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+try:
+# Verify datasets directory exists
+if not os.path.exists(DATASETS_DIR):
+raise Exception(f"Datasets directory not found: {DATASETS_DIR}")
+# Get available datasets
+available_datasets = get_available_datasets()
+if not available_datasets:

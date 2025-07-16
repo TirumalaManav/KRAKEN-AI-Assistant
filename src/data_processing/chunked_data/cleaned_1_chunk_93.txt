@@ -1,0 +1,3 @@
+print("{} samples selected (over {})".format(np.count_nonzero(train_gt), np.count_nonzero(gt)))
+print("Running an experiment with the {} model".format(MODEL), "run {}/{}".format(run + 1, N_RUNS))
+display_predictions(convert_to_color(train_gt), viz, caption="Train ground truth")

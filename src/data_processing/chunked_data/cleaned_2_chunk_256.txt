@@ -1,0 +1,10 @@
+logging.basicConfig(
+level=logging.INFO,
+format='%(asctime)s - %(levelname)s - [User: TirumalaManav] - %(message)s',
+handlers=[
+logging.FileHandler('hyperspectral_processing.log'),
+logging.StreamHandler()
+]
+)
+logger = logging.getLogger(__name__)
+# Global variables

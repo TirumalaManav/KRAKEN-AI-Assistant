@@ -1,0 +1,14 @@
+import scipy.io as sio
+import traceback
+import platform
+import gc
+import sys
+import signal
+import atexit
+from pathlib import Path
+import subprocess
+from io import BytesIO
+from PIL import Image
+import base64
+from face_verification import AdvancedCyberSecuritySystem
+# Initialize Flask app

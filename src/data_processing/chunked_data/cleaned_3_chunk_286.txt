@@ -1,0 +1,10 @@
+</div>
+</div>
+<div class="parameter-slider">
+<label>Learning Rate</label>
+<div class="slider-container">
+<input type="range" id="learning-rate" min="1" max="100" value="100">
+<span class="slider-value" id="learning-rate-value">0.01</span>
+</div>
+</div>
+<div class="parameter-slider">

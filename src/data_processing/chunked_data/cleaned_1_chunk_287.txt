@@ -1,0 +1,6 @@
+self.conv1_bn = nn.BatchNorm3d(96)
+self.pool1 = nn.MaxPool3d((1, 2, 2))
+#  256 kernels of size 3x3x256 with a stride of 2 pixels
+self.conv2 = nn.Conv3d(1, 256, (96, 3, 3), stride=(1,2,2))
+self.conv2_bn = nn.BatchNorm3d(256)
+self.pool2 = nn.MaxPool3d((1, 2, 2))

@@ -1,0 +1,4 @@
+for metric, values in history.history.items():
+logger.info(f"{metric}: {values[-1]:.4f}")
+# Log best performance
+best_epoch = history.history[monitor_metric].index(max(history.history[monitor_metric]))

@@ -1,0 +1,6 @@
+return [], None
+def get_precise_object_boundaries(self, frame, initial_bbox, spectrum_type=None):
+try:
+x, y, w, h = map(int, initial_bbox)
+search_margin = max(int(min(w, h) * 0.3), 30)
+roi = frame[max(0, y-search_margin):min(frame.shape[0], y+h+search_margin),

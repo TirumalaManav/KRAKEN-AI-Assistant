@@ -1,0 +1,6 @@
+#                 loss_win = display.line(
+#                     X=np.arange(iter_ - display_iter, iter_),
+#                     Y=mean_losses[iter_ - display_iter:iter_],
+#                     win=loss_win,
+#                     update=update,
+#                     opts={'title': "Training loss",

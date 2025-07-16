@@ -1,0 +1,5 @@
+tracker_weight = max(0.3, min(0.7, tracker_confidence))
+size_consistency = min(w1/w2, w2/w1) * min(h1/h2, h2/h1) if w1*w2*h1*h2 > 0 else 0
+size_weight = 0.8 if size_consistency < 0.7 else 0.7
+fused_box = (
+int(tracker_weight * x2 + (1-tracker_weight) * kalman_bbox[0]),

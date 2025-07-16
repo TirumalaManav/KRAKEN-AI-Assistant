@@ -1,0 +1,2 @@
+group_train.add_argument('--batch_size', type=int, help="Batch size (optional, if absent will be set by the model")
+group_train.add_argument('--test_stride', type=int, default=1, help="Sliding window step stride during inference (default = 1)")

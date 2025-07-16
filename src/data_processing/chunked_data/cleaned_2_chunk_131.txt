@@ -1,0 +1,6 @@
+if not available_datasets:
+logger.warning("No valid datasets found. Server will start, but predictions will not be available until training is completed.")
+else:
+print("\nStarting server with following configuration:")
+print(f"User: TirumalaManav")
+print(f"Timestamp: 2025-01-24 05:29:38")

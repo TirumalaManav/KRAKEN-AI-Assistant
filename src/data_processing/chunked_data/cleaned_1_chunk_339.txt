@@ -1,0 +1,4 @@
+#     n_classes = hyperparams['n_classes']
+#     kwargs = {'step': hyperparams['test_stride'], 'window_size': (patch_size, patch_size)}
+#     probs = np.zeros(img.shape[:2] + (n_classes,))
+#     iterations = count_sliding_window(img, **kwargs) // batch_size

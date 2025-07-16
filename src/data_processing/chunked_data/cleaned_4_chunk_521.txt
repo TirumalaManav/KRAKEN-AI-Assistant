@@ -1,0 +1,6 @@
+if loc_candidate is not None:
+detection_localizer = self.focused_yolo_refinement(loc_candidate, frame)
+# Run full-frame YOLO scan to compare detections
+detection_yolo = self.full_frame_yolo_scan(frame)
+# Fuse detections if both are available based on IoU
+detection_to_draw = None

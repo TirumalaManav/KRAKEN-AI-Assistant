@@ -1,0 +1,10 @@
+self.color_memory.append(hist)
+return True
+def compute_similarity(self, frame, bbox):
+if not self.feature_memory:
+return 0.0
+x, y, w, h = map(int, bbox)
+roi = frame[y:y+h, x:x+w]
+if roi.size == 0:
+return 0.0
+gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)

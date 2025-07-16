@@ -1,0 +1,11 @@
+g.paused = not g.paused
+elif key & 0xFF == ord('r'):
+g.tracked_object = None
+g.tracking_started = False
+g.init_rect = None
+g.click_point = None
+g.kalman_initialized = False
+g.message_display = ""
+elif key & 0xFF == ord('c'):
+if g.init_rect is not None:
+box = g.init_rect

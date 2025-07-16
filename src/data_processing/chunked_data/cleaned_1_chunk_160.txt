@@ -1,0 +1,4 @@
+""" Compute inverse median frequency weights for class balancing.
+For each class i, it computes its frequency f_i, i.e the ratio between
+the number of pixels from class i and the total number of pixels.
+Then, it computes the median m of all frequencies. For each class the

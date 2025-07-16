@@ -1,0 +1,9 @@
+<label>Select Model</label>
+<div class="select-wrapper">
+<select id="model-select" disabled>
+<option value="">Choose a model</option>
+<option value="cnn">Convolutional Neural Network (CNN)</option>
+<option value="autoencoder">Autoencoder (AE)</option>
+</select>
+</div>
+</div>

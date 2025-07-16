@@ -1,0 +1,7 @@
+<div class="particle" style="top: 90%; left: 10%; animation-delay: 4s;"></div>
+</div>
+<div class="brand-background">HYPER SPECTRAL</div>
+<!-- Small 3D Boxes at Top-Left and Top-Right -->
+<div class="small-3d-box top-left-box">
+<div class="face front"></div>
+<div class="face back"></div>

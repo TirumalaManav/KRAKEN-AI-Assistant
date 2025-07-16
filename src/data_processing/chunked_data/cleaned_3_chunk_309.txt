@@ -1,0 +1,9 @@
+showToast(validation.message, false);
+}
+});
+startTrainingBtn.addEventListener('click', async () => {
+if (!currentDataset || !currentModel || isTraining) return;
+const config = {
+datasetPath: currentDataset,
+modelType: currentModel,
+hyperparameters: {

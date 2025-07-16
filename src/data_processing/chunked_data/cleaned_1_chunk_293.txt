@@ -1,0 +1,11 @@
+x = self.pool2(x)
+b, t, c, w, h = x.size()
+x = x.view(b, 1, t*c, w, h)
+x = F.relu(self.conv3(x))
+x = x.view(-1, self.features_size)
+x = self.fc1(x)
+x = self.dropout(x)
+x = self.fc2(x)
+return x
+class LiuEtAl(nn.Module):
+"""

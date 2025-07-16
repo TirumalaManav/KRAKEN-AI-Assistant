@@ -1,0 +1,6 @@
+.small-3d-box .bottom { transform: rotateX(-90deg) translateZ(50px); background: rgba(255, 111, 97, 0.1); border-color: #ff6f61; }
+@keyframes rotate3dBox {
+0% { transform: rotateX(0) rotateY(0) rotateZ(0); }
+100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+.top-left-box {

@@ -1,0 +1,5 @@
+self.position_history.append(current_pos)
+if len(self.position_history) >= 2:
+velocity = self.position_history[-1] - self.position_history[-2]
+self.velocity_history.append(velocity)
+self.covariance = np.cov(np.array(self.position_history).T) + np.eye(2) * 1e-4

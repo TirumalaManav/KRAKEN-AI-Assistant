@@ -1,0 +1,9 @@
+test_indices = [list(t) for t in zip(*test_indices)]
+train_gt[train_indices] = gt[train_indices]
+test_gt[test_indices] = gt[test_indices]
+elif mode == 'disjoint':
+train_gt = np.copy(gt)
+test_gt = np.copy(gt)
+for c in np.unique(gt):
+mask = gt == c
+for x in range(gt.shape[0]):

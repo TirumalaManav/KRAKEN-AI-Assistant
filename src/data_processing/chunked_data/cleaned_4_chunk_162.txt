@@ -1,0 +1,9 @@
+key = cv2.waitKey(1) & 0xFF
+if key == 27 or key == ord('q'):  # Press 'Esc' or 'q' to quit
+print("Exiting...")
+break
+elif key == ord('c'):  # Press 'c' to cancel tracking
+tracking_initialized = False
+print("Tracking canceled. Select a new object.")
+frame_count += 1
+cap.release()

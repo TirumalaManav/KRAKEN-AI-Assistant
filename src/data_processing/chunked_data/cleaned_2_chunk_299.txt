@@ -1,0 +1,9 @@
+class HyperspectralPredictor:
+def __init__(self):
+self.timestamp = "2025-01-23 18:21:43"
+self.user = "TirumalaManav"
+# Set GPU memory growth
+self.configure_gpu()
+# Find directories
+self.base_dir = self.find_project_root()
+self.results_dir = os.path.join(self.base_dir, 'results')

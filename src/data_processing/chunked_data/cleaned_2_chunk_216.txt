@@ -1,0 +1,11 @@
+handlers=[
+logging.FileHandler('model_training.log'),
+logging.StreamHandler()
+]
+)
+logger = logging.getLogger(__name__)
+def compile_model_dynamic(model, model_type='standard'):
+"""
+Dynamically compile model based on its type
+"""
+try:

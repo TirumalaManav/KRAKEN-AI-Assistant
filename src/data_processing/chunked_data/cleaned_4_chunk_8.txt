@@ -1,0 +1,11 @@
+"""
+if len(frame.shape) == 3:
+gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+else:
+gray = frame.copy()
+mean_val = np.mean(gray)
+std_val = np.std(gray)
+if std_val < 30:
+clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+gray = clahe.apply(gray)
+sigma_color = 20 if std_val < 40 else 10

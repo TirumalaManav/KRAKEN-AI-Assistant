@@ -1,0 +1,8 @@
+cap = cv2.VideoCapture(0)
+if not cap.isOpened():
+logger.error("Failed to open webcam")
+return None
+self.global_vars.total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) if self.video_path else 0
+orig_fps = cap.get(cv2.CAP_PROP_FPS) or 25
+self.global_vars.new_fps = min(120, 4 * orig_fps)
+return cap

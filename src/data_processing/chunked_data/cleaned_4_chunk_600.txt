@@ -1,0 +1,8 @@
+logger.info("Space: Pause/Resume")
+logger.info("'r' key: Reset tracking")
+logger.info("q: Quit")
+g.frame_queue = queue.Queue(maxsize=1)
+prev_time = time.time()
+while True:
+current_time = time.time()
+fps = 1 / (current_time - prev_time) if (current_time - prev_time) > 0 else 0

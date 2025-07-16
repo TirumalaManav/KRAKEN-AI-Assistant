@@ -1,0 +1,8 @@
+logger.error(f"Error processing frame: {e}")
+return frame, None, fps
+def start_tracking(self, box):
+"""Initialize tracking with given bounding box"""
+try:
+if self.global_vars.frame is None or box is None or min(box[2], box[3]) <= 0:
+return False
+tracker = build_tracker(self.model)

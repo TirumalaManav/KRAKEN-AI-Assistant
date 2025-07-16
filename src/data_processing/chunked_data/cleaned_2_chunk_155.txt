@@ -1,0 +1,10 @@
+if not encrypted_biometrics:
+return False
+encrypted_key, salt = self._generate_dynamic_key(passphrase)
+if not encrypted_key or not salt:
+return False
+# Prepare and save user data
+user_data = {
+'encrypted_biometrics': encrypted_biometrics,
+'salt': salt,
+'encryption_key': encrypted_key,

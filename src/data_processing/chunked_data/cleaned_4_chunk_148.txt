@@ -1,0 +1,10 @@
+VIDEO_PATH = 0
+# Global variables for mouse callback
+drawing = False
+start_point = None
+end_point = None
+new_box = None
+tracking_initialized = False
+def mouse_callback(event, x, y, flags, param):
+global drawing, start_point, end_point, new_box
+if event == cv2.EVENT_LBUTTONDOWN:

@@ -1,0 +1,6 @@
+return bbox
+class ConfidenceTracker:
+"""Manages tracking confidence and object persistence"""
+def __init__(self, confidence_threshold=0.5, lost_frames_threshold=60, det_thresh=0.2):
+self.confidence_threshold = confidence_threshold
+self.lost_frames_threshold = lost_frames_threshold

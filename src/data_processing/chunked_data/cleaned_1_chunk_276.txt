@@ -1,0 +1,13 @@
+x2_1 = self.conv2_1(x)
+x2_2 = self.conv2_2(x)
+x2_3 = self.conv2_3(x)
+x2_4 = self.conv2_4(x)
+x = x2_1 + x2_2 + x2_3 + x2_4
+x = F.relu(x)
+x3_1 = self.conv3_1(x)
+x3_2 = self.conv3_2(x)
+x3_3 = self.conv3_3(x)
+x3_4 = self.conv3_4(x)
+x = x3_1 + x3_2 + x3_3 + x3_4
+x = F.relu(x)
+x = F.relu(self.conv4(x))

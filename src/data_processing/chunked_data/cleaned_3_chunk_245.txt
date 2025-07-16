@@ -1,0 +1,8 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="TirumalaManav">
+<meta name="timestamp" content="2025-01-23 13:31:46">
+<title>Hyperspectral Image Classification</title>
+<!-- CSS Libraries -->

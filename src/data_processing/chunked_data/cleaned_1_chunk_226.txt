@@ -1,0 +1,14 @@
+x = F.relu(x)
+x = self.fc2(x)
+return x
+class Baseline(nn.Module):
+"""
+Baseline network
+"""
+@staticmethod
+def weight_init(m):
+if isinstance(m, nn.Linear):
+init.kaiming_normal_(m.weight)
+init.zeros_(m.bias)
+def __init__(self, input_channels, n_classes, dropout=False):
+super(Baseline, self).__init__()

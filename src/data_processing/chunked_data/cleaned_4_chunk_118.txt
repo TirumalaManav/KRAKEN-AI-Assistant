@@ -1,0 +1,7 @@
+return
+g.total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+orig_fps = cap.get(cv2.CAP_PROP_FPS) or 25
+g.new_fps = min(120, 4 * orig_fps)  # Aim for higher FPS for hypersonic tracking
+cv2.namedWindow("Tracking")
+cv2.setMouseCallback("Tracking", mouse_callback)
+logger.info("\nControls:")

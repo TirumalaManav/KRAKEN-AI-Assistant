@@ -1,0 +1,5 @@
+return min(1.0, tracker_confidence + 0.2 * (iou_score + shape_similarity))
+return tracker_confidence
+def duo_confidence_boost(self, bbox, tracker_confidence, kalman_bbox):
+mahalanobis_dist = self.motion_model.mahalanobis_distance(bbox)
+iou_score = iou(bbox, kalman_bbox)

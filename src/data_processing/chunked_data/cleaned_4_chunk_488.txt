@@ -1,0 +1,4 @@
+cv2.THRESH_BINARY, 15, -2)
+combined_thresh = cv2.bitwise_and(thresh_frame, adapt_thresh)
+kernel = np.ones((self.MORPH_KERNEL_SIZE, self.MORPH_KERNEL_SIZE), np.uint8)
+opened = cv2.morphologyEx(combined_thresh, cv2.MORPH_OPEN, kernel, iterations=1)

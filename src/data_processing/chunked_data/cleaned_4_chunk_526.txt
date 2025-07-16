@@ -1,0 +1,9 @@
+video_path = r"D:\TX\Tracking\demo\M5.avi"
+model_path = r"D:\TX\Tracking\experiments\yolov8n.pt"
+app = LocalizationApp(video_path, model_path)
+app.run()
+from __future__ import absolute_import, division, print_function, unicode_literals
+import argparse
+import cv2
+import torch
+import numpy as np

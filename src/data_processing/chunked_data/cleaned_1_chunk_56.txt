@@ -1,0 +1,5 @@
+help="Specify CUDA device (defaults to -1, which learns on CPU)")
+parser.add_argument('--checkpoint', type=str, default=None,
+help="Weights to use for initialization, e.g. a checkpoint")
+group_test = parser.add_argument_group('Test')
+group_test.add_argument('--test_stride', type=int, default=1,

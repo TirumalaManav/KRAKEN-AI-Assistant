@@ -1,0 +1,15 @@
+padding: 1rem;
+border-radius: 10px;
+display: none;
+backdrop-filter: blur(5px);
+}
+.success {
+background: rgba(46, 204, 113, 0.2);
+color: #fff;
+border: 1px solid rgba(46, 204, 113, 0.3);
+}
+.error {
+background: rgba(231, 76, 60, 0.2);
+color: #fff;
+border: 1px solid rgba(231, 76, 60, 0.3);
+}

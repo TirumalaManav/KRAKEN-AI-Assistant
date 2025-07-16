@@ -1,0 +1,10 @@
+'accumulator': TemporalEvidenceAccumulator(),
+'kalman': kalman,
+'prev_frame': None
+}
+g.mode = "tracking"
+g.init_rect = None
+g.click_point = None
+g.message_display = "Object tracking started."
+else:
+logger.warning("No selection made. Please select an object before pressing 'c'.")

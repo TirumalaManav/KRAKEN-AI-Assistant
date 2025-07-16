@@ -1,0 +1,7 @@
+elif object_type == 'flat':
+self.feature_extractor.setMaxFeatures(int(original_nfeatures * 1.2))
+fast_thresh = self.feature_extractor.getFastThreshold()
+self.feature_extractor.setFastThreshold(fast_thresh + 5)
+if bbox:
+x, y, w, h = map(int, bbox)
+margin = int(min(w, h) * 0.2)

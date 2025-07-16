@@ -1,0 +1,7 @@
+DATASET_MAPPINGS[dataset_info['name']] = {
+'data_file': dataset_info['data_file'],
+'label_file': dataset_info['label_file'],
+'data_keys': dataset_info['data_keys'],
+'label_keys': dataset_info['label_keys'],
+'description': dataset_info['description'],
+'n_classes': dataset_info['n_classes'],

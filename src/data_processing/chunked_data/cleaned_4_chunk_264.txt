@@ -1,0 +1,8 @@
+model = ModelBuilder()
+model.load_state_dict(torch.load(SNAPSHOT_PATH, map_location=lambda storage, loc: storage.cpu(), weights_only=True))
+return model.eval().to(device)
+except Exception as e:
+logger.error(f"Failed to load model: {e}")
+return None
+def _initialize_video(self):
+try:

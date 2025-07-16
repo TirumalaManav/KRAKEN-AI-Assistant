@@ -1,0 +1,8 @@
+total_labeled = np.sum(labels != 0)
+processed = 0
+for i in range(pad_size, h - pad_size):
+for j in range(pad_size, w - pad_size):
+if labels[i, j] != 0:  # Only extract patches for labeled pixels
+patch = images[i - pad_size:i + pad_size + 1,
+j - pad_size:j + pad_size + 1, :]
+patches.append(patch)

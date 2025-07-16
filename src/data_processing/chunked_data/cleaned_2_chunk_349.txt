@@ -1,0 +1,9 @@
+raise
+def calculate_metrics(self, ground_truth, predicted, class_names):
+"""Calculate prediction metrics"""
+try:
+# Flatten arrays and remove background
+mask = ground_truth != 0
+y_true = ground_truth[mask]
+y_pred = predicted[mask]
+# Get unique labels (excluding background)

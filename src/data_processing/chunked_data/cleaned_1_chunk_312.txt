@@ -1,0 +1,4 @@
+if isinstance(m, (nn.Linear, nn.GRU)):
+init.uniform_(m.weight.data, -0.1, 0.1)
+init.uniform_(m.bias.data, -0.1, 0.1)
+def __init__(self, input_channels, n_classes):

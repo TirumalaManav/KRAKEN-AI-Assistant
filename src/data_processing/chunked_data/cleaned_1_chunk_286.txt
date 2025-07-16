@@ -1,0 +1,6 @@
+super(SharmaEtAl, self).__init__()
+self.input_channels = input_channels
+self.patch_size = patch_size
+# An input image of size 263x263 pixels is fed to conv1
+# with 96 kernels of size 6x6x96 with a stride of 2 pixels
+self.conv1 = nn.Conv3d(1, 96, (input_channels, 6, 6), stride=(1,2,2))

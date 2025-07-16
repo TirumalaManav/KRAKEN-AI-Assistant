@@ -1,0 +1,3 @@
+edges_combined = cv2.morphologyEx(edges_combined, cv2.MORPH_CLOSE, np.ones((3, 3), np.uint8), iterations=1)
+object_type = 'large' if min(w, h) > 200 else 'small' if min(w, h) < 50 else None
+keypoints, _ = self.extract_adaptive_features(roi, object_type=object_type)

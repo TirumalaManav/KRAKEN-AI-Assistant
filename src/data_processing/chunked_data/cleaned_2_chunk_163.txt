@@ -1,0 +1,9 @@
+return is_verified
+except Exception as verify_error:
+self.logger.error(f"Face verification error: {verify_error}")
+return False
+finally:
+# Clean up temporary verification image
+if os.path.exists(current_face_image):
+os.remove(current_face_image)
+except Exception as e:

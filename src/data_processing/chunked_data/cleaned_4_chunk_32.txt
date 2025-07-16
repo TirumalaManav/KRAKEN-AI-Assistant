@@ -1,0 +1,9 @@
+return False
+keypoints, descriptors = self.extract_adaptive_features(
+roi,
+object_type='large' if max(w, h) > 200 else 'small' if max(w, h) < 50 else None
+)
+if descriptors is not None and len(descriptors) > 0:
+self.feature_memory.append(descriptors)
+else:
+return False

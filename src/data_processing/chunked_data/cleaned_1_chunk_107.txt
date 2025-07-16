@@ -1,0 +1,8 @@
+display=viz, continue_training=continue_training)
+except KeyboardInterrupt:
+pass
+if not continue_training:
+probabilities = test(model, img, hyperparams)
+prediction = np.argmax(probabilities, axis=-1)
+if prediction is None:
+probabilities = test(model, img, hyperparams)

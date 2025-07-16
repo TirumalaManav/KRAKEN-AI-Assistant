@@ -1,0 +1,4 @@
+#                                            opts={'title': "Validation accuracy",
+#                                                  'xlabel': "Epochs",
+#                                                  'ylabel': "Accuracy"
+#                                                 })

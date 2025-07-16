@@ -1,0 +1,6 @@
+for file in dataset_files:
+if not os.path.exists(os.path.join(vis_dir, file)):
+logger.warning(f"Missing file for {dataset_name}: {file}")
+return None
+# Check if common training history files exist
+common_files = [files['training_history_plot'], files['training_history_text']]

@@ -1,0 +1,13 @@
+x = self.pool1(x)
+x = self.dropout(x)
+x = F.relu(self.conv2(x))
+x = self.pool2(x)
+x = self.dropout(x)
+x = F.relu(self.conv3(x))
+x = self.dropout(x)
+x = x.view(-1, self.features_size)
+x = self.fc(x)
+return x
+class LiEtAl(nn.Module):
+"""
+SPECTRAL–SPATIAL CLASSIFICATION OF HYPERSPECTRAL IMAGERY

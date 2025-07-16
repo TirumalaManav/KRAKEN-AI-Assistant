@@ -1,0 +1,7 @@
+init.constant_(m.bias.data, 0)
+def __init__(self, input_channels, n_classes, n_planes=2, patch_size=5):
+super(LiEtAl, self).__init__()
+self.input_channels = input_channels
+self.n_planes = n_planes
+self.patch_size = patch_size
+# The proposed 3D-CNN model has two 3D convolution layers (C1 and C2)

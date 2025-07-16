@@ -1,0 +1,9 @@
+}
+};
+try {
+isTraining = true;
+startTrainingBtn.disabled = true;
+startTrainingBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Training...';
+const response = await startTrainingAPI(config);
+if (response.success) {
+showToast("Training completed successfully");

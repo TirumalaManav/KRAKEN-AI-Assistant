@@ -1,0 +1,9 @@
+target_names = [class_names[i] for i in unique_labels]
+class_report = classification_report(
+y_true, y_pred,
+labels=unique_labels,
+target_names=target_names,
+zero_division=0
+)
+logger.info(f"Calculated metrics for {len(unique_labels)} classes")
+logger.info(f"Labels present in data: {unique_labels}")

@@ -1,0 +1,4 @@
+# Calculate moving averages for loss
+loss_ma = np.convolve(loss_data, np.ones(window)/window, mode='valid')
+val_loss_ma = np.convolve(val_loss_data, np.ones(window)/window, mode='valid')
+ax4.plot(loss_data, 'g-', alpha=0.3, label='Training')

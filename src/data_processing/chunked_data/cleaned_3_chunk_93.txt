@@ -1,0 +1,17 @@
+}
+}
+.deployment-info {
+font-size: 1rem;
+margin-bottom: 1rem;
+color: white; /* Ensure text is visible */
+}
+.system-capabilities {
+font-size: 1.1rem;
+margin-bottom: 2rem;
+color: white; /* Ensure text is visible */
+}
+.key-metrics {
+display: flex;
+justify-content: space-around;
+margin-bottom: 2rem;
+}

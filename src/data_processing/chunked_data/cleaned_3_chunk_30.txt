@@ -1,0 +1,6 @@
+<div class="member-image">
+<img src="D:\Validating\TestingALL\static\Images\lalan.jpg" alt="Lalan Kumar">
+</div>
+<div class="member-info">
+<h3>Lalan Kumar</h3>
+<div class="member-role">MLOps Engineer</div>

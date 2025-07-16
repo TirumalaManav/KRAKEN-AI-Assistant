@@ -1,0 +1,6 @@
+N_BANDS = img.shape[-1]
+SVM_GRID_PARAMS = [{'kernel': ['rbf'], 'gamma': [1e-1, 1e-2, 1e-3], 'C': [1, 10, 100, 1000]},
+{'kernel': ['linear'], 'C': [0.1, 1, 10, 100, 1000]},
+{'kernel': ['poly'], 'degree': [3], 'gamma': [1e-1, 1e-2, 1e-3]}]
+if palette is None:
+palette = {0: (0, 0, 0)}

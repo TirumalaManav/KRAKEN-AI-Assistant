@@ -1,0 +1,8 @@
+f'Timestamp: {self.timestamp} | User: {self.user}',
+fontsize=14, y=0.95
+)
+# Save the figure
+history_path = os.path.join(vis_dir, 'training_history.png')
+plt.savefig(history_path, dpi=300, bbox_inches='tight')
+plt.close()
+# Save detailed metrics as text

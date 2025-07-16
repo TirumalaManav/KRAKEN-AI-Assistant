@@ -1,0 +1,7 @@
+self.max_velocity_base = 7500       # Increased from 1500 for hypersonic
+self.object_size = 1.0
+self.covariance = np.eye(2) * 1e-2
+def set_object_size(self, bbox):
+w, h = bbox[2], bbox[3]
+self.object_size = max(w, h) / 100.0
+self.max_acceleration = self.max_acceleration_base * self.object_size

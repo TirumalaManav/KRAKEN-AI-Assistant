@@ -1,0 +1,14 @@
+},
+loss_weights={
+'decoded': 0.3,
+'classifier': 0.7
+},
+metrics={
+'classifier': 'accuracy'
+}
+)
+logger.info("Model compiled successfully")
+except Exception as e:
+logger.error(f"Error in model initialization/compilation: {str(e)}")
+return jsonify({
+"success": False,

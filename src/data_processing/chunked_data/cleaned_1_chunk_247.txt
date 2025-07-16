@@ -1,0 +1,10 @@
+Hyungtae Lee and Heesung Kwon
+IGARSS 2016
+"""
+@staticmethod
+def weight_init(m):
+if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
+init.kaiming_uniform_(m.weight)
+init.zeros_(m.bias)
+def __init__(self, in_channels, n_classes):
+super(LeeEtAl, self).__init__()

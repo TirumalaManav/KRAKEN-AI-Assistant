@@ -1,0 +1,10 @@
+if not username or not image_data:
+return jsonify({
+"success": False,
+"message": "Missing username or image data"
+}), 400
+# Verify user
+passphrase = "default_passphrase"
+success = security_system.authenticate_user(username, passphrase, image_data)
+if success:
+session['username'] = username

@@ -1,0 +1,8 @@
+"Acacia woodlands", "Acacia shrublands",
+"Acacia grasslands", "Short mopane", "Mixed mopane",
+"Exposed soils"]
+ignored_labels = [0]
+elif dataset_name == 'KSC':
+# Load the image
+img = open_file(folder + 'KSC.mat')['KSC']
+rgb_bands = (43, 21, 11)  # AVIRIS sensor

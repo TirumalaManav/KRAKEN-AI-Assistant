@@ -1,0 +1,4 @@
+cv2.normalize(curr_hist, curr_hist)
+color_similarity = max(0.0, max(cv2.compareHist(curr_hist, hist, cv2.HISTCMP_CORREL)
+for hist in self.color_memory)) if self.color_memory and object_type != 'small' else 0.0
+uniqueness_score = 0.0

@@ -1,0 +1,8 @@
+break
+if labels is None:
+raise KeyError(f"No valid label key found in {mapping['label_file']}")
+logger.info(f"Image shape: {images.shape}")
+logger.info(f"Label shape: {labels.shape}")
+logger.info(f"Unique labels: {np.unique(labels)}")
+return images, labels
+except Exception as e:

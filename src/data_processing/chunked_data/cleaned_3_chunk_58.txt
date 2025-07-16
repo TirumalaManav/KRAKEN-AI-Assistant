@@ -1,0 +1,16 @@
+outline: none;
+border-color: #00d4ff;
+}
+.submit-btn {
+background: linear-gradient(45deg, #00d4ff, #ff6f61);
+color: white;
+padding: 15px 30px;
+border: none;
+border-radius: 10px;
+font-size: 1rem;
+cursor: pointer;
+transition: transform 0.3s ease;
+width: 100%;
+margin-top: 20px;
+}
+.submit-btn:hover {

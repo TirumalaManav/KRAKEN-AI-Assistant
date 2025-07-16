@@ -1,0 +1,10 @@
+'salt': salt,
+'encryption_key': encrypted_key,
+'reference_image': reference_path,
+'registration_date': datetime.now().isoformat()
+}
+with open(user_file, 'wb') as f:
+pickle.dump(user_data, f)
+self.logger.info(f"User {username} registered successfully")
+return True
+except Exception as e:

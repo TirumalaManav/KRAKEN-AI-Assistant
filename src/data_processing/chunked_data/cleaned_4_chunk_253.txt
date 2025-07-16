@@ -1,0 +1,12 @@
+self.max_age = max_age
+self.min_hits = min_hits
+self.candidate_buffer = deque()
+self.missed_count = 0
+self.last_refined_bbox = None
+self.hit_streak = 0
+self.time_since_update = 0
+def reset(self):
+self.candidate_buffer.clear()
+self.missed_count = 0
+self.last_refined_bbox = None
+self.hit_streak = 0

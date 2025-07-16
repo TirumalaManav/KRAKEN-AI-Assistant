@@ -1,0 +1,11 @@
+"redirect": url_for('login')
+}), 200
+else:
+logger.warning(f"Registration failed for user {username}")
+if os.path.exists(image_path):
+os.remove(image_path)
+return jsonify({
+"success": False,
+"message": "Registration failed. Please try again."
+}), 400
+except Exception as e:

@@ -1,0 +1,7 @@
+hyperparams = vars(args)
+if CUSTOM_DATASET:
+img, gt, LABEL_VALUES, IGNORED_LABELS, RGB_BANDS, palette = open_file(CUSTOM_DATASET)
+else:
+img, gt, LABEL_VALUES, IGNORED_LABELS, RGB_BANDS, palette = get_dataset(DATASET, FOLDER)
+N_CLASSES = len(LABEL_VALUES)
+N_BANDS = img.shape[-1]

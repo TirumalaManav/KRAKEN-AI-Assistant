@@ -1,0 +1,8 @@
+if (matFiles.length >= 2) {
+const validation = await validateDatasetAPI(folderPath);
+if (validation.success) {
+currentDataset = folderPath;
+selectedFiles.innerHTML = `
+<div class="validation-message success">
+<i class="fas fa-check-circle"></i> Dataset validated successfully
+<br>

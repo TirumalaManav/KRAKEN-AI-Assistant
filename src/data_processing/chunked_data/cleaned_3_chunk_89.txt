@@ -1,0 +1,10 @@
+text-transform: uppercase;
+user-select: none;
+animation: float 10s infinite ease-in-out, rotate 20s infinite linear;
+z-index: 0;
+}
+@keyframes float {
+0%, 100% {
+transform: translate(-50%, -50%) perspective(500px) rotateX(30deg) rotateY(0deg) translateY(0);
+}
+50% {

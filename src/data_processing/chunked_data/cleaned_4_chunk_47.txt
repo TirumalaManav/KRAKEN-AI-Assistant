@@ -1,0 +1,7 @@
+acceleration = current_velocity - self.velocity_history[-1]
+# More permissive thresholds for hypersonic speeds
+velocity_norm = np.linalg.norm(current_velocity)
+if (np.linalg.norm(acceleration) > self.max_acceleration * 3.0 or
+velocity_norm > self.max_velocity * 3.0):
+return False
+return True

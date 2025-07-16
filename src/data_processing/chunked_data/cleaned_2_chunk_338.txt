@@ -1,0 +1,7 @@
+f.write(f"Training Loss: {history['loss'][-1]:.4f}\n")
+f.write(f"Validation Loss: {history['val_loss'][-1]:.4f}\n")
+# Write epoch-wise metrics
+f.write("\nEpoch-wise Metrics:\n")
+f.write("-"*20 + "\n")
+f.write("Epoch  Train_Acc  Val_Acc  Train_Loss  Val_Loss\n")
+f.write("-" * 50 + "\n")

@@ -1,0 +1,9 @@
+session['username'] = username  # Store username in session
+return jsonify({
+"success": True,
+"message": "Verification successful! Welcome back!",
+"redirect": url_for('train')  # Redirect to train page
+}), 200
+else:
+logger.warning(f"Verification failed for user {username}")
+return jsonify({

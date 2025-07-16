@@ -1,0 +1,5 @@
+logger.info(f"Applying PCA with {hyperparameters['n_components']} components...")
+images = apply_pca(images, hyperparameters['n_components'])
+logger.info(f"PCA applied successfully. New shape: {images.shape}")
+# Get number of classes
+unique_labels = np.unique(labels)

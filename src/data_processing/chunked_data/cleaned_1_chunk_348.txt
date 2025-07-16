@@ -1,0 +1,6 @@
+#             #target = target - 1
+#             for pred, out in zip(output.view(-1), target.view(-1)):
+#                 if out.item() in ignored_labels:
+#                     continue
+#                 else:
+#                     accuracy += out.item() == pred.item()

@@ -1,0 +1,9 @@
+# Fourth Conv Block
+layers.Conv2D(512, kernel_size=3, padding='same'),
+layers.BatchNormalization(),
+layers.ReLU(),
+layers.MaxPooling2D(pool_size=2, strides=1),
+# Fifth Conv Block
+layers.Conv2D(1024, kernel_size=3, padding='same'),
+layers.BatchNormalization(),
+layers.ReLU(),

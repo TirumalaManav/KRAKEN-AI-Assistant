@@ -1,0 +1,8 @@
+def __init__(self, video_path=None):
+self.video_path = video_path if video_path else DEFAULT_VIDEO_PATH
+self.global_vars = GlobalVars()
+self.model = self._load_model()
+self.cap = self._initialize_video()
+self.tracker = None
+self.prev_frame = None
+self.prev_time = time.time()

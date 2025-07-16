@@ -1,0 +1,7 @@
+iou_score = iou(bbox, kalman_bbox)
+if mahalanobis_dist > 5.0 or iou_score < 0.3:
+return max(0.0, tracker_confidence - 0.3)
+return tracker_confidence
+def update(self, frame, bbox, tracker_confidence, kalman_bbox):
+if self.initial_size is None:
+self.initial_size = (bbox[2], bbox[3])

@@ -1,0 +1,5 @@
+current_aspect_ratio = w / h if h != 0 else 1.0
+aspect_ratio_change = abs(current_aspect_ratio - self.initial_aspect_ratio) / self.initial_aspect_ratio
+growth_factor = max(0.1, min(0.5, 1.0 - confidence))
+max_size_change = 0.7
+if aspect_ratio_change > self.max_aspect_ratio_change:

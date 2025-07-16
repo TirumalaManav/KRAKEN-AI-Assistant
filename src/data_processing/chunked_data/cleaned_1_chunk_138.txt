@@ -1,0 +1,8 @@
+step: int stride of the sliding window
+window_size: int tuple, width and height of the window
+Returns:
+int number of windows
+"""
+sw = sliding_window(top, step, window_size, with_data=False)
+return sum(1 for _ in sw)
+def grouper(n, iterable):

@@ -1,0 +1,5 @@
+epoch = kwargs.setdefault('epoch', 100)
+kwargs.setdefault('scheduler', optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=epoch//4, verbose=True))
+#kwargs.setdefault('scheduler', None)
+kwargs.setdefault('batch_size', 100)
+kwargs.setdefault('supervision', 'full')

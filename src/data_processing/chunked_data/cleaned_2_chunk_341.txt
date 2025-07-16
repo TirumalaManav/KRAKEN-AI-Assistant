@@ -1,0 +1,6 @@
+f"{history['loss'][epoch]:10.4f}  "
+f"{history['val_loss'][epoch]:8.4f}\n")
+except Exception as e:
+logger.error(f"Error saving training history text: {str(e)}")
+raise
+def visualize_results(self, ground_truth, predicted, dataset_name, save_dir, model_metadata):

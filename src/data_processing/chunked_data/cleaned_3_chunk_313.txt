@@ -1,0 +1,10 @@
+showToast("Training completed successfully");
+// Check if the response contains a redirect URL
+if (response.redirect_url) {
+// Redirect to the prediction page
+window.location.href = response.redirect_url;
+}
+} else {
+showToast(response.message, false);
+}
+} catch (error) {

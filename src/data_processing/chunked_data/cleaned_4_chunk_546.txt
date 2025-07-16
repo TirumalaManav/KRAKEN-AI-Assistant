@@ -1,0 +1,7 @@
+self.max_aspect_ratio_change = 0.3
+def predict(self):
+prediction = self.kalman.predict()
+return tuple(prediction[:4].flatten())
+def update(self, bbox):
+x, y, w, h = bbox
+current_aspect_ratio = w / h if h != 0 else 1.0

@@ -1,0 +1,10 @@
+"final_metrics": final_metrics,
+"training_history": {
+k: [float(v) for v in vals]
+for k, vals in history.history.items()
+}
+}
+# Save results and model
+results_path = os.path.join(result_dir, 'training_results.json')
+with open(results_path, 'w') as f:
+json.dump(training_results, f, indent=4)

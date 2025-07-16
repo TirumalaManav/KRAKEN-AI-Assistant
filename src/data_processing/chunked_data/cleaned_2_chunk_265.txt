@@ -1,0 +1,10 @@
+'Corn', 'Grass-pasture', 'Grass-trees',
+'Grass-pasture-mowed', 'Hay-windrowed', 'Oats',
+'Soybean-notill', 'Soybean-mintill', 'Soybean-clean',
+'Wheat', 'Woods', 'Buildings-Grass-Trees-Drives',
+'Stone-Steel-Towers']
+},
+'KSC': {
+'data_file': 'KSC.mat',
+'label_file': 'KSC_gt.mat',
+'data_keys': ['KSC'],

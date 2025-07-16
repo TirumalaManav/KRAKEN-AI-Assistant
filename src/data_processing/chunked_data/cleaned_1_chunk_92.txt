@@ -1,0 +1,7 @@
+test_gt = np.copy(gt)
+w, h = test_gt.shape
+test_gt[(train_gt > 0)[:w, :h]] = 0
+elif TEST_GT is not None:
+test_gt = open_file(TEST_GT)
+else:
+train_gt, test_gt = sample_gt(gt, SAMPLE_PERCENTAGE, mode=SAMPLING_MODE)

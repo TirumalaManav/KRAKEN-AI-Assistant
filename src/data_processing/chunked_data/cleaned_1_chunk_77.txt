@@ -1,0 +1,2 @@
+group_train.add_argument('--lr', type=float, help="Learning rate, set by the model if not specified.")
+group_train.add_argument('--class_balancing', action='store_true', help="Inverse median frequency class balancing (default = False)")

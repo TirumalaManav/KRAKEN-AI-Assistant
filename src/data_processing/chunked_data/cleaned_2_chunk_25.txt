@@ -1,0 +1,11 @@
+try:
+passphrase = "default_passphrase"
+success = security_system.register_user(username, passphrase, image_data)
+if success:
+logger.info(f"Successfully registered user {username}")
+return jsonify({
+"success": True,
+"message": "Registration successful!",
+"redirect": url_for('login')
+}), 200
+else:

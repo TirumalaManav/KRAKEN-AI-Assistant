@@ -1,0 +1,9 @@
+for c in np.unique(gt):
+if c == 0:
+continue
+indices = np.nonzero(gt == c)
+X = list(zip(*indices)) # x,y features
+train, test = sklearn.model_selection.train_test_split(X, train_size=train_size)
+train_indices += train
+test_indices += test
+train_indices = [list(t) for t in zip(*train_indices)]

@@ -1,0 +1,6 @@
+#         display (False/None to switch off).
+#         scheduler (optional): PyTorch scheduler
+#         val_loader (optional): validation dataset
+#         supervision (optional): 'full' or 'semi'
+#     """
+#     if criterion is None:

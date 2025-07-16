@@ -1,0 +1,16 @@
+bottom: -10px;
+left: 0;
+width: 60px;
+height: 4px;
+background: linear-gradient(135deg, #2a2a72, #009ffd);
+border-radius: 2px;
+}
+/* Card Grid */
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+margin-top: 2rem;
+}
+.card {
+background: white;

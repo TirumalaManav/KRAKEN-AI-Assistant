@@ -1,0 +1,5 @@
+int(tracker_weight * y2 + (1-tracker_weight) * kalman_bbox[1]),
+int(size_weight * w2 + (1-size_weight) * kalman_bbox[2]),
+int(size_weight * h2 + (1-size_weight) * kalman_bbox[3])
+)
+new_center = (fused_box[0] + fused_box[2] // 2, fused_box[1] + fused_box[3] // 2)

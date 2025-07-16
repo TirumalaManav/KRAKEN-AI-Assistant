@@ -1,0 +1,16 @@
+font-family: monospace;
+white-space: pre-wrap;
+overflow-x: auto;
+font-size: 0.9rem;
+line-height: 1.5;
+}
+.visual-report {
+background-color: var(--card-background);
+padding: 1.5rem;
+border-radius: 8px;
+box-shadow: var(--shadow);
+}
+.visual-report table {
+width: 100%;
+border-collapse: collapse;
+}

@@ -1,0 +1,5 @@
+elif spectrum_type == "SWIR":
+params.update({'fastThreshold': 17, 'scaleFactor': 1.2, 'patchSize': 33})
+elif spectrum_type == "LWIR":
+params.update({'fastThreshold': 10, 'nfeatures': 2500, 'edgeThreshold': 41, 'patchSize': 41})
+elif spectrum_type == "FLIR":

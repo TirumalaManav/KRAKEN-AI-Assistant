@@ -1,0 +1,14 @@
+}
+/* Training Summary */
+.training-summary {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1.5rem;
+}
+.summary-item {
+text-align: center;
+padding: 1.5rem;
+background-color: var(--light-gray);
+border-radius: 8px;
+transition: var(--transition);
+}

@@ -1,0 +1,7 @@
+x = self.tanh(x)
+x = self.fc(x)
+return x
+# def train(net, optimizer, criterion, data_loader, epoch, scheduler=None,
+#           display_iter=100, device=torch.device('cpu'), display=None,
+#           val_loader=None, supervision='full'):
+#     """

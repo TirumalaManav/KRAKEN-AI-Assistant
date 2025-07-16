@@ -1,0 +1,7 @@
+sift_similarity = max(sift_similarity, similarity)
+hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+curr_hist = cv2.calcHist([hsv_roi], channels=[0, 1], mask=None,
+histSize=[50, 60], ranges=[0, 180, 0, 256])
+cv2.normalize(curr_hist, curr_hist)
+color_similarity = 0.0
+if self.color_memory:

@@ -1,0 +1,12 @@
+<div id="selected-files" class="validation-message"></div>
+</div>
+</div>
+</div>
+<!-- Model Configuration Card -->
+<div class="card">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+<h2>Model Configuration</h2>
+</div>
+<div class="form-group">
+<label>Select Model</label>

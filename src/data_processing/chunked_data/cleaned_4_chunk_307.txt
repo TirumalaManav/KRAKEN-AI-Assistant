@@ -1,0 +1,5 @@
+if search_gray.shape[0] < template_gray.shape[0] or search_gray.shape[1] < template_gray.shape[1]:
+return last_bbox
+res = cv2.matchTemplate(search_gray, template_gray, cv2.TM_CCOEFF_NORMED)
+_, max_val, _, max_loc = cv2.minMaxLoc(res)
+if max_val > 0.6:

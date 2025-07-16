@@ -1,0 +1,7 @@
+image_data = base64.b64decode(base64_image)
+nparr = np.frombuffer(image_data, np.uint8)
+frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+if frame is None:
+raise ValueError("Failed to decode image data")
+# Generate unique filename with timestamp
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

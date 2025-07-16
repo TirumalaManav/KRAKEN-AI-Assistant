@@ -1,0 +1,10 @@
+# Create window and set mouse callback
+cv2.namedWindow(video_name)
+cv2.setMouseCallback(video_name, mouse_callback)
+frame_count = 0
+frame_skip = 2
+# Main video loop
+print("Video is starting. Click and drag to select an object to track.")
+while True:
+# Get new frame
+ret, frame = cap.read()

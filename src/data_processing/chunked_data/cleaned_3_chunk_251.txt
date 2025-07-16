@@ -1,0 +1,12 @@
+}
+body.dark-mode ::-webkit-scrollbar-track {
+background: #1a1a2e;
+}
+body.dark-mode ::-webkit-scrollbar-thumb {
+background: var(--secondary-color);
+}
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+background: var(--success-color);
+}
+/* Hero Section */
+.hero-section {

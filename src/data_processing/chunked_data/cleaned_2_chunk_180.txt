@@ -1,0 +1,6 @@
+label_key = next(
+(key for key in label_data.keys() if 'gt' in key.lower() or 'labels' in key.lower()),
+None
+)
+if label_key is None:
+logger.error(f"Label data key for '{dataset_name}' not found in the label file {label_file}")

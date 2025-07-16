@@ -1,0 +1,5 @@
+patch_size = self.feature_extractor.getPatchSize()
+self.feature_extractor.setPatchSize(max(15, patch_size - 10))
+elif object_type == 'flat':
+self.feature_extractor.setMaxFeatures(int(original_nfeatures * 1.2))
+fast_thresh = self.feature_extractor.getFastThreshold()

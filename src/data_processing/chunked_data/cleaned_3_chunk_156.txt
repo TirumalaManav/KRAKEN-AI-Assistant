@@ -1,0 +1,16 @@
+transition: var(--transition);
+}
+.summary-item:hover {
+transform: translateY(-3px);
+box-shadow: var(--shadow);
+}
+.summary-item h3 {
+font-size: 0.9rem;
+color: var(--text-secondary);
+margin-bottom: 0.5rem;
+}
+.summary-item p {
+font-size: 1.8rem;
+font-weight: 600;
+color: var(--text-primary);
+}

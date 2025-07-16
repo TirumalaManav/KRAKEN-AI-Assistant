@@ -1,0 +1,11 @@
+return {
+'accuracy': accuracy,
+'confusion_matrix': conf_matrix,
+'classification_report': class_report,
+'labels': unique_labels,
+'target_names': target_names
+}
+except Exception as e:
+logger.error(f"Error calculating metrics: {str(e)}")
+raise
+def plot_metrics(self, metrics, dataset_name, save_dir):

@@ -1,0 +1,7 @@
+dataset = datasets[dataset_name]
+folder = target_folder + datasets[dataset_name].get('folder', dataset_name + '/')
+if dataset.get('download', True):
+# Download the dataset if is not present
+if not os.path.isdir(folder):
+os.mkdir(folder)
+for url in datasets[dataset_name]['urls']:

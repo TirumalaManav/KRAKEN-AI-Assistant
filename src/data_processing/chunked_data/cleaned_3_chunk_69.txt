@@ -1,0 +1,8 @@
+<p>info@hitam.org</p>
+<p>support@hitam.org</p>
+</div>
+</div>
+<div class="social-links">
+<a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+<a href="#" class="social-link"><i class="fab fa-github"></i></a>
+<a href="#" class="social-link"><i class="fab fa-twitter"></i></a>

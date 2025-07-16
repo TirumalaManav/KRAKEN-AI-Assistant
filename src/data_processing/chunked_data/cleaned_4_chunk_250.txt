@@ -1,0 +1,5 @@
+width_change, height_change = [abs(f - i) / i for f, i in zip([filtered_w, filtered_h], self.initial_size)]
+else:
+width_change, height_change = [abs(c - i) / i for c, i in zip(current_size, self.initial_size)]
+return max(width_change, height_change) <= self.max_size_change
+except Exception as e:

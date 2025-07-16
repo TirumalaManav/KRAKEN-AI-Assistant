@@ -1,0 +1,13 @@
+</div>
+<div class="metric">
+<span>Model Accuracy</span>
+<strong>99% Across All Architectures</strong>
+</div>
+<div class="metric">
+<span>Training Speed</span>
+<strong>Optimized for Faster Results</strong>
+</div>
+</div>
+<div class="tech-stack">
+Powered by:
+<span class="tech">TensorFlow</span> •

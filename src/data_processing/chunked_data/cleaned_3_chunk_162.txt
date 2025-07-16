@@ -1,0 +1,15 @@
+width: 100% !important;
+}
+.chart-container {
+position: relative;
+height: 400px;
+width: 100%;
+margin-bottom: 2rem;
+}
+/* Classification Report */
+.report-container {
+background-color: var(--light-gray);
+padding: 1.5rem;
+border-radius: 8px;
+font-family: monospace;
+white-space: pre-wrap;

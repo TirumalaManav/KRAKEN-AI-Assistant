@@ -1,0 +1,9 @@
+#         x = x.reshape(x.size(0), 1024 * 2 * 2)
+#         x = self.fc1(x)
+#         x = F.relu(x)
+#         x = self.fc2(x)
+#         return x
+class HyperspectralCNN(nn.Module):
+def __init__(self, in_channels, n_classes):
+super(HyperspectralCNN, self).__init__()
+# First convolutional block

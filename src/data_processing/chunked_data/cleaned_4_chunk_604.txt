@@ -1,0 +1,7 @@
+if g.dragging and g.drag_start and g.drag_end:
+x1 = min(g.drag_start[0], g.drag_end[0])
+y1 = min(g.drag_start[1], g.drag_end[1])
+x2 = max(g.drag_start[0], g.drag_end[0])
+y2 = max(g.drag_start[1], g.drag_end[1])
+cv2.rectangle(display_frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
+if g.message_display:

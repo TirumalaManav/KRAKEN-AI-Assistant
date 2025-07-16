@@ -1,0 +1,5 @@
+N_BANDS = img.shape[-1]
+hyperparams = vars(args)
+hyperparams.update({'n_classes': N_CLASSES, 'n_bands': N_BANDS, 'device': CUDA_DEVICE, 'ignored_labels': [0]})
+hyperparams = dict((k, v) for k, v in hyperparams.items() if v is not None)
+palette = {0: (0, 0, 0)}

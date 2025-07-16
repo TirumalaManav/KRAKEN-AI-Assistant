@@ -1,0 +1,9 @@
+cx = b[0] + b[2] / 2.0
+cy = b[1] + b[3] / 2.0
+centers.append([cx, cy])
+widths.append(b[2])
+heights.append(b[3])
+centers = np.array(centers)
+median_center = np.median(centers, axis=0)
+median_width = np.median(widths)
+median_height = np.median(heights)

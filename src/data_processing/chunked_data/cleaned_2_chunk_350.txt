@@ -1,0 +1,6 @@
+# Get unique labels (excluding background)
+unique_labels = sorted(np.unique(y_true))
+# Calculate metrics
+accuracy = accuracy_score(y_true, y_pred) * 100
+conf_matrix = confusion_matrix(y_true, y_pred, labels=unique_labels)
+# Get class names without background and matching the actual labels

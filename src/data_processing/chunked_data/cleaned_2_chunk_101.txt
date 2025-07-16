@@ -1,0 +1,7 @@
+if not vis_dir:
+logger.warning(f"No visualization directory found for dataset: {dataset_name}")
+return None
+files = {
+'confusion_matrix': f'{dataset_name}_confusion_matrix.png',
+'comparison': f'{dataset_name}_comparison.png',
+'classification_report': f'{dataset_name}_classification_report.txt',

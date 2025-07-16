@@ -1,0 +1,5 @@
+def convert_to_color(x):
+return convert_to_color_(x, palette=palette)
+def convert_from_color(x):
+return convert_from_color_(x, palette=invert_palette)
+hyperparams.update({'n_classes': N_CLASSES, 'n_bands': N_BANDS, 'ignored_labels': IGNORED_LABELS, 'device': CUDA_DEVICE})

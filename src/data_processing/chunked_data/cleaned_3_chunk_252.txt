@@ -1,0 +1,14 @@
+}
+/* Hero Section */
+.hero-section {
+background: linear-gradient(45deg, var(--secondary-color), var(--success-color));
+color: white;
+padding: 150px 0 200px;
+position: relative;
+overflow: hidden;
+perspective: 1000px;
+}
+.hero-content {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;

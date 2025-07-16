@@ -1,0 +1,10 @@
+}
+50% {
+transform: translate(-50%, -50%) perspective(500px) rotateX(30deg) rotateY(0deg) translateY(-20px);
+}
+}
+@keyframes rotate {
+0% {
+transform: translate(-50%, -50%) perspective(500px) rotateX(30deg) rotateY(0deg);
+}
+100% {

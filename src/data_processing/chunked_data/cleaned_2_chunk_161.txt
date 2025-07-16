@@ -1,0 +1,11 @@
+return False
+try:
+# Perform face verification
+verification_result = DeepFace.verify(
+img1_path=current_face_image,
+img2_path=user_data['reference_image'],
+model_name='ArcFace',
+detector_backend='retinaface',
+enforce_detection=True,
+align=True
+)

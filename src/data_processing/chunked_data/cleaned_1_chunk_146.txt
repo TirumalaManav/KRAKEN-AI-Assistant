@@ -1,0 +1,7 @@
+text = ""
+if agregated:
+accuracies = [r["Accuracy"] for r in results]
+kappas = [r["Kappa"] for r in results]
+F1_scores = [r["F1 scores"] for r in results]
+F1_scores_mean = np.mean(F1_scores, axis=0)
+F1_scores_std = np.std(F1_scores, axis=0)

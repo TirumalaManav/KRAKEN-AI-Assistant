@@ -1,0 +1,6 @@
+logger.info(f"5. Training History Details: {vis_dir}/training_history.txt")
+except Exception as e:
+logger.error(f"Pipeline failed: {str(e)}")
+raise
+if __name__ == "__main__":
+main()

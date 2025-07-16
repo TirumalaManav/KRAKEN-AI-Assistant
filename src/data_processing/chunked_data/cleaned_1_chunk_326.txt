@@ -1,0 +1,4 @@
+#             losses[iter_] = loss.item()
+#             mean_losses[iter_] = np.mean(losses[max(0, iter_ - 100):iter_ + 1])
+#             if display_iter and iter_ % display_iter == 0:
+#                 string = 'Train (epoch {}/{}) [{}/{} ({:.0f}%)]\tLoss: {:.6f}'

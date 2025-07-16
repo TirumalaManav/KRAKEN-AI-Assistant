@@ -1,0 +1,5 @@
+denom = boxAArea + boxBArea - interArea
+return interArea / float(denom) if denom > 0 else 0.0
+class TemporalEvidenceAccumulator:
+def __init__(self, evidence_threshold=3, position_tolerance_ratio=0.2, convergence_threshold=3,
+iou_threshold=0.6, max_age=30, min_hits=3):

@@ -1,0 +1,8 @@
+def convert_to_color_(arr_2d, palette=None):
+"""Convert an array of labels to RGB color-encoded image.
+Args:
+arr_2d: int 2D array of labels
+palette: dict of colors used (label number -> RGB tuple)
+Returns:
+arr_3d: int 2D images of color-encoded labels in RGB format
+"""

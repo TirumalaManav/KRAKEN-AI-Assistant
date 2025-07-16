@@ -1,0 +1,7 @@
+else:
+width_change = abs(current_size[0] - self.initial_size[0]) / self.initial_size[0]
+height_change = abs(current_size[1] - self.initial_size[1]) / self.initial_size[1]
+return max(width_change, height_change) <= self.max_size_change
+class GlobalVars:
+def __init__(self):
+self.init_rect = None

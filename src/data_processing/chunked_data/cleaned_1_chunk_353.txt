@@ -1,0 +1,8 @@
+if not continue_training:
+print("Skipping training as continue_training is set to False.")
+return
+net.to(device)
+best_metric = float('-inf')  # Best validation metric (accuracy or loss)
+best_model_path = None  # Path to the best model
+losses = np.zeros(1000000)
+mean_losses = np.zeros(100000000)

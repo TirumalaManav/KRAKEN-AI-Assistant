@@ -1,0 +1,6 @@
+clf = sklearn.svm.SVC(class_weight=class_weight)
+clf.fit(X_train, y_train)
+save_model(clf, MODEL, DATASET)
+prediction = clf.predict(img.reshape(-1, N_BANDS))
+prediction = prediction.reshape(img.shape[:2])
+elif MODEL == 'SGD':

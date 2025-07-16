@@ -1,0 +1,6 @@
+rgb_bands = (75, 33, 15)
+gt = open_file(folder + 'Botswana_gt.mat')['Botswana_gt']
+label_values = ["Undefined", "Water", "Hippo grass",
+"Floodplain grasses 1", "Floodplain grasses 2",
+"Reeds", "Riparian", "Firescar", "Island interior",
+"Acacia woodlands", "Acacia shrublands",

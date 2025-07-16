@@ -1,0 +1,8 @@
+except Exception as e:
+logger.error(f"Error in preprocessing: {str(e)}", exc_info=True)
+raise
+import tensorflow as tf
+from tensorflow.keras import layers, models
+class HyperspectralAE(tf.keras.Model):
+def __init__(self, in_channels, n_classes):
+super(HyperspectralAE, self).__init__()

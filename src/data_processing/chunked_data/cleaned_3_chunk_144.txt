@@ -1,0 +1,17 @@
+margin-right: 0.5rem;
+font-size: 1.1rem;
+}
+.nav-menu {
+margin-top: 2rem;
+}
+.nav-menu a {
+display: flex;
+align-items: center;
+padding: 0.8rem 1rem;
+color: var(--white);
+text-decoration: none;
+border-radius: 8px;
+margin-bottom: 0.5rem;
+transition: var(--transition);
+}
+.nav-menu a i {

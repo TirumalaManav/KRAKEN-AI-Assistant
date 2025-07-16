@@ -1,0 +1,4 @@
+parser.add_argument('--config', type=str, required=True, help='Config file for SiamRPN')
+parser.add_argument('--snapshot', type=str, required=True, help='Model snapshot for SiamRPN')
+parser.add_argument('--video_name', type=str, required=True, help='Video file path')
+args = parser.parse_args()

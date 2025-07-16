@@ -1,0 +1,8 @@
+val_dataset = HyperX(img, val_gt, **hyperparams)
+val_loader = data.DataLoader(val_dataset, batch_size=hyperparams['batch_size'])
+print(hyperparams)
+print("Network :")
+with torch.no_grad():
+for input, _ in train_loader:
+break
+summary(model.to(hyperparams['device']), input.size()[1:])

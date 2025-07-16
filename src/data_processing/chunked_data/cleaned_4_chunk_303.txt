@@ -1,0 +1,7 @@
+except Exception as e:
+logger.error(f"Error in optical flow update: {e}")
+return (0.0, 0.0)
+def universal_redetection(frame, last_bbox, last_frame=None, original_template=None):
+"""Redetect object when tracking is uncertain"""
+try:
+x, y, w, h = map(int, last_bbox)

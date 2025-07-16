@@ -1,0 +1,4 @@
+if object_type == 'small' and self.original_template is not None:
+gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY) if len(roi.shape) == 3 else roi.copy()
+resized_template = cv2.resize(self.original_template, (w, h))
+result = cv2.matchTemplate(gray_roi, resized_template, cv2.TM_CCOEFF_NORMED)

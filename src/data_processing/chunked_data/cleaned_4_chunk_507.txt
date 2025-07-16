@@ -1,0 +1,7 @@
+detections = self.temporal_smoothing(objects)
+if lock_on_override and not detections and self.last_detection is not None:
+detections = [self.last_detection]
+return detections, thresh_frame
+@staticmethod
+def compute_iou(boxA, boxB):
+# boxA and boxB are in the format (x, y, w, h)

@@ -1,0 +1,6 @@
+if current_iou < self.iou_threshold:
+print(f"Inconsistent candidate (IoU {current_iou:.2f}) at frame {frame_index}; resetting buffer.")
+self.reset()
+self.candidate_buffer.append((frame_index, bbox))
+else:
+self.candidate_buffer.append((frame_index, bbox))

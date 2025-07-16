@@ -1,0 +1,21 @@
+height: auto;
+}
+.main-content {
+margin-left: 0;
+}
+.results-grid {
+grid-template-columns: 1fr;
+}
+}
+@media (max-width: 768px) {
+.comparison-container {
+grid-template-columns: 1fr;
+}
+.metrics-summary {
+grid-template-columns: 1fr;
+}
+.card {
+margin-bottom: 1rem;
+}
+}
+/* Custom Scrollbar */

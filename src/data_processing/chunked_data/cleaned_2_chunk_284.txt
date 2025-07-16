@@ -1,0 +1,7 @@
+patch_labels = np.array(patch_labels)
+logger.info(f"Extracted {len(patches)} patches from labeled pixels")
+logger.info(f"Patch shape: {patches.shape}")
+return patches, patch_labels, patch_locations
+except Exception as e:
+logger.error(f"Error in patch extraction: {str(e)}")
+raise

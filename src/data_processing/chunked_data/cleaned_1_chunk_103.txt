@@ -1,0 +1,4 @@
+model, optimizer, loss, hyperparams = get_model(MODEL, **hyperparams)
+train_gt, val_gt = sample_gt(train_gt, 0.95, mode='random')
+train_dataset = HyperX(img, train_gt, **hyperparams)
+train_loader = data.DataLoader(train_dataset, batch_size=hyperparams['batch_size'], shuffle=True)

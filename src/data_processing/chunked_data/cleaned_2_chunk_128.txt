@@ -1,0 +1,11 @@
+"""Serve visualization files"""
+try:
+vis_dir = get_latest_visualization_dir()
+if not vis_dir:
+return "Visualization directory not found", 404
+# Determine content type
+if filename.endswith('.png'):
+mimetype = 'image/png'
+elif filename.endswith('.txt'):
+mimetype = 'text/plain'
+else:

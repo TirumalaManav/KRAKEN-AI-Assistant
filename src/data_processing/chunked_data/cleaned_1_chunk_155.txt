@@ -1,0 +1,8 @@
+train_gt[tuple(train_indices)] = gt[tuple(train_indices)]
+test_gt[tuple(test_indices)] = gt[tuple(test_indices)]
+elif mode == 'fixed':
+print("Sampling {} with train size = {}".format(mode, train_size))
+train_indices, test_indices = [], []
+for c in np.unique(gt):
+if c == 0:
+continue

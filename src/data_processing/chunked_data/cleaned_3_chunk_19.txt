@@ -1,0 +1,14 @@
+border-top: 1px solid rgba(42, 42, 114, 0.1);
+}
+.achievement-badge {
+display: inline-flex;
+align-items: center;
+padding: 8px 15px;
+background: rgba(42, 42, 114, 0.1);
+border-radius: 20px;
+font-size: 0.85rem;
+color: #2a2a72;
+margin-right: 10px;
+margin-bottom: 10px;
+transition: transform 0.3s ease;
+}

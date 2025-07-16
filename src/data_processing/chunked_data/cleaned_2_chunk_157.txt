@@ -1,0 +1,7 @@
+return True
+except Exception as e:
+self.logger.error(f"User registration failed: {e}")
+if 'face_image' in locals() and os.path.exists(face_image):
+os.remove(face_image)
+return False
+def authenticate_user(self, username, passphrase, base64_image):

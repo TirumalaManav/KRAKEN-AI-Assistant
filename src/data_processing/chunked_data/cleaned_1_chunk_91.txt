@@ -1,0 +1,9 @@
+plot_spectrums(mean_spectrums, viz, title='Mean spectrum/class')
+results = []
+for run in range(N_RUNS):
+if TRAIN_GT is not None and TEST_GT is not None:
+train_gt = open_file(TRAIN_GT)
+test_gt = open_file(TEST_GT)
+elif TRAIN_GT is not None:
+train_gt = open_file(TRAIN_GT)
+test_gt = np.copy(gt)

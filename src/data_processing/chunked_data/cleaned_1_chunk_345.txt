@@ -1,0 +1,8 @@
+#                 else:
+#                     probs[x:x + w, y:y + h] += out
+#     return probs
+# def val(net, data_loader, device='cpu', supervision='full'):
+# # TODO : fix me using metrics()
+#     net.eval()
+#     accuracy, total = 0., 0.
+#     ignored_labels = data_loader.dataset.ignored_labels

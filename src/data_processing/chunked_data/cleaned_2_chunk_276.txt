@@ -1,0 +1,6 @@
+# Check data file
+data_file_path = os.path.join(dataset_path, dataset_info['data_file'])
+if not os.path.exists(data_file_path):
+raise FileNotFoundError(f"Data file not found: {data_file_path}")
+# Check label file
+label_file_path = os.path.join(dataset_path, dataset_info['label_file'])

@@ -1,0 +1,2 @@
+<p>Hyperspectral imaging combines spectroscopy with digital imaging to capture detailed spectral information across hundreds of continuous wavelength bands. Each pixel in a hyperspectral image contains a complete spectral signature, enabling precise material identification and analysis.</p>
+</div>

@@ -1,0 +1,2 @@
+<p class="member-bio">Currently pursuing his PhD from IIIT-Ranchi (IIIT-R), Mr. Das brings extensive expertise in Machine Learning and Hyperspectral Imaging to our team. His guidance ensures our project maintains the highest academic and practical standards.</p>
+<div class="achievements">

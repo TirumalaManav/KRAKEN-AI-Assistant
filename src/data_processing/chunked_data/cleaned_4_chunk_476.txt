@@ -1,0 +1,6 @@
+if not self.cap.isOpened():
+raise Exception("Error: Could not open video.")
+self.fusion_buffer = []
+self.fusion_buffer_size = 5   # Number of frames for multi-frame fusion
+# Create instance of ObjectLocalizer for frame preprocessing and localization
+self.localizer = self.ObjectLocalizer()

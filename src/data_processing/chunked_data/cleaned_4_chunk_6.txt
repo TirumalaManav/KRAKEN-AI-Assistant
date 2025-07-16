@@ -1,0 +1,14 @@
+edgeThreshold = 31
+patchSize = 31
+nfeatures = 1500
+self.feature_extractor = cv2.ORB_create(
+nfeatures=nfeatures,
+scaleFactor=scaleFactor,
+nlevels=nlevels,
+edgeThreshold=edgeThreshold,
+firstLevel=0,
+WTA_K=3,
+scoreType=cv2.ORB_HARRIS_SCORE,
+patchSize=patchSize,
+fastThreshold=fastThreshold
+)

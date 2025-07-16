@@ -1,0 +1,10 @@
+handlers=[
+logging.FileHandler('hyperspectral_training.log'),
+logging.StreamHandler(sys.stdout)
+]
+)
+logger = logging.getLogger(__name__)
+# Initialize the security system
+security_system = AdvancedCyberSecuritySystem()
+# Constants
+DATASETS_DIR = os.path.join(os.path.dirname(__file__), 'datasets')

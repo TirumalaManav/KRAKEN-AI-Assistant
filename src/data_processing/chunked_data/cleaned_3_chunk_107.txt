@@ -1,0 +1,7 @@
+<div class="deployment-info">
+<span>v2.4.1 Stable Release</span> •
+<span>Last Updated: 2025-01-16</span>
+</div>
+<p class="system-capabilities">
+Unified MLOps Pipeline Supporting:
+<span class="highlight">CNN, GAN, and Autoencoder Models</span> •

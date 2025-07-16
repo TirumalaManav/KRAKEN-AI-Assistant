@@ -1,0 +1,6 @@
+try:
+x, y, w, h = map(int, last_bbox)
+if w <= 0 or h <= 0 or last_frame is None:
+return last_bbox
+search_w, search_h = min(frame.shape[1], w * 4), min(frame.shape[0], h * 4)
+search_x, search_y = max(0, x - (search_w - w)//2), max(0, y - (search_h - h)//2)

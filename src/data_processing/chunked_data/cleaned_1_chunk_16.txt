@@ -1,0 +1,7 @@
+for url in datasets[dataset_name]['urls']:
+# download the files
+filename = url.split('/')[-1]
+if not os.path.exists(folder + filename):
+with TqdmUpTo(unit='B', unit_scale=True, miniters=1,
+desc="Downloading {}".format(filename)) as t:
+urlretrieve(url, filename=folder + filename,

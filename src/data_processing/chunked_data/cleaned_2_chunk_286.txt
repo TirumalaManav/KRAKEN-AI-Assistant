@@ -1,0 +1,6 @@
+raise FileNotFoundError(f"Training results file not found at: {metadata_path}")
+with open(metadata_path, 'r') as f:
+training_results = json.load(f)
+metadata = {
+'training_dataset': training_results.get('dataset'),
+'n_classes': 9 if training_results.get('dataset') == 'PaviaU' else None,

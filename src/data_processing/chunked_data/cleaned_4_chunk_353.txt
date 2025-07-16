@@ -1,0 +1,6 @@
+if roi.size == 0:
+return 0.0
+object_type = 'large' if max(w, h) > 200 else 'small' if max(w, h) < 50 else None
+keypoints, descriptors = self.extract_adaptive_features(roi, object_type=object_type)
+orb_similarity = 0.0
+if descriptors is not None and len(descriptors) > 0:

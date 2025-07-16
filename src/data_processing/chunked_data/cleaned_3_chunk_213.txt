@@ -1,0 +1,4 @@
+color: rgba(255, 255, 255, 0.8);
+}
+/* Cyan and Coral Colors for 3D Box Faces */
+.small-3d-box .front { transform: translateZ(50px); background: rgba(0, 212, 255, 0.1); border-color: #00d4ff; }

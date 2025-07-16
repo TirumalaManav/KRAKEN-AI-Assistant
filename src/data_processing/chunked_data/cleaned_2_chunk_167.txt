@@ -1,0 +1,11 @@
+os.remove(reference_image)
+# Remove user file
+os.remove(user_file)
+self.logger.info(f"User {username} deleted successfully")
+return True
+except Exception as e:
+self.logger.error(f"Error deleting user: {e}")
+return False
+# Import necessary libraries
+import numpy as np
+import tensorflow as tf

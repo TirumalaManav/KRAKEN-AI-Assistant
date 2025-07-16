@@ -1,0 +1,8 @@
+continue
+display_frame = frame.copy()
+for tracker_instance in list(g.single_trackers):
+outputs = tracker_instance['tracker'].track(frame)
+bbox = outputs['bbox']
+accumulator = tracker_instance['accumulator']
+refined_bbox, confirmed = accumulator.update(bbox, g.frame_idx)
+if confirmed:

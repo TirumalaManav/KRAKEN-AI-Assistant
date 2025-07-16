@@ -1,0 +1,6 @@
+self.max_size_change = 0.5
+def update(self, frame, bbox, tracker_confidence):
+if self.initial_size is None:
+self.initial_size = (bbox[2], bbox[3])
+self.motion_model.update(bbox)
+self.appearance_model.update_features(frame, bbox)

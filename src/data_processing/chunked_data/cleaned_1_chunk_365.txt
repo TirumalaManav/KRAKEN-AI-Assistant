@@ -1,0 +1,7 @@
+if isinstance(model, torch.nn.Module):
+filename = str('best_model') + "_epoch{epoch}_{metric:.2f}".format(**kwargs)
+tqdm.write("Saving neural network weights in {}".format(filename))
+model_path = model_dir + filename + '.pth'
+torch.save(model.state_dict(), model_path)
+return model_path
+else:

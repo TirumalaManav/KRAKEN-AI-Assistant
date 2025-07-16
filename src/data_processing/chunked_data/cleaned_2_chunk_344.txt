@@ -1,0 +1,7 @@
+self.plot_metrics(metrics, dataset_name, vis_dir)
+# Plot training history
+self.plot_training_history(model_metadata, save_dir)
+logger.info(f"Saved all visualizations to {vis_dir}")
+logger.info(f"Overall accuracy: {metrics['accuracy']:.4f}%")
+return vis_dir, metrics
+except Exception as e:

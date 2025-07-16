@@ -1,0 +1,10 @@
+paused = g.paused
+if current_mode == "selection":
+ret, frame = cap.read()
+if not ret:
+logger.info("End of video reached.")
+break
+g.frame_idx += 1
+g.frame = frame.copy()
+progress = (g.frame_idx / g.total_frames) * 100 if g.total_frames > 0 else 0
+display_frame = frame.copy()

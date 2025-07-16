@@ -1,0 +1,9 @@
+#      else:
+#          filename = str('run')
+#          tqdm.write("Saving model params in {}".format(filename))
+#          joblib.dump(model, model_dir + filename + '.pkl')
+# def test(net, img, hyperparams):
+#     """
+#     Test a model on a specific image
+#     """
+#     net.eval()

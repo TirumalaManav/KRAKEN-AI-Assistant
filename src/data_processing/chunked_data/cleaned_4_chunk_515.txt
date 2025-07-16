@@ -1,0 +1,8 @@
+return max(detections, key=lambda d: d[2] * d[3])
+else:
+return None
+def mouse_callback(self, event, x, y, flags, param):
+if event == cv2.EVENT_LBUTTONDBLCLK:
+self.force_refresh_flag = True
+def run(self):
+cv2.namedWindow("Localized Output")

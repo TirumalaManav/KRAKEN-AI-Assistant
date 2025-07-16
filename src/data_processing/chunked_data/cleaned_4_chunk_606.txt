@@ -1,0 +1,14 @@
+with g.lock:
+g.paused = not g.paused
+elif key & 0xFF == ord('r'):
+with g.lock:
+if g.use_bytetrack:
+g.tracked_objects = []
+else:
+g.single_trackers = []
+g.tracking_started = False
+g.init_rect = None
+g.click_point = None
+g.kalman_initialized = False
+g.message_display = ""
+elif key & 0xFF == ord('c'):

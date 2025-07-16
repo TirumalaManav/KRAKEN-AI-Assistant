@@ -1,0 +1,5 @@
+self.kalman.measurementNoiseCov = np.eye(4, dtype=np.float32) * 1e-1
+self.kalman.errorCovPost = np.eye(8, dtype=np.float32)
+x, y, w, h = bbox
+self.kalman.statePre = np.array([[x], [y], [w], [h], [0], [0], [0], [0]], np.float32)
+self.initial_aspect_ratio = w / h if h != 0 else 1.0

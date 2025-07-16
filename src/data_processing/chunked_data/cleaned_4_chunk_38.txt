@@ -1,0 +1,8 @@
+try:
+if len(roi.shape) == 3:
+gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
+else:
+gray_roi = roi.copy()
+resized_template = cv2.resize(self.template, (w, h))
+result = cv2.matchTemplate(gray_roi, resized_template, cv2.TM_CCOEFF_NORMED)
+template_similarity = np.max(result)

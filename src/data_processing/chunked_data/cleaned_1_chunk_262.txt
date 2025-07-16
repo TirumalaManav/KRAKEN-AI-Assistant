@@ -1,0 +1,10 @@
+WITH 3D CONVOLUTIONAL NEURAL NETWORK
+Ying Li, Haokui Zhang and Qiang Shen
+MDPI Remote Sensing, 2017
+http://www.mdpi.com/2072-4292/9/1/67
+"""
+@staticmethod
+def weight_init(m):
+if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
+init.xavier_uniform_(m.weight.data)
+init.constant_(m.bias.data, 0)

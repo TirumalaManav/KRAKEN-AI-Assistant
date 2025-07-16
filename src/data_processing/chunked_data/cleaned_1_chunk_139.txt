@@ -1,0 +1,13 @@
+def grouper(n, iterable):
+""" Browse an iterable by grouping n elements by n elements.
+Args:
+n: int, size of the groups
+iterable: the iterable to Browse
+Yields:
+chunk of n elements from the iterable
+"""
+it = iter(iterable)
+while True:
+chunk = tuple(itertools.islice(it, n))
+if not chunk:
+return

@@ -1,0 +1,9 @@
+center_feature_x = (min_x + max_x) / 2
+center_feature_y = (min_y + max_y) / 2
+offset_x = 0.3 * (center_feature_x - center_original_x)
+offset_y = 0.3 * (center_feature_y - center_original_y)
+width_feature = max_x - min_x
+height_feature = max_y - min_y
+return (
+int(x + offset_x),
+int(y + offset_y),

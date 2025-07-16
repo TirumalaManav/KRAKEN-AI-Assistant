@@ -1,0 +1,6 @@
+# Get number of classes and create label values
+unique_labels = np.unique(labels)
+n_classes = len(unique_labels[unique_labels != 0])
+label_values = [f"Class_{i}" for i in range(n_classes)]
+logger.info(f"Number of classes: {n_classes}")
+# Train and save CNN Model

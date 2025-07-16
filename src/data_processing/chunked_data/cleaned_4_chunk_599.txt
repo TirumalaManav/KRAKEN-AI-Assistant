@@ -1,0 +1,5 @@
+cv2.namedWindow("Tracking")
+cv2.setMouseCallback("Tracking", mouse_callback)
+logger.info("\nControls:")
+logger.info("Drag and Drop or Double Click: Select tracking object")
+logger.info("'c' key: Confirm selection as new object (new selection replaces previous one)")

@@ -1,0 +1,10 @@
+for l in ignored_labels:
+ignored_mask[target == l] = True
+ignored_mask = ~ignored_mask
+#target = target[ignored_mask] -1
+target = target[ignored_mask]
+prediction = prediction[ignored_mask]
+results = {}
+n_classes = np.max(target) + 1 if n_classes is None else n_classes
+cm = confusion_matrix(
+target,

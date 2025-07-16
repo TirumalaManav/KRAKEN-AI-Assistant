@@ -1,0 +1,8 @@
+return False
+tracker = build_tracker(self.model)
+tracker.init(self.global_vars.frame, box)
+self.global_vars.tracked_object = {
+'tracker': tracker,
+'init_rect': box,
+'kalman_box': box,
+'confidence_tracker': ConfidenceTracker(),

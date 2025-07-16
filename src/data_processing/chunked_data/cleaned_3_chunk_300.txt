@@ -1,0 +1,8 @@
+body: JSON.stringify(config)
+});
+if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+const data = await response.json();
+console.log('Training response:', data);
+return data;
+} catch (error) {
+console.error('Training error:', error);

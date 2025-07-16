@@ -1,0 +1,10 @@
+image_data = sio.loadmat(data_file_path)
+# Get image data
+images = None
+for key in mapping['data_keys']:
+if key in image_data:
+images = image_data[key]
+logger.info(f"Found image data using key: {key}")
+break
+if images is None:
+raise KeyError(f"No valid data key found in {mapping['data_file']}")

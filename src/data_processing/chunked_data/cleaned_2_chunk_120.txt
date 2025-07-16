@@ -1,0 +1,7 @@
+logger.error(error_msg)
+return render_template('error.html', message=error_msg), 404
+# Get selected dataset
+selected_dataset = request.args.get('dataset', datasets[0])
+if selected_dataset not in datasets:
+selected_dataset = datasets[0]
+logger.info(f"Selected dataset: {selected_dataset}")

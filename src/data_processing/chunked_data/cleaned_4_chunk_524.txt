@@ -1,0 +1,6 @@
+x, y, w, h, cx, cy = detection_to_draw[:6]
+cv2.rectangle(output_frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+cv2.circle(output_frame, (cx, cy), 3, (0, 255, 0), -1)
+cv2.putText(output_frame, f"({cx},{cy})", (x, y - 10),
+cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+cv2.imshow("Heatmap", heatmap)

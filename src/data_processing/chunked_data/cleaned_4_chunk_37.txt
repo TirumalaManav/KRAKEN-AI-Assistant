@@ -1,0 +1,8 @@
+if len(matches) > self.min_match_count:
+distances = [m.distance for m in matches]
+avg_distance = sum(distances) / len(distances)
+similarity = 1.0 - (avg_distance / 100.0)
+orb_similarity = max(orb_similarity, similarity)
+if self.template is not None and max(w, h) > 200:
+try:
+if len(roi.shape) == 3:

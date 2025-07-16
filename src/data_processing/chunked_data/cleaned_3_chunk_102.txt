@@ -1,0 +1,16 @@
+}
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 20px rgba(0, 212, 255, 0.6), 0 0 20px rgba(255, 111, 97, 0.8);
+}
+/* Footer */
+.footer {
+background: #2a2a72;
+color: white;
+padding: 3rem 2rem;
+text-align: center;
+}
+.footer-content {
+max-width: 1200px;
+margin: 0 auto;
+display: grid;

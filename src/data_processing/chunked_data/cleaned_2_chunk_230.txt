@@ -1,0 +1,9 @@
+logger.info(f"Best {monitor_metric}: {max(history.history[monitor_metric]):.4f} at epoch {best_epoch + 1}")
+return history
+except Exception as e:
+logger.error(f"Error during model training: {str(e)}", exc_info=True)
+raise
+# Main execution
+if __name__ == "__main__":
+try:
+# Set up logging

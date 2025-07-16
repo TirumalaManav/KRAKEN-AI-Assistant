@@ -1,0 +1,10 @@
+nrow=2,
+opts={'caption': caption})
+def display_dataset(img, gt, bands, labels, palette, vis):
+"""Display the specified dataset.
+Args:
+img: 3D hyperspectral image
+gt: 2D array labels
+bands: tuple of RGB bands to select
+labels: list of label class names
+palette: dict of colors

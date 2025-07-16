@@ -1,0 +1,7 @@
+kwargs.setdefault('batch_size', 60)
+epoch = kwargs.setdefault('epoch', 30)
+lr = kwargs.setdefault('lr', 0.05)
+center_pixel = True
+# We assume patch_size = 64
+kwargs.setdefault('patch_size', 64)
+model = SharmaEtAl(n_bands, n_classes, patch_size=kwargs['patch_size'])

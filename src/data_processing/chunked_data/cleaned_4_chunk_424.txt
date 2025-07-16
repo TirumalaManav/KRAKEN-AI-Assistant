@@ -1,0 +1,7 @@
+if self.global_vars.mode == "selection":
+return frame, None, fps
+if self.global_vars.tracked_object:
+tracker = self.global_vars.tracked_object['tracker']
+outputs = tracker.track(frame)
+bbox = outputs['bbox']
+accumulator = self.global_vars.tracked_object['accumulator']

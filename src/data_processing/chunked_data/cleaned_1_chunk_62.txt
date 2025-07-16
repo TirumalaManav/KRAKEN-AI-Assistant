@@ -1,0 +1,7 @@
+if MAT is not None:
+img = img[MAT]
+# Normalization
+img = np.asarray(img, dtype='float32')
+img = (img - np.min(img)) / (np.max(img) - np.min(img))
+N_BANDS = img.shape[-1]
+hyperparams = vars(args)

@@ -1,0 +1,6 @@
+center_pixel = True
+model = ChenEtAl(n_bands, n_classes, patch_size=patch_size)
+lr = kwargs.setdefault('learning_rate', 0.003)
+optimizer = optim.SGD(model.parameters(), lr=lr)
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])
+kwargs.setdefault('epoch', 400)

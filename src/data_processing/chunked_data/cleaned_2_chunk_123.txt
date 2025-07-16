@@ -1,0 +1,7 @@
+classification_report = read_file_content(
+os.path.join(vis_dir, files['classification_report'])
+) or "Classification report not available"
+training_history = read_file_content(
+os.path.join(vis_dir, files['training_history_text'])
+) or "Training history not available"
+data = {

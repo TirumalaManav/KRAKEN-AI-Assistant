@@ -1,0 +1,9 @@
+self.last_refined_bbox = refined_bbox
+self.reset()
+return (refined_bbox, True)
+return (None, False)
+# Mouse callback for drag-and-drop and double-click bounding box selection
+def mouse_callback(event, x, y, flags, param):
+with g.lock:
+if event == cv2.EVENT_LBUTTONDOWN:
+g.dragging = True

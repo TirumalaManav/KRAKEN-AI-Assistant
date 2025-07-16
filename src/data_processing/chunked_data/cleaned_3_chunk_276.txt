@@ -1,0 +1,21 @@
+border-radius: 8px;
+padding: 16px;
+color: white;
+animation: slideIn 0.3s ease-in-out;
+}
+@keyframes slideIn {
+from {
+transform: translateX(100%);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}
+@media (max-width: 768px) {
+.container {
+padding: 1rem;
+}
+.grid {
+grid-template-columns: 1fr;

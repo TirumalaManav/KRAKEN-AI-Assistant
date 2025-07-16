@@ -1,0 +1,11 @@
+if conf < 0.25:
+continue
+bbox_arr = box.xyxy[0].cpu().numpy().astype(int)
+x1, y1, x2, y2 = bbox_arr
+w, h = x2 - x1, y2 - y1
+area = w * h
+if (x1 <= click_x <= x2) and (y1 <= click_y <= y2):
+aspect_ratio = w / h if h > 0 else 0
+if 0.2 <= aspect_ratio <= 5.0:
+if area < min_area:
+min_area = area

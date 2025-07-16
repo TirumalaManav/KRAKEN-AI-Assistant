@@ -1,0 +1,10 @@
+if (data.success) {
+showStatus('Registration successful! Switching to login...', 'success');
+setTimeout(() => {
+switchTab('login');
+document.getElementById('username').value = username;
+}, 1500);
+} else {
+showStatus(data.message || 'Registration failed. Please try again.', 'error');
+resetForm();
+}

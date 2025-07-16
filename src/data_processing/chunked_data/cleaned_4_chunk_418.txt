@@ -1,0 +1,8 @@
+self.prev_time = time.time()
+self.original_template = None
+def _load_model(self):
+try:
+cfg.merge_from_file(CONFIG_PATH)
+cfg.CUDA = torch.cuda.is_available()
+device = torch.device('cuda' if cfg.CUDA else 'cpu')
+model = ModelBuilder()

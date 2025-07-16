@@ -1,0 +1,10 @@
+areaA = boxA[2] * boxA[3]
+areaB = boxB[2] * boxB[3]
+unionArea = areaA + areaB - interArea
+if unionArea == 0:
+return 0
+return interArea / unionArea
+@staticmethod
+def fuse_detections(det1, det2):
+# Fuse candidate boxes by averaging respective coordinates and centers.
+x = int((det1[0] + det2[0]) / 2)

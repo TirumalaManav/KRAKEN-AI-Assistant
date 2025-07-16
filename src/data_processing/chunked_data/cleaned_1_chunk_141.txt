@@ -1,0 +1,7 @@
+target: list of target labels
+ignored_labels (optional): list of labels to ignore, e.g. 0 for undef
+n_classes (optional): number of classes, max(target) by default
+Returns:
+accuracy, F1 score by class, confusion matrix
+"""
+ignored_mask = np.zeros(target.shape[:2], dtype=np.bool_)

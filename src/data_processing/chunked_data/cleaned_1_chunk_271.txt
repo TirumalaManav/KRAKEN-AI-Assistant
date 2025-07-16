@@ -1,0 +1,4 @@
+self.conv2_2 = nn.Conv3d(16, 16, (3, 1, 1), padding=(1,0,0))
+self.conv2_3 = nn.Conv3d(16, 16, (5, 1, 1), padding=(2,0,0))
+self.conv2_4 = nn.Conv3d(16, 16, (11, 1, 1), padding=(5,0,0))
+self.conv3_1 = nn.Conv3d(16, 16, (1, 1, 1), padding=(0,0,0))

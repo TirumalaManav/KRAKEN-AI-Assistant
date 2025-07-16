@@ -1,0 +1,9 @@
+}).showToast();
+}
+// Global state
+let currentDataset = null;
+let currentModel = null;
+let isTraining = false;
+// UI Elements
+const folderInput = document.getElementById('folder-input');
+const fileUpload = document.getElementById('file-upload');

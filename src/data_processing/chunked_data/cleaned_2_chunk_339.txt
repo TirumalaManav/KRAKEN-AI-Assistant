@@ -1,0 +1,5 @@
+f.write("-" * 50 + "\n")
+n_epochs = len(history['accuracy' if 'accuracy' in history else 'classifier_accuracy'])
+for epoch in range(n_epochs):
+if 'classifier_accuracy' in history:
+f.write(f"{epoch+1:5d}  {history['classifier_accuracy'][epoch]:9.4f}  "

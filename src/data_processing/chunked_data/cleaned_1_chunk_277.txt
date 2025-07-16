@@ -1,0 +1,10 @@
+x = F.relu(x)
+x = F.relu(self.conv4(x))
+x = x.view(-1, self.features_size)
+x = self.dropout(x)
+x = self.fc(x)
+return x
+class LuoEtAl(nn.Module):
+"""
+HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image
+Yanan Luo, Jie Zou, Chengfei Yao, Tao Li, Gang Bai

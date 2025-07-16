@@ -1,0 +1,3 @@
+<div class="member-role">MLOps Engineer</div>
+<p class="member-bio">An aspiring MLOps Engineer with expertise in Machine Learning, Deep Learning, and NLP. Specialized in AutoEncoder-based model development for Hyperspectral Image Classification.</p>
+<div class="achievements">

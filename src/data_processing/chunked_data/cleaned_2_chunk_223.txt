@@ -1,0 +1,6 @@
+logger.info(f"Training parameters: model_type={model_type}, epochs={epochs}")
+# Log dataset information
+try:
+train_size = sum(1 for _ in train_dataset)
+test_size = sum(1 for _ in test_dataset)
+logger.info(f"Training dataset size: {train_size} batches")

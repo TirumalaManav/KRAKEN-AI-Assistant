@@ -1,0 +1,8 @@
+elif name == 'HICNN':
+patch_size = kwargs.setdefault('patch_size', 5)
+center_pixel = True
+in_channels = n_bands
+model = HyperspectralCNN(in_channels, n_classes)
+model.to(device)
+lr = kwargs.setdefault('learning_rate', 0.01)
+# optimizer = optim.SGD(model.parameters(), lr=lr, weight_decay=0.0005)

@@ -1,0 +1,19 @@
+align-items: center;
+justify-content: center;
+margin-right: 20px;
+color: white;
+}
+.info-content h3 {
+font-size: 1.1rem;
+margin-bottom: 5px;
+color: #2a2a72;
+}
+.info-content p {
+color: #636e72;
+font-size: 0.95rem;
+}
+.form-group {
+margin-bottom: 20px;
+}
+.form-label {
+display: block;

@@ -1,0 +1,8 @@
+self.logger.error(f"Encryption failed: {e}")
+return None
+def _decrypt_data(self, encrypted_data, fernet_instance):
+"""Decrypt data using the provided Fernet instance."""
+try:
+decrypted_data = fernet_instance.decrypt(encrypted_data)
+return pickle.loads(decrypted_data)
+except Exception as e:

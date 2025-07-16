@@ -1,0 +1,11 @@
+"timestamp": "2025-01-23 13:12:39",
+"user": "TirumalaManav"
+}), 500
+def log_memory_usage():
+"""Log memory usage statistics"""
+try:
+memory_info = get_gpu_memory_info()
+if memory_info:
+logger.info(f"""
+Memory Usage Stats (2025-01-23 13:15:17):
+- Total VRAM: {memory_info['total']:.2f}MB

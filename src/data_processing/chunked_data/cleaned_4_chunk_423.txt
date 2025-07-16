@@ -1,0 +1,7 @@
+return None, None, 0.0
+current_time = time.time()
+fps = 1.0 / (current_time - self.prev_time) if (current_time - self.prev_time) > 0 else 0.0
+self.prev_time = current_time
+self.global_vars.frame_idx += 1
+self.global_vars.frame = frame.copy()
+if self.global_vars.mode == "selection":

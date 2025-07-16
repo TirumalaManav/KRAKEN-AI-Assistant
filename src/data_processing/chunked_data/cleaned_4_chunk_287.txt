@@ -1,0 +1,8 @@
+self.original_template = self.global_vars.tracked_object['confidence_tracker'].appearance_model.original_template
+return True
+except Exception as e:
+logger.error(f"Error starting tracking: {e}")
+return False
+def reset_tracking(self):
+"""Reset tracking state"""
+self.global_vars.tracked_object = None

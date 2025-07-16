@@ -1,0 +1,8 @@
+self.force_refresh_flag = False
+loc_candidate = None
+if detections and not low_visibility:
+# Use the first detection from preprocessing as candidate
+loc_candidate = detections[0]
+# Optionally refine with focused YOLO
+detection_localizer = None
+if loc_candidate is not None:

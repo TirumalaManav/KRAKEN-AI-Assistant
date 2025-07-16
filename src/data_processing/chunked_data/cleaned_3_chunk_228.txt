@@ -1,0 +1,8 @@
+tab.classList.remove('active');
+});
+document.querySelector(`.tab:${mode === 'login' ? 'first-child' : 'last-child'}`).classList.add('active');
+stopCamera();
+resetForm();
+}
+function resetForm() {
+document.getElementById('username').value = '';

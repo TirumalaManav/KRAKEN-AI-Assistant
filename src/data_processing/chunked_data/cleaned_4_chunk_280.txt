@@ -1,0 +1,5 @@
+self.original_template)
+if iou(redetected_box, self.global_vars.tracked_object['kalman_box']) > 0.6:
+blend = max(0.3, min(0.7, conf))
+self.global_vars.tracked_object['kalman_box'] = tuple(
+int(blend * self.global_vars.tracked_object['kalman_box'][i] + (1-blend) * redetected_box[i])

@@ -1,0 +1,6 @@
+super(HuEtAl, self).__init__()
+if kernel_size is None:
+# [In our experiments, k1 is better to be [ceil](n1/9)]
+kernel_size = math.ceil(input_channels / 9)
+if pool_size is None:
+# The authors recommand that k2's value is chosen so that the pooled features have 30~40 values

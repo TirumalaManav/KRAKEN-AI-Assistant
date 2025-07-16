@@ -1,0 +1,6 @@
+color_similarity = 0.0
+if self.color_memory:
+for stored_hist in self.color_memory:
+sim = cv2.compareHist(curr_hist, stored_hist, cv2.HISTCMP_CORREL)
+color_similarity = max(color_similarity, max(sim, 0.0))
+combined_similarity = 0.5 * sift_similarity + 0.5 * color_similarity

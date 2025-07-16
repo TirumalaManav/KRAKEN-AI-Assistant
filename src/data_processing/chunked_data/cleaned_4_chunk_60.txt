@@ -1,0 +1,8 @@
+if max(w_change, h_change) > max_size_change:
+w = filtered_w
+h = filtered_h
+measurement = np.array([[np.float32(x)], [np.float32(y)], [np.float32(w)], [np.float32(h)]])
+self.kalman.correct(measurement)
+return self.predict()
+def get_covariance(self):
+return self.kalman.errorCovPost[:2, :2]

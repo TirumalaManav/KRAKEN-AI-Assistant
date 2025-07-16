@@ -1,0 +1,5 @@
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+const closeBtn = document.getElementsByClassName('close')[0];
+// Get all zoomable images
+const zoomableImages = document.getElementsByClassName('zoomable');

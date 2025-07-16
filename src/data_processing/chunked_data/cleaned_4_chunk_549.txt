@@ -1,0 +1,6 @@
+[np.float32(w)], [np.float32(h)]])
+self.kalman.correct(measurement)
+return self.predict()
+# Confidence tracker combines motion, appearance, and detection confidence
+class ConfidenceTracker:
+def __init__(self, confidence_threshold=0.6, lost_frames_threshold=30):

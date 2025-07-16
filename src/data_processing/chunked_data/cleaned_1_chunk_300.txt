@@ -1,0 +1,11 @@
+x = torch.zeros((1, self.input_channels,
+self.patch_size, self.patch_size))
+x = F.relu(self.conv1_bn(self.conv1(x)))
+_, c, w, h = x.size()
+size0 = c * w * h
+x = self.pool1(x)
+_, c, w, h = x.size()
+size1 = c * w * h
+x = self.conv1_bn(x)
+_, c, w, h = x.size()
+size2 = c * w * h

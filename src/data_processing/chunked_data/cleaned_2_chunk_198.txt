@@ -1,0 +1,6 @@
+logger.info(f"Test set size: {len(X_test)}")
+logger.info(f"Creating {model_type} datasets...")
+if model_type == 'standard':
+train_dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train))
+test_dataset = tf.data.Dataset.from_tensor_slices((X_test, y_test))
+elif model_type == 'autoencoder':

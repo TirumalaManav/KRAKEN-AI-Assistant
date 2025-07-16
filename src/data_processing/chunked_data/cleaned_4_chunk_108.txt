@@ -1,0 +1,6 @@
+dx, dy = float(displacement[0]), float(displacement[1])
+object_diagonal = np.sqrt(w*w + h*h)
+size_factor = 1.0 / (1.0 + 0.02 * min(w, h))
+max_shift = object_diagonal * (0.2 + 0.3 * size_factor)  # Increased max shift
+shift_magnitude = np.sqrt(dx*dx + dy*dy)
+if shift_magnitude > max_shift:

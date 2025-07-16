@@ -1,0 +1,9 @@
+return context_similarity > 0.5
+except Exception as e:
+logger.error(f"Error in context consistency: {e}")
+return False
+def update(self, frame, bbox, tracker_confidence, kalman_bbox):
+try:
+if self.initial_size is None:
+self.initial_size = (bbox[2], bbox[3])
+self.motion_model.set_object_size(bbox)

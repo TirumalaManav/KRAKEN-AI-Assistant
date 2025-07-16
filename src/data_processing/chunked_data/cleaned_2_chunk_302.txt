@@ -1,0 +1,9 @@
+if gpus:
+for gpu in gpus:
+tf.config.experimental.set_memory_growth(gpu, True)
+logger.info(f"Found {len(gpus)} GPU(s), configured memory growth")
+except Exception as e:
+logger.warning(f"Error configuring GPU: {str(e)}")
+def find_project_root(self):
+"""Find project root directory"""
+try:

@@ -1,0 +1,8 @@
+plt.legend()
+plt.tight_layout()
+plt.savefig(results_dir / 'cnn_training_history.png')
+plt.close()
+# Train and save Autoencoder Model
+logger.info("Starting Autoencoder training...")
+ae_model = HyperspectralAE(n_components, n_classes)
+train_dataset, test_dataset = preprocess_hyperspectral_data(

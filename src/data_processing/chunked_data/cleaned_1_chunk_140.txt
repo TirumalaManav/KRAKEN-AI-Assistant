@@ -1,0 +1,8 @@
+if not chunk:
+return
+yield chunk
+def metrics(prediction, target, ignored_labels=[], n_classes=None):
+"""Compute and print metrics (accuracy, confusion matrix and F1 scores).
+Args:
+prediction: list of predicted labels
+target: list of target labels

@@ -1,0 +1,7 @@
+document.getElementById('batch-size-value').textContent = e.target.value;
+});
+document.getElementById('epochs').addEventListener('input', (e) => {
+document.getElementById('epochs-value').textContent = e.target.value;
+});
+// Initialize UI
+document.addEventListener('DOMContentLoaded', () => {

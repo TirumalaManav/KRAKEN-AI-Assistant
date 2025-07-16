@@ -1,0 +1,10 @@
+const imageData = canvas.toDataURL('image/jpeg');
+if (currentMode === 'login') {
+processLogin(imageData);
+} else {
+processRegistration(imageData);
+}
+}
+async function processLogin(imageData) {
+const username = document.getElementById('username').value.trim();
+try {

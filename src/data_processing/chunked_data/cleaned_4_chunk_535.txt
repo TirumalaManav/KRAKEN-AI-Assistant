@@ -1,0 +1,5 @@
+for stored_descriptors in self.feature_memory:
+matches = self.matcher.match(descriptors, stored_descriptors)
+if len(matches) > self.min_match_count:
+distances = [m.distance for m in matches]
+similarity = 1.0 - (sum(distances) / len(distances)) / 500.0

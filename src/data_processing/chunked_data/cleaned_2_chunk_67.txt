@@ -1,0 +1,10 @@
+'n_components': 30,  # PCA components
+'patch_size': 7,
+'batch_size': 32,
+'epochs': 5
+}
+if not all([dataset_name, model_type]):
+return jsonify({
+"success": False,
+"message": "Missing required parameters: datasetPath and modelType",
+"timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),

@@ -1,0 +1,4 @@
+curr_hist = cv2.calcHist([hsv_roi], [0, 1] if len(roi.shape) == 3 else [0], None,
+[50, 60] if len(roi.shape) == 3 else [50],
+[0, 180, 0, 256] if len(roi.shape) == 3 else [0, 256])
+cv2.normalize(curr_hist, curr_hist)

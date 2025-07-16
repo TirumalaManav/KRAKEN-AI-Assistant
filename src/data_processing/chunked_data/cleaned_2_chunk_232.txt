@@ -1,0 +1,9 @@
+logger.info(f"User: TirumalaManav")
+# Set up parameters
+data_dir = r"D:\HIC\HIC Practise\Hyperspectral-Classification-master\Hyperspectral-Classification-master\Datasets"
+dataset_name = "PaviaU"
+n_components = 30
+batch_size = 32
+epochs = 2
+patch_size = 7
+# Create results directory

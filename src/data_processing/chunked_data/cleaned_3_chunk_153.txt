@@ -1,0 +1,16 @@
+}
+.card-header {
+padding: 1.5rem;
+background: var(--header-gradient); /* Cyan to Coral gradient */
+color: var(--white);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.card-header h2 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+font-size: 1.2rem;
+}
+.card-actions i {

@@ -1,0 +1,9 @@
+weights_only=True))
+except TypeError:
+# For older PyTorch versions that don't support weights_only
+model.load_state_dict(torch.load(SNAPSHOT_PATH,
+map_location=lambda storage, loc: storage.cpu()))
+model.eval().to(device)
+# build tracker
+tracker = build_tracker(model)
+# Initialize video capture

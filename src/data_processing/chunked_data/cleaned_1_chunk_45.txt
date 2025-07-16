@@ -1,0 +1,6 @@
+def mixture_noise(self, data, label, beta=1/25):
+alpha1, alpha2 = np.random.uniform(0.01, 1., size=2)
+noise = np.random.normal(loc=0., scale=1.0, size=data.shape)
+data2 = np.zeros_like(data)
+for  idx, value in np.ndenumerate(label):
+if value not in self.ignored_labels:

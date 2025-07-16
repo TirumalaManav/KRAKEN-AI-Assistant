@@ -1,0 +1,12 @@
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(255, 111, 97, 0.4);
+}
+/* Small 3D Boxes at Top-Left and Top-Right */
+.small-3d-box {
+position: fixed;
+width: 100px;
+height: 100px;
+transform-style: preserve-3d;
+animation: rotate3dBox 10s infinite linear;
+}
+.small-3d-box .face {

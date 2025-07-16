@@ -1,0 +1,2 @@
+<h3>Mr. Bhaskar Das</h3>
+<div class="member-role">Associate Professor & Research Lead</div>

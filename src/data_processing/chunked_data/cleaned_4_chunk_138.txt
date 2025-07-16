@@ -1,0 +1,9 @@
+g.tracked_object['kalman_box'] = (
+int(new_center_x - fused_box[2]/2),
+int(new_center_y - fused_box[3]/2),
+fused_box[2], fused_box[3]
+)
+g.tracked_object['prev_center'] = (new_center_x, new_center_y)
+else:
+g.tracked_object['kalman_box'] = fused_box
+g.tracked_object['prev_center'] = new_center

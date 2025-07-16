@@ -1,0 +1,14 @@
+prev_frame = frame.copy()
+elif current_mode == "tracking":
+if paused:
+cv2.waitKey(1)
+continue
+ret, frame = cap.read()
+if not ret:
+break
+g.frame_idx += 1
+g.frame = frame.copy()
+display_frame = frame.copy()
+if g.tracked_object:
+tracker = g.tracked_object['tracker']
+outputs = tracker.track(frame)

@@ -1,0 +1,7 @@
+if patch_size == 3:
+self.conv1 = nn.Conv3d(
+1, 20, (3, 3, 3), stride=(1, 1, 1), dilation=dilation, padding=1)
+else:
+self.conv1 = nn.Conv3d(
+1, 20, (3, 3, 3), stride=(1, 1, 1), dilation=dilation, padding=0)
+# Next pooling is applied using a layer identical to the previous one

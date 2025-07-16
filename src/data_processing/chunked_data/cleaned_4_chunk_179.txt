@@ -1,0 +1,8 @@
+elif object_type == 'flat':
+self.feature_extractor.setFastThreshold(fast_thresh)
+return keypoints, descriptors
+except Exception as e:
+logger.error(f"Error in feature extraction: {e}")
+return [], None
+def get_precise_object_boundaries(self, frame, initial_bbox, spectrum_type=None):
+try:

@@ -1,0 +1,3 @@
+result = cv2.matchTemplate(gray_roi, resized_template, cv2.TM_CCOEFF_NORMED)
+orb_similarity = 0.7 * orb_similarity + 0.3 * np.max(result) if result.size > 0 else orb_similarity
+hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV) if len(roi.shape) == 3 else roi

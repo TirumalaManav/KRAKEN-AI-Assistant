@@ -1,0 +1,9 @@
+# Plot predictions
+plt.subplot(122)
+plt.title(f'Predicted Labels - {dataset_name}', fontsize=12)
+plt.imshow(predicted, cmap='nipy_spectral')
+plt.colorbar(label='Classes')
+plt.axis('off')
+# Add title with metadata
+plt.suptitle(
+f'Prediction Results\nTimestamp: {self.timestamp} | User: {self.user}',

@@ -1,0 +1,9 @@
+new_detections = []
+for curr in current_detections:
+x, y, w, h, cx, cy = curr
+best_match = None
+min_dist = float('inf')
+for prev in self.prev_detections:
+px, py, pw, ph, pcx, pcy, count = prev
+dist = np.sqrt((cx - pcx)**2 + (cy - pcy)**2)
+if dist < self.SMOOTHING_DIST_THRESH and dist < min_dist:

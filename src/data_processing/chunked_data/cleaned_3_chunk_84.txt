@@ -1,0 +1,12 @@
+margin: 0 auto;
+}
+.logo {
+font-size: 1.5rem;
+font-weight: bold;
+color: white;
+text-transform: uppercase;
+letter-spacing: 2px;
+animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); }

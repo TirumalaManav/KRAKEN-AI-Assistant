@@ -1,0 +1,6 @@
+def mahalanobis_distance(self, bbox):
+center_x, center_y = bbox[0] + bbox[2] / 2, bbox[1] + bbox[3] / 2
+actual_pos = np.array([center_x, center_y])
+predicted_pos = (self.position_history[-1] + self.velocity_history[-1]
+if self.velocity_history else actual_pos)
+diff = actual_pos - predicted_pos

@@ -1,0 +1,5 @@
+return (None, False)
+centers = np.array([[b[0] + b[2]/2.0, b[1] + b[3]/2.0] for _, b in self.candidate_buffer])
+widths, heights = [b[2] for _, b in self.candidate_buffer], [b[3] for _, b in self.candidate_buffer]
+if np.max(np.std(centers, axis=0)) > self.convergence_threshold:
+return (None, False)

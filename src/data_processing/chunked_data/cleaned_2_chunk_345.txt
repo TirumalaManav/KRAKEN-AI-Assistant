@@ -1,0 +1,8 @@
+return vis_dir, metrics
+except Exception as e:
+logger.error(f"Error visualizing results: {str(e)}")
+raise
+def _plot_prediction_comparison(self, ground_truth, predicted, dataset_name, vis_dir):
+"""Plot comparison between ground truth and predictions."""
+try:
+plt.figure(figsize=(20, 10))

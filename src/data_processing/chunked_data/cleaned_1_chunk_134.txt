@@ -1,0 +1,7 @@
+y2 = y1 + h
+return x1, x2, y1, y2
+def sliding_window(image, step=10, window_size=(20, 20), with_data=True):
+"""Sliding window generator over an input image.
+Args:
+image: 2D+ image to slide the window on, e.g. RGB or hyperspectral
+step: int stride of the sliding window

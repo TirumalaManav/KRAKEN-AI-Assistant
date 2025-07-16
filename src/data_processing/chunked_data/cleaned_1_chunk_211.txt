@@ -1,0 +1,6 @@
+#         self.bn4 = nn.BatchNorm2d(512)
+#         self.relu4 = nn.ReLU(inplace=True)
+#         self.maxpool4 = nn.MaxPool2d(kernel_size=2, stride=1)
+#         # Fifth convolutional block
+#         self.conv5 = nn.Conv2d(512, 1024, kernel_size=3, padding=1)
+#         self.bn5 = nn.BatchNorm2d(1024)

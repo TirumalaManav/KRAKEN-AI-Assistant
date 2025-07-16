@@ -1,0 +1,7 @@
+self.conv1 = nn.Conv2d(256, 128, (1, 1))
+self.conv2 = nn.Conv2d(128, 128, (1, 1))
+self.conv3 = nn.Conv2d(128, 128, (1, 1))
+# Residual block 2
+self.conv4 = nn.Conv2d(128, 128, (1, 1))
+self.conv5 = nn.Conv2d(128, 128, (1, 1))
+# The layer combination in the last three convolutional layers

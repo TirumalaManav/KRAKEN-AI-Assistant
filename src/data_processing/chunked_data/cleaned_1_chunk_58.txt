@@ -1,0 +1,4 @@
+help="Choose the data on which to test the trained algorithm ")
+group_test.add_argument('--mat', type=str, default=None, nargs='?',
+help="In case of a .mat file, define the variable to call inside the file")
+group_test.add_argument('--n_classes', type=int, default=None, nargs='?',

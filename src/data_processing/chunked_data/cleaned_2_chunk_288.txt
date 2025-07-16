@@ -1,0 +1,4 @@
+'training_accuracy': training_results.get('final_metrics', {}).get('accuracy'),
+'validation_accuracy': training_results.get('final_metrics', {}).get('val_accuracy'),
+'batch_size': training_results.get('hyperparameters', {}).get('batch_size'),
+'model_type': training_results.get('model_type'),

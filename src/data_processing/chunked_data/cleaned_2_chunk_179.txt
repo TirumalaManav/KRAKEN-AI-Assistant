@@ -1,0 +1,6 @@
+images = image_data.get(image_key)
+# Loading label data
+logger.info(f"Loading label data from: {label_file}")
+label_data = sio.loadmat(os.path.join(dataset_path, label_file))
+logger.debug(f"Keys in the label file '{label_file}': {label_data.keys()}")
+label_key = next(

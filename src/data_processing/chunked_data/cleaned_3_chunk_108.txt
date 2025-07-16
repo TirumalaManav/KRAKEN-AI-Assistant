@@ -1,0 +1,9 @@
+<span class="highlight">Accelerated Training Pipelines</span> •
+<span class="highlight">Highly Accurate Predictions</span>
+</p>
+<div class="key-metrics">
+<div class="metric">
+<span>Model Architectures</span>
+<strong>CNN, GAN, Autoencoder</strong>
+</div>
+<div class="metric">

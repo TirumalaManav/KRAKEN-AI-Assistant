@@ -1,0 +1,6 @@
+prev_box = obj['kalman_box']
+prev_center = obj.get('prev_center', (prev_box[0] + prev_box[2] // 2,
+prev_box[1] + prev_box[3] // 2))
+dx, dy = optical_flow_update(g.frame, frame, prev_box)
+x, y, w, h = prev_box
+new_box = (int(x+dx), int(y+dy), w, h)

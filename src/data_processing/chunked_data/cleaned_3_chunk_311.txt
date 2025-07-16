@@ -1,0 +1,10 @@
+epochs: parseInt(document.getElementById('epochs').value)
+},
+augmentation: {
+flip: document.getElementById('flip-aug').checked,
+radiation: document.getElementById('radiation-aug').checked,
+mixture: document.getElementById('mixture-aug').checked
+}
+};
+try {
+isTraining = true;

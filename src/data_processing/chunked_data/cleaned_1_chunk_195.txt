@@ -1,0 +1,6 @@
+# optimizer = optim.Adadelta(model.parameters(), lr=lr)
+# optimizer = optim.Adagrad(model.parameters(), lr=lr, weight_decay=0.01)
+optimizer = optim.Adam(model.parameters(), lr=lr)
+kwargs.setdefault('batch_size', 100)
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])
+elif name == 'mou':

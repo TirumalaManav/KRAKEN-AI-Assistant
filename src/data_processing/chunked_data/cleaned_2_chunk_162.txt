@@ -1,0 +1,9 @@
+enforce_detection=True,
+align=True
+)
+is_verified = verification_result.get('verified', False)
+if is_verified:
+self.logger.info(f"User {username} authenticated successfully")
+else:
+self.logger.warning(f"Face verification failed for user {username}")
+return is_verified

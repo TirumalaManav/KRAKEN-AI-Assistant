@@ -1,0 +1,11 @@
+from sklearn import preprocessing
+try:
+# Python 3
+from urllib.request import urlretrieve
+except ImportError:
+# Python 2
+from urllib import urlretrieve
+from utils import open_file
+DATASETS_CONFIG = {
+'PaviaC': {
+'urls': ['http://www.ehu.eus/ccwintco/uploads/e/e3/Pavia.mat',

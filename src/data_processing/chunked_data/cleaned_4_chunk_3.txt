@@ -1,0 +1,10 @@
+self.min_match_count = 10
+self.template = None
+self.template_size = None
+self.alpha = 0.95
+self.spectrum_type = spectrum_type
+def initialize_spectrum_adaptive_orb(self, spectrum_type=None):
+"""
+Initialize ORB with parameters optimized for different spectrum types.
+"""
+nfeatures = 2000

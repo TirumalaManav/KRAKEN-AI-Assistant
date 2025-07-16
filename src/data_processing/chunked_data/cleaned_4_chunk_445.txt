@@ -1,0 +1,14 @@
+return None
+def release(self):
+"""Clean up resources"""
+if self.cap:
+self.cap.release()
+class GlobalVars:
+"""Global state management"""
+def __init__(self):
+self.init_rect = None
+self.frame = None
+self.tracking_started = False
+self.paused = False
+self.click_point = None
+self.prev_gray = None

@@ -1,0 +1,9 @@
+def login():
+if request.method == 'GET':
+return render_template('register.html')  # Assuming login form is in register.html
+else:
+try:
+data = request.json if request.is_json else request.form
+username = data.get('username')
+image_data = data.get('image')
+if not username or not image_data:

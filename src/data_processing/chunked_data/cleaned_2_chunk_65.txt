@@ -1,0 +1,10 @@
+User: TirumalaManav
+System: {platform.system()} {platform.release()}
+GPU: NVIDIA GeForce RTX 3050 (4GB VRAM)
+=====================================================
+""")
+try:
+# Parse request data
+data = request.get_json()
+dataset_name = data.get('datasetPath')
+model_type = data.get('modelType')

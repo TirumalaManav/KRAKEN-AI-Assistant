@@ -1,0 +1,9 @@
+x = x.view(-1, self.features_size)
+x = F.relu(self.fc1(x))
+x = self.fc2(x)
+return x
+class SharmaEtAl(nn.Module):
+"""
+HYPERSPECTRAL CNN FOR IMAGE CLASSIFICATION & BAND SELECTION, WITH APPLICATION
+TO FACE RECOGNITION
+Vivek Sharma, Ali Diba, Tinne Tuytelaars, Luc Van Gool

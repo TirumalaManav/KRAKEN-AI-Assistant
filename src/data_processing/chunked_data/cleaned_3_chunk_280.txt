@@ -1,0 +1,11 @@
+<i class="fas fa-moon"></i>
+</div>
+<!-- Hero Section -->
+<div class="hero-section">
+<div class="hero-content">
+<h1>Hyperspectral Image Classification</h1>
+<p>Advanced Deep Learning Models for Hyperspectral Data Analysis</p>
+</div>
+</div>
+<!-- Main Content -->
+<div class="container">

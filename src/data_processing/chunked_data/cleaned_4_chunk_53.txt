@@ -1,0 +1,9 @@
+[0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+[0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+], np.float32)
+process_noise = np.eye(10, dtype=np.float32) * 1e-3
+process_noise[0:2, 0:2] *= 50
+process_noise[4:6, 4:6] *= 20
+process_noise[8, 8] *= 5
+self.kalman.processNoiseCov = process_noise

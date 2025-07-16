@@ -1,0 +1,8 @@
+step: int stride of the sliding window
+window_size: int tuple, width and height of the window
+with_data (optional): bool set to True to return both the data and the
+corner indices
+Yields:
+([data], x, y, w, h) where x and y are the top-left corner of the
+window, (w,h) the window size
+"""

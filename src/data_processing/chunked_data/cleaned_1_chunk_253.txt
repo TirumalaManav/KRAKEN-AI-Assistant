@@ -1,0 +1,10 @@
+x = torch.cat([x_3x3, x_1x1], dim=1)
+# Remove the third dimension of the tensor
+x = torch.squeeze(x)
+# Local Response Normalization
+x = F.relu(self.lrn1(x))
+# First convolution
+x = self.conv1(x)
+# Local Response Normalization
+x = F.relu(self.lrn2(x))
+# First residual block

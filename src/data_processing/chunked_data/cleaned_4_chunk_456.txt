@@ -1,0 +1,4 @@
+if p1 is None or len(p1[st.flatten() == 1]) == 0:
+return (0.0, 0.0)
+displacement = np.mean(p1[st.flatten() == 1].reshape(-1, 2) - p0[st.flatten() == 1].reshape(-1, 2), axis=0)
+shift_magnitude = np.sqrt(displacement[0]**2 + displacement[1]**2)

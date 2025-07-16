@@ -1,0 +1,4 @@
+ax4.plot(val_loss_data, 'y-', alpha=0.3, label='Validation')
+ax4.plot(range(window-1, len(loss_data)), loss_ma, 'b-', label='Training Trend')
+ax4.plot(range(window-1, len(val_loss_data)), val_loss_ma, 'r-', label='Validation Trend')
+ax4.set_title('Loss Trends (Moving Average)', fontsize=12, pad=20)

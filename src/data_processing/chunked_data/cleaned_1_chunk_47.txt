@@ -1,0 +1,8 @@
+def __len__(self):
+return len(self.indices)
+def __getitem__(self, i):
+x, y = self.indices[i]
+x1, y1 = x - self.patch_size // 2, y - self.patch_size // 2
+x2, y2 = x1 + self.patch_size, y1 + self.patch_size
+data = self.data[x1:x2, y1:y2]
+label = self.label[x1:x2, y1:y2]

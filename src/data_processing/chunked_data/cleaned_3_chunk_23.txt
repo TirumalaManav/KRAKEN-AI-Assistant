@@ -1,0 +1,14 @@
+50% { transform: scale(1.1); }
+}
+</style>
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading-screen">
+<h1>Loading...</h1>
+</div>
+<!-- Dark Mode Toggle -->
+<div class="dark-mode-toggle" onclick="toggleDarkMode()">
+<i class="fas fa-moon"></i>
+</div>
+<!-- Hero Section -->

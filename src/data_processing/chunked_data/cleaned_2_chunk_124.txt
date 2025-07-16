@@ -1,0 +1,12 @@
+) or "Training history not available"
+data = {
+'username': "TirumalaManav",
+'timestamp': "2025-01-24 05:29:38",
+'selected_dataset': selected_dataset,
+'available_datasets': datasets,
+'overview': {
+'accuracy': '95.8%',
+'training_time': '2.5 hours',
+'model_type': 'CNN'
+},
+'images': {

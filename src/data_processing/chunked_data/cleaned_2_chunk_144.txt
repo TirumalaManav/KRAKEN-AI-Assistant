@@ -1,0 +1,9 @@
+return None, None
+def process_base64_image(self, base64_image, username):
+"""Process and save a base64 encoded image."""
+try:
+# Handle data URI scheme
+if ',' in base64_image:
+base64_image = base64_image.split(',')[1]
+# Decode base64 image
+image_data = base64.b64decode(base64_image)

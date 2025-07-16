@@ -1,0 +1,6 @@
+self.Datasets_dir = os.path.join(self.base_dir, 'Datasets')
+# Create necessary directories
+os.makedirs(self.results_dir, exist_ok=True)
+logger.info(f"Initialized predictor with:")
+logger.info(f"Base directory: {self.base_dir}")
+logger.info(f"Results directory: {self.results_dir}")

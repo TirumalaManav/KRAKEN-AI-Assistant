@@ -1,0 +1,5 @@
+if 'classifier_loss' in history:
+ax2.plot(history['classifier_loss'], 'b-', label='Training', marker='o', markersize=4)
+ax2.plot(history['val_classifier_loss'], 'r-', label='Validation', marker='o', markersize=4)
+else:
+ax2.plot(history['loss'], 'b-', label='Training', marker='o', markersize=4)

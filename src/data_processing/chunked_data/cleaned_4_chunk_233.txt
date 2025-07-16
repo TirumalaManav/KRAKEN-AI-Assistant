@@ -1,0 +1,6 @@
+[0, 180, 0, 256] if len(context_roi.shape) == 3 else [0, 256])
+cv2.normalize(self.initial_context, self.initial_context)
+return True
+x, y, w, h = map(int, bbox)
+margin = int(min(w, h) * 0.5)
+context_roi = frame[max(0, y-margin):min(frame.shape[0], y+h+margin),

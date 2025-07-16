@@ -1,0 +1,9 @@
+'label_keys': ['paviaU_gt'],
+'description': 'Pavia University scene',
+'n_classes': 9,
+'n_bands': 103,
+'class_names': ['Background', 'Asphalt', 'Meadows', 'Gravel', 'Trees',
+'Metal Sheets', 'Bare Soil', 'Bitumen', 'Bricks', 'Shadows']
+},
+'PaviaC': {
+'data_file': 'Pavia.mat',

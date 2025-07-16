@@ -1,0 +1,7 @@
+# Load and process data
+images, ground_truth = load_hyperspectral_data(predictor.Datasets_dir, dataset_name)
+predicted_labels, predictions = predictor.generate_predictions(
+model, images, ground_truth, model_metadata
+)
+# Visualize and save results
+vis_dir, metrics = predictor.visualize_results(

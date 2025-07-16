@@ -1,0 +1,8 @@
+// Filter .mat files
+const matFiles = files.filter(file => file.name.toLowerCase().endsWith('.mat'));
+const folderPath = files[0].webkitRelativePath.split('/')[0];
+// Reset UI state
+modelSelect.disabled = true;
+startTrainingBtn.disabled = true;
+currentDataset = null;
+if (matFiles.length >= 2) {

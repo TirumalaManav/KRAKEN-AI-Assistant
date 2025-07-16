@@ -1,0 +1,6 @@
+#                 output = net(data)
+#             elif supervision == 'semi':
+#                 outs = net(data)
+#                 output, rec = outs
+#             _, output = torch.max(output, dim=1)
+#             #target = target - 1

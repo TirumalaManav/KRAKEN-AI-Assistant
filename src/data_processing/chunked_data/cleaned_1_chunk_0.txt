@@ -1,0 +1,12 @@
+from utils import open_file
+import numpy as np
+import cv2
+CUSTOM_DATASETS_CONFIG = {
+'DFC2018_HSI': {
+'img': '2018_IEEE_GRSS_DFC_HSI_TR.HDR',
+'gt': '2018_IEEE_GRSS_DFC_GT_TR.tif',
+'download': False,
+'loader': lambda folder: dfc2018_loader(folder)
+}
+}
+def dfc2018_loader(folder):

@@ -1,0 +1,11 @@
+self.lock = threading.Lock()
+self.mode = "selection"
+self.stop_async_thread = False
+self.frame_queue = None
+self.frame_idx = 0
+self.total_frames = 0
+self.new_fps = 0
+self.cursor_pos = None
+self.last_mouse_move = 0
+self.use_bytetrack = False
+self.tracked_objects = []  # For ByteTrack mode

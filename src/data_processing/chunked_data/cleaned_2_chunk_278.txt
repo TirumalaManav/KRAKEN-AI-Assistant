@@ -1,0 +1,8 @@
+raise
+def apply_pca(images, n_components):
+"""Apply PCA to reduce the dimensionality of the hyperspectral data."""
+try:
+logger.info(f"Starting PCA reduction with n_components={n_components}")
+h, w, c = images.shape
+reshaped_images = images.reshape(-1, c)
+pca = PCA(n_components=n_components)

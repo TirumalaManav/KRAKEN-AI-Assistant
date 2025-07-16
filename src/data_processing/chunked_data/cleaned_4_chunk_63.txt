@@ -1,0 +1,4 @@
+self.size_history = deque(maxlen=5)
+def dlo_confidence_boost(self, bbox, tracker_confidence, kalman_bbox):
+iou_score = iou(bbox, kalman_bbox)
+mahalanobis_dist = self.motion_model.mahalanobis_distance(bbox)

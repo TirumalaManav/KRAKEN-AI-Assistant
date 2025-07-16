@@ -1,0 +1,4 @@
+help="Sliding window step stride during inference (default = 1)")
+group_test.add_argument('--image', type=str, default=None, nargs='?',
+help="Path to an image on which to run inference.")
+group_test.add_argument('--only_test', type=str, default=None, nargs='?',

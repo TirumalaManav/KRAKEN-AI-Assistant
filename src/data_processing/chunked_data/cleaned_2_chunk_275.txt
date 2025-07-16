@@ -1,0 +1,7 @@
+"""Validate that all required files for a dataset exist."""
+try:
+if dataset_name not in DATASET_MAPPINGS:
+raise ValueError(f"Dataset '{dataset_name}' is not registered")
+dataset_info = DATASET_MAPPINGS[dataset_name]
+dataset_path = os.path.join(data_dir, dataset_name)
+# Check data file

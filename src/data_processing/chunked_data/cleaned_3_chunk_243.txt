@@ -1,0 +1,13 @@
+resetForm();
+}
+} catch (error) {
+showStatus('Registration failed: ' + error.message, 'error');
+resetForm();
+} finally {
+stopCamera();
+isProcessing = false;
+}
+}
+function showStatus(message, type) {
+const statusElement = document.getElementById('status-message');
+statusElement.textContent = message;

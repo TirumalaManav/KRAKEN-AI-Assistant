@@ -1,0 +1,14 @@
+p0[:, 0, 0] += x
+p0[:, 0, 1] += y
+p1, st, err = cv2.calcOpticalFlowPyrLK(
+prev_gray,
+curr_gray,
+p0,
+None,
+winSize=(21, 21),
+maxLevel=3,
+criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03)
+)
+if p1 is None:
+return (0.0, 0.0)
+good_new = p1[st.flatten() == 1]

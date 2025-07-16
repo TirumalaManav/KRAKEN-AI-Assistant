@@ -1,0 +1,10 @@
+if np.linalg.norm(acceleration) > self.max_acceleration:
+return False
+if np.linalg.norm(current_velocity) > self.max_velocity:
+return False
+return True
+# Kalman filter extension for box tracking
+class EnhancedKalmanBox:
+def __init__(self, bbox):
+self.kalman = cv2.KalmanFilter(8, 4)
+dt = 1.0

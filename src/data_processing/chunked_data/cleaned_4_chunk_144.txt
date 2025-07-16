@@ -1,0 +1,12 @@
+cv2.imshow("Tracking", display_frame)
+key = cv2.waitKey(1)
+if key & 0xFF == ord('q'):
+break
+elif key & 0xFF == ord('r'):
+g.tracked_object = None
+g.tracking_started = False
+g.mode = "selection"
+elif key & 0xFF == ord(' '):
+g.paused = not g.paused
+prev_frame = frame.copy()
+cap.release()

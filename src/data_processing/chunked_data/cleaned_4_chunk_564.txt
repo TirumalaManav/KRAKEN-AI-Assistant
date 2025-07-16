@@ -1,0 +1,8 @@
+self.candidate_buffer.clear()
+self.missed_count = 0
+self.last_refined_bbox = None
+def update(self, bbox, frame_index):
+# If no detection in the current frame
+if bbox is None:
+self.missed_count += 1
+if self.missed_count >= self.max_missed_frames:

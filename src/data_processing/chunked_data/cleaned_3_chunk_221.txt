@@ -1,0 +1,10 @@
+<div class="face right"></div>
+<div class="face left"></div>
+<div class="face top"></div>
+<div class="face bottom"></div>
+</div>
+<div class="container">
+<div class="auth-box">
+<div class="logo">HYPER SPECTRAL</div>
+<div class="tabs">
+<div class="tab active" onclick="switchTab('login')">Login</div>

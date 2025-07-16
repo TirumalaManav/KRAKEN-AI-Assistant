@@ -1,0 +1,7 @@
+if not available_datasets:
+logger.warning("No valid datasets with visualizations found!")
+else:
+logger.info(f"Found {len(available_datasets)} valid datasets with visualizations")
+return sorted(available_datasets)
+except Exception as e:
+logger.error(f"Error getting available datasets: {str(e)}")

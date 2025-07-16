@@ -1,0 +1,6 @@
+update = None if win is None else 'append'
+win = vis.line(X=np.arange(n_bands), Y=v, name=k, win=win, update=update,
+opts={'title': title})
+def build_dataset(mat, gt, ignored_labels=None):
+"""Create a list of training samples based on an image and a mask.
+Args:

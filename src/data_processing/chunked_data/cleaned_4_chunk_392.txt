@@ -1,0 +1,6 @@
+self.motion_model.set_object_size(bbox)
+self._check_context_consistency(frame, bbox)
+self.motion_model.update(bbox)
+predicted_pos = self.motion_model.predict_next_position()
+if predicted_pos is not None:
+center_x, center_y = bbox[0] + bbox[2]/2, bbox[1] + bbox[3]/2

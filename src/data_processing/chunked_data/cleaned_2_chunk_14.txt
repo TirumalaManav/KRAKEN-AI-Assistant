@@ -1,0 +1,8 @@
+# Custom callback for training monitoring
+class CustomTrainingCallback(tf.keras.callbacks.Callback):
+def __init__(self, model_type):
+super().__init__()
+self.model_type = model_type
+def on_epoch_end(self, epoch, logs=None):
+current_training_info.update({
+"current_epoch": epoch + 1,

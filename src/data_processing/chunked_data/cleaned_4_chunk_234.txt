@@ -1,0 +1,5 @@
+max(0, x-margin):min(frame.shape[1], x+w+margin)]
+if context_roi.size == 0:
+return False
+curr_context = cv2.calcHist([cv2.cvtColor(context_roi, cv2.COLOR_BGR2HSV) if len(context_roi.shape) == 3 else context_roi],
+[0, 1] if len(context_roi.shape) == 3 else [0], None,

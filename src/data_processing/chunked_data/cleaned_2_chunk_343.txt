@@ -1,0 +1,6 @@
+class_names = dataset_info['class_names']
+# Plot comparison
+self._plot_prediction_comparison(ground_truth, predicted, dataset_name, vis_dir)
+# Calculate and plot metrics
+metrics = self.calculate_metrics(ground_truth, predicted, class_names)
+self.plot_metrics(metrics, dataset_name, vis_dir)

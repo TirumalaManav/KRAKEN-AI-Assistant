@@ -1,0 +1,11 @@
+def get_training_status():
+"""Enhanced training status endpoint with detailed metrics"""
+try:
+status_info = current_training_info.copy()
+status_info.update({
+"timestamp": "2025-01-23 13:12:39",
+"user": "TirumalaManav"
+})
+if gpus:
+memory_info = get_gpu_memory_info()
+if memory_info:

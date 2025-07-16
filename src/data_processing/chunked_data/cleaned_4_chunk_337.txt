@@ -1,0 +1,9 @@
+low_thresh_base = max(10, int(mean_val * 0.2))
+high_thresh_base = max(30, int(mean_val * 0.5))
+if spectrum_type in ["LWIR", "MWIR"]:
+low_thresh_base *= 0.7
+high_thresh_base *= 0.7
+elif spectrum_type == "SWIR":
+low_thresh_base *= 1.1
+high_thresh_base *= 1.1
+edges_combined = np.zeros_like(gray_roi)

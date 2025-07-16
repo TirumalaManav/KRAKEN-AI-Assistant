@@ -1,0 +1,7 @@
+return max(0.0, tracker_confidence - 0.2)
+return tracker_confidence
+def _check_context_consistency(self, frame, bbox):
+try:
+if self.initial_context is None or max(bbox[2], bbox[3]) > 200:
+x, y, w, h = map(int, bbox)
+margin = int(min(w, h) * 0.5)

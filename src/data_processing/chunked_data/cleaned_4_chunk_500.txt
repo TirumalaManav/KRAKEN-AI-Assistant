@@ -1,0 +1,8 @@
+if self.last_detection is not None:
+prev_area = self.last_detection[2] * self.last_detection[3]
+new_area = best[2] * best[3]
+if new_area > prev_area * self.UPDATE_AREA_FACTOR:
+self.last_detection = best
+else:
+self.last_detection = best
+if best[2] * best[3] < self.MIN_AREA * 4:

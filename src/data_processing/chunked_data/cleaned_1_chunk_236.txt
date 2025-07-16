@@ -1,0 +1,10 @@
+x = self.fc2(x)
+return x
+class HamidaEtAl(nn.Module):
+"""
+3-D Deep Learning Approach for Remote Sensing Image Classification
+Amina Ben Hamida, Alexandre Benoit, Patrick Lambert, Chokri Ben Amar
+IEEE TGRS, 2018
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8344565
+"""
+@staticmethod

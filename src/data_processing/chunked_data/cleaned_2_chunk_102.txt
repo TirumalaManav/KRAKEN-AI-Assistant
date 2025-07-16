@@ -1,0 +1,5 @@
+'training_history_plot': 'training_history.png',  # Common for all datasets
+'training_history_text': 'training_history.txt'   # Common for all datasets
+}
+# Check if dataset-specific files exist
+dataset_files = [files['confusion_matrix'], files['comparison'], files['classification_report']]

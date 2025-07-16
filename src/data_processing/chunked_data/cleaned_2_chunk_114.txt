@@ -1,0 +1,7 @@
+return available_datasets
+# Get list of all visualization files
+vis_files = os.listdir(vis_dir)
+logger.info(f"Found visualization files: {vis_files}")
+# Extract dataset names from visualization files
+processed_datasets = set()
+for file in vis_files:

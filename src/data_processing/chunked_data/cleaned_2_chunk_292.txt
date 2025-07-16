@@ -1,0 +1,6 @@
+if dataset_name not in DATASET_MAPPINGS:
+raise ValueError(f"Dataset {dataset_name} is not registered")
+mapping = DATASET_MAPPINGS[dataset_name]
+dataset_path = os.path.join(data_dir, dataset_name)
+# Load image data
+data_file_path = os.path.join(dataset_path, mapping['data_file'])

@@ -1,0 +1,8 @@
+document.getElementById('auth-button').style.display = 'block';
+isProcessing = false;
+}
+async function startAuth() {
+if (isProcessing) return;
+const username = document.getElementById('username').value.trim();
+const authButton = document.getElementById('auth-button');
+if (!username) {

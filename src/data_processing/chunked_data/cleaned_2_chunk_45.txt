@@ -1,0 +1,11 @@
+'name': item,
+'files': mat_files,
+'timestamp': "2025-01-23 13:11:38",
+'user': "TirumalaManav"
+})
+logger.info(f"Found {len(datasets)} valid datasets")
+return jsonify({
+"success": True,
+"datasets": datasets,
+"message": f"Found {len(datasets)} valid datasets",
+"timestamp": "2025-01-23 13:11:38",

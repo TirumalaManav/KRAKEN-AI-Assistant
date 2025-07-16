@@ -1,0 +1,5 @@
+X_train = scaler.fit_transform(X_train)
+class_weight = 'balanced' if CLASS_BALANCING else None
+clf = sklearn.linear_model.SGDClassifier(class_weight=class_weight, learning_rate='optimal', tol=1e-3, average=10)
+clf.fit(X_train, y_train)
+save_model(clf, MODEL, DATASET)

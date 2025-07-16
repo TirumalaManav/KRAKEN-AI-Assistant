@@ -1,0 +1,8 @@
+return convert_to_color_(x, palette=palette)
+def convert_from_color(x):
+return convert_from_color_(x, palette=invert_palette)
+if MODEL in ['SVM', 'SVM_grid', 'SGD', 'nearest']:
+from sklearn.externals import joblib
+model = joblib.load(CHECKPOINT)
+w, h = img.shape[:2]
+X = img.reshape((w*h, N_BANDS))

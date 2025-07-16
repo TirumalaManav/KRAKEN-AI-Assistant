@@ -1,0 +1,5 @@
+prediction = self.predict()
+alpha = 0.7
+x, y, w, h = [alpha * pred + (1 - alpha) * val for pred, val in zip(prediction, [x, y, w, h])]
+self.size_history.append((w, h))
+if len(self.size_history) > 3:

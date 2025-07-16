@@ -1,0 +1,7 @@
+data = request.json if is_ajax else request.form
+username = data.get('username')
+image_data = data.get('image')
+# Check if user already exists
+user_files = [f for f in os.listdir(UPLOAD_FOLDER)
+if f.startswith(f'{username}_register_')]
+if user_files:

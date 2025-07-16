@@ -1,0 +1,6 @@
+'n_classes': dataset_info['n_classes'],
+'n_bands': dataset_info['n_bands'],
+'class_names': dataset_info['class_names']
+}
+logger.info(f"Successfully registered custom dataset: {dataset_info['name']}")
+logger.info(f"Description: {dataset_info['description']}")

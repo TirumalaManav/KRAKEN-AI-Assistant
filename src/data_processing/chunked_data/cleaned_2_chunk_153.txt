@@ -1,0 +1,8 @@
+if face_features is None:
+if os.path.exists(face_image):
+os.remove(face_image)
+return False
+# Save reference image
+reference_path = os.path.join(self.reference_images_path, f'{username}_reference.jpg')
+shutil.move(face_image, reference_path)
+# Generate encryption keys and encrypt data

@@ -1,0 +1,10 @@
+mimetype = 'text/plain'
+else:
+mimetype = 'application/octet-stream'
+return send_from_directory(vis_dir, filename, mimetype=mimetype)
+except Exception as e:
+logger.error(f"Error serving file {filename}: {str(e)}")
+return str(e), 404
+# Server initialization
+if __name__ == '__main__':
+try:

@@ -1,0 +1,5 @@
+"""
+@staticmethod
+def weight_init(m):
+# All weight matrices in our RNN and bias vectors are initialized with a uniform distribution, and the values of these weight matrices and bias vectors are initialized in the range [−0.1,0.1]
+if isinstance(m, (nn.Linear, nn.GRU)):

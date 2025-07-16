@@ -1,0 +1,9 @@
+# Reconstruct full image
+predicted_image = self.reconstruct_image(
+predicted_labels, patch_locations, labels.shape
+)
+logger.info("Prediction generation completed")
+return predicted_image, predictions
+except Exception as e:
+logger.error(f"Error generating predictions: {str(e)}")
+raise

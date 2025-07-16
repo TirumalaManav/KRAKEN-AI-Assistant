@@ -1,0 +1,11 @@
+results["Accuracy"] = accuracy
+# Compute F1 score
+F1scores = np.zeros(len(cm))
+for i in range(len(cm)):
+try:
+F1 = 2. * cm[i, i] / (np.sum(cm[i, :]) + np.sum(cm[:, i]))
+except ZeroDivisionError:
+F1 = 0.
+F1scores[i] = F1
+results["F1 scores"] = F1scores
+# Compute kappa coefficient

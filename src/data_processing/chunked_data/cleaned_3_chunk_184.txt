@@ -1,0 +1,13 @@
+<!-- Classification Report -->
+<div class="card">
+<div class="card-header">
+<h2><i class="fas fa-file-alt"></i> Classification Report</h2>
+</div>
+<div class="card-content">
+<div class="report-container visual-report">
+<pre>{{ data.reports.classification }}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,6 @@
+frame, self.global_vars.tracked_object['kalman_box'], tracker_confidence, kalman_bbox
+)
+if conf < 0.4:
+redetected_box = universal_redetection(frame, self.global_vars.tracked_object['kalman_box'],
+self.global_vars.tracked_object['prev_frame'],
+self.original_template)

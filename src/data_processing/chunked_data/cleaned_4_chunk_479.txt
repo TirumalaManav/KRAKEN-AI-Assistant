@@ -1,0 +1,3 @@
+MIN_AREA = 120                    # Minimum area threshold for a valid candidate
+MORPH_KERNEL_SIZE = 3             # Kernel size for morphological operations
+ROI_STD_THRESH = 12               # Minimum standard deviation in ROI (to avoid low contrast regions)

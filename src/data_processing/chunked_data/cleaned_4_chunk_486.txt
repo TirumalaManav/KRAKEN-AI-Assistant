@@ -1,0 +1,6 @@
+return gray, enhanced
+def adaptive_threshold(self, enhanced, bg_model):
+diff = cv2.absdiff(enhanced, bg_model)
+diff = cv2.GaussianBlur(diff, (5, 5), 0)
+noise_level = np.std(diff)
+adaptive_offset = self.BASE_THRESH_OFFSET * (noise_level / 10.0)

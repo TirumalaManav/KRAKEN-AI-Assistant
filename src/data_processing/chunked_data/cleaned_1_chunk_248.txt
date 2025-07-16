@@ -1,0 +1,5 @@
+super(LeeEtAl, self).__init__()
+# The first convolutional layer applied to the input hyperspectral
+# image uses an inception module that locally convolves the input
+# image with two convolutional filters with different sizes
+# (1x1xB and 3x3xB where B is the number of spectral bands)

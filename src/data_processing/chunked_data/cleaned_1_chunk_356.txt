@@ -1,0 +1,8 @@
+if supervision == 'full':
+output = net(data)
+loss = criterion(output, target)
+elif supervision == 'semi':
+outs = net(data)
+output, rec = outs
+loss = criterion[0](output, target) + net.aux_loss_weight * criterion[1](rec, data)
+else:

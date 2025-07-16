@@ -1,0 +1,7 @@
+)
+if face_features and len(face_features) > 0:
+self.logger.info(f"Face features extracted successfully using {backend}")
+return face_features[0]['embedding']
+except Exception as backend_error:
+self.logger.warning(f"Face detection failed with {backend}: {backend_error}")
+continue

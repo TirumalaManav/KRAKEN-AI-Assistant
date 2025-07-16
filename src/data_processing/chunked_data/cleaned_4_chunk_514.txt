@@ -1,0 +1,9 @@
+CONF_THRESHOLD = 0.3
+for result in yolo_results:
+for box in result.boxes:
+if box.conf[0] >= CONF_THRESHOLD:
+x1, y1, x2, y2 = map(int, box.xyxy[0])
+detections.append((x1, y1, x2 - x1, y2 - y1,
+x1 + (x2 - x1) // 2, y1 + (y2 - y1) // 2))
+if detections:
+return max(detections, key=lambda d: d[2] * d[3])

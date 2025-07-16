@@ -1,0 +1,6 @@
+torch.set_num_threads(1)
+# Hardcoded paths
+CONFIG_PATH = r"D:\TestingPysot\experiments\siamrpn_mobilev2_l234_dwxcorr\config.yaml"
+SNAPSHOT_PATH = r"D:\TestingPysot\experiments\siamrpn_mobilev2_l234_dwxcorr\model.pth"
+# VIDEO_PATH = r"D:\TestingPysot\demo\M16.avi"
+VIDEO_PATH = 0

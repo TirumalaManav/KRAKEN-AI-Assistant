@@ -1,0 +1,6 @@
+logger.info(f"Output patches shape: {patches_array.shape}")
+logger.info(f"Output labels shape: {valid_labels_array.shape}")
+return patches_array, valid_labels_array
+except Exception as e:
+logger.error(f"Error in patch extraction: {str(e)}", exc_info=True)
+raise

@@ -1,0 +1,8 @@
+patch_size = 7
+# Create results directory
+timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+results_dir = Path(f'results_{timestamp}')
+results_dir.mkdir(exist_ok=True)
+# Set up file logging
+fh = logging.FileHandler(results_dir / 'training.log')
+fh.setLevel(logging.INFO)

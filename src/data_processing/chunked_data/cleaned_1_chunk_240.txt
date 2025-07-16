@@ -1,0 +1,5 @@
+# with the difference of a 1D kernel size (1,1,3) and a larger stride
+# equal to 2 in order to reduce the spectral dimension
+self.pool1 = nn.Conv3d(
+20, 20, (3, 1, 1), dilation=dilation, stride=(2, 1, 1), padding=(1, 0, 0))
+# Then, a duplicate of the first and second layers is created with

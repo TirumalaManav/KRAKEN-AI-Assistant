@@ -1,0 +1,8 @@
+adjusted_bbox = (
+max(0, min(int(pred_center_x - w/2 - expansion), frame.shape[1] - w - 2*expansion)),
+max(0, min(int(pred_center_y - h/2 - expansion), frame.shape[0] - h - 2*expansion)),
+min(w + 2 * expansion, frame.shape[1]),
+min(h + 2 * expansion, frame.shape[0])
+)
+else:
+adjusted_bbox = bbox

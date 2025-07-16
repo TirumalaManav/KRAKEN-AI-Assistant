@@ -1,0 +1,5 @@
+if display_iter and iter_ % display_iter == 0:
+string = 'Train (epoch {}/{}) [{}/{} ({:.0f}%)]\tLoss: {:.6f}'
+string = string.format(
+e, epoch, batch_idx * len(data), len(data) * len(data_loader),
+100. * batch_idx / len(data_loader), mean_losses[iter_])

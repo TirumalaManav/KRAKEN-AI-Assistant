@@ -1,0 +1,8 @@
+<!-- Header -->
+<div class="header">
+<div class="header-title">
+<h1>Analysis Results: <span class="highlight">{{ data.selected_dataset }}</span></h1>
+</div>
+<div class="dataset-selector">
+<select onchange="window.location.href='/?dataset=' + this.value">
+{% for dataset in data.available_datasets %}

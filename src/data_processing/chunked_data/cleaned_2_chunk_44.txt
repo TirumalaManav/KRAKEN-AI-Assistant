@@ -1,0 +1,10 @@
+try:
+datasets = []
+for item in os.listdir(DATASETS_DIR):
+dataset_path = os.path.join(DATASETS_DIR, item)
+if os.path.isdir(dataset_path):
+mat_files = [f for f in os.listdir(dataset_path) if f.endswith('.mat')]
+if len(mat_files) >= 2:
+datasets.append({
+'name': item,
+'files': mat_files,

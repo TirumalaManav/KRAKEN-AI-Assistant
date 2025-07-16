@@ -1,0 +1,8 @@
+closed = cv2.morphologyEx(opened, cv2.MORPH_CLOSE, kernel, iterations=1)
+return closed
+def filter_candidate(self, cnt, enhanced):
+area = cv2.contourArea(cnt)
+if area < self.MIN_AREA:
+return False, None, None
+x, y, w, h = cv2.boundingRect(cnt)
+aspect_ratio = w / float(h) if h != 0 else 0

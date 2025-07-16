@@ -1,0 +1,9 @@
+CHECKPOINT = args.restore
+LEARNING_RATE = args.lr
+CLASS_BALANCING = args.class_balancing
+TRAIN_GT = args.train_set
+TEST_GT = args.test_set
+TEST_STRIDE = args.test_stride
+if args.download is not None and len(args.download) > 0:
+for dataset in args.download:
+get_dataset(dataset, target_folder=FOLDER)

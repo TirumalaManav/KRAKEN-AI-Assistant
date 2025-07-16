@@ -1,0 +1,4 @@
+filtered_h = np.median([s[1] for s in self.size_history])
+width_change = abs(filtered_w - self.initial_size[0]) / self.initial_size[0]
+height_change = abs(filtered_h - self.initial_size[1]) / self.initial_size[1]
+else:

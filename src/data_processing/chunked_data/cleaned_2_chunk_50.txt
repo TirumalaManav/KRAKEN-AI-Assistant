@@ -1,0 +1,10 @@
+return jsonify({
+"success": False,
+"message": "Missing data or ground truth files",
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+})
+# Load and validate data content
+try:
+cleanup_gpu_memory()
+data_content = sio.loadmat(os.path.join(full_path, data_files[0]))

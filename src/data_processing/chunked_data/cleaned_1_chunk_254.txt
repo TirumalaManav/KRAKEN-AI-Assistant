@@ -1,0 +1,12 @@
+x = F.relu(self.lrn2(x))
+# First residual block
+x_res = F.relu(self.conv2(x))
+x_res = self.conv3(x_res)
+x = F.relu(x + x_res)
+# Second residual block
+x_res = F.relu(self.conv4(x))
+x_res = self.conv5(x_res)
+x = F.relu(x + x_res)
+x = F.relu(self.conv6(x))
+x = self.dropout(x)
+x = F.relu(self.conv7(x))

@@ -1,0 +1,15 @@
+background: var(--coral);
+}
+</style>
+</head>
+<body>
+<!-- Loading Overlay -->
+<div class="loading-overlay">
+<div class="loader"></div>
+<p>Loading...</p>
+</div>
+<div class="dashboard">
+<!-- Sidebar -->
+<div class="sidebar">
+<div class="sidebar-header">
+<img src="logo.png" alt="Logo" class="logo">

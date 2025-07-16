@@ -1,0 +1,5 @@
+rgb_bands = (43, 21, 11)  # AVIRIS sensor
+gt = open_file(folder + 'Indian_pines_gt.mat')['indian_pines_gt']
+label_values = ["Undefined", "Alfalfa", "Corn-notill", "Corn-mintill",
+"Corn", "Grass-pasture", "Grass-trees",
+"Grass-pasture-mowed", "Hay-windrowed", "Oats",

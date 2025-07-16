@@ -1,0 +1,5 @@
+return self.kalman.errorCovPost[:2, :2]
+class ConfidenceTracker:
+def __init__(self, confidence_threshold=0.6, lost_frames_threshold=60, det_thresh=0.3):  # Increased from 30
+self.confidence_threshold = confidence_threshold
+self.lost_frames_threshold = lost_frames_threshold

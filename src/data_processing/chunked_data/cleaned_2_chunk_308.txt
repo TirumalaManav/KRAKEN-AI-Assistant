@@ -1,0 +1,8 @@
+except Exception as e:
+logger.error(f"Error loading model: {str(e)}")
+raise
+def generate_predictions(self, model, images, labels, model_metadata):
+"""Generate predictions using the loaded model"""
+try:
+logger.info("Starting prediction generation...")
+# Apply PCA if needed

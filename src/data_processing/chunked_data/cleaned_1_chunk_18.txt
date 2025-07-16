@@ -1,0 +1,8 @@
+rgb_bands = (55, 41, 12)
+gt = open_file(folder + 'Pavia_gt.mat')['pavia_gt']
+label_values = ["Undefined", "Water", "Trees", "Asphalt",
+"Self-Blocking Bricks", "Bitumen", "Tiles", "Shadows",
+"Meadows", "Bare Soil"]
+ignored_labels = [0]
+elif dataset_name == 'PaviaU':
+# Load the image

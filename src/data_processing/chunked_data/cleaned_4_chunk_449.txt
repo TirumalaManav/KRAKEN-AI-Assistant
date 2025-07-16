@@ -1,0 +1,7 @@
+return interArea / float(boxAArea + boxBArea - interArea) if boxAArea + boxBArea - interArea > 0 else 0.0
+except Exception as e:
+logger.error(f"Error in IoU calculation: {e}")
+return 0.0
+def get_adaptive_bbox(frame, x, y):
+"""Get adaptive bounding box around point"""
+try:

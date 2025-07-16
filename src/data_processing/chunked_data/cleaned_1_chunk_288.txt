@@ -1,0 +1,5 @@
+self.pool2 = nn.MaxPool3d((1, 2, 2))
+# 512 kernels of size 3x3x512 with a stride of 1 pixel
+self.conv3 = nn.Conv3d(1, 512, (256, 3, 3), stride=(1,1,1))
+# Considering those large kernel values, I assume they actually merge the
+# 3D tensors at each step

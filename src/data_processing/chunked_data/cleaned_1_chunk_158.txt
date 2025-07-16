@@ -1,0 +1,10 @@
+mask = gt == c
+for x in range(gt.shape[0]):
+first_half_count = np.count_nonzero(mask[:x, :])
+second_half_count = np.count_nonzero(mask[x:, :])
+try:
+ratio = first_half_count / second_half_count
+if ratio > 0.9 * train_size and ratio < 1.1 * train_size:
+break
+except ZeroDivisionError:
+continue

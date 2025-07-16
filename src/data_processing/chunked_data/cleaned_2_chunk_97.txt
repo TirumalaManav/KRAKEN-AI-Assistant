@@ -1,0 +1,9 @@
+def log_training_metrics(epoch, logs):
+"""Log training metrics with timestamp"""
+try:
+metrics_info = f"""
+Training Metrics (2025-01-23 13:15:17):
+- Epoch: {epoch + 1}
+- Loss: {logs.get('loss', 0):.4f}
+- Accuracy: {logs.get('accuracy', 0):.4f}
+- Validation Loss: {logs.get('val_loss', 0):.4f}

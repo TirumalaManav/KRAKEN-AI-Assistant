@@ -1,0 +1,11 @@
+loss='sparse_categorical_crossentropy',
+metrics=['accuracy']
+)
+logger.info("Model compiled with sparse_categorical_crossentropy loss and accuracy metric")
+elif model_type == 'autoencoder':
+logger.info("Compiling autoencoder model")
+model.compile(
+optimizer='adam',
+loss='mse',
+metrics=['mse']
+)

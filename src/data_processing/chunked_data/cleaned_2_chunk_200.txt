@@ -1,0 +1,15 @@
+X_train,
+{
+'decoded': X_train,
+'classifier': y_train
+}
+))
+test_dataset = tf.data.Dataset.from_tensor_slices((
+X_test,
+{
+'decoded': X_test,
+'classifier': y_test
+}
+))
+# Batch and prefetch
+logger.info(f"Batching datasets with batch_size={batch_size}")

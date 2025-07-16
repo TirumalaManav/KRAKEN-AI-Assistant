@@ -1,0 +1,8 @@
+self.feature_memory.append(descriptors)
+else:
+return False
+if self.original_template is None:
+self.original_template = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY) if len(roi.shape) == 3 else roi.copy()
+self.template = self.original_template.copy()
+self.template_size = (w, h)
+elif max(w, h) > 200:

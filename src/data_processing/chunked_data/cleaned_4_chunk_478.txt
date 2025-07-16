@@ -1,0 +1,4 @@
+"""
+BUFFER_SIZE = 30                  # Frames used for background modeling
+EMA_ALPHA = 0.1                   # Weight for exponential moving average of background
+BASE_THRESH_OFFSET = 10           # Base offset for thresholding (adjusted by noise)

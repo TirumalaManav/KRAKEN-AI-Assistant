@@ -1,0 +1,10 @@
+@app.route('/contact')
+def contact():
+return render_template('contact.html')
+@app.route('/try-it-yourself')
+def try_it_yourself():
+if 'username' not in session:
+return redirect(url_for('register_user'))
+else:
+return redirect(url_for('train'))
+@app.route('/register', methods=['GET', 'POST'])

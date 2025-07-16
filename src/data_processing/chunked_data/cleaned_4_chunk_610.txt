@@ -1,0 +1,10 @@
+random.randint(0, 255),
+random.randint(0, 255))
+new_obj['prev_center'] = (x + w // 2, y + h // 2)
+new_obj['accumulator'] = TemporalEvidenceAccumulator()
+g.tracked_objects.append(new_obj)
+g.mode = "tracking"
+g.init_rect = None
+g.click_point = None
+g.message_display = "Object tracking."
+else:

@@ -1,0 +1,10 @@
+log_training_metrics(epoch, logs)
+# Error handler
+@app.errorhandler(Exception)
+def handle_error(error):
+cleanup_gpu_memory()
+logger.error(f"Error occurred at 2025-01-23 13:11:38: {str(error)}")
+return jsonify({
+"success": False,
+"message": "Internal server error",
+"error": str(error),

@@ -1,0 +1,14 @@
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+// Particles.js Configuration
+particlesJS.load('particles-js', 'particles.json', function() {
+console.log('Particles.js loaded!');
+});
+// Dark Mode Toggle
+function toggleDarkMode() {
+document.body.classList.toggle('dark-mode');

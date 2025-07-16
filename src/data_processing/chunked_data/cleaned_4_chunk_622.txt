@@ -1,0 +1,8 @@
+g.tracked_objects.remove(obj)
+continue
+x, y, w, h = obj['kalman_box']
+cv2.rectangle(display_frame, (x, y), (x+w, y+h), obj['color'], 2)
+cv2.putText(display_frame, f"FPS: {fps:.2f}", (10, 60),
+cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 2)
+cv2.imshow("Tracking", display_frame)
+key = cv2.waitKey(1)

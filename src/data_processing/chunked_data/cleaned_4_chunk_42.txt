@@ -1,0 +1,6 @@
+return combined_similarity
+class MotionModel:
+def __init__(self, history_size=5):
+self.position_history = deque(maxlen=history_size)
+self.velocity_history = deque(maxlen=history_size-1)
+self.max_acceleration_base = 10000  # Increased from 2000 for hypersonic

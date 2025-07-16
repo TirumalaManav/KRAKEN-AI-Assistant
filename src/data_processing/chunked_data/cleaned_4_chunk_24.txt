@@ -1,0 +1,11 @@
+min_area = max(100, w * h * 0.2)
+max_area = w * h * 3.0
+for cnt in contours:
+area = cv2.contourArea(cnt)
+if area < min_area or area > max_area:
+continue
+M = cv2.moments(cnt)
+if M['m00'] == 0:
+continue
+cx = int(M['m10'] / M['m00'])
+cy = int(M['m01'] / M['m00'])

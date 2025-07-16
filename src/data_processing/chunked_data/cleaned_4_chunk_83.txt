@@ -1,0 +1,13 @@
+self.total_frames = 0
+self.new_fps = 0
+self.cursor_pos = None
+self.last_mouse_move = 0
+self.tracked_object = None
+self.dragging = False
+self.drag_start = None
+self.drag_end = None
+self.message_display = ""
+g = GlobalVars()
+def iou(boxA, boxB):
+xA = max(boxA[0], boxB[0])
+yA = max(boxA[1], boxB[1])

@@ -1,0 +1,6 @@
+'model_type': training_results.get('model_type'),
+'training_history': training_results.get('training_history', {})
+}
+logger.info(f"Loaded model metadata from training results:")
+logger.info(f"Dataset: {metadata['training_dataset']}")
+logger.info(f"Number of components: {metadata['n_components']}")

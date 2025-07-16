@@ -1,0 +1,6 @@
+#             else:
+#                 output = np.transpose(output.numpy(), (0, 2, 3, 1))
+#             for (x, y, w, h), out in zip(indices, output):
+#                 if center_pixel:
+#                     probs[x + w // 2, y + h // 2] += out
+#                 else:

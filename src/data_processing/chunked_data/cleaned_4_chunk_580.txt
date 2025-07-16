@@ -1,0 +1,8 @@
+g.init_rect = (x1, y1, x2 - x1, y2 - y1)
+g.click_point = ((x1 + x2) // 2, (y1 + y2) // 2)
+g.message_display = "Object Locked via Drag and Drop - Object ready for tracking."
+print("Drag selection finished:", g.init_rect)
+elif event == cv2.EVENT_LBUTTONDBLCLK:
+if g.frame is None:
+return
+try:

@@ -1,0 +1,8 @@
+if not history:
+logger.warning("No training history found in metadata")
+return
+# Create figure with subplots
+fig = plt.figure(figsize=(20, 15))
+# Create GridSpec for better control over subplot sizing
+gs = plt.GridSpec(2, 2, figure=fig, hspace=0.3, wspace=0.3)
+# Plot Training vs Validation Accuracy

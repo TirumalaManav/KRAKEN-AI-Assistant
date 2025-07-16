@@ -1,0 +1,6 @@
+g.tracked_object['kalman_box'] = new_box
+g.tracked_object['prev_center'] = new_center
+tracker_confidence = outputs.get('score', 0.8)
+x1, y1, w1, h1 = g.tracked_object['kalman_box']
+x2, y2, w2, h2 = bbox
+kalman_bbox = g.tracked_object['kalman'].update((x2, y2, w2, h2), tracker_confidence)

@@ -1,0 +1,10 @@
+def sample_gt(gt, train_size, mode='random'):
+"""Extract a fixed percentage of samples from an array of labels.
+Args:
+gt: a 2D array of int labels
+percentage: [0, 1] float
+Returns:
+train_gt, test_gt: 2D arrays of int labels
+"""
+indices = np.nonzero(gt)
+X = list(zip(*indices)) # x,y features

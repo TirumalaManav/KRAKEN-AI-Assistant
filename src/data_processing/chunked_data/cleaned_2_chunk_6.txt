@@ -1,0 +1,13 @@
+"progress": 0,
+"current_epoch": 0,
+"total_epochs": 50,
+"current_loss": 0,
+"current_accuracy": 0,
+"best_accuracy": 0,
+"training_start_time": None,
+"last_update_time": None,
+"user": "TirumalaManav",
+"timestamp": "2025-01-23 13:10:47"
+}
+# Import from mlpipeline
+from mlpipeline import (

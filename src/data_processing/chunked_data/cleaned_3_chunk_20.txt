@@ -1,0 +1,17 @@
+transition: transform 0.3s ease;
+}
+.achievement-badge:hover {
+transform: translateY(-5px) rotateX(5deg);
+}
+.achievement-badge i {
+margin-right: 5px;
+color: #00d4ff;
+}
+@media (max-width: 768px) {
+.hero-content h1 {
+font-size: 2.5rem;
+}
+.team-grid {
+grid-template-columns: 1fr;
+}
+.container {

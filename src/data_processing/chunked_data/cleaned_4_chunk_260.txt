@@ -1,0 +1,9 @@
+median_height <= min_height * (1 + self.position_tolerance_ratio)):
+refined_bbox = (
+int(median_center[0] - median_width / 2.0),
+int(median_center[1] - median_height / 2.0),
+int(median_width),
+int(median_height)
+)
+self.last_refined_bbox = refined_bbox
+self.candidate_buffer.clear()

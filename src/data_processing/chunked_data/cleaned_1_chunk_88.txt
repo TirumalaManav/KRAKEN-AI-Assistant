@@ -1,0 +1,6 @@
+if palette is None:
+palette = {0: (0, 0, 0)}
+for k, color in enumerate(sns.color_palette("hls", len(LABEL_VALUES) - 1)):
+palette[k + 1] = tuple(np.asarray(255 * np.array(color), dtype='uint8'))
+invert_palette = {v: k for k, v in palette.items()}
+def convert_to_color(x):

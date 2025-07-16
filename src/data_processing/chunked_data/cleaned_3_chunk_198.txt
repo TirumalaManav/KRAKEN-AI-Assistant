@@ -1,0 +1,13 @@
+}
+50% {
+transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+}
+}
+.logo {
+margin-bottom: 2rem;
+font-size: 1.5rem;
+font-weight: bold;
+letter-spacing: 2px;
+background: linear-gradient(45deg, #00d4ff, #ff6f61);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;

@@ -1,0 +1,10 @@
+if tracker.model is None:
+logger.error("Exiting due to model loading failure.")
+exit(1)
+cv2.namedWindow("Tracking")
+cv2.setMouseCallback("Tracking", mouse_callback, tracker.global_vars)
+while True:
+try:
+frame = tracker.get_frame()
+if frame is None:
+logger.error("Failed to read frame. Exiting.")

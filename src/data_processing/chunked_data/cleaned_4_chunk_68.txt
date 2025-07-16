@@ -1,0 +1,6 @@
+center_x = bbox[0] + bbox[2]/2
+center_y = bbox[1] + bbox[3]/2
+pred_center_x, pred_center_y = predicted_pos
+w, h = bbox[2], bbox[3]
+# Larger expansion based on predicted motion
+motion_dist = np.hypot(pred_center_x - center_x, pred_center_y - center_y)

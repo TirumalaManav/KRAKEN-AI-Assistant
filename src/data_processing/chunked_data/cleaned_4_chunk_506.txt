@@ -1,0 +1,6 @@
+if force_refresh:
+objects, thresh_frame = self.fallback_trigger(frame)
+else:
+thresh_frame = self.adaptive_threshold(enhanced, bg_model_ema)
+objects = self.get_objects(thresh_frame, enhanced)
+detections = self.temporal_smoothing(objects)

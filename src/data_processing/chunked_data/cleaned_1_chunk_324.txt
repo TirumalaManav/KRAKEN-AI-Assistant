@@ -1,0 +1,5 @@
+#                 outs = net(data)
+#                 output, rec = outs
+#                 #target = target - 1
+#                 loss = criterion[0](output, target) + net.aux_loss_weight * criterion[1](rec, data)
+#             else:

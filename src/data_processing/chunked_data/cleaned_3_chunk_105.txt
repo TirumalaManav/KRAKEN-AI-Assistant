@@ -1,0 +1,6 @@
+<nav class="nav-container">
+<div class="logo">HyperSpec AI</div>
+<ul class="nav-links">
+<li><a href="{{ url_for('home') }}">Home</a></li>
+<li><a href="{{ url_for('about') }}">About Us</a></li>
+<li><a href="{{ url_for('try_it_yourself') }}">Try It Yourself</a></li>

@@ -1,0 +1,8 @@
+patches.append(patch)
+patch_labels.append(labels[i, j])
+patch_locations.append((i, j))
+processed += 1
+if processed % 1000 == 0:
+logger.info(f"Processed {processed}/{total_labeled} labeled pixels")
+patches = np.array(patches)
+patch_labels = np.array(patch_labels)

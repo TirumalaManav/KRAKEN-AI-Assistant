@@ -1,0 +1,9 @@
+return (dx, dy)
+except Exception as e:
+logger.error(f"Error in optical flow calculation: %s", e)
+return (0.0, 0.0)
+def universal_redetection(frame, last_bbox, last_frame=None):
+x, y, w, h = map(int, last_bbox)
+if w <= 0 or h <= 0:
+return last_bbox
+if last_frame is not None:

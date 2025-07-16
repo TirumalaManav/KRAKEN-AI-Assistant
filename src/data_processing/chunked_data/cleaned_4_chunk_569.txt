@@ -1,0 +1,6 @@
+else:
+# No previous confirmed bbox, so check consistency using IoU.
+if self.candidate_buffer:
+_, last_bbox = self.candidate_buffer[-1]
+current_iou = iou(last_bbox, bbox)
+if current_iou < self.iou_threshold:

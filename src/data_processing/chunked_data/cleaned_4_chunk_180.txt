@@ -1,0 +1,7 @@
+try:
+x, y, w, h = map(int, initial_bbox)
+search_margin = max(int(min(w, h) * 0.3), 30)
+roi = frame[max(0, y-search_margin):min(frame.shape[0], y+h+search_margin),
+max(0, x-search_margin):min(frame.shape[1], x+w+search_margin)]
+if roi.size == 0:
+return initial_bbox

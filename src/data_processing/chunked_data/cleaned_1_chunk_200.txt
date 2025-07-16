@@ -1,0 +1,6 @@
+kwargs.setdefault('supervision', 'full')
+kwargs.setdefault('flip_augmentation', False)
+kwargs.setdefault('radiation_augmentation', False)
+kwargs.setdefault('mixture_augmentation', False)
+kwargs['center_pixel'] = center_pixel
+return model, optimizer, criterion, kwargs

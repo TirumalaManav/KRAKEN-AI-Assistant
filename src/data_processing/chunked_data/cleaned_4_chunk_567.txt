@@ -1,0 +1,7 @@
+print(f"Candidate at frame {frame_index} is inside refined bbox; updating buffer.")
+self.candidate_buffer.append((frame_index, bbox))
+else:
+# Check IoU with latest candidate in buffer if exists.
+if self.candidate_buffer:
+_, last_bbox = self.candidate_buffer[-1]
+current_iou = iou(last_bbox, bbox)

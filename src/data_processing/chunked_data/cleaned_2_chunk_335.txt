@@ -1,0 +1,7 @@
+f.write("Model Configuration:\n")
+f.write("-"*20 + "\n")
+f.write(f"Model Type: {model_metadata['model_type']}\n")
+f.write(f"Number of components: {model_metadata['n_components']}\n")
+f.write(f"Patch size: {model_metadata['patch_size']}\n\n")
+# Write final metrics
+f.write("Final Metrics:\n")

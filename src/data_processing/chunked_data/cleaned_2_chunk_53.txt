@@ -1,0 +1,12 @@
+return jsonify({
+"success": True,
+"message": f"Dataset '{dataset_path}' validated successfully",
+"files": {
+"data": data_files[0],
+"ground_truth": gt_files[0]
+},
+"dataset_info": {
+"name": dataset_path,
+"path": full_path,
+"data_shape": data_arrays[0].shape,
+"gt_shape": gt_arrays[0].shape,

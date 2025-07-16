@@ -1,0 +1,10 @@
+"learning_rate": "0.001 with decay"
+}
+}
+# Add GPU info if available
+memory_info = get_gpu_memory_info()
+if memory_info:
+model_config[model_type]["gpu_memory"] = memory_info
+logger.info(f"Model '{model_type}' validated successfully")
+return jsonify({
+"success": True,

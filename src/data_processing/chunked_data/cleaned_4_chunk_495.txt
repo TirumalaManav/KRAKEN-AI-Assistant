@@ -1,0 +1,7 @@
+def get_objects(self, thresh_frame, enhanced):
+contours, _ = cv2.findContours(thresh_frame, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+valid_boxes = []
+for cnt in contours:
+valid, bbox, _ = self.filter_candidate(cnt, enhanced)
+if valid:
+valid_boxes.append((bbox[0], bbox[1], bbox[2], bbox[3]))

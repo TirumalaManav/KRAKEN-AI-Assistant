@@ -1,0 +1,6 @@
+# default of  0.002 to  train the  network"
+lr = kwargs.setdefault('lr', 1.0)
+model = MouEtAl(n_bands, n_classes)
+# For Adadelta, we need to load the model on GPU before creating the optimizer
+model = model.to(device)
+optimizer = optim.Adadelta(model.parameters(), lr=lr)

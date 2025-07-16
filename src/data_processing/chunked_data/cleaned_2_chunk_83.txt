@@ -1,0 +1,7 @@
+"message": f"Training error: {str(e)}",
+"timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+"user": "TirumalaManav"
+}), 500
+# Prepare and save training results
+final_metrics = {
+"accuracy": float(history.history['accuracy'][-1]) if mlpipeline_model_type == 'standard'

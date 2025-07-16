@@ -1,0 +1,7 @@
+- Overall accuracy: {metrics['accuracy']:.2f}%
+- Timestamp: 2025-01-23 18:24:38
+- User: TirumalaManav
+""")
+# Print summary of generated files
+logger.info("\nGenerated files:")
+logger.info(f"1. Prediction Comparison: {vis_dir}/{dataset_name}_comparison.png")

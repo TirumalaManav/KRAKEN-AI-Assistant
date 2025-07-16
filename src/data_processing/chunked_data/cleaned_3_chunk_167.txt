@@ -1,0 +1,18 @@
+padding: 1rem;
+border-radius: 8px;
+margin-bottom: 1rem;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+color: var(--white);
+}
+.error-message {
+background-color: var(--coral);
+}
+.success-message {
+background-color: var(--cyan);
+}
+.error-message i,
+.success-message i {
+font-size: 1.2rem;
+}

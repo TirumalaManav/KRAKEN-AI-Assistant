@@ -1,0 +1,2 @@
+.small-3d-box .back { transform: rotateY(180deg) translateZ(50px); background: rgba(255, 111, 97, 0.1); border-color: #ff6f61; }
+.small-3d-box .right { transform: rotateY(90deg) translateZ(50px); background: rgba(0, 212, 255, 0.1); border-color: #00d4ff; }

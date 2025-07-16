@@ -1,0 +1,6 @@
+high_thresh = int(high_thresh_base * scale)
+edges = cv2.Canny(gray_roi, low_thresh, high_thresh)
+edges_combined = cv2.bitwise_or(edges_combined, edges)
+kernel = np.ones((3, 3), np.uint8)
+edges_combined = cv2.morphologyEx(edges_combined, cv2.MORPH_CLOSE, kernel, iterations=1)
+object_size = min(w, h)

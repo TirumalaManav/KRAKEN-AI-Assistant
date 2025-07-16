@@ -1,0 +1,10 @@
+try:
+plt.figure(figsize=(20, 10))
+# Plot ground truth
+plt.subplot(121)
+plt.title(f'Ground Truth - {dataset_name}', fontsize=12)
+plt.imshow(ground_truth, cmap='nipy_spectral')
+plt.colorbar(label='Classes')
+plt.axis('off')
+# Plot predictions
+plt.subplot(122)

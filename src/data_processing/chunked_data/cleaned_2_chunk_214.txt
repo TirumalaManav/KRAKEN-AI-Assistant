@@ -1,0 +1,11 @@
+layers.BatchNormalization(),
+layers.ReLU(),
+layers.MaxPooling2D(pool_size=2, strides=1),
+# Flatten and Dense layers
+layers.Flatten(),
+layers.Dense(1024, activation='relu'),
+layers.Dense(self.n_classes, activation='softmax')
+])
+def call(self, x):
+return self.model(x)
+import logging

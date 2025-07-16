@@ -1,0 +1,11 @@
+optimizer='adam',
+loss='mse',
+metrics=['mse']
+)
+logger.info("Model compiled with MSE loss and MSE metric")
+elif model_type == 'autoencoder_classifier':
+logger.info("Compiling autoencoder-classifier model")
+model.compile(
+optimizer='adam',
+loss={
+'decoded': 'mse',

@@ -1,0 +1,8 @@
+- Total VRAM: {memory_info['total']:.2f}MB
+- Used VRAM: {memory_info['used']:.2f}MB
+- Free VRAM: {memory_info['free']:.2f}MB
+- User: TirumalaManav
+""")
+except Exception as e:
+logger.error(f"Error logging memory usage: {str(e)}")
+def log_training_metrics(epoch, logs):

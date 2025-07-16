@@ -1,0 +1,9 @@
+cv2.imshow("Heatmap", heatmap)
+cv2.imshow("Adaptive Threshold", thresh_frame)
+cv2.imshow("Localized Output", output_frame)
+if cv2.waitKey(1) & 0xFF == ord('q'):
+break
+self.cap.release()
+cv2.destroyAllWindows()
+if __name__ == "__main__":
+video_path = r"D:\TX\Tracking\demo\M5.avi"

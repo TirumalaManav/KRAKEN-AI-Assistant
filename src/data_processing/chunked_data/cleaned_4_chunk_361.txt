@@ -1,0 +1,5 @@
+return (0.6 * orb_similarity + 0.4 * color_similarity) * (1.0 + uniqueness_score) if object_type == 'small' else (0.6 * orb_similarity + 0.4 * color_similarity)
+except Exception as e:
+logger.error(f"Error in compute_similarity: {e}")
+return 0.0
+class MotionModel:

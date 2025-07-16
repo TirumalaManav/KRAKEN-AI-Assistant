@@ -1,0 +1,16 @@
+</div>
+<div class="nav-menu">
+<a href="#overview" class="active">
+<i class="fas fa-home"></i>
+Overview
+</a>
+<a href="#visualizations">
+<i class="fas fa-chart-bar"></i>
+Visualizations
+</a>
+</div>
+</div>
+<!-- Main Content -->
+<div class="main-content">
+<!-- Header -->
+<div class="header">

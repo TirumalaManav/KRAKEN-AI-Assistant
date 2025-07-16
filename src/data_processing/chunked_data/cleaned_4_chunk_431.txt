@@ -1,0 +1,2 @@
+jump_factor = JUMP_THRESHOLD_BASE * max(fused_box[2], fused_box[3]) / 100.0 / (jump_distance + 1e-6)
+new_center_x = self.global_vars.tracked_object['prev_center'][0] + (new_center[0] - self.global_vars.tracked_object['prev_center'][0]) * jump_factor

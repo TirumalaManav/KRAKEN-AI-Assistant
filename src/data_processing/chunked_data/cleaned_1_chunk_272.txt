@@ -1,0 +1,5 @@
+self.conv3_2 = nn.Conv3d(16, 16, (3, 1, 1), padding=(1,0,0))
+self.conv3_3 = nn.Conv3d(16, 16, (5, 1, 1), padding=(2,0,0))
+self.conv3_4 = nn.Conv3d(16, 16, (11, 1, 1), padding=(5,0,0))
+self.conv4 = nn.Conv3d(16, 16, (3, 2, 2))
+self.pooling = nn.MaxPool2d((3,2,2), stride=(3,2,2))

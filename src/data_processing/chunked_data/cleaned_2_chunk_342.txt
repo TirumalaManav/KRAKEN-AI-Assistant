@@ -1,0 +1,8 @@
+"""Visualize and save prediction results"""
+try:
+# Create visualization directory
+vis_dir = os.path.join(save_dir, 'visualizations')
+os.makedirs(vis_dir, exist_ok=True)
+# Get dataset info and class names
+dataset_info = DATASET_MAPPINGS[dataset_name]
+class_names = dataset_info['class_names']

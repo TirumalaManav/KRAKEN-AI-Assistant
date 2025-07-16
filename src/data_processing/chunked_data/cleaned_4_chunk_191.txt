@@ -1,0 +1,10 @@
+int(y + 0.3 * ((min_y + max_y)/2 - h/2)),
+int(0.7 * w + 0.3 * (max_x - min_x)),
+int(0.7 * h + 0.3 * (max_y - min_y))
+)
+return initial_bbox
+except Exception as e:
+logger.error(f"Error in get_precise_object_boundaries: {e}")
+return initial_bbox
+def update_features(self, frame, bbox):
+try:

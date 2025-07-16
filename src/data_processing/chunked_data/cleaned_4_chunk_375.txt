@@ -1,0 +1,7 @@
+self.initial_size = (w, h)
+def predict(self):
+return tuple(self.kalman.predict()[:4].flatten())
+def update(self, bbox, confidence=1.0):
+try:
+x, y, w, h = bbox
+current_aspect_ratio = w/h if h != 0 else 1.0

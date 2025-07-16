@@ -1,0 +1,8 @@
+y2 = min(height, y + box_size // 2)
+g.init_rect = (x1, y1, x2 - x1, y2 - y1)
+g.click_point = (x, y)
+g.message_display = "Object Locked - Object ready for tracking."
+print("Double-click selection:", g.init_rect)
+except Exception as e:
+logger.error("Error in mouse callback: %s", e)
+g.init_rect = None

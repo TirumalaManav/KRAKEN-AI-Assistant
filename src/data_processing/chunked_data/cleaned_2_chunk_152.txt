@@ -1,0 +1,9 @@
+if os.path.exists(user_file):
+self.logger.warning(f"User {username} already exists")
+return False
+# Process the face image
+face_image = self.process_base64_image(base64_image, username)
+if not face_image:
+return False
+# Extract face features
+face_features = self.extract_face_features(face_image)

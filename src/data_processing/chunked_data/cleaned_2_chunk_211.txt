@@ -1,0 +1,8 @@
+return models.Sequential([
+# First Conv Block
+layers.Conv2D(64, kernel_size=3, padding='same', input_shape=(7, 7, self.in_channels)),
+layers.BatchNormalization(),
+layers.ReLU(),
+layers.MaxPooling2D(pool_size=2, strides=1),
+# Second Conv Block
+layers.Conv2D(128, kernel_size=3, padding='same'),

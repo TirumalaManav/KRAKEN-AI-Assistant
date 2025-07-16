@@ -1,0 +1,14 @@
+width: 100%;
+border-collapse: collapse;
+}
+.visual-report th,
+.visual-report td {
+padding: 0.75rem;
+text-align: left;
+border-bottom: 1px solid var(--light-gray);
+}
+.visual-report th {
+background: var(--header-gradient); /* Cyan to Coral gradient */
+color: var(--white);
+}
+.visual-report tr:hover {

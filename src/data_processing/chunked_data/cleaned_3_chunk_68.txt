@@ -1,0 +1,15 @@
+</div>
+<div class="info-content">
+<h3>Phone</h3>
+<p>+91 40 2934 5678</p>
+<p>Mon-Fri 9:00 AM - 5:00 PM</p>
+</div>
+</div>
+<div class="info-item">
+<div class="info-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<div class="info-content">
+<h3>Email</h3>
+<p>info@hitam.org</p>
+<p>support@hitam.org</p>

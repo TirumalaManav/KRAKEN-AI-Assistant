@@ -1,0 +1,11 @@
+try {
+const response = await fetch('/register', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json',
+'X-Requested-With': 'XMLHttpRequest'
+},
+body: JSON.stringify({ username, image: imageData })
+});
+const data = await response.json();
+if (data.success) {

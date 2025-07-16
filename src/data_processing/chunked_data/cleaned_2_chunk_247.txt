@@ -1,0 +1,12 @@
+# Prepare training summary
+training_summary = {
+'timestamp': timestamp,
+'user': 'TirumalaManav',
+'parameters': {
+'n_components': n_components,
+'batch_size': batch_size,
+'epochs': epochs,
+'patch_size': patch_size,
+'n_classes': n_classes
+},
+'model_paths': {

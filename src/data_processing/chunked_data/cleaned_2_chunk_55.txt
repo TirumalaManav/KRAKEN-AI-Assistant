@@ -1,0 +1,10 @@
+"message": f"Invalid .mat file format: {str(e)}",
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+})
+except Exception as e:
+logger.error(f"Error validating dataset: {str(e)}")
+return jsonify({
+"success": False,
+"message": f"Error: {str(e)}",
+"timestamp": "2025-01-23 13:11:38",

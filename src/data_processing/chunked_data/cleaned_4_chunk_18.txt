@@ -1,0 +1,6 @@
+high_thresh_base = max(30, int(mean_val * 0.5))
+if spectrum_type in ["LWIR", "MWIR"]:
+low_thresh_base = max(5, int(low_thresh_base * 0.7))
+high_thresh_base = max(15, int(high_thresh_base * 0.7))
+elif spectrum_type == "SWIR":
+low_thresh_base = int(low_thresh_base * 1.1)

@@ -1,0 +1,11 @@
+#label_values = label_values[1:]
+vis.heatmap(cm, opts={'title': "Confusion matrix",
+'marginbottom': 150,
+'marginleft': 150,
+'width': 500,
+'height': 500,
+'rownames': label_values, 'columnnames': label_values})
+text += "Confusion matrix :\n"
+text += str(cm)
+text += "---\n"
+if agregated:

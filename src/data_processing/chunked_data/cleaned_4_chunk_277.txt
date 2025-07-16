@@ -1,0 +1,4 @@
+new_center_y = self.global_vars.tracked_object['prev_center'][1] + (new_center[1] - self.global_vars.tracked_object['prev_center'][1]) * jump_factor
+self.global_vars.tracked_object['kalman_box'] = (
+int(new_center_x - fused_box[2]/2), int(new_center_y - fused_box[3]/2), fused_box[2], fused_box[3]
+)

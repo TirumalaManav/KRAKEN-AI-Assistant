@@ -1,0 +1,7 @@
+</div>
+<div class="card">
+<h3>AutoEncoder</h3>
+<p>Our AutoEncoder architecture efficiently compresses hyperspectral data while preserving essential features, enabling faster processing and improved classification accuracy through dimensionality reduction.</p>
+</div>
+<div class="card">
+<h3>GAN</h3>

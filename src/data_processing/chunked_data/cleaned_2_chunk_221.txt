@@ -1,0 +1,7 @@
+else:
+logger.error(f"Unknown model type: {model_type}")
+raise ValueError(f"Unknown model type: {model_type}")
+logger.info("Model compilation completed successfully")
+except Exception as e:
+logger.error(f"Error during model compilation: {str(e)}", exc_info=True)
+raise

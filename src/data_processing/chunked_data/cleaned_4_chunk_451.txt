@@ -1,0 +1,7 @@
+return temp_model.get_precise_object_boundaries(frame, (x1, y1, x2 - x1, y2 - y1))
+except Exception as e:
+logger.error(f"Error in get_adaptive_bbox: {e}")
+return (x-50, y-50, 100, 100)
+def optical_flow_update(prev_frame, current_frame, bbox):
+"""Calculate optical flow displacement"""
+try:

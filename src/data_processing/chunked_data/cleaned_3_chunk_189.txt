@@ -1,0 +1,7 @@
+link.addEventListener('click', function(e) {
+e.preventDefault();
+document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+this.classList.add('active');
+const target = document.querySelector(this.getAttribute('href'));
+target.scrollIntoView({ behavior: 'smooth' });
+});

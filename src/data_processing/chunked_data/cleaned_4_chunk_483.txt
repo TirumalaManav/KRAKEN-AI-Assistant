@@ -1,0 +1,5 @@
+self.prev_detections = []     # Each detection: (x, y, w, h, cx, cy, count)
+self.last_detection = None    # Best candidate detection so far
+self.prev_bg_model = None     # Background model computed via EMA
+self.aggregate_detection = None
+self.aggregate_count = 0

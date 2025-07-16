@@ -1,0 +1,7 @@
+modelSelect.disabled = true;
+startTrainingBtn.disabled = true;
+// Hide loading screen after 2 seconds (fallback in case assets fail to load)
+setTimeout(() => {
+const loadingScreen = document.querySelector('.loading-screen');
+loadingScreen.classList.add('hide');
+}, 2000);

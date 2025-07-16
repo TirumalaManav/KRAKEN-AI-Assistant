@@ -1,0 +1,5 @@
+kalman_bbox[2]/bbox[2] if bbox[2] else 1) * \
+min(bbox[3]/kalman_bbox[3] if kalman_bbox[3] else 1,
+kalman_bbox[3]/bbox[3] if bbox[3] else 1) < 0.7 else 0.8
+fused_box = (
+int(tracker_weight * bbox[0] + (1-tracker_weight) * kalman_bbox[0]),

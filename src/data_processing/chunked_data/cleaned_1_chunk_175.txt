@@ -1,0 +1,6 @@
+lr = kwargs.setdefault('learning_rate', 0.001)
+optimizer = optim.Adam(model.parameters(), lr=lr)
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])
+elif name == 'chen':
+patch_size = kwargs.setdefault('patch_size', 27)
+center_pixel = True

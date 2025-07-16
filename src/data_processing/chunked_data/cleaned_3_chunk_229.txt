@@ -1,0 +1,5 @@
+document.getElementById('username').value = '';
+document.getElementById('video-container').style.display = 'none';
+document.getElementById('status-message').style.display = 'none';
+document.getElementById('processing').style.display = 'none';
+document.getElementById('auth-button').disabled = false;

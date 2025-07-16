@@ -1,0 +1,4 @@
+min(bbox[3] / (kalman_bbox[3] + 1e-6), kalman_bbox[3] / (bbox[3] + 1e-6))
+if iou_score > 0.3 and mahalanobis_dist < 5.0 and shape_similarity > 0.5:
+return min(1.0, tracker_confidence + 0.2 * (iou_score + shape_similarity))
+return tracker_confidence

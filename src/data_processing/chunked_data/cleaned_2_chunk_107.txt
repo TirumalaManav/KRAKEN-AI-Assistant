@@ -1,0 +1,5 @@
+# Log the contents of the dataset directory
+dataset_files = os.listdir(dataset_path)
+logger.info(f"Files in dataset directory '{dataset_name}': {dataset_files}")
+# Define the expected filenames for this dataset
+data_file = f"{dataset_name}.mat"          # e.g., PaviaU.mat

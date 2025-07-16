@@ -1,0 +1,2 @@
+group_train.add_argument('--epoch', type=int, help="Training epochs (optional, if absent will be set by the model)")
+group_train.add_argument('--patch_size', type=int, help="Size of the spatial neighbourhood (optional, if absent will be set by the model)")

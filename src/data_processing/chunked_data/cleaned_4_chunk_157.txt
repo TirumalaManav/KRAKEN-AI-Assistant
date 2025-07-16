@@ -1,0 +1,8 @@
+# Draw rectangle during selection
+if drawing and start_point and end_point:
+cv2.rectangle(display_frame, start_point, end_point, (0, 255, 255), 2)
+# If tracking is initialized, track the object
+if tracking_initialized:
+# Perform tracking
+outputs = tracker.track(frame)
+# Draw the tracking results

@@ -1,0 +1,8 @@
+self.feature_memory = deque(maxlen=feature_memory_size)
+self.color_memory = deque(maxlen=feature_memory_size)
+self.min_match_count = 5
+self.original_template = None
+self.template = None
+self.template_size = None
+self.alpha = 0.95
+self.spectrum_type = spectrum_type

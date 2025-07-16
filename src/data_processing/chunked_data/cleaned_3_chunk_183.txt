@@ -1,0 +1,12 @@
+</div>
+<div class="card-content">
+<div class="image-container">
+<img src="{{ data.images.training_history }}" alt="Training History" class="zoomable">
+</div>
+<div class="report-container">
+<pre>{{ data.reports.training }}</pre>
+</div>
+</div>
+</div>
+<!-- Classification Report -->
+<div class="card">

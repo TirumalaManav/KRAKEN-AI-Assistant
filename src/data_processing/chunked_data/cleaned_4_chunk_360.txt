@@ -1,0 +1,4 @@
+uniqueness_score = 0.0
+if object_type == 'small' and keypoints and self.original_template is not None:
+keypoint_ratio = len(keypoints) / (w * h / 1000)
+uniqueness_score = min(1.0, keypoint_ratio * 0.5 + np.std([kp.response for kp in keypoints]) / 100.0 * 0.5)

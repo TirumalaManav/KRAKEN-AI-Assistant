@@ -1,0 +1,8 @@
+return combined_similarity
+# Motion model to verify consistency of the target
+class MotionModel:
+def __init__(self, history_size=5):
+self.position_history = deque(maxlen=history_size)
+self.velocity_history = deque(maxlen=history_size-1)
+self.max_acceleration = 50
+self.max_velocity = 100

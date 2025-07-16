@@ -1,0 +1,12 @@
+cv2.waitKey(1)
+continue
+if g.use_bytetrack:
+ret, frame = cap.read()
+if not ret:
+break
+with g.lock:
+g.frame_idx += 1
+g.frame = frame.copy()
+display_frame = frame.copy()
+for obj in list(g.tracked_objects):
+prev_box = obj['kalman_box']

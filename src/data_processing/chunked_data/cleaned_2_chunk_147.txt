@@ -1,0 +1,9 @@
+return image_path
+except Exception as e:
+self.logger.error(f"Image processing failed: {e}")
+return None
+def extract_face_features(self, image_path):
+"""Extract facial features using multiple detection backends."""
+try:
+backends = ['retinaface', 'mtcnn', 'opencv', 'ssd']
+for backend in backends:

@@ -1,0 +1,9 @@
+# Forward pass through the decoder and classifier
+decoded = self.decoder(encoded)
+classified = self.classifier(encoded)
+return {
+'decoded': decoded,
+'classifier': classified
+}
+from tensorflow.keras import layers, models
+class HyperspectralCNN(models.Model):

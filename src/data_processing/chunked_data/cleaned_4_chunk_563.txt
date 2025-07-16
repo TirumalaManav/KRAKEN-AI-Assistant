@@ -1,0 +1,7 @@
+self.iou_threshold = iou_threshold
+self.max_missed_frames = max_missed_frames
+self.candidate_buffer = deque()
+self.missed_count = 0
+self.last_refined_bbox = None  # Store previously confirmed refined bbox
+def reset(self):
+"""Reset the candidate buffer and missed frame count."""

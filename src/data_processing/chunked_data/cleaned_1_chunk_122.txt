@@ -1,0 +1,7 @@
+# Display the RGB composite image
+caption = "RGB (bands {}, {}, {})".format(*bands)
+# send to visdom server
+vis.images([np.transpose(rgb, (2, 0, 1))],
+opts={'caption': caption})
+def explore_spectrums(img, complete_gt, class_names, vis,
+ignored_labels=None):

@@ -1,0 +1,7 @@
+plt.close()
+# Save classification report
+report_path = os.path.join(save_dir, f'{dataset_name}_classification_report.txt')
+with open(report_path, 'w') as f:
+f.write(f"Classification Report for {dataset_name}\n")
+f.write("="*50 + "\n")
+f.write(f"Timestamp: {self.timestamp}\n")

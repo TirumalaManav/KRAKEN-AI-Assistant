@@ -1,0 +1,6 @@
+median_height = np.median(heights)
+if np.max(np.std(centers, axis=0)) > self.convergence_threshold:
+return (None, False)
+min_width = min(widths)
+min_height = min(heights)
+if (median_width <= min_width * (1 + self.position_tolerance_ratio) and

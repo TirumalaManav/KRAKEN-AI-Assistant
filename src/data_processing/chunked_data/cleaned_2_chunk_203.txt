@@ -1,0 +1,10 @@
+super(HyperspectralAE, self).__init__()
+self.in_channels = in_channels
+self.n_classes = n_classes
+# Call build_model to initialize layers
+self.build_model()
+def build_model(self):
+"""
+Function to build the model architecture.
+The architecture is unchanged from the previous version you shared.
+"""

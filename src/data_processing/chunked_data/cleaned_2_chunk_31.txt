@@ -1,0 +1,15 @@
+if success:
+session['username'] = username
+return jsonify({
+"success": True,
+"message": "Login successful!",
+"redirect": url_for('train')
+}), 200
+else:
+return jsonify({
+"success": False,
+"message": "Login failed. Please try again."
+}), 401
+except Exception as e:
+return jsonify({
+"success": False,

@@ -1,0 +1,14 @@
+try:
+ret, frame = self.cap.read()
+if not ret and self.video_path:
+return None
+elif not ret:
+self.cap = cv2.VideoCapture(0)
+ret, frame = self.cap.read()
+if not ret:
+return None
+return frame
+except Exception as e:
+logger.error(f"Error getting frame: {e}")
+return None
+def release(self):

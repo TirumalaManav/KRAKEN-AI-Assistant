@@ -1,0 +1,9 @@
+if descriptors is not None:
+self.feature_memory.append(descriptors)
+else:
+return False
+hsv_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+hist = cv2.calcHist([hsv_roi], channels=[0, 1], mask=None,
+histSize=[50, 60], ranges=[0, 180, 0, 256])
+cv2.normalize(hist, hist)
+self.color_memory.append(hist)

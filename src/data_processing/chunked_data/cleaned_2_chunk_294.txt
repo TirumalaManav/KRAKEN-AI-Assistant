@@ -1,0 +1,10 @@
+# Load label data
+label_file_path = os.path.join(dataset_path, mapping['label_file'])
+label_data = sio.loadmat(label_file_path)
+# Get label data
+labels = None
+for key in mapping['label_keys']:
+if key in label_data:
+labels = label_data[key]
+logger.info(f"Found label data using key: {key}")
+break

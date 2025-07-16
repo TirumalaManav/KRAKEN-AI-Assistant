@@ -1,0 +1,6 @@
+max_shift = np.sqrt(w*w + h*h) * (0.3 + 0.5 / (1.0 + 0.02 * min(w, h)))
+if shift_magnitude > max_shift:
+dampening = max_shift / shift_magnitude
+return (displacement[0] * dampening, displacement[1] * dampening)
+return (float(displacement[0]), float(displacement[1]))
+except Exception as e:

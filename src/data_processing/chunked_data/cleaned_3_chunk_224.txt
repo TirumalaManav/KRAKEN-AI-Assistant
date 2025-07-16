@@ -1,0 +1,11 @@
+</div>
+</div>
+</div>
+<canvas id="canvas" width="640" height="480"></canvas>
+<!-- Scroll Button -->
+<button class="scroll-button" onclick="scrollToBottom()">↓</button>
+<script>
+let currentStream = null;
+let currentMode = 'login';
+let captureTimeout = null;
+let countdownInterval = null;

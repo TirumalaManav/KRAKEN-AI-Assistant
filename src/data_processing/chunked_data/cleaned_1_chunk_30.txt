@@ -1,0 +1,6 @@
+#     def __init__(self, data, gt, **hyperparams):
+#         """
+#         Args:
+#             data: 3D hyperspectral image
+#             gt: 2D array of labels
+#             patch_size: int, size of the spatial neighbourhood

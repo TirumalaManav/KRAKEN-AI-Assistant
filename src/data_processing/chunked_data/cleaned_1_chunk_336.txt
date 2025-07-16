@@ -1,0 +1,5 @@
+#      if isinstance(model, torch.nn.Module):
+#          filename = str('run') + "_epoch{epoch}_{metric:.2f}".format(**kwargs)
+#          tqdm.write("Saving neural network weights in {}".format(filename))
+#          torch.save(model.state_dict(), model_dir + filename + '.pth')
+#      else:

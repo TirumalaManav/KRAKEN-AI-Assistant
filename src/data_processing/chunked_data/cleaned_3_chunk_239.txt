@@ -1,0 +1,10 @@
+if (data.success) {
+showStatus('Login successful! Redirecting...', 'success');
+setTimeout(() => {
+window.location.href = data.redirect || '/dashboard';
+}, 1500);
+} else {
+showStatus(data.message || 'Login failed. Please try again.', 'error');
+resetForm();
+}
+} catch (error) {

@@ -1,0 +1,4 @@
+dataset_path = os.path.join(data_dir, dataset_name)
+if not os.path.exists(dataset_path):
+logger.error(f"Dataset folder '{dataset_name}' not found in '{data_dir}'")
+raise FileNotFoundError(f"Dataset folder '{dataset_name}' not found in '{data_dir}'.")

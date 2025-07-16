@@ -1,0 +1,8 @@
+# Get dataset files
+files = get_dataset_files(selected_dataset)
+if not files:
+error_msg = f"Missing visualization files for dataset: {selected_dataset}"
+logger.error(error_msg)
+return render_template('error.html', message=error_msg), 500
+# Read reports
+classification_report = read_file_content(

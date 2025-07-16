@@ -1,0 +1,6 @@
+roi = prev_gray[y:y+h, x:x+w]
+max_corners = max(15, min(500, int(10 * math.log2(1 + (w * h) / 100))))
+p0 = cv2.goodFeaturesToTrack(roi, maxCorners=max_corners, qualityLevel=0.005, minDistance=5, blockSize=7,
+useHarrisDetector=True, k=0.04)
+if p0 is None:
+return (0.0, 0.0)

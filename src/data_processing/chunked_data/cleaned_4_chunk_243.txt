@@ -1,0 +1,6 @@
+boosted_confidence = self._dlo_confidence_boost(bbox, tracker_confidence, kalman_bbox)
+final_confidence = self._duo_confidence_boost(bbox, boosted_confidence, kalman_bbox)
+combined_confidence = (
+0.3 * final_confidence +
+0.25 * appearance_score +
+0.2 * iou(bbox, kalman_bbox) +

@@ -1,0 +1,13 @@
+def __init__(self):
+self.init_rect = None
+self.frame = None
+self.tracking_started = False
+self.paused = False
+self.click_point = None
+self.prev_gray = None
+self.kalman_initialized = False
+self.kalman_box = None
+self.mode = "selection"
+self.frame_idx = 0
+self.total_frames = 0
+self.new_fps = 0

@@ -1,0 +1,13 @@
+--card-bg: rgba(255, 255, 255, 0.9);
+--text-primary: #2a2a72;
+--text-secondary: #636e72;
+--border-color: rgba(42, 42, 114, 0.1);
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+body {
+background: var(--background-color);

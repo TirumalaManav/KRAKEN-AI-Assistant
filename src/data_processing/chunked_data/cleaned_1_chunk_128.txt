@@ -1,0 +1,10 @@
+def plot_spectrums(spectrums, vis, title=""):
+"""Plot the specified dictionary of spectrums.
+Args:
+spectrums: dictionary (name -> spectrum) of spectrums to plot
+vis: Visdom display
+"""
+win = None
+for k, v in spectrums.items():
+n_bands = len(v)
+update = None if win is None else 'append'

@@ -1,0 +1,8 @@
+"redirect": url_for('home')
+}), 404
+# Extract base64 data
+if ',' in image_data:
+image_data = image_data.split(',')[1]
+# Generate timestamp for unique filename
+timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+image_path = os.path.join(UPLOAD_FOLDER, f'{username}_verify_{timestamp}.jpg')

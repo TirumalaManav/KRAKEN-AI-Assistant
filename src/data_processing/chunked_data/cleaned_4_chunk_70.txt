@@ -1,0 +1,8 @@
+)
+# Ensure within frame bounds
+adjusted_bbox = (
+max(0, min(adjusted_bbox[0], frame.shape[1] - adjusted_bbox[2])),
+max(0, min(adjusted_bbox[1], frame.shape[0] - adjusted_bbox[3])),
+min(adjusted_bbox[2], frame.shape[1] - adjusted_bbox[0]),
+min(adjusted_bbox[3], frame.shape[0] - adjusted_bbox[1])
+)

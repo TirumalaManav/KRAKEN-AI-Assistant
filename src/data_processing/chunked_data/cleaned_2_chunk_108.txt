@@ -1,0 +1,6 @@
+gt_file = f"{dataset_name}_gt.mat"         # e.g., PaviaU_gt.mat
+# Check for required files
+required_files = [data_file, gt_file]
+for file in required_files:
+file_path = os.path.join(dataset_path, file)
+if not os.path.exists(file_path):

@@ -1,0 +1,5 @@
+# were set to seven and three, respectively
+self.conv1 = nn.Conv3d(1, n_planes, (7, 3, 3), padding=(1, 0, 0))
+# the number of kernels in the second convolution layer is set to be
+# twice as many as that in the first convolution layer
+self.conv2 = nn.Conv3d(n_planes, 2 * n_planes,

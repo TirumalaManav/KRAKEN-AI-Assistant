@@ -1,0 +1,7 @@
+raise
+def reconstruct_image(self, predictions, patch_locations, original_shape):
+"""Reconstruct full image from predictions"""
+try:
+# Initialize with zeros (background)
+reconstructed = np.zeros(original_shape)
+# Place predictions at their original locations

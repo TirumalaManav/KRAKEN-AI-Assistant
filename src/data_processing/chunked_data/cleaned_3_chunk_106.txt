@@ -1,0 +1,9 @@
+<li><a href="{{ url_for('contact') }}">Contact</a></li>
+<li><a href="{{ url_for('login') }}">Login</a></li>
+</ul>
+</nav>
+</header>
+<section class="hero" id="home">
+<div class="background-text">HYPERSPECTRAL</div>
+<div class="hero-content">
+<h2>Revolutionizing Hyperspectral Image Classification</h2>

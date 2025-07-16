@@ -1,0 +1,7 @@
+return reduced_images
+except Exception as e:
+logger.error(f"Error in PCA application: {str(e)}")
+raise
+def extract_patches(images, labels, patch_size, prediction_mode=False):
+"""Extract patches only from labeled pixels (where labels != 0)."""
+try:

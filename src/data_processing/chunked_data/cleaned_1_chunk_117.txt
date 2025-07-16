@@ -1,0 +1,9 @@
+def convert_from_color_(arr_3d, palette=None):
+"""Convert an RGB-encoded image to grayscale labels.
+Args:
+arr_3d: int 2D image of color-coded labels on 3 channels
+palette: dict of colors used (RGB tuple -> label number)
+Returns:
+arr_2d: int 2D array of labels
+"""
+if palette is None:

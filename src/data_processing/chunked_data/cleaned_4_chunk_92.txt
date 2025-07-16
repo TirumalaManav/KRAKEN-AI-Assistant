@@ -1,0 +1,9 @@
+self.candidate_buffer.append((frame_index, bbox))
+if len(self.candidate_buffer) < self.evidence_threshold or self.hit_streak < self.min_hits:
+return (None, False)
+centers = []
+widths = []
+heights = []
+for _, b in self.candidate_buffer:
+cx = b[0] + b[2] / 2.0
+cy = b[1] + b[3] / 2.0

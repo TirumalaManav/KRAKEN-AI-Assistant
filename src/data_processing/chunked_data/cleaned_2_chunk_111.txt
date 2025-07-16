@@ -1,0 +1,8 @@
+return None
+# Find the latest training run
+latest_run = max(training_runs, key=os.path.getmtime)
+vis_dir = os.path.join(latest_run, 'visualizations')
+if os.path.exists(vis_dir):
+logger.info(f"Using visualization directory: {vis_dir}")
+return vis_dir
+else:

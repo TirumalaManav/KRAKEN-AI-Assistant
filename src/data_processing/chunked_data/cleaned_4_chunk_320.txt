@@ -1,0 +1,6 @@
+import time
+# Hardcoded configuration paths
+CONFIG_PATH = r"D:\TestingPysot\experiments\siamrpn_mobilev2_l234_dwxcorr\config.yaml"
+SNAPSHOT_PATH = r"D:\TestingPysot\experiments\siamrpn_mobilev2_l234_dwxcorr\model.pth"
+DEFAULT_VIDEO_PATH = r"D:\TestingPysot\demo\M16.avi"
+# DEFAULT_VIDEO_PATH= 0

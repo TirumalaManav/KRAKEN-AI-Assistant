@@ -1,0 +1,9 @@
+full_path = os.path.join(DATASETS_DIR, dataset_path)
+if not os.path.exists(full_path):
+return jsonify({
+"success": False,
+"message": f"Dataset directory '{dataset_path}' not found",
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+})
+# Validate .mat files

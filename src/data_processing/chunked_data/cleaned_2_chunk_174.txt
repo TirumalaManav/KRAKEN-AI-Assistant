@@ -1,0 +1,4 @@
+logger.info(f"Searching for .mat files in: {dataset_path}")
+image_file = next((f for f in os.listdir(dataset_path) if f.endswith('.mat') and '_gt' not in f), None)
+label_file = next((f for f in os.listdir(dataset_path) if f.endswith('_gt.mat')), None)
+if not image_file or not label_file:

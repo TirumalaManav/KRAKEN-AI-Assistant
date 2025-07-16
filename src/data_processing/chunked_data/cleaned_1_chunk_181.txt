@@ -1,0 +1,6 @@
+kwargs.setdefault('epoch', 100)
+kwargs.setdefault('batch_size', 100)
+elif name == 'he':
+# We train our model by AdaGrad [18] algorithm, in which
+# the base learning rate is 0.01. In addition, we set the batch
+# as 40, weight decay as 0.01 for all the layers

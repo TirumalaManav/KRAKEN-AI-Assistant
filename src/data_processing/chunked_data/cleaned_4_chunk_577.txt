@@ -1,0 +1,9 @@
+g.dragging = True
+g.drag_start = (x, y)
+g.drag_end = (x, y)
+print("Left button down at:", (x, y))
+elif event == cv2.EVENT_MOUSEMOVE:
+if g.dragging and (flags & cv2.EVENT_FLAG_LBUTTON):
+g.drag_end = (x, y)
+# Update selection rectangle during dragging.
+x1 = min(g.drag_start[0], g.drag_end[0])

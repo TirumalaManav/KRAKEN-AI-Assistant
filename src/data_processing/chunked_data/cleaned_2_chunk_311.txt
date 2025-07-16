@@ -1,0 +1,7 @@
+start_idx = i * batch_size
+end_idx = min((i + 1) * batch_size, len(patches))
+batch = patches[start_idx:end_idx]
+batch_predictions = model.predict(batch, verbose=0)
+if isinstance(batch_predictions, dict):
+batch_predictions = batch_predictions['classifier']
+predictions.append(batch_predictions)

@@ -1,0 +1,11 @@
+'img': 'Botswana.mat',
+'gt': 'Botswana_gt.mat',
+}
+}
+try:
+from custom_datasets import CUSTOM_DATASETS_CONFIG
+DATASETS_CONFIG.update(CUSTOM_DATASETS_CONFIG)
+except ImportError:
+pass
+class TqdmUpTo(tqdm):
+"""Provides `update_to(n)` which uses `tqdm.update(delta_n)`."""

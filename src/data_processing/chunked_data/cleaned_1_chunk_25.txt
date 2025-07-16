@@ -1,0 +1,6 @@
+rgb_bands = (43, 21, 11)  # AVIRIS sensor
+gt = open_file(folder + 'KSC_gt.mat')['KSC_gt']
+label_values = ["Undefined", "Scrub", "Willow swamp",
+"Cabbage palm hammock", "Cabbage palm/oak hammock",
+"Slash pine", "Oak/broadleaf hammock",
+"Hardwood swamp", "Graminoid marsh", "Spartina marsh",

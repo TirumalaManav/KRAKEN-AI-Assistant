@@ -1,0 +1,10 @@
+<a href="https://www.linkedin.com/in/manav-goud" target="_blank">Manav Goud</a>
+</div>
+</div>
+</div>
+<div style="margin-top: 2rem; text-align: center;">
+<p>&copy; 2024 HyperSpec AI. All rights reserved.</p>
+</div>
+</footer>
+<script>
+// Intersection Observer for scroll animations

@@ -1,0 +1,5 @@
+# the width is 1. After reshape layer, the feature vectors becomes an image-like
+# 2-dimension data.
+# Conv2 has 64 kernels size of 3x3, with stride s2.
+# After that, the 64 results are drawn into a vector as the input of the fully
+# connected layer FC1 which has n4 nodes.

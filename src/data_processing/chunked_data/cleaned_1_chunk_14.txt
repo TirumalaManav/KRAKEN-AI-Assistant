@@ -1,0 +1,8 @@
+gt: 2D int array of labels
+label_values: list of class names
+ignored_labels: list of int classes to ignore
+rgb_bands: int tuple that correspond to red, green and blue bands
+"""
+palette = None
+if dataset_name not in datasets.keys():
+raise ValueError("{} dataset is unknown.".format(dataset_name))

@@ -1,0 +1,6 @@
+<div class="tab" onclick="switchTab('register')">Register</div>
+</div>
+<div id="login-form">
+<input type="text" id="username" placeholder="Enter username" onchange="checkUsername()">
+<div class="video-container" id="video-container">
+<video id="video" autoplay playsinline></video>

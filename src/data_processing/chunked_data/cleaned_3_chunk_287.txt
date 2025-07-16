@@ -1,0 +1,10 @@
+</div>
+</div>
+<div class="parameter-slider">
+<label>Batch Size</label>
+<div class="slider-container">
+<input type="range" id="batch-size" min="2" max="256" step="16" value="4">
+<span class="slider-value" id="batch-size-value">4</span>
+</div>
+</div>
+<div class="parameter-slider">

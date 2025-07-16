@@ -1,0 +1,5 @@
+# def save_model(model, model_name, dataset_name, **kwargs):
+#      model_dir = './checkpoints/' + model_name + "/" + dataset_name + "/"
+#      if not os.path.isdir(model_dir):
+#          os.makedirs(model_dir, exist_ok=True)
+#      if isinstance(model, torch.nn.Module):

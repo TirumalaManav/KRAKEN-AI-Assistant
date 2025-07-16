@@ -1,0 +1,17 @@
+}
+body {
+background: var(--background-color);
+color: var(--text-primary);
+line-height: 1.6;
+overflow-x: hidden;
+transition: background 0.5s, color 0.5s;
+}
+body.dark-mode {
+background: #1a1a2e;
+color: #ffffff;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {

@@ -1,0 +1,7 @@
+# 3D tensors at each step
+self.features_size = self._get_final_flattened_size()
+# The fc1 has 1024 outputs, where dropout was applied after
+# fc1 with a rate of 0.5
+self.fc1 = nn.Linear(self.features_size, 1024)
+self.dropout = nn.Dropout(p=0.5)
+self.fc2 = nn.Linear(1024, n_classes)

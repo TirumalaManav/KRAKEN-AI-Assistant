@@ -1,0 +1,5 @@
+model = HuEtAl(n_bands, n_classes)
+# From what I infer from the paper (Eq.7 and Algorithm 1), it is standard SGD with lr = 0.01
+lr = kwargs.setdefault('learning_rate', 0.01)
+optimizer = optim.SGD(model.parameters(), lr=lr)
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])

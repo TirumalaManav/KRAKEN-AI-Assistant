@@ -1,0 +1,11 @@
+g.single_trackers.append(new_tracker)
+g.tracking_started = True
+g.init_rect = None
+g.message_display = "Object tracking."
+else:
+logger.warning("No selection made. Please select an object before pressing 'c'.")
+elif current_mode == "tracking":
+if paused:
+cv2.waitKey(1)
+continue
+if g.use_bytetrack:

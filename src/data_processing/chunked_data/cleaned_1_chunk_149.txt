@@ -1,0 +1,10 @@
+text += str(cm)
+text += "---\n"
+if agregated:
+text += ("Accuracy: {:.03f} +- {:.03f}\n".format(np.mean(accuracies),
+np.std(accuracies)))
+else:
+text += "Accuracy : {:.03f}%\n".format(accuracy)
+text += "---\n"
+text += "F1 scores :\n"
+if agregated:

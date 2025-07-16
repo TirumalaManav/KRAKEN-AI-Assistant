@@ -1,0 +1,8 @@
+x = int((det1[0] + det2[0]) / 2)
+y = int((det1[1] + det2[1]) / 2)
+w = int((det1[2] + det2[2]) / 2)
+h = int((det1[3] + det2[3]) / 2)
+cx = int((det1[4] + det2[4]) / 2)
+cy = int((det1[5] + det2[5]) / 2)
+return (x, y, w, h, cx, cy)
+def focused_yolo_refinement(self, detection, frame):

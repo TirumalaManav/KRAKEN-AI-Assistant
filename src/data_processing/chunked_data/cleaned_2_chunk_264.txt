@@ -1,0 +1,9 @@
+'IndianPines': {
+'data_file': 'Indian_pines.mat',
+'label_file': 'Indian_pines_gt.mat',
+'data_keys': ['indian_pines'],
+'label_keys': ['indian_pines_gt'],
+'description': 'Indian Pines scene',
+'n_classes': 16,
+'n_bands': 200,
+'class_names': ['Background', 'Alfalfa', 'Corn-notill', 'Corn-mintill',

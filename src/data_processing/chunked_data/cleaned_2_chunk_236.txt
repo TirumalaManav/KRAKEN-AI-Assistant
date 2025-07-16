@@ -1,0 +1,10 @@
+# Train and save CNN Model
+logger.info("Starting CNN training...")
+cnn_model = HyperspectralCNN(n_components, n_classes)
+train_dataset, test_dataset = preprocess_hyperspectral_data(
+images,
+labels,
+model_type='standard',
+patch_size=patch_size,
+batch_size=batch_size
+)

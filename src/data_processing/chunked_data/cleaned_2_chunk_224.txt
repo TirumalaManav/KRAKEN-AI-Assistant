@@ -1,0 +1,7 @@
+logger.info(f"Testing dataset size: {test_size} batches")
+except Exception as e:
+logger.warning(f"Could not determine dataset sizes: {str(e)}")
+# Define monitoring metric based on model type
+if model_type == 'standard':
+monitor_metric = 'val_accuracy'
+elif model_type == 'autoencoder_classifier':

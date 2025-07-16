@@ -1,0 +1,10 @@
+if max_val > 0.6:
+return (search_x + max_loc[0], search_y + max_loc[1], w, h)
+return last_bbox
+except Exception as e:
+logger.error(f"Error in universal redetection: {e}")
+return last_bbox
+def mouse_callback(event, x, y, flags, param):
+"""Handle mouse events for object selection"""
+g = param
+try:

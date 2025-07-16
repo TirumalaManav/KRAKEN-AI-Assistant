@@ -1,0 +1,8 @@
+'classification': classification_report,
+'training': training_history
+}
+}
+# Log the data being passed to the template
+logger.info(f"Data being passed to template: {data}")
+logger.info(f"Rendering template with data for {selected_dataset}")
+return render_template('prediction.html', data=data)

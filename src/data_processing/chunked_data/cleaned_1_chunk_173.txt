@@ -1,0 +1,6 @@
+elif name == 'hamida':
+patch_size = kwargs.setdefault('patch_size', 5)
+center_pixel = True
+model = HamidaEtAl(n_bands, n_classes, patch_size=patch_size)
+lr = kwargs.setdefault('learning_rate', 0.01)
+optimizer = optim.SGD(model.parameters(), lr=lr, weight_decay=0.0005)

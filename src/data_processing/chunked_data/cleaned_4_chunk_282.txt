@@ -1,0 +1,7 @@
+self.global_vars.mode = "selection"
+return frame, None, fps
+self.global_vars.tracked_object['prev_frame'] = frame.copy()
+return frame, self.global_vars.tracked_object['kalman_box'], fps
+return frame, None, fps
+except Exception as e:
+logger.error(f"Error processing frame: {e}")

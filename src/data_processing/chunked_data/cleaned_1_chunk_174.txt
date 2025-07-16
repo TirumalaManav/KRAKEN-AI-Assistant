@@ -1,0 +1,8 @@
+kwargs.setdefault('batch_size', 100)
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])
+elif name == 'lee':
+kwargs.setdefault('epoch', 200)
+patch_size = kwargs.setdefault('patch_size', 5)
+center_pixel = False
+model = LeeEtAl(n_bands, n_classes)
+lr = kwargs.setdefault('learning_rate', 0.001)

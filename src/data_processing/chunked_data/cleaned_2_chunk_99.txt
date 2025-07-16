@@ -1,0 +1,10 @@
+def read_file_content(file_path):
+"""Safely read file content"""
+try:
+if not os.path.exists(file_path):
+logger.error(f"File not found: {file_path}")
+return None
+with open(file_path, 'r') as f:
+content = f.read()
+logger.info(f"Successfully read file: {file_path}")
+return content

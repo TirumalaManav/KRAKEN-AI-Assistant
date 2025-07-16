@@ -1,0 +1,5 @@
+logger.info(f"Found image file: {image_file}")
+logger.info(f"Found label file: {label_file}")
+# Loading image data
+logger.info(f"Loading image data from: {image_file}")
+image_data = sio.loadmat(os.path.join(dataset_path, image_file))

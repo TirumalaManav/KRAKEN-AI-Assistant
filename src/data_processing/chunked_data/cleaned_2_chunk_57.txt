@@ -1,0 +1,7 @@
+model_type = data.get('modelType')
+logger.info(f"Validating model type: {model_type}")
+if model_type not in ['cnn', 'autoencoder']:
+return jsonify({
+"success": False,
+"message": "Invalid model type. Please select either CNN or Autoencoder.",
+"timestamp": "2025-01-23 13:11:38",

@@ -1,0 +1,8 @@
+# After training, run prediction.py
+try:
+subprocess.run(["python", "prediction.py"], check=True)
+logger.info("Prediction script executed successfully")
+except Exception as e:
+logger.error(f"Error running prediction script: {str(e)}")
+return jsonify({
+"success": False,

@@ -1,0 +1,3 @@
+shape_similarity = min(bbox[2] / (kalman_bbox[2] + 1e-6), kalman_bbox[2] / (bbox[2] + 1e-6)) * \
+min(bbox[3] / (kalman_bbox[3] + 1e-6), kalman_bbox[3] / (bbox[3] + 1e-6))
+boosted_confidence = self.dlo_confidence_boost(bbox, tracker_confidence, kalman_bbox)

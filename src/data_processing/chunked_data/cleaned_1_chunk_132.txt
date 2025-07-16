@@ -1,0 +1,7 @@
+samples += list(mat[indices])
+labels += len(indices[0]) * [label]
+return np.asarray(samples), np.asarray(labels)
+def get_random_pos(img, window_shape):
+""" Return the corners of a random window in the input image
+Args:
+img: 2D (or more) image, e.g. RGB or grayscale image

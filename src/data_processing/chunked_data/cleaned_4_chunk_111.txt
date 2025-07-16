@@ -1,0 +1,8 @@
+return last_bbox
+if last_frame is not None:
+search_w = min(frame.shape[1], w * 3)
+search_h = min(frame.shape[0], h * 3)
+search_x = max(0, x - (search_w - w)//2)
+search_y = max(0, y - (search_h - h)//2)
+template = last_frame[y:y+h, x:x+w]
+search_area = frame[

@@ -1,0 +1,9 @@
+return jsonify({
+"success": False,
+"message": f"Error: {str(e)}",
+"timestamp": "2025-01-23 13:11:38",
+"user": "TirumalaManav"
+}), 500
+@app.route('/api/train', methods=['POST'])
+def train_endpoint():
+"""Training endpoint integrated with MLPipeline functions for 99.8% accuracy"""

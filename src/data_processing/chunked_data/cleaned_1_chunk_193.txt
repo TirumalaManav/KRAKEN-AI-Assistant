@@ -1,0 +1,6 @@
+kwargs.setdefault('epoch', 100)
+lr = kwargs.setdefault('lr', 0.001)
+center_pixel = True
+model = BoulchEtAl(n_bands, n_classes)
+optimizer = optim.SGD(model.parameters(), lr=lr)
+criterion = (nn.CrossEntropyLoss(weight=kwargs['weights']), lambda rec, data: F.mse_loss(rec, data.squeeze()))

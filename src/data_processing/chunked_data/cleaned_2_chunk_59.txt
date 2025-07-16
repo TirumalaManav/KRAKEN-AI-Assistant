@@ -1,0 +1,10 @@
+"Conv2D(256) → BatchNorm → ReLU → MaxPool",
+"Dense(512) → Dropout(0.5) → Dense(n_classes)"
+],
+"input_shape": "(7, 7, n_bands)",
+"optimizer": "Adam with ExponentialDecay",
+"learning_rate": "0.001 with decay"
+},
+'autoencoder': {
+"type": "Autoencoder with Classifier",
+"architecture": [

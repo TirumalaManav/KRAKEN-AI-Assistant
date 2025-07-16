@@ -1,0 +1,9 @@
+return jsonify({
+"success": False,
+"message": "Error saving image. Please try again."
+}), 500
+try:
+passphrase = "default_passphrase"
+success = security_system.authenticate_user(username, passphrase, image_data)
+if success:
+logger.info(f"Successfully verified user {username}")

@@ -1,0 +1,9 @@
+verbose=1
+)
+end_time = datetime.utcnow()
+training_duration = end_time - start_time
+# Log training results
+logger.info(f"Training completed at {end_time}")
+logger.info(f"Total training time: {training_duration}")
+logger.info("Final training metrics:")
+for metric, values in history.history.items():

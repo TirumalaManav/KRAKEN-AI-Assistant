@@ -1,0 +1,5 @@
+modelType: currentModel,
+hyperparameters: {
+patchSize: parseInt(document.getElementById('patch-size').value),
+learningRate: parseFloat(document.getElementById('learning-rate-value').textContent),
+batchSize: parseInt(document.getElementById('batch-size').value),

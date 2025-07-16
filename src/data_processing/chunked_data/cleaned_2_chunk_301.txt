@@ -1,0 +1,9 @@
+logger.info(f"Datasets directory: {self.Datasets_dir}")
+logger.info(f"Timestamp: {self.timestamp}")
+logger.info(f"User: {self.user}")
+def configure_gpu(self):
+"""Configure GPU memory growth"""
+try:
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+for gpu in gpus:

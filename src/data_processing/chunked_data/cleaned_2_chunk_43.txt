@@ -1,0 +1,8 @@
+def train():
+if 'username' not in session:
+return redirect(url_for('login'))  # Redirect to login if not logged in
+return render_template('train.html')
+@app.route('/api/list-datasets', methods=['GET'])
+def list_datasets():
+"""List all available datasets with enhanced validation"""
+try:

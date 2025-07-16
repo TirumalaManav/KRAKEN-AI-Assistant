@@ -1,0 +1,5 @@
+'final_val_accuracy': float(cnn_history.history['val_accuracy'][-1])
+},
+'autoencoder_training': {
+'final_reconstruction_loss': float(ae_history.history['decoded_loss'][-1]),
+'final_classifier_loss': float(ae_history.history['classifier_loss'][-1]),

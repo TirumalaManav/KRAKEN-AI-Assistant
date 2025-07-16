@@ -1,0 +1,2 @@
+group_dataset.add_argument('--training_sample', type=float, default=0.1, help="Percentage of samples to use for training (default: 10%)")
+group_dataset.add_argument('--sampling_mode', type=str, default='random', help="Sampling mode (random sampling or disjoint, default: random)")

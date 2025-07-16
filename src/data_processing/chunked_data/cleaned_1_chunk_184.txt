@@ -1,0 +1,6 @@
+criterion = nn.CrossEntropyLoss(weight=kwargs['weights'])
+elif name == 'luo':
+# All  the  experiments  are  settled  by  the  learning  rate  of  0.1,
+# the  decay  term  of  0.09  and  batch  size  of  100.
+kwargs.setdefault('patch_size', 3)
+kwargs.setdefault('batch_size', 100)

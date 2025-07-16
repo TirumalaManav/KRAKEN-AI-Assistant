@@ -1,0 +1,11 @@
+return jsonify({
+"success": False,
+"message": "Verification failed. Please try again."
+}), 401
+except Exception as e:
+logger.error(f"Error in security system verification: {str(e)}")
+return jsonify({
+"success": False,
+"message": "Verification system error. Please try again."
+}), 500
+finally:

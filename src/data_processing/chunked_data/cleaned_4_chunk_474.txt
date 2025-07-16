@@ -1,0 +1,5 @@
+class LocalizationApp:
+LOW_VISIBILITY_THRESHOLD = 80    # Threshold for low visibility scenario
+IOU_FUSION_THRESHOLD = 0.3         # IoU threshold for fusing detections when both methods are used
+def __init__(self, video_path, model_path):
+self.force_refresh_flag = False

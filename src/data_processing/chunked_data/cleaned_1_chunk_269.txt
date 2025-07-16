@@ -1,0 +1,9 @@
+Mingyi He, Bo Li, Huahui Chen
+IEEE International Conference on Image Processing (ICIP) 2017
+https://ieeexplore.ieee.org/document/8297014/
+"""
+@staticmethod
+def weight_init(m):
+if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
+init.kaiming_uniform(m.weight)
+init.zeros_(m.bias)

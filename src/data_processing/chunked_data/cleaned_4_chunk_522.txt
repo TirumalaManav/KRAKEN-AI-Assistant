@@ -1,0 +1,6 @@
+detection_to_draw = None
+if detection_localizer is not None and detection_yolo is not None:
+iou = self.compute_iou(detection_localizer[:4], detection_yolo[:4])
+if iou > self.IOU_FUSION_THRESHOLD:
+detection_to_draw = self.fuse_detections(detection_localizer, detection_yolo)
+else:

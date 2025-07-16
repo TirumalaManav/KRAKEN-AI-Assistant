@@ -1,0 +1,9 @@
+if memory_info:
+status_info["gpu_memory"] = memory_info
+return jsonify(status_info)
+except Exception as e:
+logger.error(f"Error getting training status: {str(e)}")
+return jsonify({
+"success": False,
+"message": f"Error getting status: {str(e)}",
+"timestamp": "2025-01-23 13:12:39",

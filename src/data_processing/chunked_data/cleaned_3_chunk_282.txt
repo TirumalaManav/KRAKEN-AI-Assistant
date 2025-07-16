@@ -1,0 +1,5 @@
+<div class="file-upload" id="file-upload">
+<i class="fas fa-folder-open"></i>
+<p>Select Dataset Folder</p>
+<p>(Must contain dataset.mat and dataset_gt.mat files)</p>
+<input type="file" id="folder-input" webkitdirectory directory multiple style="display: none">

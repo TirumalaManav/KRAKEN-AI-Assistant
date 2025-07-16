@@ -1,0 +1,5 @@
+#             center_pixel: bool, set to True to consider only the label of the
+#                           center pixel
+#             data_augmentation: bool, set to True to perform random flips
+#             supervision: 'full' or 'semi' supervised algorithms
+#         """
