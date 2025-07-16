@@ -10,7 +10,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.38+-red.svg)](https://streamlit.io)
 [![LangChain](https://img.shields.io/badge/LangChain-0.2.16-green.svg)](https://langchain.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/PAPPULASANDEEPKUMAR/kraken-ai-assistant.svg)](https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/TirumalaManav/kraken-ai-assistant.svg)](https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant/stargazers)
 
 [🚀 Live Demo](https://kraken-ai.streamlit.app) • [📖 Documentation](docs/) • [🎯 Features](#features) • [⚡ Quick Start](#quick-start)
 
@@ -100,8 +100,8 @@ graph TD
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/PAPPULASANDEEPKUMAR/kraken-ai-assistant.git
-   cd kraken-ai-assistant
+   git clone   https://github.com/TirumalaManav/KRAKEN-AI-Assistant.git
+   cd KRAKEN-AI-ASSISTANT
    ```
 
 2. **Create virtual environment**
