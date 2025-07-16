@@ -308,12 +308,6 @@ EXPOSE 8501
 CMD ["streamlit", "run", "streamlit_app.py"]
 ```
 
-### ☁️ Production Platforms
-
-- **AWS**: ECS, Lambda, or Elastic Beanstalk
-- **Google Cloud**: Cloud Run or App Engine  
-- **Azure**: Container Instances or App Service
-- **Self-hosted**: Docker Compose or Kubernetes
 
 ---
 
@@ -347,16 +341,6 @@ AGENT_CONFIG = {
 
 ---
 
-## 📊 Performance Metrics
-
-| Metric | Value | Benchmark |
-|--------|-------|-----------|
-| **Response Latency** | < 2s | Average end-to-end response |
-| **Code Accuracy** | 94.2% | Validated against test suites |
-| **Context Retention** | 95.8% | Multi-turn conversation quality |
-| **Document Processing** | 50 MB/s | File ingestion throughput |
-| **Concurrent Sessions** | 100+ | Simultaneous user capacity |
-| **Vector Retrieval** | < 100ms | Semantic search performance |
 
 ---
 
@@ -415,29 +399,7 @@ pip install -r requirements.txt
 ```
 
 ---
-
-## 🏆 Awards & Recognition
-
-- 🥇 **Best AI Project** - University Tech Fest 2025
-- 🌟 **Innovation Award** - Student Developer Competition
-- 🚀 **Top GitHub Repository** - AI/ML Category
-- 💡 **Outstanding Project** - Computer Science Department
-
 ---
-
-## 📊 Analytics & Metrics
-
-### 📊 Usage Statistics
-- **Total interactions**: 10,000+ successful conversations
-- **Code generation**: 5,000+ functions and classes generated
-- **Bug fixes**: 2,500+ issues resolved
-- **User satisfaction**: 4.8/5.0 average rating
-
-### 🎯 Performance Metrics
-- **Uptime**: 99.9% availability
-- **Response accuracy**: 94.2% on coding benchmarks
-- **User retention**: 85% monthly active users
-- **Processing speed**: Sub-2-second response times
 
 ---
 
@@ -456,34 +418,6 @@ pip install -r requirements.txt
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 Tirumala Manav
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
 ---
 
 ## 🙏 Acknowledgments
@@ -495,26 +429,9 @@ SOFTWARE.
 - **Google Gemini**: Advanced language model capabilities
 - **Sentence Transformers**: State-of-the-art embeddings
 
-### 🌟 Inspiration Sources
-- **Modern AI Research**: RAG and agent-based systems
-- **Developer Tools**: GitHub Copilot, ChatGPT, Stack Overflow
-- **Open Source Community**: Collaborative development practices
-
 ---
 
-## 📊 GitHub Stats
 
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TirumalaManav&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TirumalaManav&layout=compact&theme=radical)
-
-</div>
-
----
-
-<div align="center">
 
 ### ⭐ Star this repository if KRAKEN enhanced your development workflow!
 
@@ -524,6 +441,6 @@ SOFTWARE.
 
 *KRAKEN v1.0 - Advanced AI Coding Assistant with RAG Pipeline & Multi-Agent Architecture*
 
-*Developed in 16 hours of continuous coding • Machine Learning Engineer • Computer Science Graduate*
+
 
 </div>
