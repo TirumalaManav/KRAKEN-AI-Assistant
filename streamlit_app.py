@@ -323,7 +323,7 @@ Technology Stack:
 #             prompt_lower = prompt.lower()
 
 #             if any(word in prompt_lower for word in ["hello", "hi", "hey"]):
-#                 response = "👋 Hello PAPPULASANDEEPKUMAR! I'm KRAKEN, ready to help with your coding questions. What programming challenge can I assist you with today?"
+#                 response = "👋 Hello TIRUMALA MANAV! I'm KRAKEN, ready to help with your coding questions. What programming challenge can I assist you with today?"
 
 #             elif "help" in prompt_lower:
 #                 response = """I can assist you with:
@@ -673,7 +673,7 @@ if prompt := st.chat_input("Message KRAKEN..."):
             prompt_lower = prompt.lower()
 
             if any(word in prompt_lower for word in ["hello", "hi", "hey"]):
-                response = "👋 Hello PAPPULASANDEEPKUMAR! I'm KRAKEN, ready to help with your coding questions. What programming challenge can I assist you with today?"
+                response = "👋 Hello TIRUMALA MANAV! I'm KRAKEN, ready to help with your coding questions. What programming challenge can I assist you with today?"
 
             elif "help" in prompt_lower:
                 response = """I can assist you with:
