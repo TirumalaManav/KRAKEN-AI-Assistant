@@ -31,6 +31,8 @@ import sys
 import os
 import time
 from datetime import datetime, timezone
+import json
+import hashlib
 
 import datetime as dt
 if not hasattr(dt, 'UTC'):
@@ -48,65 +50,125 @@ def get_config_value(key: str, default=None):
         load_dotenv()
         return os.getenv(key, default)
 
-# In-memory ChromaDB function (SOLVES SQLITE ISSUE)
-def create_memory_chroma():
-    """Create in-memory ChromaDB that works without SQLite issues"""
+# Simple Vector Store (NO CHROMADB!)
+class SimpleVectorStore:
+    """Simple in-memory vector store using sentence similarity"""
+
+    def __init__(self):
+        self.documents = []
+        self.embeddings = []
+        self.metadata = []
+
+    def add_documents(self, docs, metadatas=None):
+        """Add documents to the store"""
+        for i, doc in enumerate(docs):
+            self.documents.append(doc)
+            # Simple hash-based "embedding" (good enough for basic similarity)
+            embedding = self._simple_embed(doc)
+            self.embeddings.append(embedding)
+
+            if metadatas:
+                self.metadata.append(metadatas[i])
+            else:
+                self.metadata.append({"source": "default"})
+
+    def _simple_embed(self, text):
+        """Create simple text embedding using word frequency"""
+        words = text.lower().split()
+        word_count = {}
+        for word in words:
+            word_count[word] = word_count.get(word, 0) + 1
+        return word_count
+
+    def search(self, query, top_k=3):
+        """Search for similar documents"""
+        query_embedding = self._simple_embed(query)
+
+        # Calculate similarity scores
+        scores = []
+        for i, doc_embedding in enumerate(self.embeddings):
+            score = self._calculate_similarity(query_embedding, doc_embedding)
+            scores.append((score, i))
+
+        # Sort by similarity and return top results
+        scores.sort(reverse=True)
+        results = []
+
+        for score, idx in scores[:top_k]:
+            if score > 0:  # Only return if there's some similarity
+                results.append({
+                    'document': self.documents[idx],
+                    'metadata': self.metadata[idx],
+                    'score': score
+                })
+
+        return results
+
+    def _calculate_similarity(self, embed1, embed2):
+        """Calculate simple similarity between embeddings"""
+        common_words = set(embed1.keys()) & set(embed2.keys())
+        if not common_words:
+            return 0
+
+        similarity = 0
+        for word in common_words:
+            similarity += min(embed1[word], embed2[word])
+
+        return similarity
+
+# Initialize the simple vector store
+@st.cache_resource
+def create_simple_rag():
+    """Create simple RAG system without any external dependencies"""
     try:
-        import chromadb
+        vector_store = SimpleVectorStore()
 
-        # Use in-memory client (no SQLite dependency)
-        client = chromadb.Client()
-
-        # Create collection
-        collection = client.create_collection(
-            name="kraken_knowledge",
-            metadata={"description": "In-memory knowledge base"}
-        )
-
-        # Add programming knowledge
-        docs = [
-            "Python is a versatile programming language with clean syntax and dynamic typing",
-            "JavaScript powers web development and runs in browsers and Node.js servers",
-            "React is a popular JavaScript library for building interactive user interfaces",
-            "Node.js enables JavaScript server-side development and API creation",
-            "Git tracks code changes and enables distributed version control",
-            "SQL manages relational database operations and data queries",
-            "APIs enable communication between different software systems and services",
-            "HTML structures web page content with semantic markup elements",
-            "CSS styles HTML elements for visual presentation and responsive design",
-            "JSON is a lightweight format for data exchange between applications",
-            "REST APIs use HTTP methods for stateless communication",
-            "MongoDB is a NoSQL database that stores data in flexible documents",
-            "Docker containerizes applications for consistent deployment",
-            "AWS provides cloud computing services and infrastructure",
-            "Machine Learning algorithms learn patterns from data to make predictions"
+        # Programming knowledge base
+        programming_docs = [
+            "Python is a high-level programming language with clean syntax, dynamic typing, and extensive libraries for web development, data science, and automation",
+            "JavaScript is the programming language of the web, used for front-end development, back-end with Node.js, and mobile app development",
+            "React is a JavaScript library for building user interfaces with component-based architecture and virtual DOM for efficient rendering",
+            "Node.js is a JavaScript runtime that allows server-side development, API creation, and real-time applications using event-driven architecture",
+            "Git is a distributed version control system for tracking changes in source code, enabling collaboration and code history management",
+            "SQL is a programming language for managing relational databases, performing queries, and manipulating structured data",
+            "HTML (HyperText Markup Language) structures web content using semantic elements like headers, paragraphs, links, and forms",
+            "CSS (Cascading Style Sheets) styles HTML elements, controls layout, typography, colors, and responsive design for web pages",
+            "REST APIs use HTTP methods (GET, POST, PUT, DELETE) for stateless communication between client and server applications",
+            "JSON (JavaScript Object Notation) is a lightweight data interchange format used for API responses and configuration files",
+            "MongoDB is a NoSQL database that stores data in flexible JSON-like documents, ideal for modern web applications",
+            "Docker containerizes applications with their dependencies, ensuring consistent deployment across different environments",
+            "AWS (Amazon Web Services) provides cloud computing services including EC2, S3, Lambda, and RDS for scalable applications",
+            "Machine Learning algorithms learn patterns from data to make predictions, including supervised, unsupervised, and reinforcement learning",
+            "APIs (Application Programming Interfaces) define how software components communicate, enabling integration between different systems",
+            "Debugging is the process of finding and fixing errors in code using tools like debuggers, logging, and testing frameworks",
+            "Version control with Git tracks code changes, enables branching and merging, and facilitates team collaboration on projects",
+            "Web frameworks like Django (Python), Express (Node.js), and Spring (Java) simplify web application development",
+            "Databases store and organize data, with SQL databases being relational and NoSQL databases offering flexible schemas",
+            "Frontend development focuses on user interface and experience using HTML, CSS, JavaScript, and frameworks like React or Vue"
         ]
 
-        for i, doc in enumerate(docs):
-            collection.add(
-                documents=[doc],
-                ids=[f"doc_{i}"],
-                metadatas=[{"source": "programming", "type": "knowledge"}]
-            )
+        # Add metadata for each document
+        metadatas = [{"topic": f"topic_{i}", "category": "programming"} for i in range(len(programming_docs))]
 
-        return client, collection
+        vector_store.add_documents(programming_docs, metadatas)
+
+        return vector_store
 
     except Exception as e:
-        st.sidebar.error(f"Memory ChromaDB failed: {e}")
-        return None, None
+        st.sidebar.error(f"Simple RAG creation failed: {e}")
+        return None
 
-# Simple RAG function
-def simple_rag_query(query, collection):
-    """Simple RAG query using in-memory ChromaDB"""
+# Enhanced RAG query function
+def enhanced_rag_query(query, vector_store):
+    """Perform RAG query using simple vector store"""
     try:
         # Search for relevant documents
-        results = collection.query(
-            query_texts=[query],
-            n_results=3
-        )
+        results = vector_store.search(query, top_k=3)
 
-        if results['documents'] and results['documents'][0]:
-            context = " ".join(results['documents'][0])
+        if results:
+            # Combine relevant documents as context
+            context_docs = [result['document'] for result in results]
+            context = " ".join(context_docs)
 
             # Generate response with context
             import google.generativeai as genai
@@ -114,11 +176,20 @@ def simple_rag_query(query, collection):
             genai.configure(api_key=api_key)
             model = genai.GenerativeModel('gemini-1.5-flash')
 
-            enhanced_prompt = f"""Context from knowledge base: {context}
+            enhanced_prompt = f"""You are KRAKEN, an expert AI coding assistant created by Tirumala Manav.
 
-Question: {query}
+RELEVANT CONTEXT from knowledge base:
+{context}
 
-As KRAKEN, your AI coding assistant, provide a comprehensive response using the context above and your programming expertise. Be helpful, detailed, and practical:"""
+USER QUESTION: {query}
+
+Provide a comprehensive, helpful response that:
+1. Uses the context information when relevant
+2. Adds your own expertise and knowledge
+3. Gives practical examples and code snippets if applicable
+4. Maintains a friendly, professional tone
+
+Response:"""
 
             response = model.generate_content(enhanced_prompt)
             return response.text, True
@@ -126,7 +197,7 @@ As KRAKEN, your AI coding assistant, provide a comprehensive response using the 
             return None, False
 
     except Exception as e:
-        st.sidebar.error(f"RAG query failed: {e}")
+        st.sidebar.error(f"Enhanced RAG query failed: {e}")
         return None, False
 
 # Test AI response function
@@ -164,7 +235,7 @@ Provide a helpful, detailed, and practical response:"""
 # Test API keys access and show debug info
 def test_api_access():
     """Test if API keys are accessible"""
-    st.sidebar.subheader("🔍 API Keys Status")
+    st.sidebar.subheader("🔍 System Status")
 
     try:
         gemini_key = get_config_value("GEMINI_API_KEY")
@@ -184,10 +255,10 @@ def test_api_access():
             st.sidebar.success(f"✅ Tavily: ...{tavily_key[-8:]}")
             tavily_ready = True
         else:
-            st.sidebar.warning("⚠️ Tavily: Not found (optional)")
+            st.sidebar.info("ℹ️ Tavily: Not configured (optional)")
             tavily_ready = False
     except Exception as e:
-        st.sidebar.warning(f"⚠️ Tavily: {e}")
+        st.sidebar.info(f"ℹ️ Tavily: {e}")
         tavily_ready = False
 
     return gemini_ready, tavily_ready
@@ -211,51 +282,18 @@ st.set_page_config(
 # Test API access first
 gemini_ready, tavily_ready = test_api_access()
 
-# UPDATED safe_import_modules function (FIXES SQLITE ISSUE)
-def safe_import_modules():
-    """Safely import modules with detailed error reporting"""
-    modules_status = {}
-
-    # Try in-memory RAG instead of file-based RAG (SQLITE FIX)
-    try:
-        client, collection = create_memory_chroma()
-        if client and collection:
-            modules_status['rag_pipeline'] = True
-            st.sidebar.success("✅ Memory RAG loaded")
-            # Store in session state
-            st.session_state.chroma_client = client
-            st.session_state.chroma_collection = collection
-        else:
-            modules_status['rag_pipeline'] = False
-            st.sidebar.warning("⚠️ Memory RAG failed, using direct AI")
-
-    except Exception as e:
-        modules_status['rag_pipeline'] = False
-        st.sidebar.error(f"❌ RAG System: {e}")
-
-    # Keep handlers as they are (optional)
-    try:
-        from input_handler import InputHandler
-        from output_handler import OutputHandler
-        modules_status['handlers'] = True
-        st.sidebar.success("✅ Handlers loaded")
-    except Exception as e:
-        modules_status['handlers'] = False
-        st.sidebar.warning(f"⚠️ Handlers: {e} (using built-in handlers)")
-
-    return modules_status
-
-# Import modules
-modules_status = safe_import_modules()
-pipeline_ready = modules_status.get('rag_pipeline', False)
-handlers_ready = modules_status.get('handlers', False)
+# Initialize simple RAG system
+simple_rag_store = create_simple_rag()
+if simple_rag_store:
+    st.sidebar.success("✅ Simple RAG System loaded")
+    system_ready = gemini_ready
+else:
+    st.sidebar.warning("⚠️ RAG System failed")
+    system_ready = gemini_ready
 
 # Session state
 if 'messages' not in st.session_state:
     st.session_state.messages = []
-
-# Determine system readiness
-system_ready = pipeline_ready and gemini_ready
 
 # Function to clear chat
 def clear_chat():
@@ -386,8 +424,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # System status indicator
-if system_ready and 'chroma_collection' in st.session_state:
-    st.success("🚀 KRAKEN System is fully operational with Memory RAG!")
+if system_ready and simple_rag_store:
+    st.success("🚀 KRAKEN System is fully operational with Simple RAG!")
 elif gemini_ready:
     st.warning("⚡ KRAKEN is running in enhanced AI mode")
 else:
@@ -406,7 +444,7 @@ if not st.session_state.messages:
         </div>
         <p style='margin: 0; color: #ccc; line-height: 1.5;'>
             I can help you with programming questions, debugging, code explanation, and implementation guidance.
-            You can also upload documents (PDF, DOCX, TXT, and more) for analysis.
+            I'm equipped with a knowledge base and advanced AI capabilities.
         </p>
         <p style='margin: 1rem 0 0 0; color: #00d4aa; font-weight: 500;'>
             What can I help you with today?
@@ -432,20 +470,20 @@ if prompt := st.chat_input("Message KRAKEN..."):
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # UPDATED Generate response (SQLITE FIX APPLIED)
+    # Generate response
     with st.chat_message("assistant"):
         typing_placeholder = st.empty()
         typing_placeholder.markdown('<p class="typing-indicator">🐙 KRAKEN is thinking...</p>', unsafe_allow_html=True)
 
-        # Try memory-based RAG first (SQLITE SOLUTION)
-        if system_ready and 'chroma_collection' in st.session_state:
+        # Try simple RAG first
+        if system_ready and simple_rag_store:
             try:
-                rag_response, success = simple_rag_query(prompt, st.session_state.chroma_collection)
+                rag_response, success = enhanced_rag_query(prompt, simple_rag_store)
                 typing_placeholder.empty()
 
                 if success and rag_response:
                     response = rag_response
-                    st.sidebar.info("🧠 Used Memory RAG")
+                    st.sidebar.info("🧠 Used Simple RAG")
                 else:
                     # Fallback to direct AI
                     ai_response, error = test_ai_response(prompt)
@@ -469,23 +507,7 @@ if prompt := st.chat_input("Message KRAKEN..."):
         else:
             # Fallback responses
             typing_placeholder.empty()
-            prompt_lower = prompt.lower()
-
-            if any(word in prompt_lower for word in ["hello", "hi", "hey"]):
-                response = "👋 Hello! I'm KRAKEN, but I need API configuration to provide full AI responses. Please check the sidebar for status."
-
-            elif "help" in prompt_lower:
-                response = """I can assist you with:
-
-🐍 **Python Programming** - Write, debug, and optimize code
-🔧 **Problem Solving** - Algorithm design and implementation
-📚 **Code Explanation** - Understand complex programming concepts
-🐛 **Debugging** - Find and fix errors in your code
-
-⚠️ Note: I need API keys configured to provide full AI responses."""
-
-            else:
-                response = f"I understand you're asking about: \"{prompt}\"\n\n⚠️ I need API configuration to provide intelligent responses. Please check the sidebar for status and ensure your API keys are properly set up."
+            response = "⚠️ I need API configuration to provide intelligent responses. Please check the sidebar for status."
 
         st.markdown(response)
         st.session_state.messages.append({"role": "assistant", "content": response})
