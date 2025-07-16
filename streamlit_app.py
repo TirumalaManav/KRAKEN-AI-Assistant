@@ -374,12 +374,15 @@ Technology Stack:
 # </div>
 # """, unsafe_allow_html=True)
 
-
 import streamlit as st
 import sys
 import os
 import time
-from datetime import datetime
+from datetime import datetime, timezone
+
+import datetime as dt
+if not hasattr(dt, 'UTC'):
+    dt.UTC = dt.timezone.utc
 
 # Universal configuration function for both local and cloud
 def get_config_value(key: str, default=None):
